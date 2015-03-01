@@ -1,0 +1,2360 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage[letterpaper, margin=.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\setlength{\parindent}{0em}
+\begin{document}
+adrenalina
+
+adren$|$alina
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf a} & {\color{red}\bf d} & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf n} & a & l & i & n & a \\ 
+suc-freq: & 30251 & 1604 & 54 & 16 & 11 & 6 & 4 & 3 & 3 & 2 \\ 
+log(SF): & 4.48074 & 3.2052 & 1.73239 & 1.20412 & 1.04139 & 0.77815 & 0.60206 & 0.47712 & 0.47712 & 0.30103 \\ 
+pred-freq: & 1 & 2 & 2 & 2 & 2 & 37 & 175 & 1275 & 3765 & 52303 \\ 
+log(PF): & 0.0 & 0.30103 & 0.30103 & 0.30103 & 0.30103 & 1.5682 & 2.24304 & 3.10551 & 3.57576 & 4.71853 \\ 
+lex-freq: & 977 & 52 & 2 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 3
+
+PF point: 5
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+baterista
+
+bater$|$ista
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf a} & {\color{red}\bf t} & {\color{red}\bf e} & {\color{red}\bf r} & i & s & t & a \\ 
+suc-freq: & 17457 & 4324 & 395 & 74 & 25 & 6 & 3 & 3 & 3 \\ 
+log(SF): & 4.24197 & 3.63589 & 2.5966 & 1.86923 & 1.39794 & 0.77815 & 0.47712 & 0.47712 & 0.47712 \\ 
+pred-freq: & 1 & 2 & 5 & 12 & 118 & 954 & 1274 & 4519 & 52303 \\ 
+log(PF): & 0.0 & 0.30103 & 0.69897 & 1.07918 & 2.07188 & 2.97955 & 3.10517 & 3.65504 & 4.71853 \\ 
+lex-freq: & 411 & 131 & 23 & 10 & 5 & 3 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 6
+
+PF point: 4
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+bermuda
+
+berm$|$uda
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf e} & {\color{red}\bf r} & {\color{red}\bf m} & u & d & a \\ 
+suc-freq: & 17457 & 2882 & 513 & 14 & 3 & 3 & 2 \\ 
+log(SF): & 4.24197 & 3.45969 & 2.71012 & 1.14613 & 0.47712 & 0.47712 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 4 & 165 & 6461 & 52303 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.60206 & 2.21748 & 3.8103 & 4.71853 \\ 
+lex-freq: & 1125 & 195 & 26 & 3 & 2 & 2 & 2 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 4
+
+PF point: 4
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+bobeira
+
+bob$|$eira
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf o} & {\color{red}\bf b} & e & i & r & a \\ 
+suc-freq: & 17457 & 2733 & 114 & 17 & 6 & 3 & 2 \\ 
+log(SF): & 4.24197 & 3.43664 & 2.0569 & 1.23045 & 0.77815 & 0.47712 & 0.30103 \\ 
+pred-freq: & 2 & 3 & 15 & 701 & 955 & 5489 & 52303 \\ 
+log(PF): & 0.30103 & 0.47712 & 1.17609 & 2.84572 & 2.98 & 3.73949 & 4.71853 \\ 
+lex-freq: & 561 & 107 & 9 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 3
+
+SF point: 3
+
+PF point: 3
+
+SF+PF-before point: 3
+
+SF+PF-closest point: 3
+
+\vspace{3em}
+
+burocrata
+
+burocr$|$ata
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf u} & {\color{red}\bf r} & {\color{red}\bf o} & {\color{red}\bf c} & {\color{red}\bf r} & a & t & a \\ 
+suc-freq: & 17457 & 1625 & 365 & 14 & 11 & 10 & 6 & 4 & 2 \\ 
+log(SF): & 4.24197 & 3.21085 & 2.56229 & 1.14613 & 1.04139 & 1.0 & 0.77815 & 0.60206 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 2 & 8 & 11 & 70 & 424 & 4519 & 52303 \\ 
+log(PF): & 0.0 & 0.0 & 0.30103 & 0.90309 & 1.04139 & 1.8451 & 2.62737 & 3.65504 & 4.71853 \\ 
+lex-freq: & 1175 & 99 & 24 & 3 & 3 & 3 & 3 & 2 & 2 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 4
+
+PF point: 5
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+cerveja
+
+cerv$|$eja
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf e} & {\color{red}\bf r} & {\color{red}\bf v} & e & j & a \\ 
+suc-freq: & 32837 & 1383 & 395 & 42 & 19 & 13 & 7 \\ 
+log(SF): & 4.51636 & 3.14082 & 2.5966 & 1.62325 & 1.27875 & 1.11394 & 0.8451 \\ 
+pred-freq: & 1 & 2 & 2 & 14 & 111 & 389 & 52303 \\ 
+log(PF): & 0.0 & 0.30103 & 0.30103 & 1.14613 & 2.04532 & 2.58995 & 4.71853 \\ 
+lex-freq: & 94 & 6 & 5 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 2
+
+PF point: 6
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+delegado
+
+deleg$|$ado
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf d} & {\color{red}\bf e} & {\color{red}\bf l} & {\color{red}\bf e} & {\color{red}\bf g} & a & d & o \\ 
+suc-freq: & 23868 & 12765 & 591 & 96 & 26 & 22 & 6 & 4 \\ 
+log(SF): & 4.37782 & 4.10602 & 2.77159 & 1.98227 & 1.41497 & 1.34242 & 0.77815 & 0.60206 \\ 
+pred-freq: & 2 & 3 & 8 & 49 & 227 & 4948 & 12123 & 50164 \\ 
+log(PF): & 0.30103 & 0.47712 & 0.90309 & 1.6902 & 2.35603 & 3.69443 & 4.08361 & 4.70039 \\ 
+lex-freq: & 305 & 143 & 7 & 4 & 2 & 2 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 3
+
+PF point: 5
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+flagrante
+
+flagr$|$ante
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf f} & {\color{red}\bf l} & {\color{red}\bf a} & {\color{red}\bf g} & {\color{red}\bf r} & a & n & t & e \\ 
+suc-freq: & 13301 & 1168 & 341 & 56 & 20 & 17 & 3 & 3 & 3 \\ 
+log(SF): & 4.12388 & 3.06744 & 2.53275 & 1.74819 & 1.30103 & 1.23045 & 0.47712 & 0.47712 & 0.47712 \\ 
+pred-freq: & 1 & 1 & 3 & 11 & 127 & 1037 & 4733 & 8368 & 33980 \\ 
+log(PF): & 0.0 & 0.0 & 0.47712 & 1.04139 & 2.1038 & 3.01578 & 3.67514 & 3.92262 & 4.53122 \\ 
+lex-freq: & 660 & 24 & 4 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 7
+
+PF point: 4
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+forasteira
+
+forast$|$eira
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf f} & {\color{red}\bf o} & {\color{red}\bf r} & {\color{red}\bf a} & {\color{red}\bf s} & {\color{red}\bf t} & e & i & r & a \\ 
+suc-freq: & 13301 & 1889 & 782 & 32 & 5 & 4 & 4 & 4 & 4 & 2 \\ 
+log(SF): & 4.12388 & 3.27623 & 2.89321 & 1.50515 & 0.69897 & 0.60206 & 0.60206 & 0.60206 & 0.60206 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 3 & 4 & 13 & 83 & 701 & 955 & 5489 & 52303 \\ 
+log(PF): & 0.0 & 0.0 & 0.47712 & 0.60206 & 1.11394 & 1.91908 & 2.84572 & 2.98 & 3.73949 & 4.71853 \\ 
+lex-freq: & 1593 & 234 & 117 & 8 & 4 & 3 & 3 & 3 & 3 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 5
+
+PF point: 8
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+fortuna
+
+fort$|$una
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf f} & {\color{red}\bf o} & {\color{red}\bf r} & {\color{red}\bf t} & u & n & a \\ 
+suc-freq: & 13301 & 1889 & 782 & 132 & 18 & 13 & 8 \\ 
+log(SF): & 4.12388 & 3.27623 & 2.89321 & 2.12057 & 1.25527 & 1.11394 & 0.90309 \\ 
+pred-freq: & 2 & 7 & 7 & 16 & 118 & 3765 & 52303 \\ 
+log(PF): & 0.30103 & 0.8451 & 0.8451 & 1.20412 & 2.07188 & 3.57576 & 4.71853 \\ 
+lex-freq: & 128 & 20 & 9 & 3 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 5
+
+PF point: 5
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+neurose
+
+neur$|$ose
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf n} & {\color{red}\bf e} & {\color{red}\bf u} & {\color{red}\bf r} & o & s & e \\ 
+suc-freq: & 7750 & 1812 & 248 & 140 & 107 & 6 & 2 \\ 
+log(SF): & 3.8893 & 3.25816 & 2.39445 & 2.14613 & 2.02938 & 0.77815 & 0.30103 \\ 
+pred-freq: & 2 & 2 & 3 & 46 & 224 & 3611 & 33980 \\ 
+log(PF): & 0.30103 & 0.30103 & 0.47712 & 1.66276 & 2.35025 & 3.55763 & 4.53122 \\ 
+lex-freq: & 510 & 139 & 9 & 6 & 2 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 6
+
+PF point: 3
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+pijama
+
+pij$|$ama
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf i} & {\color{red}\bf j} & a & m & a \\ 
+suc-freq: & 25768 & 2237 & 4 & 4 & 4 & 2 \\ 
+log(SF): & 4.41108 & 3.34967 & 0.60206 & 0.60206 & 0.60206 & 0.30103 \\ 
+pred-freq: & 1 & 2 & 4 & 395 & 1787 & 52303 \\ 
+log(PF): & 0.0 & 0.30103 & 0.60206 & 2.5966 & 3.25212 & 4.71853 \\ 
+lex-freq: & 798 & 34 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 3
+
+SF point: 3
+
+PF point: 3
+
+SF+PF-before point: 3
+
+SF+PF-closest point: 3
+
+\vspace{3em}
+
+português
+
+portug$|$uês
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf o} & {\color{red}\bf r} & {\color{red}\bf t} & {\color{red}\bf u} & {\color{red}\bf g} & u & ê & s \\ 
+suc-freq: & 25768 & 3504 & 616 & 207 & 25 & 17 & 11 & 4 & 4 \\ 
+log(SF): & 4.41108 & 3.54456 & 2.78958 & 2.31597 & 1.39794 & 1.23045 & 1.04139 & 0.60206 & 0.60206 \\ 
+pred-freq: & 1 & 1 & 1 & 1 & 1 & 8 & 24 & 289 & 71986 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.90309 & 1.38021 & 2.4609 & 4.85725 \\ 
+lex-freq: & 796 & 110 & 23 & 10 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 5
+
+PF point: 8
+
+SF+PF-before point: 6
+
+SF+PF-closest point: 6
+
+\vspace{3em}
+
+proletário
+
+prolet$|$ário
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf r} & {\color{red}\bf o} & {\color{red}\bf l} & {\color{red}\bf e} & {\color{red}\bf t} & á & r & i & o \\ 
+suc-freq: & 25768 & 6153 & 2631 & 82 & 15 & 9 & 5 & 5 & 4 & 2 \\ 
+log(SF): & 4.41108 & 3.78909 & 3.42012 & 1.91381 & 1.17609 & 0.95424 & 0.69897 & 0.69897 & 0.60206 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 2 & 12 & 101 & 432 & 1123 & 3464 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.30103 & 1.07918 & 2.00432 & 2.63548 & 3.05038 & 3.53958 & 4.70039 \\ 
+lex-freq: & 3774 & 1059 & 466 & 9 & 4 & 3 & 2 & 2 & 2 & 2 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 4
+
+PF point: 9
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+refrigerante
+
+refri$|$gerante
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllll}
+
+trunc: & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf f} & {\color{red}\bf r} & {\color{red}\bf i} & g & e & r & a & n & t & e \\ 
+suc-freq: & 18966 & 10830 & 569 & 87 & 23 & 19 & 18 & 18 & 17 & 3 & 2 & 2 \\ 
+log(SF): & 4.27798 & 4.03463 & 2.75511 & 1.93952 & 1.36173 & 1.27875 & 1.25527 & 1.25527 & 1.23045 & 0.47712 & 0.30103 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 1 & 2 & 2 & 26 & 127 & 1037 & 4733 & 8368 & 33980 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.0 & 0.30103 & 0.30103 & 1.41497 & 2.1038 & 3.01578 & 3.67514 & 3.92262 & 4.53122 \\ 
+lex-freq: & 259 & 138 & 7 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 10
+
+PF point: 6
+
+SF+PF-before point: 6
+
+SF+PF-closest point: 7
+
+\vspace{3em}
+
+salafrário
+
+salafrá$|$rio
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf a} & {\color{red}\bf l} & {\color{red}\bf a} & {\color{red}\bf f} & {\color{red}\bf r} & {\color{red}\bf á} & r & i & o \\ 
+suc-freq: & 26553 & 4326 & 676 & 76 & 6 & 3 & 3 & 3 & 3 & 2 \\ 
+log(SF): & 4.42411 & 3.63609 & 2.82995 & 1.88081 & 0.77815 & 0.47712 & 0.47712 & 0.47712 & 0.47712 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 2 & 2 & 30 & 432 & 1123 & 3464 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.30103 & 0.30103 & 1.47712 & 2.63548 & 3.05038 & 3.53958 & 4.70039 \\ 
+lex-freq: & 2477 & 488 & 91 & 11 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 7
+
+SF point: 5
+
+PF point: 5
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+sapatão
+
+sapat$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf a} & {\color{red}\bf p} & {\color{red}\bf a} & {\color{red}\bf t} & ã & o \\ 
+suc-freq: & 26553 & 4326 & 124 & 61 & 48 & 1 & 1 \\ 
+log(SF): & 4.42411 & 3.63609 & 2.09342 & 1.78533 & 1.68124 & 0.0 & 0.0 \\ 
+pred-freq: & 1 & 1 & 2 & 27 & 286 & 6510 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.30103 & 1.43136 & 2.45637 & 3.81358 & 4.70039 \\ 
+lex-freq: & 1478 & 278 & 6 & 4 & 4 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 6
+
+PF point: 3
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+saudades
+
+saudad$|$es
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf a} & {\color{red}\bf u} & {\color{red}\bf d} & {\color{red}\bf a} & {\color{red}\bf d} & e & s \\ 
+suc-freq: & 26553 & 4326 & 141 & 65 & 35 & 6 & 2 & 1 \\ 
+log(SF): & 4.42411 & 3.63609 & 2.14922 & 1.81291 & 1.54407 & 0.77815 & 0.30103 & 0.0 \\ 
+pred-freq: & 3 & 3 & 4 & 325 & 397 & 930 & 13381 & 71986 \\ 
+log(PF): & 0.47712 & 0.47712 & 0.60206 & 2.51188 & 2.59879 & 2.96848 & 4.12649 & 4.85725 \\ 
+lex-freq: & 159 & 31 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 3
+
+PF point: 3
+
+SF+PF-before point: 3
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+secretária
+
+secret$|$ária
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf e} & {\color{red}\bf c} & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf t} & á & r & i & a \\ 
+suc-freq: & 26553 & 3668 & 212 & 52 & 49 & 44 & 6 & 6 & 4 & 2 \\ 
+log(SF): & 4.42411 & 3.56443 & 2.32634 & 1.716 & 1.6902 & 1.64345 & 0.77815 & 0.77815 & 0.60206 & 0.30103 \\ 
+pred-freq: & 3 & 3 & 3 & 3 & 14 & 76 & 251 & 3178 & 8638 & 52303 \\ 
+log(PF): & 0.47712 & 0.47712 & 0.47712 & 0.47712 & 1.14613 & 1.88081 & 2.39967 & 3.50215 & 3.93641 & 4.71853 \\ 
+lex-freq: & 198 & 73 & 2 & 2 & 2 & 2 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 7
+
+PF point: 4
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 6
+
+\vspace{3em}
+
+travesti
+
+trav$|$esti
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf t} & {\color{red}\bf r} & {\color{red}\bf a} & {\color{red}\bf v} & e & s & t & i \\ 
+suc-freq: & 17191 & 4543 & 2411 & 135 & 74 & 37 & 14 & 11 \\ 
+log(SF): & 4.2353 & 3.65734 & 3.3822 & 2.13033 & 1.86923 & 1.5682 & 1.14613 & 1.04139 \\ 
+pred-freq: & 1 & 1 & 1 & 6 & 35 & 90 & 975 & 16859 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.77815 & 1.54407 & 1.95424 & 2.989 & 4.22683 \\ 
+lex-freq: & 741 & 220 & 133 & 6 & 3 & 3 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 4
+
+PF point: 3
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+vagabunda
+
+vagab$|$unda
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf v} & {\color{red}\bf a} & {\color{red}\bf g} & {\color{red}\bf a} & {\color{red}\bf b} & u & n & d & a \\ 
+suc-freq: & 8652 & 1924 & 146 & 69 & 26 & 21 & 21 & 21 & 7 \\ 
+log(SF): & 3.93712 & 3.28421 & 2.16435 & 1.83885 & 1.41497 & 1.32222 & 1.32222 & 1.32222 & 0.8451 \\ 
+pred-freq: & 1 & 1 & 1 & 14 & 20 & 69 & 464 & 6461 & 52303 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 1.14613 & 1.30103 & 1.83885 & 2.66652 & 3.8103 & 4.71853 \\ 
+lex-freq: & 172 & 16 & 2 & 2 & 2 & 2 & 2 & 2 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 3
+
+PF point: 3
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+vestibular
+
+vestib$|$ular
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf v} & {\color{red}\bf e} & {\color{red}\bf s} & {\color{red}\bf t} & {\color{red}\bf i} & {\color{red}\bf b} & u & l & a & r \\ 
+suc-freq: & 8652 & 2097 & 167 & 95 & 61 & 4 & 3 & 3 & 2 & 2 \\ 
+log(SF): & 3.93712 & 3.3216 & 2.22272 & 1.97772 & 1.78533 & 0.60206 & 0.47712 & 0.47712 & 0.30103 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 2 & 3 & 15 & 183 & 553 & 7274 & 20376 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.30103 & 0.47712 & 1.17609 & 2.26245 & 2.74273 & 3.86177 & 4.30912 \\ 
+lex-freq: & 782 & 200 & 21 & 19 & 13 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 6
+
+PF point: 8
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 6
+
+\vspace{3em}
+
+beleza
+
+bele$|$za
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf e} & {\color{red}\bf l} & {\color{red}\bf e} & z & a \\ 
+suc-freq: & 17457 & 2882 & 433 & 25 & 9 & 2 \\ 
+log(SF): & 4.24197 & 3.45969 & 2.63649 & 1.39794 & 0.95424 & 0.30103 \\ 
+pred-freq: & 4 & 6 & 27 & 176 & 804 & 52303 \\ 
+log(PF): & 0.60206 & 0.77815 & 1.43136 & 2.24551 & 2.90526 & 4.71853 \\ 
+lex-freq: & 23 & 6 & 2 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 4
+
+PF point: 5
+
+SF+PF-before point: 3
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+burguês
+
+burg$|$uês
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf u} & {\color{red}\bf r} & {\color{red}\bf g} & u & ê & s \\ 
+suc-freq: & 17457 & 1625 & 365 & 52 & 21 & 2 & 2 \\ 
+log(SF): & 4.24197 & 3.21085 & 2.56229 & 1.716 & 1.32222 & 0.30103 & 0.30103 \\ 
+pred-freq: & 3 & 3 & 3 & 8 & 24 & 289 & 71986 \\ 
+log(PF): & 0.47712 & 0.47712 & 0.47712 & 0.90309 & 1.38021 & 2.4609 & 4.85725 \\ 
+lex-freq: & 737 & 58 & 13 & 2 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 6
+
+PF point: 6
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+chinês
+
+chin$|$ês
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf h} & {\color{red}\bf i} & {\color{red}\bf n} & ê & s \\ 
+suc-freq: & 32837 & 4215 & 758 & 111 & 3 & 3 \\ 
+log(SF): & 4.51636 & 3.6248 & 2.87967 & 2.04532 & 0.47712 & 0.47712 \\ 
+pred-freq: & 2 & 2 & 15 & 65 & 289 & 71986 \\ 
+log(PF): & 0.30103 & 0.30103 & 1.17609 & 1.81291 & 2.4609 & 4.85725 \\ 
+lex-freq: & 323 & 41 & 3 & 2 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 5
+
+PF point: 5
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+cruzeiro
+
+cruz$|$eiro
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf r} & {\color{red}\bf u} & {\color{red}\bf z} & e & i & r & o \\ 
+suc-freq: & 32837 & 2125 & 240 & 61 & 10 & 3 & 2 & 2 \\ 
+log(SF): & 4.51636 & 3.32736 & 2.38021 & 1.78533 & 1.0 & 0.47712 & 0.30103 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 4 & 9 & 732 & 968 & 3069 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.60206 & 0.95424 & 2.86451 & 2.98588 & 3.487 & 4.70039 \\ 
+lex-freq: & 992 & 55 & 4 & 3 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 3
+
+PF point: 4
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+demônio
+
+dem$|$ônio
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf d} & {\color{red}\bf e} & {\color{red}\bf m} & ô & n & i & o \\ 
+suc-freq: & 23868 & 12765 & 537 & 9 & 8 & 8 & 3 \\ 
+log(SF): & 4.37782 & 4.10602 & 2.72997 & 0.95424 & 0.90309 & 0.90309 & 0.47712 \\ 
+pred-freq: & 4 & 4 & 16 & 51 & 274 & 3464 & 50164 \\ 
+log(PF): & 0.60206 & 0.60206 & 1.20412 & 1.70757 & 2.43775 & 3.53958 & 4.70039 \\ 
+lex-freq: & 177 & 82 & 3 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 3
+
+SF point: 4
+
+PF point: 2
+
+SF+PF-before point: 3
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+fissura
+
+fissu$|$ra
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf f} & {\color{red}\bf i} & {\color{red}\bf s} & {\color{red}\bf s} & {\color{red}\bf u} & r & a \\ 
+suc-freq: & 13301 & 2028 & 161 & 14 & 7 & 7 & 7 \\ 
+log(SF): & 4.12388 & 3.30707 & 2.20683 & 1.14613 & 0.8451 & 0.8451 & 0.8451 \\ 
+pred-freq: & 1 & 1 & 6 & 27 & 631 & 5489 & 52303 \\ 
+log(PF): & 0.0 & 0.0 & 0.77815 & 1.43136 & 2.80003 & 3.73949 & 4.71853 \\ 
+lex-freq: & 1258 & 195 & 7 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 4
+
+PF point: 2
+
+SF+PF-before point: 3
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+milhão
+
+milh$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf i} & {\color{red}\bf l} & {\color{red}\bf h} & ã & o \\ 
+suc-freq: & 22253 & 3020 & 454 & 42 & 2 & 2 \\ 
+log(SF): & 4.34739 & 3.48001 & 2.65706 & 1.62325 & 0.30103 & 0.30103 \\ 
+pred-freq: & 1 & 23 & 71 & 131 & 6510 & 50164 \\ 
+log(PF): & 0.0 & 1.36173 & 1.85126 & 2.11727 & 3.81358 & 4.70039 \\ 
+lex-freq: & 101 & 12 & 4 & 3 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 5
+
+PF point: 4
+
+SF+PF-before point: 3
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+mulher
+
+mulh$|$er
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf u} & {\color{red}\bf l} & {\color{red}\bf h} & e & r \\ 
+suc-freq: & 22253 & 1825 & 387 & 53 & 44 & 42 \\ 
+log(SF): & 4.34739 & 3.26126 & 2.58771 & 1.72428 & 1.64345 & 1.62325 \\ 
+pred-freq: & 7 & 10 & 29 & 416 & 7695 & 20376 \\ 
+log(PF): & 0.8451 & 1.0 & 1.4624 & 2.61909 & 3.88621 & 4.30912 \\ 
+lex-freq: & 13 & 3 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 4
+
+PF point: 3
+
+SF+PF-before point: 3
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+palhaço
+
+palh$|$aço
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf a} & {\color{red}\bf l} & {\color{red}\bf h} & a & ç & o \\ 
+suc-freq: & 25768 & 5044 & 474 & 26 & 15 & 8 & 3 \\ 
+log(SF): & 4.41108 & 3.70278 & 2.67578 & 1.41497 & 1.17609 & 0.90309 & 0.47712 \\ 
+pred-freq: & 1 & 6 & 8 & 17 & 108 & 423 & 50164 \\ 
+log(PF): & 0.0 & 0.77815 & 0.90309 & 1.23045 & 2.03342 & 2.62634 & 4.70039 \\ 
+lex-freq: & 361 & 74 & 5 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 4
+
+PF point: 6
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+playboy
+
+playb$|$oy
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf l} & {\color{red}\bf a} & {\color{red}\bf y} & {\color{red}\bf b} & o & y \\ 
+suc-freq: & 25768 & 1020 & 565 & 42 & 6 & 5 & 4 \\ 
+log(SF): & 4.41108 & 3.0086 & 2.75205 & 1.62325 & 0.77815 & 0.69897 & 0.60206 \\ 
+pred-freq: & 1 & 1 & 3 & 11 & 67 & 241 & 7766 \\ 
+log(PF): & 0.0 & 0.0 & 0.47712 & 1.04139 & 1.82607 & 2.38202 & 3.8902 \\ 
+lex-freq: & 1110 & 31 & 26 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 2
+
+PF point: 6
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+preguiça
+
+pregui$|$ça
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf g} & {\color{red}\bf u} & {\color{red}\bf i} & ç & a \\ 
+suc-freq: & 25768 & 6153 & 2245 & 101 & 42 & 16 & 9 & 2 \\ 
+log(SF): & 4.41108 & 3.78909 & 3.35122 & 2.00432 & 1.62325 & 1.20412 & 0.95424 & 0.30103 \\ 
+pred-freq: & 2 & 2 & 2 & 4 & 6 & 79 & 652 & 52303 \\ 
+log(PF): & 0.30103 & 0.30103 & 0.30103 & 0.60206 & 0.77815 & 1.89763 & 2.81425 & 4.71853 \\ 
+lex-freq: & 1363 & 372 & 144 & 8 & 4 & 4 & 4 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 4
+
+PF point: 7
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 6
+
+\vspace{3em}
+
+sargento
+
+sarg$|$ento
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf a} & {\color{red}\bf r} & {\color{red}\bf g} & e & n & t & o \\ 
+suc-freq: & 26553 & 4326 & 367 & 29 & 16 & 10 & 9 & 3 \\ 
+log(SF): & 4.42411 & 3.63609 & 2.56467 & 1.4624 & 1.20412 & 1.0 & 0.95424 & 0.47712 \\ 
+pred-freq: & 1 & 2 & 3 & 13 & 1325 & 1635 & 4565 & 50164 \\ 
+log(PF): & 0.0 & 0.30103 & 0.47712 & 1.11394 & 3.12222 & 3.21352 & 3.65944 & 4.70039 \\ 
+lex-freq: & 71 & 13 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 4
+
+PF point: 4
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+brasil
+
+Bras$|$il
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf r} & {\color{red}\bf a} & {\color{red}\bf s} & i & l \\ 
+suc-freq: & 17457 & 2435 & 640 & 63 & 23 & 16 \\ 
+log(SF): & 4.24197 & 3.3865 & 2.80618 & 1.79934 & 1.36173 & 1.20412 \\ 
+pred-freq: & 23 & 25 & 30 & 69 & 751 & 8688 \\ 
+log(PF): & 1.36173 & 1.39794 & 1.47712 & 1.83885 & 2.87564 & 3.93892 \\ 
+lex-freq: & 119 & 20 & 8 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 4
+
+PF point: 4
+
+SF+PF-before point: 3
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+pirralho
+
+pirr$|$alho
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf i} & {\color{red}\bf r} & {\color{red}\bf r} & a & l & h & o \\ 
+suc-freq: & 25768 & 2237 & 230 & 14 & 12 & 8 & 8 & 2 \\ 
+log(SF): & 4.41108 & 3.34967 & 2.36173 & 1.14613 & 1.07918 & 0.90309 & 0.90309 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 3 & 13 & 71 & 245 & 2537 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.47712 & 1.11394 & 1.85126 & 2.38917 & 3.40432 & 4.70039 \\ 
+lex-freq: & 1335 & 69 & 7 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 4
+
+PF point: 6
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+tranqüilo
+
+tranqüi$|$lo
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf t} & {\color{red}\bf r} & {\color{red}\bf a} & {\color{red}\bf n} & {\color{red}\bf q} & {\color{red}\bf ü} & {\color{red}\bf i} & l & o \\ 
+suc-freq: & 17191 & 4543 & 2411 & 1025 & 113 & 42 & 36 & 28 & 2 \\ 
+log(SF): & 4.2353 & 3.65734 & 3.3822 & 3.01072 & 2.05308 & 1.62325 & 1.5563 & 1.44716 & 0.30103 \\ 
+pred-freq: & 2 & 2 & 2 & 3 & 3 & 3 & 162 & 1668 & 50164 \\ 
+log(PF): & 0.30103 & 0.30103 & 0.30103 & 0.47712 & 0.47712 & 0.47712 & 2.20952 & 3.2222 & 4.70039 \\ 
+lex-freq: & 208 & 43 & 27 & 5 & 2 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 7
+
+SF point: 5
+
+PF point: 6
+
+SF+PF-before point: 6
+
+SF+PF-closest point: 7
+
+\vspace{3em}
+
+tranquilo
+
+tranqui$|$lo
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf t} & {\color{red}\bf r} & {\color{red}\bf a} & {\color{red}\bf n} & {\color{red}\bf q} & {\color{red}\bf u} & {\color{red}\bf i} & l & o \\ 
+suc-freq: & 17191 & 4543 & 2411 & 1025 & 113 & 66 & 52 & 46 & 3 \\ 
+log(SF): & 4.2353 & 3.65734 & 3.3822 & 3.01072 & 2.05308 & 1.81954 & 1.716 & 1.66276 & 0.47712 \\ 
+pred-freq: & 2 & 2 & 2 & 2 & 18 & 19 & 162 & 1668 & 50164 \\ 
+log(PF): & 0.30103 & 0.30103 & 0.30103 & 0.30103 & 1.25527 & 1.27875 & 2.20952 & 3.2222 & 4.70039 \\ 
+lex-freq: & 206 & 42 & 26 & 4 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 7
+
+SF point: 5
+
+PF point: 4
+
+SF+PF-before point: 6
+
+SF+PF-closest point: 7
+
+\vspace{3em}
+
+falsificado
+
+falsi$|$ficado
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllll}
+
+trunc: & {\color{red}\bf f} & {\color{red}\bf a} & {\color{red}\bf l} & {\color{red}\bf s} & {\color{red}\bf i} & f & i & c & a & d & o \\ 
+suc-freq: & 13301 & 2724 & 507 & 55 & 31 & 29 & 29 & 25 & 23 & 7 & 5 \\ 
+log(SF): & 4.12388 & 3.43521 & 2.70501 & 1.74036 & 1.49136 & 1.4624 & 1.4624 & 1.39794 & 1.36173 & 0.8451 & 0.69897 \\ 
+pred-freq: & 1 & 1 & 1 & 10 & 78 & 85 & 176 & 405 & 4948 & 12123 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 1.0 & 1.89209 & 1.92942 & 2.24551 & 2.60746 & 3.69443 & 4.08361 & 4.70039 \\ 
+lex-freq: & 1402 & 322 & 92 & 11 & 6 & 5 & 5 & 5 & 4 & 2 & 2 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 4
+
+PF point: 3
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+bijuteria
+
+biju$|$teria
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf i} & {\color{red}\bf j} & {\color{red}\bf u} & t & e & r & i & a \\ 
+suc-freq: & 17457 & 1806 & 22 & 5 & 4 & 2 & 2 & 2 & 2 \\ 
+log(SF): & 4.24197 & 3.25672 & 1.34242 & 0.69897 & 0.60206 & 0.30103 & 0.30103 & 0.30103 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 3 & 79 & 426 & 3178 & 8638 & 52303 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.47712 & 1.89763 & 2.62941 & 3.50215 & 3.93641 & 4.71853 \\ 
+lex-freq: & 2524 & 189 & 4 & 2 & 2 & 2 & 2 & 2 & 2 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 3
+
+PF point: 4
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+bisavó
+
+bis$|$avó
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf i} & {\color{red}\bf s} & a & v & ó \\ 
+suc-freq: & 17457 & 1806 & 200 & 7 & 4 & 2 \\ 
+log(SF): & 4.24197 & 3.25672 & 2.30103 & 0.8451 & 0.60206 & 0.30103 \\ 
+pred-freq: & 1 & 2 & 2 & 6 & 12 & 277 \\ 
+log(PF): & 0.0 & 0.30103 & 0.30103 & 0.77815 & 1.07918 & 2.44248 \\ 
+lex-freq: & 963 & 65 & 9 & 2 & 2 & 1 \\ 
+\end{tabular}
+
+trunc point: 3
+
+SF point: 4
+
+PF point: 5
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+cafajeste
+
+caf$|$ajeste
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf a} & {\color{red}\bf f} & a & j & e & s & t & e \\ 
+suc-freq: & 32837 & 7446 & 81 & 7 & 4 & 4 & 4 & 4 & 3 \\ 
+log(SF): & 4.51636 & 3.87192 & 1.90849 & 0.8451 & 0.60206 & 0.60206 & 0.60206 & 0.60206 & 0.47712 \\ 
+pred-freq: & 1 & 1 & 1 & 1 & 2 & 225 & 1136 & 8368 & 33980 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.0 & 0.30103 & 2.35218 & 3.05538 & 3.92262 & 4.53122 \\ 
+lex-freq: & 2658 & 617 & 8 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 3
+
+SF point: 3
+
+PF point: 5
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+carnaval
+
+carn$|$aval
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf a} & {\color{red}\bf r} & {\color{red}\bf n} & a & v & a & l \\ 
+suc-freq: & 32837 & 7446 & 1613 & 110 & 24 & 8 & 8 & 6 \\ 
+log(SF): & 4.51636 & 3.87192 & 3.20763 & 2.04139 & 1.38021 & 0.90309 & 0.90309 & 0.77815 \\ 
+pred-freq: & 1 & 1 & 1 & 3 & 16 & 104 & 2433 & 8688 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.47712 & 1.20412 & 2.01703 & 3.38614 & 3.93892 \\ 
+lex-freq: & 1357 & 306 & 63 & 3 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 4
+
+PF point: 6
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+cocaína
+
+coc$|$aína
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf o} & {\color{red}\bf c} & a & í & n & a \\ 
+suc-freq: & 32837 & 12410 & 214 & 20 & 2 & 2 & 2 \\ 
+log(SF): & 4.51636 & 4.09377 & 2.33041 & 1.30103 & 0.30103 & 0.30103 & 0.30103 \\ 
+pred-freq: & 2 & 7 & 9 & 12 & 48 & 3765 & 52303 \\ 
+log(PF): & 0.30103 & 0.8451 & 0.95424 & 1.07918 & 1.68124 & 3.57576 & 4.71853 \\ 
+lex-freq: & 493 & 199 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 3
+
+SF point: 5
+
+PF point: 5
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+confusão
+
+conf$|$usão
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf o} & {\color{red}\bf n} & {\color{red}\bf f} & u & s & ã & o \\ 
+suc-freq: & 32837 & 12410 & 5267 & 691 & 82 & 18 & 1 & 1 \\ 
+log(SF): & 4.51636 & 4.09377 & 3.72156 & 2.83948 & 1.91381 & 1.25527 & 0.0 & 0.0 \\ 
+pred-freq: & 1 & 1 & 3 & 13 & 47 & 442 & 6510 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.47712 & 1.11394 & 1.6721 & 2.64542 & 3.81358 & 4.70039 \\ 
+lex-freq: & 202 & 81 & 36 & 3 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 7
+
+PF point: 2
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+disposição
+
+dispo$|$sição
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf d} & {\color{red}\bf i} & {\color{red}\bf s} & {\color{red}\bf p} & {\color{red}\bf o} & s & i & ç & ã & o \\ 
+suc-freq: & 23868 & 4130 & 1445 & 337 & 71 & 23 & 14 & 7 & 2 & 1 \\ 
+log(SF): & 4.37782 & 3.61595 & 3.15987 & 2.52763 & 1.85126 & 1.36173 & 1.14613 & 0.8451 & 0.30103 & 0.0 \\ 
+pred-freq: & 4 & 4 & 5 & 32 & 32 & 44 & 276 & 2731 & 6510 & 50164 \\ 
+log(PF): & 0.60206 & 0.60206 & 0.69897 & 1.50515 & 1.50515 & 1.64345 & 2.44091 & 3.43632 & 3.81358 & 4.70039 \\ 
+lex-freq: & 338 & 76 & 22 & 5 & 4 & 3 & 2 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 2
+
+PF point: 3
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 6
+
+\vspace{3em}
+
+faculdade
+
+facu$|$ldade
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf f} & {\color{red}\bf a} & {\color{red}\bf c} & {\color{red}\bf u} & l & d & a & d & e \\ 
+suc-freq: & 13301 & 2724 & 194 & 12 & 8 & 2 & 2 & 2 & 2 \\ 
+log(SF): & 4.12388 & 3.43521 & 2.2878 & 1.07918 & 0.90309 & 0.30103 & 0.30103 & 0.30103 & 0.30103 \\ 
+pred-freq: & 1 & 2 & 8 & 9 & 55 & 1180 & 1445 & 2858 & 33980 \\ 
+log(PF): & 0.0 & 0.30103 & 0.90309 & 0.95424 & 1.74036 & 3.07188 & 3.15987 & 3.45606 & 4.53122 \\ 
+lex-freq: & 81 & 27 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 4
+
+PF point: 8
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+japonês
+
+Jap$|$onês
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf j} & {\color{red}\bf a} & {\color{red}\bf p} & o & n & ê & s \\ 
+suc-freq: & 4394 & 1221 & 40 & 17 & 15 & 3 & 3 \\ 
+log(SF): & 3.64286 & 3.08672 & 1.60206 & 1.23045 & 1.17609 & 0.47712 & 0.47712 \\ 
+pred-freq: & 6 & 6 & 8 & 21 & 65 & 289 & 71986 \\ 
+log(PF): & 0.77815 & 0.77815 & 0.90309 & 1.32222 & 1.81291 & 2.4609 & 4.85725 \\ 
+lex-freq: & 71 & 18 & 3 & 2 & 2 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 3
+
+SF point: 3
+
+PF point: 6
+
+SF+PF-before point: 3
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+loteria
+
+lot$|$eria
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf l} & {\color{red}\bf o} & {\color{red}\bf t} & e & r & i & a \\ 
+suc-freq: & 12040 & 1498 & 81 & 19 & 3 & 2 & 2 \\ 
+log(SF): & 4.08063 & 3.17551 & 1.90849 & 1.27875 & 0.47712 & 0.30103 & 0.30103 \\ 
+pred-freq: & 1 & 2 & 79 & 426 & 3178 & 8638 & 52303 \\ 
+log(PF): & 0.0 & 0.30103 & 1.89763 & 2.62941 & 3.50215 & 3.93641 & 4.71853 \\ 
+lex-freq: & 233 & 33 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 3
+
+SF point: 3
+
+PF point: 2
+
+SF+PF-before point: 3
+
+SF+PF-closest point: 3
+
+\vspace{3em}
+
+metaleiro
+
+metal$|$eiro
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf e} & {\color{red}\bf t} & {\color{red}\bf a} & {\color{red}\bf l} & e & i & r & o \\ 
+suc-freq: & 22253 & 3578 & 472 & 139 & 29 & 4 & 3 & 3 & 2 \\ 
+log(SF): & 4.34739 & 3.55364 & 2.67394 & 2.14301 & 1.4624 & 0.60206 & 0.47712 & 0.47712 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 6 & 16 & 62 & 732 & 968 & 3069 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.77815 & 1.20412 & 1.79239 & 2.86451 & 2.98588 & 3.487 & 4.70039 \\ 
+lex-freq: & 6697 & 1060 & 145 & 44 & 13 & 2 & 2 & 2 & 2 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 6
+
+PF point: 2
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+mordomia
+
+mordo$|$mia
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf o} & {\color{red}\bf r} & {\color{red}\bf d} & {\color{red}\bf o} & m & i & a \\ 
+suc-freq: & 22253 & 3845 & 823 & 99 & 9 & 5 & 2 & 2 \\ 
+log(SF): & 4.34739 & 3.5849 & 2.9154 & 1.99564 & 0.95424 & 0.69897 & 0.30103 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 2 & 85 & 227 & 8638 & 52303 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.30103 & 1.92942 & 2.35603 & 3.93641 & 4.71853 \\ 
+lex-freq: & 4398 & 825 & 213 & 35 & 5 & 3 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 5
+
+PF point: 4
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+prejuízo
+
+preju$|$ízo
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf j} & {\color{red}\bf u} & í & z & o \\ 
+suc-freq: & 25768 & 6153 & 2245 & 48 & 46 & 2 & 2 & 2 \\ 
+log(SF): & 4.41108 & 3.78909 & 3.35122 & 1.68124 & 1.66276 & 0.30103 & 0.30103 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 2 & 8 & 8 & 9 & 370 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.30103 & 0.90309 & 0.90309 & 0.95424 & 2.5682 & 4.70039 \\ 
+lex-freq: & 1161 & 317 & 123 & 2 & 2 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 4
+
+PF point: 6
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 6
+
+\vspace{3em}
+
+profissional
+
+profi$|$ssional
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf r} & {\color{red}\bf o} & {\color{red}\bf f} & {\color{red}\bf i} & s & s & i & o & n & a & l \\ 
+suc-freq: & 25768 & 6153 & 2631 & 243 & 62 & 31 & 28 & 18 & 15 & 15 & 15 & 11 \\ 
+log(SF): & 4.41108 & 3.78909 & 3.42012 & 2.38561 & 1.79239 & 1.49136 & 1.44716 & 1.25527 & 1.17609 & 1.17609 & 1.17609 & 1.04139 \\ 
+pred-freq: & 5 & 6 & 6 & 6 & 8 & 14 & 40 & 170 & 221 & 386 & 2433 & 8688 \\ 
+log(PF): & 0.69897 & 0.77815 & 0.77815 & 0.77815 & 0.90309 & 1.14613 & 1.60206 & 2.23045 & 2.34439 & 2.58659 & 3.38614 & 3.93892 \\ 
+lex-freq: & 222 & 55 & 21 & 2 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 4
+
+PF point: 10
+
+SF+PF-before point: 6
+
+SF+PF-closest point: 7
+
+\vspace{3em}
+
+transação
+
+trans$|$ação
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf t} & {\color{red}\bf r} & {\color{red}\bf a} & {\color{red}\bf n} & {\color{red}\bf s} & a & ç & ã & o \\ 
+suc-freq: & 17191 & 4543 & 2411 & 1025 & 759 & 63 & 5 & 1 & 1 \\ 
+log(SF): & 4.2353 & 3.65734 & 3.3822 & 3.01072 & 2.88024 & 1.79934 & 0.69897 & 0.0 & 0.0 \\ 
+pred-freq: & 1 & 1 & 1 & 11 & 29 & 1941 & 2731 & 6510 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 1.04139 & 1.4624 & 3.28803 & 3.43632 & 3.81358 & 4.70039 \\ 
+lex-freq: & 558 & 156 & 96 & 27 & 18 & 4 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 8
+
+PF point: 5
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+troglodita
+
+troglo$|$dita
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf t} & {\color{red}\bf r} & {\color{red}\bf o} & {\color{red}\bf g} & {\color{red}\bf l} & {\color{red}\bf o} & d & i & t & a \\ 
+suc-freq: & 17191 & 4543 & 488 & 10 & 6 & 6 & 5 & 4 & 2 & 2 \\ 
+log(SF): & 4.2353 & 3.65734 & 2.68842 & 1.0 & 0.77815 & 0.77815 & 0.69897 & 0.60206 & 0.30103 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 1 & 1 & 3 & 59 & 818 & 4519 & 52303 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.47712 & 1.77085 & 2.91275 & 3.65504 & 4.71853 \\ 
+lex-freq: & 2333 & 722 & 89 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 4
+
+PF point: 6
+
+SF+PF-before point: 6
+
+SF+PF-closest point: 6
+
+\vspace{3em}
+
+sacristão
+
+sacrist$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf a} & {\color{red}\bf c} & {\color{red}\bf r} & {\color{red}\bf i} & {\color{red}\bf s} & {\color{red}\bf t} & ã & o \\ 
+suc-freq: & 26553 & 4326 & 351 & 116 & 76 & 5 & 5 & 1 & 1 \\ 
+log(SF): & 4.42411 & 3.63609 & 2.54531 & 2.06446 & 1.88081 & 0.69897 & 0.69897 & 0.0 & 0.0 \\ 
+pred-freq: & 1 & 1 & 2 & 6 & 49 & 95 & 286 & 6510 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.30103 & 0.77815 & 1.6902 & 1.97772 & 2.45637 & 3.81358 & 4.70039 \\ 
+lex-freq: & 2922 & 561 & 58 & 20 & 18 & 2 & 2 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 7
+
+SF point: 6
+
+PF point: 7
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+salafrário
+
+salafr$|$ário
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf a} & {\color{red}\bf l} & {\color{red}\bf a} & {\color{red}\bf f} & {\color{red}\bf r} & á & r & i & o \\ 
+suc-freq: & 26553 & 4326 & 676 & 76 & 6 & 3 & 3 & 3 & 3 & 2 \\ 
+log(SF): & 4.42411 & 3.63609 & 2.82995 & 1.88081 & 0.77815 & 0.47712 & 0.47712 & 0.47712 & 0.47712 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 2 & 2 & 30 & 432 & 1123 & 3464 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.30103 & 0.30103 & 1.47712 & 2.63548 & 3.05038 & 3.53958 & 4.70039 \\ 
+lex-freq: & 2477 & 488 & 91 & 11 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 5
+
+PF point: 5
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+analfabeto
+
+analf$|$abeto
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf a} & {\color{red}\bf n} & {\color{red}\bf a} & {\color{red}\bf l} & {\color{red}\bf f} & a & b & e & t & o \\ 
+suc-freq: & 30251 & 2849 & 295 & 94 & 5 & 5 & 5 & 5 & 5 & 2 \\ 
+log(SF): & 4.48074 & 3.45469 & 2.46982 & 1.97313 & 0.69897 & 0.69897 & 0.69897 & 0.69897 & 0.69897 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 2 & 2 & 3 & 4 & 9 & 258 & 4565 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.30103 & 0.30103 & 0.47712 & 0.60206 & 0.95424 & 2.41162 & 3.65944 & 4.70039 \\ 
+lex-freq: & 2654 & 218 & 20 & 12 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 5
+
+PF point: 7
+
+SF+PF-before point: 6
+
+SF+PF-closest point: 6
+
+\vspace{3em}
+
+botequim
+
+boteq$|$uim
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf o} & {\color{red}\bf t} & {\color{red}\bf e} & {\color{red}\bf q} & u & i & m \\ 
+suc-freq: & 17457 & 2733 & 174 & 20 & 3 & 3 & 2 & 1 \\ 
+log(SF): & 4.24197 & 3.43664 & 2.24055 & 1.30103 & 0.47712 & 0.47712 & 0.30103 & 0.0 \\ 
+pred-freq: & 1 & 1 & 1 & 6 & 22 & 35 & 701 & 19158 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.77815 & 1.34242 & 1.54407 & 2.84572 & 4.28235 \\ 
+lex-freq: & 1618 & 275 & 20 & 5 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 5
+
+PF point: 6
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+cacetete
+
+cacete$|$te
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf a} & {\color{red}\bf c} & {\color{red}\bf e} & {\color{red}\bf t} & {\color{red}\bf e} & t & e \\ 
+suc-freq: & 32837 & 7446 & 197 & 23 & 11 & 4 & 2 & 2 \\ 
+log(SF): & 4.51636 & 3.87192 & 2.29447 & 1.36173 & 1.04139 & 0.60206 & 0.30103 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 3 & 11 & 453 & 8368 & 33980 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.47712 & 1.04139 & 2.6561 & 3.92262 & 4.53122 \\ 
+lex-freq: & 7971 & 1840 & 47 & 7 & 4 & 3 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 3
+
+PF point: 5
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+cafetão
+
+cafet$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf a} & {\color{red}\bf f} & {\color{red}\bf e} & {\color{red}\bf t} & ã & o \\ 
+suc-freq: & 32837 & 7446 & 81 & 36 & 22 & 3 & 2 \\ 
+log(SF): & 4.51636 & 3.87192 & 1.90849 & 1.5563 & 1.34242 & 0.47712 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 3 & 32 & 286 & 6510 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.47712 & 1.50515 & 2.45637 & 3.81358 & 4.70039 \\ 
+lex-freq: & 1043 & 239 & 2 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 3
+
+PF point: 3
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+capitão
+
+capit$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf a} & {\color{red}\bf p} & {\color{red}\bf i} & {\color{red}\bf t} & ã & o \\ 
+suc-freq: & 32837 & 7446 & 552 & 134 & 88 & 7 & 3 \\ 
+log(SF): & 4.51636 & 3.87192 & 2.74194 & 2.1271 & 1.94448 & 0.8451 & 0.47712 \\ 
+pred-freq: & 1 & 1 & 2 & 25 & 286 & 6510 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.30103 & 1.39794 & 2.45637 & 3.81358 & 4.70039 \\ 
+lex-freq: & 30 & 8 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 6
+
+PF point: 3
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+carpinteiro
+
+carpin$|$teiro
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf a} & {\color{red}\bf r} & {\color{red}\bf p} & {\color{red}\bf i} & {\color{red}\bf n} & t & e & i & r & o \\ 
+suc-freq: & 32837 & 7446 & 1613 & 64 & 20 & 12 & 9 & 7 & 4 & 4 & 2 \\ 
+log(SF): & 4.51636 & 3.87192 & 3.20763 & 1.80618 & 1.30103 & 1.07918 & 0.95424 & 0.8451 & 0.60206 & 0.60206 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 1 & 4 & 15 & 106 & 732 & 968 & 3069 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.0 & 0.60206 & 1.17609 & 2.02531 & 2.86451 & 2.98588 & 3.487 & 4.70039 \\ 
+lex-freq: & 1368 & 310 & 64 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 4
+
+PF point: 10
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 6
+
+\vspace{3em}
+
+categoria
+
+categ$|$oria
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf a} & {\color{red}\bf t} & {\color{red}\bf e} & {\color{red}\bf g} & o & r & i & a \\ 
+suc-freq: & 32837 & 7446 & 448 & 74 & 21 & 16 & 16 & 13 & 3 \\ 
+log(SF): & 4.51636 & 3.87192 & 2.65128 & 1.86923 & 1.32222 & 1.20412 & 1.20412 & 1.11394 & 0.47712 \\ 
+pred-freq: & 2 & 2 & 2 & 3 & 6 & 128 & 3178 & 8638 & 52303 \\ 
+log(PF): & 0.30103 & 0.30103 & 0.30103 & 0.47712 & 0.77815 & 2.10721 & 3.50215 & 3.93641 & 4.71853 \\ 
+lex-freq: & 884 & 199 & 4 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 3
+
+PF point: 5
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+celular
+
+celul$|$ar
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf e} & {\color{red}\bf l} & {\color{red}\bf u} & {\color{red}\bf l} & a & r \\ 
+suc-freq: & 32837 & 1383 & 208 & 20 & 17 & 10 & 6 \\ 
+log(SF): & 4.51636 & 3.14082 & 2.31806 & 1.30103 & 1.23045 & 1.0 & 0.77815 \\ 
+pred-freq: & 8 & 8 & 12 & 183 & 553 & 7274 & 20376 \\ 
+log(PF): & 0.90309 & 0.90309 & 1.07918 & 2.26245 & 2.74273 & 3.86177 & 4.30912 \\ 
+lex-freq: & 180 & 10 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 4
+
+PF point: 3
+
+SF+PF-before point: 3
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+cesariana
+
+cesaria$|$na
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf e} & {\color{red}\bf s} & {\color{red}\bf a} & {\color{red}\bf r} & {\color{red}\bf i} & {\color{red}\bf a} & n & a \\ 
+suc-freq: & 32837 & 1383 & 96 & 20 & 16 & 8 & 3 & 3 & 2 \\ 
+log(SF): & 4.51636 & 3.14082 & 1.98227 & 1.30103 & 1.20412 & 0.90309 & 0.47712 & 0.47712 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 21 & 73 & 314 & 882 & 3765 & 52303 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 1.32222 & 1.86332 & 2.49693 & 2.94547 & 3.57576 & 4.71853 \\ 
+lex-freq: & 3409 & 131 & 7 & 3 & 3 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 7
+
+SF point: 4
+
+PF point: 3
+
+SF+PF-before point: 3
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+comissão
+
+comiss$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf o} & {\color{red}\bf m} & {\color{red}\bf i} & {\color{red}\bf s} & {\color{red}\bf s} & ã & o \\ 
+suc-freq: & 32837 & 12410 & 2471 & 128 & 43 & 32 & 2 & 1 \\ 
+log(SF): & 4.51636 & 4.09377 & 3.39287 & 2.10721 & 1.63347 & 1.50515 & 0.30103 & 0.0 \\ 
+pred-freq: & 4 & 7 & 25 & 38 & 151 & 442 & 6510 & 50164 \\ 
+log(PF): & 0.60206 & 0.8451 & 1.39794 & 1.57978 & 2.17898 & 2.64542 & 3.81358 & 4.70039 \\ 
+lex-freq: & 391 & 156 & 43 & 3 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 7
+
+PF point: 6
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+comissário
+
+comiss$|$ário
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf o} & {\color{red}\bf m} & {\color{red}\bf i} & {\color{red}\bf s} & {\color{red}\bf s} & á & r & i & o \\ 
+suc-freq: & 32837 & 12410 & 2471 & 128 & 43 & 32 & 6 & 6 & 5 & 3 \\ 
+log(SF): & 4.51636 & 4.09377 & 3.39287 & 2.10721 & 1.63347 & 1.50515 & 0.77815 & 0.77815 & 0.69897 & 0.47712 \\ 
+pred-freq: & 2 & 2 & 5 & 5 & 17 & 47 & 432 & 1123 & 3464 & 50164 \\ 
+log(PF): & 0.30103 & 0.30103 & 0.69897 & 0.69897 & 1.23045 & 1.6721 & 2.63548 & 3.05038 & 3.53958 & 4.70039 \\ 
+lex-freq: & 466 & 188 & 55 & 6 & 2 & 2 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 4
+
+PF point: 9
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 6
+
+\vspace{3em}
+
+comunista
+
+comun$|$ista
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf o} & {\color{red}\bf m} & {\color{red}\bf u} & {\color{red}\bf n} & i & s & t & a \\ 
+suc-freq: & 32837 & 12410 & 2471 & 145 & 121 & 81 & 6 & 4 & 3 \\ 
+log(SF): & 4.51636 & 4.09377 & 3.39287 & 2.16137 & 2.08279 & 1.90849 & 0.77815 & 0.60206 & 0.47712 \\ 
+pred-freq: & 2 & 2 & 3 & 6 & 160 & 954 & 1274 & 4519 & 52303 \\ 
+log(PF): & 0.30103 & 0.30103 & 0.47712 & 0.77815 & 2.20412 & 2.97955 & 3.10517 & 3.65504 & 4.71853 \\ 
+lex-freq: & 481 & 196 & 57 & 4 & 3 & 3 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 4
+
+PF point: 4
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+consumação
+
+consum$|$ação
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf o} & {\color{red}\bf n} & {\color{red}\bf s} & {\color{red}\bf u} & {\color{red}\bf m} & a & ç & ã & o \\ 
+suc-freq: & 32837 & 12410 & 5267 & 1196 & 141 & 62 & 15 & 1 & 1 & 1 \\ 
+log(SF): & 4.51636 & 4.09377 & 3.72156 & 3.07773 & 2.14922 & 1.79239 & 1.17609 & 0.0 & 0.0 & 0.0 \\ 
+pred-freq: & 1 & 1 & 1 & 1 & 7 & 74 & 1941 & 2731 & 6510 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.0 & 0.8451 & 1.86923 & 3.28803 & 3.43632 & 3.81358 & 4.70039 \\ 
+lex-freq: & 4644 & 1975 & 909 & 211 & 26 & 11 & 2 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 8
+
+PF point: 4
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 6
+
+\vspace{3em}
+
+cortesia
+
+cortes$|$ia
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf o} & {\color{red}\bf r} & {\color{red}\bf t} & {\color{red}\bf e} & {\color{red}\bf s} & i & a \\ 
+suc-freq: & 32837 & 12410 & 1276 & 163 & 58 & 11 & 2 & 2 \\ 
+log(SF): & 4.51636 & 4.09377 & 3.10585 & 2.21219 & 1.76343 & 1.04139 & 0.30103 & 0.30103 \\ 
+pred-freq: & 2 & 2 & 4 & 8 & 39 & 264 & 8638 & 52303 \\ 
+log(PF): & 0.30103 & 0.30103 & 0.60206 & 0.90309 & 1.59106 & 2.4216 & 3.93641 & 4.71853 \\ 
+lex-freq: & 780 & 338 & 38 & 9 & 3 & 2 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 7
+
+PF point: 6
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+madrugada
+
+madrug$|$ada
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf a} & {\color{red}\bf d} & {\color{red}\bf r} & {\color{red}\bf u} & {\color{red}\bf g} & a & d & a \\ 
+suc-freq: & 22253 & 8028 & 275 & 64 & 23 & 22 & 18 & 10 & 2 \\ 
+log(SF): & 4.34739 & 3.90461 & 2.43933 & 1.80618 & 1.36173 & 1.34242 & 1.25527 & 1.0 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 4 & 13 & 183 & 4122 & 6461 & 52303 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.60206 & 1.11394 & 2.26245 & 3.61511 & 3.8103 & 4.71853 \\ 
+lex-freq: & 407 & 138 & 4 & 2 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 3
+
+PF point: 8
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+manequim
+
+maneq$|$uim
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf a} & {\color{red}\bf n} & {\color{red}\bf e} & {\color{red}\bf q} & u & i & m \\ 
+suc-freq: & 22253 & 8028 & 1329 & 105 & 2 & 2 & 2 & 1 \\ 
+log(SF): & 4.34739 & 3.90461 & 3.12352 & 2.02119 & 0.30103 & 0.30103 & 0.30103 & 0.0 \\ 
+pred-freq: & 1 & 1 & 1 & 6 & 22 & 35 & 701 & 19158 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.77815 & 1.34242 & 1.54407 & 2.84572 & 4.28235 \\ 
+lex-freq: & 1387 & 544 & 116 & 5 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 5
+
+PF point: 6
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+motocicleta
+
+motoc$|$icleta
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf o} & {\color{red}\bf t} & {\color{red}\bf o} & {\color{red}\bf c} & i & c & l & e & t & a \\ 
+suc-freq: & 22253 & 3845 & 232 & 90 & 13 & 9 & 9 & 6 & 2 & 2 & 2 \\ 
+log(SF): & 4.34739 & 3.5849 & 2.36549 & 1.95424 & 1.11394 & 0.95424 & 0.95424 & 0.77815 & 0.30103 & 0.30103 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 1 & 7 & 10 & 10 & 75 & 474 & 4519 & 52303 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.0 & 0.8451 & 1.0 & 1.0 & 1.87506 & 2.67578 & 3.65504 & 4.71853 \\ 
+lex-freq: & 912 & 179 & 12 & 7 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 3
+
+PF point: 7
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 6
+
+\vspace{3em}
+
+natureza
+
+natur$|$eza
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf n} & {\color{red}\bf a} & {\color{red}\bf t} & {\color{red}\bf u} & {\color{red}\bf r} & e & z & a \\ 
+suc-freq: & 7750 & 1968 & 230 & 50 & 44 & 11 & 3 & 2 \\ 
+log(SF): & 3.8893 & 3.29403 & 2.36173 & 1.69897 & 1.64345 & 1.04139 & 0.47712 & 0.30103 \\ 
+pred-freq: & 2 & 2 & 2 & 6 & 37 & 176 & 804 & 52303 \\ 
+log(PF): & 0.30103 & 0.30103 & 0.30103 & 0.77815 & 1.5682 & 2.24551 & 2.90526 & 4.71853 \\ 
+lex-freq: & 46 & 10 & 2 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 4
+
+PF point: 7
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+periferia
+
+perif$|$eria
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf e} & {\color{red}\bf r} & {\color{red}\bf i} & {\color{red}\bf f} & e & r & i & a \\ 
+suc-freq: & 25768 & 4823 & 2066 & 163 & 11 & 5 & 5 & 4 & 2 \\ 
+log(SF): & 4.41108 & 3.68332 & 3.31513 & 2.21219 & 1.04139 & 0.69897 & 0.69897 & 0.60206 & 0.30103 \\ 
+pred-freq: & 2 & 2 & 2 & 3 & 12 & 426 & 3178 & 8638 & 52303 \\ 
+log(PF): & 0.30103 & 0.30103 & 0.30103 & 0.47712 & 1.07918 & 2.62941 & 3.50215 & 3.93641 & 4.71853 \\ 
+lex-freq: & 1590 & 356 & 173 & 10 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 5
+
+PF point: 5
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+proletariado
+
+prolet$|$ariado
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf r} & {\color{red}\bf o} & {\color{red}\bf l} & {\color{red}\bf e} & {\color{red}\bf t} & a & r & i & a & d & o \\ 
+suc-freq: & 25768 & 6153 & 2631 & 82 & 15 & 9 & 3 & 3 & 3 & 3 & 3 & 2 \\ 
+log(SF): & 4.41108 & 3.78909 & 3.42012 & 1.91381 & 1.17609 & 0.95424 & 0.47712 & 0.47712 & 0.47712 & 0.47712 & 0.47712 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 1 & 4 & 6 & 17 & 48 & 312 & 4948 & 12123 & 50164 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.0 & 0.60206 & 0.77815 & 1.23045 & 1.68124 & 2.49415 & 3.69443 & 4.08361 & 4.70039 \\ 
+lex-freq: & 1963 & 541 & 223 & 2 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 4
+
+PF point: 4
+
+SF+PF-before point: 6
+
+SF+PF-closest point: 6
+
+\vspace{3em}
+
+rapaziada
+
+rapaz$|$iada
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf r} & {\color{red}\bf a} & {\color{red}\bf p} & {\color{red}\bf a} & {\color{red}\bf z} & i & a & d & a \\ 
+suc-freq: & 18966 & 2764 & 227 & 65 & 25 & 7 & 1 & 1 & 1 \\ 
+log(SF): & 4.27798 & 3.44154 & 2.35603 & 1.81291 & 1.39794 & 0.8451 & 0.0 & 0.0 & 0.0 \\ 
+pred-freq: & 1 & 1 & 1 & 2 & 3 & 237 & 4122 & 6461 & 52303 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.30103 & 0.47712 & 2.37475 & 3.61511 & 3.8103 & 4.71853 \\ 
+lex-freq: & 954 & 114 & 20 & 6 & 4 & 2 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 7
+
+PF point: 5
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+reação
+
+reaç$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf a} & {\color{red}\bf ç} & ã & o \\ 
+suc-freq: & 18966 & 10830 & 757 & 11 & 1 & 1 \\ 
+log(SF): & 4.27798 & 4.03463 & 2.8791 & 1.04139 & 0.0 & 0.0 \\ 
+pred-freq: & 9 & 19 & 1941 & 2731 & 6510 & 50164 \\ 
+log(PF): & 0.95424 & 1.27875 & 3.28803 & 3.43632 & 3.81358 & 4.70039 \\ 
+lex-freq: & 112 & 60 & 5 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 5
+
+PF point: 2
+
+SF+PF-before point: 2
+
+SF+PF-closest point: 3
+
+\vspace{3em}
+
+responsabilidade
+
+respons$|$abilidade
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllllllll}
+
+trunc: & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf s} & {\color{red}\bf p} & {\color{red}\bf o} & {\color{red}\bf n} & {\color{red}\bf s} & a & b & i & l & i & d & a & d & e \\ 
+suc-freq: & 18966 & 10830 & 1449 & 379 & 159 & 139 & 81 & 58 & 52 & 44 & 37 & 35 & 7 & 6 & 5 & 3 \\ 
+log(SF): & 4.27798 & 4.03463 & 3.16107 & 2.57864 & 2.2014 & 2.14301 & 1.90849 & 1.76343 & 1.716 & 1.64345 & 1.5682 & 1.54407 & 0.8451 & 0.77815 & 0.69897 & 0.47712 \\ 
+pred-freq: & 2 & 2 & 2 & 3 & 4 & 4 & 7 & 78 & 140 & 178 & 355 & 965 & 1180 & 1445 & 2858 & 33980 \\ 
+log(PF): & 0.30103 & 0.30103 & 0.30103 & 0.47712 & 0.60206 & 0.60206 & 0.8451 & 1.89209 & 2.14613 & 2.25042 & 2.55023 & 2.98453 & 3.07188 & 3.15987 & 3.45606 & 4.53122 \\ 
+lex-freq: & 51 & 24 & 9 & 6 & 5 & 4 & 2 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 7
+
+SF point: 13
+
+PF point: 7
+
+SF+PF-before point: 7
+
+SF+PF-closest point: 8
+
+\vspace{3em}
+
+telefone
+
+telef$|$one
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf t} & {\color{red}\bf e} & {\color{red}\bf l} & {\color{red}\bf e} & {\color{red}\bf f} & o & n & e \\ 
+suc-freq: & 17191 & 3109 & 458 & 357 & 86 & 61 & 53 & 11 \\ 
+log(SF): & 4.2353 & 3.49262 & 2.66087 & 2.55267 & 1.9345 & 1.78533 & 1.72428 & 1.04139 \\ 
+pred-freq: & 3 & 4 & 4 & 8 & 39 & 616 & 2646 & 33980 \\ 
+log(PF): & 0.47712 & 0.60206 & 0.60206 & 0.90309 & 1.59106 & 2.78958 & 3.42259 & 4.53122 \\ 
+lex-freq: & 35 & 13 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 5
+
+SF point: 3
+
+PF point: 5
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+traficante
+
+trafic$|$ante
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf t} & {\color{red}\bf r} & {\color{red}\bf a} & {\color{red}\bf f} & {\color{red}\bf i} & {\color{red}\bf c} & a & n & t & e \\ 
+suc-freq: & 17191 & 4543 & 2411 & 44 & 24 & 21 & 18 & 4 & 3 & 3 \\ 
+log(SF): & 4.2353 & 3.65734 & 3.3822 & 1.64345 & 1.38021 & 1.32222 & 1.25527 & 0.60206 & 0.47712 & 0.47712 \\ 
+pred-freq: & 2 & 2 & 2 & 28 & 45 & 75 & 1037 & 4733 & 8368 & 33980 \\ 
+log(PF): & 0.30103 & 0.30103 & 0.30103 & 1.44716 & 1.65321 & 1.87506 & 3.01578 & 3.67514 & 3.92262 & 4.53122 \\ 
+lex-freq: & 303 & 70 & 45 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 4
+
+PF point: 3
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+ventilador
+
+ventil$|$ador
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf v} & {\color{red}\bf e} & {\color{red}\bf n} & {\color{red}\bf t} & {\color{red}\bf i} & {\color{red}\bf l} & a & d & o & r \\ 
+suc-freq: & 8652 & 2097 & 515 & 118 & 29 & 23 & 16 & 6 & 4 & 2 \\ 
+log(SF): & 3.93712 & 3.3216 & 2.71181 & 2.07188 & 1.4624 & 1.36173 & 1.20412 & 0.77815 & 0.60206 & 0.30103 \\ 
+pred-freq: & 1 & 1 & 1 & 3 & 14 & 92 & 1311 & 1638 & 3023 & 20376 \\ 
+log(PF): & 0.0 & 0.0 & 0.0 & 0.47712 & 1.14613 & 1.96379 & 3.1176 & 3.21431 & 3.48044 & 4.30912 \\ 
+lex-freq: & 453 & 123 & 35 & 5 & 2 & 2 & 2 & 1 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 6
+
+SF point: 5
+
+PF point: 9
+
+SF+PF-before point: 5
+
+SF+PF-closest point: 5
+
+\vspace{3em}
+
+violão
+
+viol$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf v} & {\color{red}\bf i} & {\color{red}\bf o} & {\color{red}\bf l} & ã & o \\ 
+suc-freq: & 8652 & 2486 & 170 & 135 & 2 & 2 \\ 
+log(SF): & 3.93712 & 3.3955 & 2.23045 & 2.13033 & 0.30103 & 0.30103 \\ 
+pred-freq: & 1 & 2 & 16 & 105 & 6510 & 50164 \\ 
+log(PF): & 0.0 & 0.30103 & 1.20412 & 2.02119 & 3.81358 & 4.70039 \\ 
+lex-freq: & 283 & 96 & 4 & 4 & 1 & 1 \\ 
+\end{tabular}
+
+trunc point: 4
+
+SF point: 5
+
+PF point: 4
+
+SF+PF-before point: 4
+
+SF+PF-closest point: 4
+
+\vspace{3em}
+
+\end{document}

@@ -1,0 +1,3459 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage[letterpaper, margin=.5in]{geometry}
+\usepackage{fontspec}
+\setlength{\parindent}{0em}
+\begin{document}
+
+
+1
+
+adrenalina
+
+adren$|$alina
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf a} & {\color{red}\bf d} & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf n} & a & l & i & n & a \\ 
+R-complete freq: & 29882 & 1602 & 54 & 16 & 11 & 6 & 4 & 3 & 3 & 2 \\ 
+log(RC): & 4.47541 & 3.20466 & 1.73239 & 1.20412 & 1.04139 & 0.77815 & 0.60206 & 0.47712 & 0.47712 & 0.30103 \\ 
+L-complete freq: & 1 & 2 & 2 & 2 & 2 & 37 & 174 & 1268 & 3750 & 51866 \\ 
+log(LC): & 0.0 & 0.30103 & 0.30103 & 0.30103 & 0.30103 & 1.5682 & 2.24055 & 3.10312 & 3.57403 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 3
+
+LC point: 5
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+2
+
+baterista
+
+bater$|$ista
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf a} & {\color{red}\bf t} & {\color{red}\bf e} & {\color{red}\bf r} & i & s & t & a \\ 
+R-complete freq: & 17361 & 4305 & 395 & 74 & 24 & 6 & 3 & 3 & 3 \\ 
+log(RC): & 4.23957 & 3.63397 & 2.5966 & 1.86923 & 1.38021 & 0.77815 & 0.47712 & 0.47712 & 0.47712 \\ 
+L-complete freq: & 1 & 2 & 5 & 12 & 112 & 950 & 1269 & 4490 & 51866 \\ 
+log(LC): & 0.0 & 0.30103 & 0.69897 & 1.07918 & 2.04922 & 2.97772 & 3.10346 & 3.65225 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 3
+
+LC point: 4
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+3
+
+bermuda
+
+berm$|$uda
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf e} & {\color{red}\bf r} & {\color{red}\bf m} & u & d & a \\ 
+R-complete freq: & 17361 & 2868 & 461 & 14 & 3 & 3 & 2 \\ 
+log(RC): & 4.23957 & 3.45758 & 2.6637 & 1.14613 & 0.47712 & 0.47712 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 4 & 165 & 6423 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.60206 & 2.21748 & 3.80774 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 4
+
+LC point: 4
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+4
+
+bobeira
+
+bob$|$eira
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf o} & {\color{red}\bf b} & e & i & r & a \\ 
+R-complete freq: & 17361 & 2718 & 114 & 17 & 6 & 3 & 2 \\ 
+log(RC): & 4.23957 & 3.43425 & 2.0569 & 1.23045 & 0.77815 & 0.47712 & 0.30103 \\ 
+L-complete freq: & 2 & 3 & 15 & 696 & 950 & 5255 & 51866 \\ 
+log(LC): & 0.30103 & 0.47712 & 1.17609 & 2.84261 & 2.97772 & 3.72057 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 3
+
+RC point: 3
+
+LC point: 3
+
+RC-LC point: 3
+
+\vspace{3em}
+
+
+
+5
+
+burocrata
+
+burocr$|$ata
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf u} & {\color{red}\bf r} & {\color{red}\bf o} & {\color{red}\bf c} & {\color{red}\bf r} & a & t & a \\ 
+R-complete freq: & 17361 & 1615 & 319 & 14 & 11 & 10 & 6 & 4 & 2 \\ 
+log(RC): & 4.23957 & 3.20817 & 2.50379 & 1.14613 & 1.04139 & 1.0 & 0.77815 & 0.60206 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 2 & 8 & 11 & 68 & 424 & 4490 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.30103 & 0.90309 & 1.04139 & 1.83251 & 2.62737 & 3.65225 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 4
+
+LC point: 5
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+6
+
+cerveja
+
+cerv$|$eja
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf e} & {\color{red}\bf r} & {\color{red}\bf v} & e & j & a \\ 
+R-complete freq: & 28344 & 1376 & 364 & 42 & 19 & 13 & 7 \\ 
+log(RC): & 4.45246 & 3.13862 & 2.5611 & 1.62325 & 1.27875 & 1.11394 & 0.8451 \\ 
+L-complete freq: & 1 & 2 & 2 & 14 & 111 & 389 & 51866 \\ 
+log(LC): & 0.0 & 0.30103 & 0.30103 & 1.14613 & 2.04532 & 2.58995 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 2
+
+LC point: 6
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+7
+
+delegado
+
+deleg$|$ado
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf d} & {\color{red}\bf e} & {\color{red}\bf l} & {\color{red}\bf e} & {\color{red}\bf g} & a & d & o \\ 
+R-complete freq: & 23673 & 12670 & 587 & 95 & 26 & 22 & 6 & 4 \\ 
+log(RC): & 4.37425 & 4.10278 & 2.76864 & 1.97772 & 1.41497 & 1.34242 & 0.77815 & 0.60206 \\ 
+L-complete freq: & 2 & 3 & 8 & 49 & 227 & 4898 & 12026 & 49626 \\ 
+log(LC): & 0.30103 & 0.47712 & 0.90309 & 1.6902 & 2.35603 & 3.69002 & 4.08012 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 3
+
+LC point: 5
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+8
+
+delegada
+
+deleg$|$ada
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf d} & {\color{red}\bf e} & {\color{red}\bf l} & {\color{red}\bf e} & {\color{red}\bf g} & a & d & a \\ 
+R-complete freq: & 23673 & 12670 & 587 & 95 & 26 & 22 & 6 & 2 \\ 
+log(RC): & 4.37425 & 4.10278 & 2.76864 & 1.97772 & 1.41497 & 1.34242 & 0.77815 & 0.30103 \\ 
+L-complete freq: & 1 & 2 & 6 & 40 & 183 & 4089 & 6423 & 51866 \\ 
+log(LC): & 0.0 & 0.30103 & 0.77815 & 1.60206 & 2.26245 & 3.61162 & 3.80774 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 3
+
+LC point: 7
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+9
+
+delegacia
+
+deleg$|$acia
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf d} & {\color{red}\bf e} & {\color{red}\bf l} & {\color{red}\bf e} & {\color{red}\bf g} & a & c & i & a \\ 
+R-complete freq: & 23673 & 12670 & 587 & 95 & 26 & 22 & 5 & 3 & 2 \\ 
+log(RC): & 4.37425 & 4.10278 & 2.76864 & 1.97772 & 1.41497 & 1.34242 & 0.69897 & 0.47712 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 2 & 4 & 61 & 1210 & 8593 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.30103 & 0.60206 & 1.78533 & 3.08279 & 3.93414 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 3
+
+LC point: 5
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+10
+
+flagrante
+
+flagr$|$ante
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf f} & {\color{red}\bf l} & {\color{red}\bf a} & {\color{red}\bf g} & {\color{red}\bf r} & a & n & t & e \\ 
+R-complete freq: & 13224 & 1163 & 339 & 56 & 20 & 17 & 3 & 3 & 3 \\ 
+log(RC): & 4.12136 & 3.06558 & 2.5302 & 1.74819 & 1.30103 & 1.23045 & 0.47712 & 0.47712 & 0.47712 \\ 
+L-complete freq: & 1 & 1 & 3 & 11 & 116 & 1031 & 4709 & 8326 & 33546 \\ 
+log(LC): & 0.0 & 0.0 & 0.47712 & 1.04139 & 2.06446 & 3.01326 & 3.67293 & 3.92044 & 4.52564 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 7
+
+LC point: 2
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+11
+
+forasteira
+
+forast$|$eira
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf f} & {\color{red}\bf o} & {\color{red}\bf r} & {\color{red}\bf a} & {\color{red}\bf s} & {\color{red}\bf t} & e & i & r & a \\ 
+R-complete freq: & 13224 & 1881 & 736 & 32 & 5 & 4 & 4 & 4 & 4 & 2 \\ 
+log(RC): & 4.12136 & 3.27439 & 2.86688 & 1.50515 & 0.69897 & 0.60206 & 0.60206 & 0.60206 & 0.60206 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 3 & 4 & 13 & 83 & 696 & 950 & 5255 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.47712 & 0.60206 & 1.11394 & 1.91908 & 2.84261 & 2.97772 & 3.72057 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 5
+
+LC point: 8
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+12
+
+fortuna
+
+fort$|$una
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf f} & {\color{red}\bf o} & {\color{red}\bf r} & {\color{red}\bf t} & u & n & a \\ 
+R-complete freq: & 13224 & 1881 & 736 & 132 & 18 & 13 & 8 \\ 
+log(RC): & 4.12136 & 3.27439 & 2.86688 & 2.12057 & 1.25527 & 1.11394 & 0.90309 \\ 
+L-complete freq: & 2 & 7 & 7 & 16 & 118 & 3750 & 51866 \\ 
+log(LC): & 0.30103 & 0.8451 & 0.8451 & 1.20412 & 2.07188 & 3.57403 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 5
+
+LC point: 5
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+13
+
+neurose
+
+neur$|$ose
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf n} & {\color{red}\bf e} & {\color{red}\bf u} & {\color{red}\bf r} & o & s & e \\ 
+R-complete freq: & 7622 & 1781 & 246 & 140 & 107 & 6 & 3 \\ 
+log(RC): & 3.88207 & 3.25066 & 2.39094 & 2.14613 & 2.02938 & 0.77815 & 0.47712 \\ 
+L-complete freq: & 2 & 2 & 3 & 48 & 244 & 3484 & 33546 \\ 
+log(LC): & 0.30103 & 0.30103 & 0.47712 & 1.68124 & 2.38739 & 3.54208 & 4.52564 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 6
+
+LC point: 3
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+14
+
+pijama
+
+pij$|$ama
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf i} & {\color{red}\bf j} & a & m & a \\ 
+R-complete freq: & 25437 & 2221 & 4 & 4 & 4 & 2 \\ 
+log(RC): & 4.40547 & 3.34655 & 0.60206 & 0.60206 & 0.60206 & 0.30103 \\ 
+L-complete freq: & 1 & 2 & 4 & 394 & 1774 & 51866 \\ 
+log(LC): & 0.0 & 0.30103 & 0.60206 & 2.5955 & 3.24895 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 3
+
+RC point: 3
+
+LC point: 3
+
+RC-LC point: 3
+
+\vspace{3em}
+
+
+
+15
+
+portugês
+
+portug$|$ês
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf o} & {\color{red}\bf r} & {\color{red}\bf t} & {\color{red}\bf u} & {\color{red}\bf g} & ê & s \\ 
+R-complete freq: & 25437 & 3459 & 568 & 205 & 23 & 15 & 4 & 4 \\ 
+log(RC): & 4.40547 & 3.53895 & 2.75435 & 2.31175 & 1.36173 & 1.17609 & 0.60206 & 0.60206 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 1 & 11 & 287 & 71273 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 1.04139 & 2.45788 & 4.85293 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 5
+
+LC point: 5
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+16
+
+proletário
+
+prolet$|$ário
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf r} & {\color{red}\bf o} & {\color{red}\bf l} & {\color{red}\bf e} & {\color{red}\bf t} & á & r & i & o \\ 
+R-complete freq: & 25437 & 6048 & 2598 & 82 & 15 & 9 & 5 & 5 & 4 & 2 \\ 
+log(RC): & 4.40547 & 3.78161 & 3.41464 & 1.91381 & 1.17609 & 0.95424 & 0.69897 & 0.69897 & 0.60206 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 2 & 12 & 101 & 431 & 1109 & 3444 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.30103 & 1.07918 & 2.00432 & 2.63448 & 3.04493 & 3.53706 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 4
+
+LC point: 9
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+17
+
+refrigerante
+
+refri$|$gerante
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllll}
+
+trunc: & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf f} & {\color{red}\bf r} & {\color{red}\bf i} & g & e & r & a & n & t & e \\ 
+R-complete freq: & 18767 & 10754 & 569 & 87 & 23 & 19 & 18 & 18 & 17 & 3 & 2 & 2 \\ 
+log(RC): & 4.27339 & 4.03157 & 2.75511 & 1.93952 & 1.36173 & 1.27875 & 1.25527 & 1.25527 & 1.23045 & 0.47712 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 2 & 2 & 26 & 116 & 1031 & 4709 & 8326 & 33546 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.30103 & 0.30103 & 1.41497 & 2.06446 & 3.01326 & 3.67293 & 3.92044 & 4.52564 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 10
+
+LC point: 6
+
+RC-LC point: 7
+
+\vspace{3em}
+
+
+
+18
+
+sapatão
+
+sapat$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf a} & {\color{red}\bf p} & {\color{red}\bf a} & {\color{red}\bf t} & ã & o \\ 
+R-complete freq: & 26396 & 4314 & 123 & 60 & 47 & 1 & 1 \\ 
+log(RC): & 4.42154 & 3.63488 & 2.08991 & 1.77815 & 1.6721 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 2 & 27 & 279 & 6372 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.30103 & 1.43136 & 2.4456 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 6
+
+LC point: 3
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+19
+
+saudades
+
+saudad$|$es
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf a} & {\color{red}\bf u} & {\color{red}\bf d} & {\color{red}\bf a} & {\color{red}\bf d} & e & s \\ 
+R-complete freq: & 26396 & 4314 & 141 & 65 & 35 & 6 & 2 & 1 \\ 
+log(RC): & 4.42154 & 3.63488 & 2.14922 & 1.81291 & 1.54407 & 0.77815 & 0.30103 & 0.0 \\ 
+L-complete freq: & 3 & 3 & 4 & 323 & 395 & 931 & 13492 & 71273 \\ 
+log(LC): & 0.47712 & 0.47712 & 0.60206 & 2.5092 & 2.5966 & 2.96895 & 4.13008 & 4.85293 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 3
+
+LC point: 3
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+20
+
+secretária
+
+secret$|$ária
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf e} & {\color{red}\bf c} & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf t} & á & r & i & a \\ 
+R-complete freq: & 26396 & 3639 & 204 & 52 & 49 & 44 & 6 & 6 & 4 & 2 \\ 
+log(RC): & 4.42154 & 3.56098 & 2.30963 & 1.716 & 1.6902 & 1.64345 & 0.77815 & 0.77815 & 0.60206 & 0.30103 \\ 
+L-complete freq: & 3 & 3 & 3 & 3 & 14 & 76 & 250 & 3134 & 8593 & 51866 \\ 
+log(LC): & 0.47712 & 0.47712 & 0.47712 & 0.47712 & 1.14613 & 1.88081 & 2.39794 & 3.4961 & 3.93414 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 7
+
+LC point: 4
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+21
+
+travesti
+
+trav$|$esti
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf t} & {\color{red}\bf r} & {\color{red}\bf a} & {\color{red}\bf v} & e & s & t & i \\ 
+R-complete freq: & 17076 & 4497 & 2374 & 131 & 70 & 33 & 14 & 11 \\ 
+log(RC): & 4.23239 & 3.65292 & 3.37548 & 2.11727 & 1.8451 & 1.51851 & 1.14613 & 1.04139 \\ 
+L-complete freq: & 1 & 1 & 1 & 6 & 35 & 89 & 966 & 16725 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.77815 & 1.54407 & 1.94939 & 2.98498 & 4.22337 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 4
+
+LC point: 3
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+22
+
+vagabunda
+
+vagab$|$unda
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf v} & {\color{red}\bf a} & {\color{red}\bf g} & {\color{red}\bf a} & {\color{red}\bf b} & u & n & d & a \\ 
+R-complete freq: & 8603 & 1901 & 144 & 69 & 26 & 21 & 21 & 21 & 7 \\ 
+log(RC): & 3.93465 & 3.27898 & 2.15836 & 1.83885 & 1.41497 & 1.32222 & 1.32222 & 1.32222 & 0.8451 \\ 
+L-complete freq: & 1 & 1 & 1 & 14 & 20 & 68 & 462 & 6423 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 1.14613 & 1.30103 & 1.83251 & 2.66464 & 3.80774 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 3
+
+LC point: 3
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+23
+
+vestibular
+
+vestib$|$ular
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf v} & {\color{red}\bf e} & {\color{red}\bf s} & {\color{red}\bf t} & {\color{red}\bf i} & {\color{red}\bf b} & u & l & a & r \\ 
+R-complete freq: & 8603 & 2090 & 168 & 95 & 61 & 4 & 3 & 3 & 2 & 2 \\ 
+log(RC): & 3.93465 & 3.32015 & 2.22531 & 1.97772 & 1.78533 & 0.60206 & 0.47712 & 0.47712 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 2 & 3 & 15 & 183 & 552 & 7201 & 20031 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.30103 & 0.47712 & 1.17609 & 2.26245 & 2.74194 & 3.85739 & 4.3017 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 6
+
+LC point: 8
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+24
+
+beleza
+
+bele$|$za
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf e} & {\color{red}\bf l} & {\color{red}\bf e} & z & a \\ 
+R-complete freq: & 17361 & 2868 & 427 & 25 & 9 & 2 \\ 
+log(RC): & 4.23957 & 3.45758 & 2.63043 & 1.39794 & 0.95424 & 0.30103 \\ 
+L-complete freq: & 4 & 6 & 26 & 175 & 802 & 51866 \\ 
+log(LC): & 0.60206 & 0.77815 & 1.41497 & 2.24304 & 2.90417 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 4
+
+LC point: 5
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+25
+
+burgês
+
+burg$|$ês
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf u} & {\color{red}\bf r} & {\color{red}\bf g} & ê & s \\ 
+R-complete freq: & 17361 & 1615 & 319 & 49 & 2 & 2 \\ 
+log(RC): & 4.23957 & 3.20817 & 2.50379 & 1.6902 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 3 & 3 & 3 & 11 & 287 & 71273 \\ 
+log(LC): & 0.47712 & 0.47712 & 0.47712 & 1.04139 & 2.45788 & 4.85293 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 5
+
+LC point: 5
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+26
+
+cruzeiro
+
+cruz$|$eiro
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf r} & {\color{red}\bf u} & {\color{red}\bf z} & e & i & r & o \\ 
+R-complete freq: & 28344 & 2105 & 240 & 61 & 10 & 3 & 2 & 2 \\ 
+log(RC): & 4.45246 & 3.32325 & 2.38021 & 1.78533 & 1.0 & 0.47712 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 4 & 9 & 722 & 957 & 2898 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.60206 & 0.95424 & 2.85854 & 2.98091 & 3.4621 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 3
+
+LC point: 4
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+27
+
+demônio
+
+demô$|$nio
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf d} & {\color{red}\bf e} & {\color{red}\bf m} & {\color{red}\bf ô} & n & i & o \\ 
+R-complete freq: & 23673 & 12670 & 536 & 9 & 8 & 8 & 3 \\ 
+log(RC): & 4.37425 & 4.10278 & 2.72916 & 0.95424 & 0.90309 & 0.90309 & 0.47712 \\ 
+L-complete freq: & 4 & 4 & 16 & 51 & 274 & 3444 & 49626 \\ 
+log(LC): & 0.60206 & 0.60206 & 1.20412 & 1.70757 & 2.43775 & 3.53706 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 4
+
+LC point: 2
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+28
+
+fisura
+
+fisu$|$ra
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf f} & {\color{red}\bf i} & {\color{red}\bf s} & {\color{red}\bf u} & r & a \\ 
+R-complete freq: & 13224 & 2017 & 163 & 7 & 7 & 7 \\ 
+log(RC): & 4.12136 & 3.30471 & 2.21219 & 0.8451 & 0.8451 & 0.8451 \\ 
+L-complete freq: & 1 & 2 & 28 & 628 & 5255 & 51866 \\ 
+log(LC): & 0.0 & 0.30103 & 1.44716 & 2.79796 & 3.72057 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 4
+
+LC point: 2
+
+RC-LC point: 3
+
+\vspace{3em}
+
+
+
+29
+
+miLão
+
+miL$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|lllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf i} & {\color{red}\bf L} & ã & o \\ 
+R-complete freq: & 22063 & 2988 & 42 & 2 & 2 \\ 
+log(RC): & 4.34366 & 3.47538 & 1.62325 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 23 & 71 & 6372 & 49626 \\ 
+log(LC): & 0.0 & 1.36173 & 1.85126 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 3
+
+RC point: 4
+
+LC point: 3
+
+RC-LC point: 3
+
+\vspace{3em}
+
+
+
+30
+
+muLer
+
+muL$|$er
+
+\vspace{1em}
+
+\begin{tabular}{l|lllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf u} & {\color{red}\bf L} & e & r \\ 
+R-complete freq: & 22063 & 1808 & 52 & 43 & 40 \\ 
+log(RC): & 4.34366 & 3.2572 & 1.716 & 1.63347 & 1.60206 \\ 
+L-complete freq: & 7 & 10 & 29 & 7619 & 20031 \\ 
+log(LC): & 0.8451 & 1.0 & 1.4624 & 3.8819 & 4.3017 \\ 
+\end{tabular}
+
+trunc point: 3
+
+RC point: 3
+
+LC point: 3
+
+RC-LC point: 3
+
+\vspace{3em}
+
+
+
+31
+
+paLaso
+
+paL$|$aso
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf a} & {\color{red}\bf L} & a & s & o \\ 
+R-complete freq: & 25437 & 4970 & 26 & 15 & 9 & 3 \\ 
+log(RC): & 4.40547 & 3.69636 & 1.41497 & 1.17609 & 0.95424 & 0.47712 \\ 
+L-complete freq: & 1 & 6 & 8 & 176 & 1709 & 49626 \\ 
+log(LC): & 0.0 & 0.77815 & 0.90309 & 2.24551 & 3.23274 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 3
+
+RC point: 3
+
+LC point: 3
+
+RC-LC point: 3
+
+\vspace{3em}
+
+
+
+32
+
+piscina
+
+pis$|$cina
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf i} & {\color{red}\bf s} & c & i & n & a \\ 
+R-complete freq: & 25437 & 2221 & 210 & 56 & 14 & 6 & 2 \\ 
+log(RC): & 4.40547 & 3.34655 & 2.32222 & 1.74819 & 1.14613 & 0.77815 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 5 & 59 & 1268 & 3750 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.69897 & 1.77085 & 3.10312 & 3.57403 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 3
+
+RC point: 3
+
+LC point: 2
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+33
+
+playboy
+
+playb$|$oy
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf l} & {\color{red}\bf a} & {\color{red}\bf y} & {\color{red}\bf b} & o & y \\ 
+R-complete freq: & 25437 & 1015 & 564 & 42 & 6 & 5 & 4 \\ 
+log(RC): & 4.40547 & 3.00647 & 2.75128 & 1.62325 & 0.77815 & 0.69897 & 0.60206 \\ 
+L-complete freq: & 1 & 1 & 3 & 11 & 67 & 241 & 7739 \\ 
+log(LC): & 0.0 & 0.0 & 0.47712 & 1.04139 & 1.82607 & 2.38202 & 3.88868 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 2
+
+LC point: 6
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+34
+
+pregisa
+
+pregi$|$sa
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf g} & {\color{red}\bf i} & s & a \\ 
+R-complete freq: & 25437 & 6048 & 2187 & 100 & 15 & 9 & 2 \\ 
+log(RC): & 4.40547 & 3.78161 & 3.33985 & 2.0 & 1.17609 & 0.95424 & 0.30103 \\ 
+L-complete freq: & 2 & 2 & 2 & 9 & 257 & 2192 & 51866 \\ 
+log(LC): & 0.30103 & 0.30103 & 0.30103 & 0.95424 & 2.40993 & 3.34084 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 5
+
+LC point: 4
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+35
+
+sargento
+
+sarg$|$ento
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf a} & {\color{red}\bf r} & {\color{red}\bf g} & e & n & t & o \\ 
+R-complete freq: & 26396 & 4314 & 336 & 28 & 16 & 10 & 9 & 3 \\ 
+log(RC): & 4.42154 & 3.63488 & 2.52634 & 1.44716 & 1.20412 & 1.0 & 0.95424 & 0.47712 \\ 
+L-complete freq: & 1 & 2 & 3 & 23 & 1320 & 1627 & 4541 & 49626 \\ 
+log(LC): & 0.0 & 0.30103 & 0.47712 & 1.36173 & 3.12057 & 3.21139 & 3.65715 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 4
+
+LC point: 4
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+36
+
+piRaLo
+
+piR$|$aLo
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf i} & {\color{red}\bf R} & a & L & o \\ 
+R-complete freq: & 25437 & 2221 & 14 & 12 & 8 & 2 \\ 
+log(RC): & 4.40547 & 3.34655 & 1.14613 & 1.07918 & 0.90309 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 3 & 70 & 244 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.47712 & 1.8451 & 2.38739 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 3
+
+RC point: 3
+
+LC point: 5
+
+RC-LC point: 3
+
+\vspace{3em}
+
+
+
+37
+
+trankilo
+
+tranki$|$lo
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf t} & {\color{red}\bf r} & {\color{red}\bf a} & {\color{red}\bf n} & {\color{red}\bf k} & {\color{red}\bf i} & l & o \\ 
+R-complete freq: & 17076 & 4497 & 2374 & 1005 & 71 & 52 & 46 & 3 \\ 
+log(RC): & 4.23239 & 3.65292 & 3.37548 & 3.00217 & 1.85126 & 1.716 & 1.66276 & 0.47712 \\ 
+L-complete freq: & 2 & 2 & 2 & 2 & 19 & 161 & 1664 & 49626 \\ 
+log(LC): & 0.30103 & 0.30103 & 0.30103 & 0.30103 & 1.27875 & 2.20683 & 3.22115 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 5
+
+LC point: 4
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+38
+
+falsificado
+
+falsi$|$ficado
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllll}
+
+trunc: & {\color{red}\bf f} & {\color{red}\bf a} & {\color{red}\bf l} & {\color{red}\bf s} & {\color{red}\bf i} & f & i & c & a & d & o \\ 
+R-complete freq: & 13224 & 2701 & 461 & 57 & 31 & 29 & 29 & 25 & 23 & 7 & 5 \\ 
+log(RC): & 4.12136 & 3.43152 & 2.6637 & 1.75587 & 1.49136 & 1.4624 & 1.4624 & 1.39794 & 1.36173 & 0.8451 & 0.69897 \\ 
+L-complete freq: & 1 & 1 & 1 & 9 & 77 & 84 & 175 & 403 & 4898 & 12026 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.95424 & 1.88649 & 1.92428 & 2.24304 & 2.60531 & 3.69002 & 4.08012 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 4
+
+LC point: 3
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+39
+
+bijuteria
+
+biju$|$teria
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf i} & {\color{red}\bf j} & {\color{red}\bf u} & t & e & r & i & a \\ 
+R-complete freq: & 17361 & 1791 & 22 & 5 & 4 & 2 & 2 & 2 & 2 \\ 
+log(RC): & 4.23957 & 3.2531 & 1.34242 & 0.69897 & 0.60206 & 0.30103 & 0.30103 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 3 & 79 & 424 & 3134 & 8593 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.47712 & 1.89763 & 2.62737 & 3.4961 & 3.93414 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 3
+
+LC point: 4
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+40
+
+bisavó
+
+bis$|$avó
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf i} & {\color{red}\bf s} & a & v & ó \\ 
+R-complete freq: & 17361 & 1791 & 196 & 9 & 4 & 2 \\ 
+log(RC): & 4.23957 & 3.2531 & 2.29226 & 0.95424 & 0.60206 & 0.30103 \\ 
+L-complete freq: & 1 & 2 & 2 & 6 & 12 & 276 \\ 
+log(LC): & 0.0 & 0.30103 & 0.30103 & 0.77815 & 1.07918 & 2.44091 \\ 
+\end{tabular}
+
+trunc point: 3
+
+RC point: 4
+
+LC point: 5
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+41
+
+cafajeste
+
+caf$|$ajeste
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf a} & {\color{red}\bf f} & a & j & e & s & t & e \\ 
+R-complete freq: & 28344 & 7324 & 81 & 7 & 4 & 4 & 4 & 4 & 3 \\ 
+log(RC): & 4.45246 & 3.86475 & 1.90849 & 0.8451 & 0.60206 & 0.60206 & 0.60206 & 0.60206 & 0.47712 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 2 & 224 & 1128 & 8326 & 33546 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.30103 & 2.35025 & 3.05231 & 3.92044 & 4.52564 \\ 
+\end{tabular}
+
+trunc point: 3
+
+RC point: 3
+
+LC point: 5
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+42
+
+carnaval
+
+carn$|$aval
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf a} & {\color{red}\bf r} & {\color{red}\bf n} & a & v & a & l \\ 
+R-complete freq: & 28344 & 7324 & 1333 & 110 & 24 & 8 & 8 & 6 \\ 
+log(RC): & 4.45246 & 3.86475 & 3.12483 & 2.04139 & 1.38021 & 0.90309 & 0.90309 & 0.77815 \\ 
+L-complete freq: & 1 & 1 & 1 & 3 & 16 & 104 & 2413 & 8627 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.47712 & 1.20412 & 2.01703 & 3.38256 & 3.93586 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 6
+
+LC point: 6
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+43
+
+cocaína
+
+coc$|$aína
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf o} & {\color{red}\bf c} & a & í & n & a \\ 
+R-complete freq: & 28344 & 12302 & 146 & 20 & 2 & 2 & 2 \\ 
+log(RC): & 4.45246 & 4.08998 & 2.16435 & 1.30103 & 0.30103 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 2 & 7 & 9 & 12 & 48 & 3750 & 51866 \\ 
+log(LC): & 0.30103 & 0.8451 & 0.95424 & 1.07918 & 1.68124 & 3.57403 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 3
+
+RC point: 3
+
+LC point: 5
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+44
+
+confusão
+
+conf$|$usão
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf o} & {\color{red}\bf n} & {\color{red}\bf f} & u & s & ã & o \\ 
+R-complete freq: & 28344 & 12302 & 5072 & 682 & 80 & 16 & 1 & 1 \\ 
+log(RC): & 4.45246 & 4.08998 & 3.70518 & 2.83378 & 1.90309 & 1.20412 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 3 & 13 & 128 & 3048 & 6372 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.47712 & 1.11394 & 2.10721 & 3.48401 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 7
+
+LC point: 7
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+45
+
+disposisão
+
+dispo$|$sisão
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf d} & {\color{red}\bf i} & {\color{red}\bf s} & {\color{red}\bf p} & {\color{red}\bf o} & s & i & s & ã & o \\ 
+R-complete freq: & 23673 & 4077 & 1406 & 335 & 70 & 22 & 13 & 6 & 2 & 1 \\ 
+log(RC): & 4.37425 & 3.61034 & 3.14799 & 2.52504 & 1.8451 & 1.34242 & 1.11394 & 0.77815 & 0.30103 & 0.0 \\ 
+L-complete freq: & 4 & 4 & 5 & 31 & 31 & 44 & 365 & 3048 & 6372 & 49626 \\ 
+log(LC): & 0.60206 & 0.60206 & 0.69897 & 1.49136 & 1.49136 & 1.64345 & 2.56229 & 3.48401 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 2
+
+LC point: 6
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+46
+
+faculdade
+
+facu$|$ldade
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf f} & {\color{red}\bf a} & {\color{red}\bf c} & {\color{red}\bf u} & l & d & a & d & e \\ 
+R-complete freq: & 13224 & 2701 & 181 & 12 & 8 & 2 & 2 & 2 & 2 \\ 
+log(RC): & 4.12136 & 3.43152 & 2.25768 & 1.07918 & 0.90309 & 0.30103 & 0.30103 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 2 & 8 & 9 & 55 & 1173 & 1437 & 2848 & 33546 \\ 
+log(LC): & 0.0 & 0.30103 & 0.90309 & 0.95424 & 1.74036 & 3.0693 & 3.15746 & 3.45454 & 4.52564 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 4
+
+LC point: 8
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+47
+
+loteria
+
+lot$|$eria
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf l} & {\color{red}\bf o} & {\color{red}\bf t} & e & r & i & a \\ 
+R-complete freq: & 11900 & 1487 & 81 & 19 & 3 & 2 & 2 \\ 
+log(RC): & 4.07555 & 3.17231 & 1.90849 & 1.27875 & 0.47712 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 2 & 79 & 424 & 3134 & 8593 & 51866 \\ 
+log(LC): & 0.0 & 0.30103 & 1.89763 & 2.62737 & 3.4961 & 3.93414 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 3
+
+RC point: 3
+
+LC point: 2
+
+RC-LC point: 3
+
+\vspace{3em}
+
+
+
+48
+
+metaleiro
+
+metal$|$eiro
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf e} & {\color{red}\bf t} & {\color{red}\bf a} & {\color{red}\bf l} & e & i & r & o \\ 
+R-complete freq: & 22063 & 3553 & 470 & 139 & 27 & 4 & 3 & 3 & 2 \\ 
+log(RC): & 4.34366 & 3.5506 & 2.6721 & 2.14301 & 1.43136 & 0.60206 & 0.47712 & 0.47712 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 6 & 16 & 62 & 722 & 957 & 2898 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.77815 & 1.20412 & 1.79239 & 2.85854 & 2.98091 & 3.4621 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 6
+
+LC point: 2
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+49
+
+mordomia
+
+mordo$|$mia
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf o} & {\color{red}\bf r} & {\color{red}\bf d} & {\color{red}\bf o} & m & i & a \\ 
+R-complete freq: & 22063 & 3811 & 701 & 99 & 9 & 5 & 2 & 2 \\ 
+log(RC): & 4.34366 & 3.58104 & 2.84572 & 1.99564 & 0.95424 & 0.69897 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 2 & 85 & 227 & 8593 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.30103 & 1.92942 & 2.35603 & 3.93414 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 5
+
+LC point: 4
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+50
+
+prejuízo
+
+preju$|$ízo
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf j} & {\color{red}\bf u} & í & z & o \\ 
+R-complete freq: & 25437 & 6048 & 2187 & 48 & 46 & 2 & 2 & 2 \\ 
+log(RC): & 4.40547 & 3.78161 & 3.33985 & 1.68124 & 1.66276 & 0.30103 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 2 & 8 & 8 & 9 & 369 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.30103 & 0.90309 & 0.90309 & 0.95424 & 2.56703 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 4
+
+LC point: 6
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+51
+
+profisional
+
+profi$|$sional
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf r} & {\color{red}\bf o} & {\color{red}\bf f} & {\color{red}\bf i} & s & i & o & n & a & l \\ 
+R-complete freq: & 25437 & 6048 & 2598 & 234 & 60 & 29 & 18 & 15 & 15 & 15 & 11 \\ 
+log(RC): & 4.40547 & 3.78161 & 3.41464 & 2.36922 & 1.77815 & 1.4624 & 1.25527 & 1.17609 & 1.17609 & 1.17609 & 1.04139 \\ 
+L-complete freq: & 5 & 6 & 6 & 6 & 13 & 36 & 166 & 217 & 382 & 2413 & 8627 \\ 
+log(LC): & 0.69897 & 0.77815 & 0.77815 & 0.77815 & 1.11394 & 1.5563 & 2.22011 & 2.33646 & 2.58206 & 3.38256 & 3.93586 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 4
+
+LC point: 9
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+52
+
+transasão
+
+trans$|$asão
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf t} & {\color{red}\bf r} & {\color{red}\bf a} & {\color{red}\bf n} & {\color{red}\bf s} & a & s & ã & o \\ 
+R-complete freq: & 17076 & 4497 & 2374 & 1005 & 754 & 64 & 8 & 1 & 1 \\ 
+log(RC): & 4.23239 & 3.65292 & 3.37548 & 3.00217 & 2.87737 & 1.80618 & 0.90309 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 1 & 11 & 32 & 1960 & 3048 & 6372 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 1.04139 & 1.50515 & 3.29226 & 3.48401 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 8
+
+LC point: 5
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+53
+
+troglodita
+
+troglo$|$dita
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf t} & {\color{red}\bf r} & {\color{red}\bf o} & {\color{red}\bf g} & {\color{red}\bf l} & {\color{red}\bf o} & d & i & t & a \\ 
+R-complete freq: & 17076 & 4497 & 487 & 10 & 6 & 6 & 5 & 4 & 2 & 2 \\ 
+log(RC): & 4.23239 & 3.65292 & 2.68753 & 1.0 & 0.77815 & 0.77815 & 0.69897 & 0.60206 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 1 & 3 & 59 & 811 & 4490 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.47712 & 1.77085 & 2.90902 & 3.65225 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 4
+
+LC point: 6
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+54
+
+sacristão
+
+sacrist$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf a} & {\color{red}\bf c} & {\color{red}\bf r} & {\color{red}\bf i} & {\color{red}\bf s} & {\color{red}\bf t} & ã & o \\ 
+R-complete freq: & 26396 & 4314 & 324 & 116 & 76 & 5 & 5 & 1 & 1 \\ 
+log(RC): & 4.42154 & 3.63488 & 2.51055 & 2.06446 & 1.88081 & 0.69897 & 0.69897 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 2 & 6 & 42 & 88 & 279 & 6372 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.30103 & 0.77815 & 1.62325 & 1.94448 & 2.4456 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 7
+
+RC point: 6
+
+LC point: 7
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+55
+
+salafrário
+
+salafr$|$ário
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf a} & {\color{red}\bf l} & {\color{red}\bf a} & {\color{red}\bf f} & {\color{red}\bf r} & á & r & i & o \\ 
+R-complete freq: & 26396 & 4314 & 679 & 76 & 6 & 3 & 3 & 3 & 3 & 2 \\ 
+log(RC): & 4.42154 & 3.63488 & 2.83187 & 1.88081 & 0.77815 & 0.47712 & 0.47712 & 0.47712 & 0.47712 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 2 & 2 & 29 & 431 & 1109 & 3444 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.30103 & 0.30103 & 1.4624 & 2.63448 & 3.04493 & 3.53706 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 5
+
+LC point: 5
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+56
+
+analfabeto
+
+analf$|$abeto
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf a} & {\color{red}\bf n} & {\color{red}\bf a} & {\color{red}\bf l} & {\color{red}\bf f} & a & b & e & t & o \\ 
+R-complete freq: & 29882 & 2818 & 295 & 94 & 5 & 5 & 5 & 5 & 5 & 2 \\ 
+log(RC): & 4.47541 & 3.44994 & 2.46982 & 1.97313 & 0.69897 & 0.69897 & 0.69897 & 0.69897 & 0.69897 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 2 & 2 & 3 & 4 & 9 & 258 & 4541 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.30103 & 0.30103 & 0.47712 & 0.60206 & 0.95424 & 2.41162 & 3.65715 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 5
+
+LC point: 7
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+57
+
+botekim
+
+botek$|$im
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf o} & {\color{red}\bf t} & {\color{red}\bf e} & {\color{red}\bf k} & i & m \\ 
+R-complete freq: & 17361 & 2718 & 173 & 19 & 3 & 2 & 1 \\ 
+log(RC): & 4.23957 & 3.43425 & 2.23805 & 1.27875 & 0.47712 & 0.30103 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 1 & 7 & 37 & 691 & 19004 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.8451 & 1.5682 & 2.83948 & 4.27885 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 5
+
+LC point: 3
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+58
+
+cacetete
+
+cacete$|$te
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf a} & {\color{red}\bf c} & {\color{red}\bf e} & {\color{red}\bf t} & {\color{red}\bf e} & t & e \\ 
+R-complete freq: & 28344 & 7324 & 102 & 23 & 11 & 4 & 2 & 2 \\ 
+log(RC): & 4.45246 & 3.86475 & 2.0086 & 1.36173 & 1.04139 & 0.60206 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 3 & 11 & 450 & 8326 & 33546 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.47712 & 1.04139 & 2.65321 & 3.92044 & 4.52564 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 3
+
+LC point: 5
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+59
+
+cafetão
+
+cafet$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf a} & {\color{red}\bf f} & {\color{red}\bf e} & {\color{red}\bf t} & ã & o \\ 
+R-complete freq: & 28344 & 7324 & 81 & 36 & 22 & 3 & 2 \\ 
+log(RC): & 4.45246 & 3.86475 & 1.90849 & 1.5563 & 1.34242 & 0.47712 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 3 & 32 & 279 & 6372 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.47712 & 1.50515 & 2.4456 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 3
+
+LC point: 3
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+60
+
+capitão
+
+capit$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf a} & {\color{red}\bf p} & {\color{red}\bf i} & {\color{red}\bf t} & ã & o \\ 
+R-complete freq: & 28344 & 7324 & 552 & 134 & 88 & 7 & 3 \\ 
+log(RC): & 4.45246 & 3.86475 & 2.74194 & 2.1271 & 1.94448 & 0.8451 & 0.47712 \\ 
+L-complete freq: & 1 & 1 & 2 & 25 & 279 & 6372 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.30103 & 1.39794 & 2.4456 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 6
+
+LC point: 3
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+61
+
+carpinteiro
+
+carpin$|$teiro
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf a} & {\color{red}\bf r} & {\color{red}\bf p} & {\color{red}\bf i} & {\color{red}\bf n} & t & e & i & r & o \\ 
+R-complete freq: & 28344 & 7324 & 1333 & 64 & 20 & 12 & 9 & 7 & 4 & 4 & 2 \\ 
+log(RC): & 4.45246 & 3.86475 & 3.12483 & 1.80618 & 1.30103 & 1.07918 & 0.95424 & 0.8451 & 0.60206 & 0.60206 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 4 & 15 & 105 & 722 & 957 & 2898 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.60206 & 1.17609 & 2.02119 & 2.85854 & 2.98091 & 3.4621 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 4
+
+LC point: 10
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+62
+
+categoria
+
+categ$|$oria
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf a} & {\color{red}\bf t} & {\color{red}\bf e} & {\color{red}\bf g} & o & r & i & a \\ 
+R-complete freq: & 28344 & 7324 & 448 & 74 & 21 & 16 & 16 & 13 & 3 \\ 
+log(RC): & 4.45246 & 3.86475 & 2.65128 & 1.86923 & 1.32222 & 1.20412 & 1.20412 & 1.11394 & 0.47712 \\ 
+L-complete freq: & 2 & 2 & 2 & 3 & 6 & 128 & 3134 & 8593 & 51866 \\ 
+log(LC): & 0.30103 & 0.30103 & 0.30103 & 0.47712 & 0.77815 & 2.10721 & 3.4961 & 3.93414 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 3
+
+LC point: 5
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+63
+
+celular
+
+celul$|$ar
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf e} & {\color{red}\bf l} & {\color{red}\bf u} & {\color{red}\bf l} & a & r \\ 
+R-complete freq: & 28344 & 1376 & 208 & 20 & 17 & 10 & 6 \\ 
+log(RC): & 4.45246 & 3.13862 & 2.31806 & 1.30103 & 1.23045 & 1.0 & 0.77815 \\ 
+L-complete freq: & 8 & 8 & 12 & 183 & 552 & 7201 & 20031 \\ 
+log(LC): & 0.90309 & 0.90309 & 1.07918 & 2.26245 & 2.74194 & 3.85739 & 4.3017 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 4
+
+LC point: 3
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+64
+
+cesariana
+
+cesaria$|$na
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf e} & {\color{red}\bf s} & {\color{red}\bf a} & {\color{red}\bf r} & {\color{red}\bf i} & {\color{red}\bf a} & n & a \\ 
+R-complete freq: & 28344 & 1376 & 90 & 44 & 26 & 10 & 5 & 3 & 2 \\ 
+log(RC): & 4.45246 & 3.13862 & 1.95424 & 1.64345 & 1.41497 & 1.0 & 0.69897 & 0.47712 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 21 & 73 & 312 & 879 & 3750 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 1.32222 & 1.86332 & 2.49415 & 2.94399 & 3.57403 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 7
+
+RC point: 3
+
+LC point: 3
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+65
+
+comisão
+
+comis$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf o} & {\color{red}\bf m} & {\color{red}\bf i} & {\color{red}\bf s} & ã & o \\ 
+R-complete freq: & 28344 & 12302 & 2446 & 125 & 40 & 2 & 1 \\ 
+log(RC): & 4.45246 & 4.08998 & 3.38846 & 2.09691 & 1.60206 & 0.30103 & 0.0 \\ 
+L-complete freq: & 4 & 7 & 28 & 365 & 3048 & 6372 & 49626 \\ 
+log(LC): & 0.60206 & 0.8451 & 1.44716 & 2.56229 & 3.48401 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 6
+
+LC point: 6
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+66
+
+comisário
+
+comis$|$ário
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf o} & {\color{red}\bf m} & {\color{red}\bf i} & {\color{red}\bf s} & á & r & i & o \\ 
+R-complete freq: & 28344 & 12302 & 2446 & 125 & 40 & 6 & 6 & 5 & 3 \\ 
+log(RC): & 4.45246 & 4.08998 & 3.38846 & 2.09691 & 1.60206 & 0.77815 & 0.77815 & 0.69897 & 0.47712 \\ 
+L-complete freq: & 2 & 2 & 5 & 6 & 47 & 431 & 1109 & 3444 & 49626 \\ 
+log(LC): & 0.30103 & 0.30103 & 0.69897 & 0.77815 & 1.6721 & 2.63448 & 3.04493 & 3.53706 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 6
+
+LC point: 4
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+67
+
+comunista
+
+comun$|$ista
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf o} & {\color{red}\bf m} & {\color{red}\bf u} & {\color{red}\bf n} & i & s & t & a \\ 
+R-complete freq: & 28344 & 12302 & 2446 & 144 & 117 & 80 & 7 & 4 & 3 \\ 
+log(RC): & 4.45246 & 4.08998 & 3.38846 & 2.15836 & 2.06819 & 1.90309 & 0.8451 & 0.60206 & 0.47712 \\ 
+L-complete freq: & 2 & 2 & 3 & 6 & 158 & 950 & 1269 & 4490 & 51866 \\ 
+log(LC): & 0.30103 & 0.30103 & 0.47712 & 0.77815 & 2.19866 & 2.97772 & 3.10346 & 3.65225 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 4
+
+LC point: 4
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+68
+
+consumasão
+
+consum$|$asão
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf o} & {\color{red}\bf n} & {\color{red}\bf s} & {\color{red}\bf u} & {\color{red}\bf m} & a & s & ã & o \\ 
+R-complete freq: & 28344 & 12302 & 5072 & 1182 & 141 & 62 & 15 & 2 & 1 & 1 \\ 
+log(RC): & 4.45246 & 4.08998 & 3.70518 & 3.07262 & 2.14922 & 1.79239 & 1.17609 & 0.30103 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 7 & 75 & 1960 & 3048 & 6372 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.8451 & 1.87506 & 3.29226 & 3.48401 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 8
+
+LC point: 4
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+69
+
+cortesia
+
+cortes$|$ia
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf o} & {\color{red}\bf r} & {\color{red}\bf t} & {\color{red}\bf e} & {\color{red}\bf s} & i & a \\ 
+R-complete freq: & 28344 & 12302 & 874 & 162 & 58 & 11 & 2 & 2 \\ 
+log(RC): & 4.45246 & 4.08998 & 2.94151 & 2.20952 & 1.76343 & 1.04139 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 2 & 2 & 4 & 8 & 41 & 257 & 8593 & 51866 \\ 
+log(LC): & 0.30103 & 0.30103 & 0.60206 & 0.90309 & 1.61278 & 2.40993 & 3.93414 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 7
+
+LC point: 6
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+70
+
+madrugada
+
+madrug$|$ada
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf a} & {\color{red}\bf d} & {\color{red}\bf r} & {\color{red}\bf u} & {\color{red}\bf g} & a & d & a \\ 
+R-complete freq: & 22063 & 7953 & 270 & 61 & 23 & 22 & 18 & 10 & 2 \\ 
+log(RC): & 4.34366 & 3.90053 & 2.43136 & 1.78533 & 1.36173 & 1.34242 & 1.25527 & 1.0 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 2 & 13 & 183 & 4089 & 6423 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.30103 & 1.11394 & 2.26245 & 3.61162 & 3.80774 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 3
+
+LC point: 8
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+71
+
+manekim
+
+manek$|$im
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf a} & {\color{red}\bf n} & {\color{red}\bf e} & {\color{red}\bf k} & i & m \\ 
+R-complete freq: & 22063 & 7953 & 1281 & 105 & 2 & 2 & 1 \\ 
+log(RC): & 4.34366 & 3.90053 & 3.10755 & 2.02119 & 0.30103 & 0.30103 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 1 & 7 & 37 & 691 & 19004 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.8451 & 1.5682 & 2.83948 & 4.27885 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 5
+
+LC point: 3
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+72
+
+motocicleta
+
+motoc$|$icleta
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf o} & {\color{red}\bf t} & {\color{red}\bf o} & {\color{red}\bf c} & i & c & l & e & t & a \\ 
+R-complete freq: & 22063 & 3811 & 229 & 88 & 13 & 9 & 9 & 6 & 2 & 2 & 2 \\ 
+log(RC): & 4.34366 & 3.58104 & 2.35984 & 1.94448 & 1.11394 & 0.95424 & 0.95424 & 0.77815 & 0.30103 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 7 & 10 & 10 & 75 & 470 & 4490 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.8451 & 1.0 & 1.0 & 1.87506 & 2.6721 & 3.65225 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 3
+
+LC point: 7
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+73
+
+natureza
+
+natur$|$eza
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf n} & {\color{red}\bf a} & {\color{red}\bf t} & {\color{red}\bf u} & {\color{red}\bf r} & e & z & a \\ 
+R-complete freq: & 7622 & 1953 & 230 & 50 & 44 & 11 & 3 & 2 \\ 
+log(RC): & 3.88207 & 3.2907 & 2.36173 & 1.69897 & 1.64345 & 1.04139 & 0.47712 & 0.30103 \\ 
+L-complete freq: & 2 & 2 & 2 & 6 & 37 & 175 & 802 & 51866 \\ 
+log(LC): & 0.30103 & 0.30103 & 0.30103 & 0.77815 & 1.5682 & 2.24304 & 2.90417 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 4
+
+LC point: 7
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+74
+
+periferia
+
+perif$|$eria
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf e} & {\color{red}\bf r} & {\color{red}\bf i} & {\color{red}\bf f} & e & r & i & a \\ 
+R-complete freq: & 25437 & 4750 & 1995 & 162 & 11 & 5 & 5 & 4 & 2 \\ 
+log(RC): & 4.40547 & 3.67669 & 3.29994 & 2.20952 & 1.04139 & 0.69897 & 0.69897 & 0.60206 & 0.30103 \\ 
+L-complete freq: & 2 & 2 & 2 & 3 & 12 & 424 & 3134 & 8593 & 51866 \\ 
+log(LC): & 0.30103 & 0.30103 & 0.30103 & 0.47712 & 1.07918 & 2.62737 & 3.4961 & 3.93414 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 5
+
+LC point: 5
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+75
+
+proletariado
+
+prolet$|$ariado
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf r} & {\color{red}\bf o} & {\color{red}\bf l} & {\color{red}\bf e} & {\color{red}\bf t} & a & r & i & a & d & o \\ 
+R-complete freq: & 25437 & 6048 & 2598 & 82 & 15 & 9 & 3 & 3 & 3 & 3 & 3 & 2 \\ 
+log(RC): & 4.40547 & 3.78161 & 3.41464 & 1.91381 & 1.17609 & 0.95424 & 0.47712 & 0.47712 & 0.47712 & 0.47712 & 0.47712 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 4 & 6 & 17 & 47 & 312 & 4898 & 12026 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.60206 & 0.77815 & 1.23045 & 1.6721 & 2.49415 & 3.69002 & 4.08012 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 4
+
+LC point: 4
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+76
+
+rapaziada
+
+rapaz$|$iada
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf r} & {\color{red}\bf a} & {\color{red}\bf p} & {\color{red}\bf a} & {\color{red}\bf z} & i & a & d & a \\ 
+R-complete freq: & 18767 & 2749 & 226 & 64 & 24 & 7 & 1 & 1 & 1 \\ 
+log(RC): & 4.27339 & 3.43917 & 2.35411 & 1.80618 & 1.38021 & 0.8451 & 0.0 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 1 & 2 & 3 & 236 & 4089 & 6423 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.30103 & 0.47712 & 2.37291 & 3.61162 & 3.80774 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 7
+
+LC point: 5
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+77
+
+reasão
+
+reas$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf a} & {\color{red}\bf s} & ã & o \\ 
+R-complete freq: & 18767 & 10754 & 755 & 39 & 1 & 1 \\ 
+log(RC): & 4.27339 & 4.03157 & 2.87795 & 1.59106 & 0.0 & 0.0 \\ 
+L-complete freq: & 9 & 19 & 1960 & 3048 & 6372 & 49626 \\ 
+log(LC): & 0.95424 & 1.27875 & 3.29226 & 3.48401 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 5
+
+LC point: 2
+
+RC-LC point: 3
+
+\vspace{3em}
+
+
+
+78
+
+responsabilidade
+
+respons$|$abilidade
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllllllll}
+
+trunc: & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf s} & {\color{red}\bf p} & {\color{red}\bf o} & {\color{red}\bf n} & {\color{red}\bf s} & a & b & i & l & i & d & a & d & e \\ 
+R-complete freq: & 18767 & 10754 & 1415 & 376 & 157 & 137 & 79 & 58 & 52 & 44 & 37 & 35 & 7 & 6 & 5 & 3 \\ 
+log(RC): & 4.27339 & 4.03157 & 3.15076 & 2.57519 & 2.1959 & 2.13672 & 1.89763 & 1.76343 & 1.716 & 1.64345 & 1.5682 & 1.54407 & 0.8451 & 0.77815 & 0.69897 & 0.47712 \\ 
+L-complete freq: & 1 & 2 & 2 & 3 & 4 & 4 & 6 & 77 & 137 & 175 & 349 & 958 & 1173 & 1437 & 2848 & 33546 \\ 
+log(LC): & 0.0 & 0.30103 & 0.30103 & 0.47712 & 0.60206 & 0.60206 & 0.77815 & 1.88649 & 2.13672 & 2.24304 & 2.54283 & 2.98137 & 3.0693 & 3.15746 & 3.45454 & 4.52564 \\ 
+\end{tabular}
+
+trunc point: 7
+
+RC point: 13
+
+LC point: 7
+
+RC-LC point: 8
+
+\vspace{3em}
+
+
+
+79
+
+telefone
+
+telef$|$one
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf t} & {\color{red}\bf e} & {\color{red}\bf l} & {\color{red}\bf e} & {\color{red}\bf f} & o & n & e \\ 
+R-complete freq: & 17076 & 3093 & 448 & 355 & 86 & 61 & 53 & 11 \\ 
+log(RC): & 4.23239 & 3.49038 & 2.65128 & 2.55023 & 1.9345 & 1.78533 & 1.72428 & 1.04139 \\ 
+L-complete freq: & 3 & 4 & 4 & 8 & 39 & 614 & 2640 & 33546 \\ 
+log(LC): & 0.47712 & 0.60206 & 0.60206 & 0.90309 & 1.59106 & 2.78817 & 3.4216 & 4.52564 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 3
+
+LC point: 5
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+80
+
+traficante
+
+trafic$|$ante
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf t} & {\color{red}\bf r} & {\color{red}\bf a} & {\color{red}\bf f} & {\color{red}\bf i} & {\color{red}\bf c} & a & n & t & e \\ 
+R-complete freq: & 17076 & 4497 & 2374 & 44 & 24 & 21 & 18 & 4 & 3 & 3 \\ 
+log(RC): & 4.23239 & 3.65292 & 3.37548 & 1.64345 & 1.38021 & 1.32222 & 1.25527 & 0.60206 & 0.47712 & 0.47712 \\ 
+L-complete freq: & 2 & 2 & 2 & 28 & 45 & 75 & 1031 & 4709 & 8326 & 33546 \\ 
+log(LC): & 0.30103 & 0.30103 & 0.30103 & 1.44716 & 1.65321 & 1.87506 & 3.01326 & 3.67293 & 3.92044 & 4.52564 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 4
+
+LC point: 3
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+81
+
+ventilador
+
+ventil$|$ador
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf v} & {\color{red}\bf e} & {\color{red}\bf n} & {\color{red}\bf t} & {\color{red}\bf i} & {\color{red}\bf l} & a & d & o & r \\ 
+R-complete freq: & 8603 & 2090 & 493 & 117 & 29 & 23 & 16 & 6 & 4 & 2 \\ 
+log(RC): & 3.93465 & 3.32015 & 2.69285 & 2.06819 & 1.4624 & 1.36173 & 1.20412 & 0.77815 & 0.60206 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 3 & 14 & 92 & 1307 & 1633 & 3008 & 20031 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.47712 & 1.14613 & 1.96379 & 3.11628 & 3.21299 & 3.47828 & 4.3017 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 5
+
+LC point: 9
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+82
+
+violão
+
+viol$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf v} & {\color{red}\bf i} & {\color{red}\bf o} & {\color{red}\bf l} & ã & o \\ 
+R-complete freq: & 8603 & 2474 & 169 & 134 & 2 & 2 \\ 
+log(RC): & 3.93465 & 3.3934 & 2.22789 & 2.1271 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 2 & 16 & 104 & 6372 & 49626 \\ 
+log(LC): & 0.0 & 0.30103 & 1.20412 & 2.01703 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 5
+
+LC point: 4
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+83
+
+psicologia
+
+psico$|$logia
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf s} & {\color{red}\bf i} & {\color{red}\bf c} & {\color{red}\bf o} & l & o & g & i & a \\ 
+R-complete freq: & 25437 & 372 & 243 & 191 & 153 & 18 & 11 & 11 & 8 & 2 \\ 
+log(RC): & 4.40547 & 2.57054 & 2.38561 & 2.28103 & 2.18469 & 1.25527 & 1.04139 & 1.04139 & 0.90309 & 0.30103 \\ 
+L-complete freq: & 4 & 5 & 7 & 17 & 189 & 201 & 225 & 394 & 8593 & 51866 \\ 
+log(LC): & 0.60206 & 0.69897 & 0.8451 & 1.23045 & 2.27646 & 2.3032 & 2.35218 & 2.5955 & 3.93414 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 2
+
+LC point: 8
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+84
+
+odontologia
+
+odonto$|$logia
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllll}
+
+trunc: & {\color{red}\bf o} & {\color{red}\bf d} & {\color{red}\bf o} & {\color{red}\bf n} & {\color{red}\bf t} & {\color{red}\bf o} & l & o & g & i & a \\ 
+R-complete freq: & 7065 & 233 & 28 & 11 & 7 & 5 & 5 & 2 & 2 & 2 & 1 \\ 
+log(RC): & 3.84911 & 2.36736 & 1.44716 & 1.04139 & 0.8451 & 0.69897 & 0.69897 & 0.30103 & 0.30103 & 0.30103 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 5 & 8 & 41 & 189 & 201 & 225 & 394 & 8593 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.69897 & 0.90309 & 1.61278 & 2.27646 & 2.3032 & 2.35218 & 2.5955 & 3.93414 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 2
+
+LC point: 9
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+85
+
+fonoaudiologa
+
+fono$|$audiologa
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllllll}
+
+trunc: & {\color{red}\bf f} & {\color{red}\bf o} & {\color{red}\bf n} & {\color{red}\bf o} & a & u & d & i & o & l & o & g & a \\ 
+R-complete freq: & 13224 & 1881 & 112 & 11 & 4 & 4 & 4 & 4 & 1 & 1 & 1 & 1 & 1 \\ 
+log(RC): & 4.12136 & 3.27439 & 2.04922 & 1.04139 & 0.60206 & 0.60206 & 0.60206 & 0.60206 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 3 & 39 & 104 & 888 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.30103 & 0.47712 & 1.59106 & 2.01703 & 2.94841 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 9
+
+LC point: 9
+
+RC-LC point: 8
+
+\vspace{3em}
+
+
+
+86
+
+supermercado
+
+super$|$mercado
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf u} & {\color{red}\bf p} & {\color{red}\bf e} & {\color{red}\bf r} & m & e & r & c & a & d & o \\ 
+R-complete freq: & 26396 & 4178 & 997 & 662 & 645 & 31 & 5 & 2 & 2 & 2 & 2 & 2 \\ 
+log(RC): & 4.42154 & 3.62097 & 2.9987 & 2.82086 & 2.80956 & 1.49136 & 0.69897 & 0.30103 & 0.30103 & 0.30103 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 3 & 3 & 3 & 8 & 12 & 33 & 403 & 4898 & 12026 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.47712 & 0.47712 & 0.47712 & 0.90309 & 1.07918 & 1.51851 & 2.60531 & 3.69002 & 4.08012 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 6
+
+LC point: 8
+
+RC-LC point: 7
+
+\vspace{3em}
+
+
+
+87
+
+depresão
+
+depre$|$são
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf d} & {\color{red}\bf e} & {\color{red}\bf p} & {\color{red}\bf r} & {\color{red}\bf e} & s & ã & o \\ 
+R-complete freq: & 23673 & 12670 & 482 & 106 & 64 & 22 & 1 & 1 \\ 
+log(RC): & 4.37425 & 4.10278 & 2.68305 & 2.02531 & 1.80618 & 1.34242 & 0.0 & 0.0 \\ 
+L-complete freq: & 2 & 3 & 20 & 42 & 145 & 3048 & 6372 & 49626 \\ 
+log(LC): & 0.30103 & 0.47712 & 1.30103 & 1.62325 & 2.16137 & 3.48401 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 7
+
+LC point: 5
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+88
+
+deprimido
+
+depr$|$imido
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf d} & {\color{red}\bf e} & {\color{red}\bf p} & {\color{red}\bf r} & i & m & i & d & o \\ 
+R-complete freq: & 23673 & 12670 & 482 & 106 & 30 & 25 & 13 & 5 & 2 \\ 
+log(RC): & 4.37425 & 4.10278 & 2.68305 & 2.02531 & 1.47712 & 1.39794 & 1.11394 & 0.69897 & 0.30103 \\ 
+L-complete freq: & 1 & 2 & 8 & 8 & 13 & 42 & 1193 & 12026 & 49626 \\ 
+log(LC): & 0.0 & 0.30103 & 0.90309 & 0.90309 & 1.11394 & 1.62325 & 3.07664 & 4.08012 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 3
+
+LC point: 6
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+89
+
+pregisoso
+
+pregi$|$soso
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf g} & {\color{red}\bf i} & s & o & s & o \\ 
+R-complete freq: & 25437 & 6048 & 2187 & 100 & 15 & 9 & 7 & 6 & 2 \\ 
+log(RC): & 4.40547 & 3.78161 & 3.33985 & 2.0 & 1.17609 & 0.95424 & 0.8451 & 0.77815 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 5 & 22 & 686 & 1709 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.69897 & 1.34242 & 2.83632 & 3.23274 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 5
+
+LC point: 8
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+90
+
+tostão
+
+tost$|$ão
+
+\vspace{1em}
+
+\begin{tabular}{l|llllll}
+
+trunc: & {\color{red}\bf t} & {\color{red}\bf o} & {\color{red}\bf s} & {\color{red}\bf t} & ã & o \\ 
+R-complete freq: & 17076 & 2393 & 141 & 39 & 1 & 1 \\ 
+log(RC): & 4.23239 & 3.37894 & 2.14922 & 1.59106 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 5 & 88 & 279 & 6372 & 49626 \\ 
+log(LC): & 0.0 & 0.69897 & 1.94448 & 2.4456 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 5
+
+LC point: 4
+
+RC-LC point: 3
+
+\vspace{3em}
+
+
+
+91
+
+sanduíSe
+
+sanduíS$|$e
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf a} & {\color{red}\bf n} & {\color{red}\bf d} & {\color{red}\bf u} & {\color{red}\bf í} & {\color{red}\bf S} & e \\ 
+R-complete freq: & 26396 & 4314 & 615 & 133 & 17 & 4 & 4 & 2 \\ 
+log(RC): & 4.42154 & 3.63488 & 2.78888 & 2.12385 & 1.23045 & 0.60206 & 0.60206 & 0.30103 \\ 
+L-complete freq: & 2 & 2 & 2 & 3 & 3 & 5 & 309 & 33546 \\ 
+log(LC): & 0.30103 & 0.30103 & 0.30103 & 0.47712 & 0.47712 & 0.69897 & 2.48996 & 4.52564 \\ 
+\end{tabular}
+
+trunc point: 7
+
+RC point: 6
+
+LC point: 6
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+92
+
+satisfasão
+
+satisf$|$asão
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf s} & {\color{red}\bf a} & {\color{red}\bf t} & {\color{red}\bf i} & {\color{red}\bf s} & {\color{red}\bf f} & a & s & ã & o \\ 
+R-complete freq: & 26396 & 4314 & 269 & 95 & 66 & 61 & 40 & 8 & 1 & 1 \\ 
+log(RC): & 4.42154 & 3.63488 & 2.42975 & 1.97772 & 1.81954 & 1.78533 & 1.60206 & 0.90309 & 0.0 & 0.0 \\ 
+L-complete freq: & 3 & 3 & 3 & 3 & 4 & 17 & 1960 & 3048 & 6372 & 49626 \\ 
+log(LC): & 0.47712 & 0.47712 & 0.47712 & 0.47712 & 0.60206 & 1.23045 & 3.29226 & 3.48401 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 9
+
+LC point: 6
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+93
+
+caSoeira
+
+caS$|$oeira
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf c} & {\color{red}\bf a} & {\color{red}\bf S} & o & e & i & r & a \\ 
+R-complete freq: & 28344 & 7324 & 95 & 34 & 3 & 2 & 2 & 2 \\ 
+log(RC): & 4.45246 & 3.86475 & 1.97772 & 1.53148 & 0.47712 & 0.30103 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 2 & 2 & 2 & 23 & 696 & 950 & 5255 & 51866 \\ 
+log(LC): & 0.30103 & 0.30103 & 0.30103 & 1.36173 & 2.84261 & 2.97772 & 3.72057 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 3
+
+RC point: 3
+
+LC point: 3
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+94
+
+namorada
+
+namo$|$rada
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf n} & {\color{red}\bf a} & {\color{red}\bf m} & {\color{red}\bf o} & r & a & d & a \\ 
+R-complete freq: & 7622 & 1953 & 127 & 66 & 59 & 37 & 17 & 3 \\ 
+log(RC): & 3.88207 & 3.2907 & 2.1038 & 1.81954 & 1.77085 & 1.5682 & 1.23045 & 0.47712 \\ 
+L-complete freq: & 3 & 3 & 9 & 60 & 479 & 4089 & 6423 & 51866 \\ 
+log(LC): & 0.47712 & 0.47712 & 0.95424 & 1.77815 & 2.68034 & 3.61162 & 3.80774 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 3
+
+LC point: 7
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+95
+
+namorado
+
+namo$|$rado
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf n} & {\color{red}\bf a} & {\color{red}\bf m} & {\color{red}\bf o} & r & a & d & o \\ 
+R-complete freq: & 7622 & 1953 & 127 & 66 & 59 & 37 & 17 & 5 \\ 
+log(RC): & 3.88207 & 3.2907 & 2.1038 & 1.81954 & 1.77085 & 1.5682 & 1.23045 & 0.69897 \\ 
+L-complete freq: & 3 & 3 & 8 & 73 & 535 & 4898 & 12026 & 49626 \\ 
+log(LC): & 0.47712 & 0.47712 & 0.90309 & 1.86332 & 2.72835 & 3.69002 & 4.08012 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 3
+
+LC point: 3
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+96
+
+recalcada
+
+rec$|$alcada
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllll}
+
+trunc: & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf c} & a & l & c & a & d & a \\ 
+R-complete freq: & 18767 & 10754 & 1683 & 159 & 28 & 16 & 4 & 3 & 1 \\ 
+log(RC): & 4.27339 & 4.03157 & 3.22608 & 2.2014 & 1.44716 & 1.20412 & 0.60206 & 0.47712 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 2 & 3 & 8 & 310 & 4089 & 6423 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.30103 & 0.47712 & 0.90309 & 2.49136 & 3.61162 & 3.80774 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 3
+
+RC point: 5
+
+LC point: 5
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+97
+
+pirigete
+
+pirig$|$ete
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf i} & {\color{red}\bf r} & {\color{red}\bf i} & {\color{red}\bf g} & e & t & e \\ 
+R-complete freq: & 25437 & 2221 & 216 & 28 & 2 & 2 & 2 & 2 \\ 
+log(RC): & 4.40547 & 3.34655 & 2.33445 & 1.44716 & 0.30103 & 0.30103 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 2 & 19 & 450 & 8326 & 33546 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.30103 & 1.27875 & 2.65321 & 3.92044 & 4.52564 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 5
+
+LC point: 4
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+98
+
+parceiro
+
+parc$|$eiro
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf a} & {\color{red}\bf r} & {\color{red}\bf c} & e & i & r & o \\ 
+R-complete freq: & 25437 & 4970 & 1441 & 53 & 31 & 11 & 8 & 3 \\ 
+log(RC): & 4.40547 & 3.69636 & 3.15866 & 1.72428 & 1.49136 & 1.04139 & 0.90309 & 0.47712 \\ 
+L-complete freq: & 1 & 1 & 3 & 34 & 722 & 957 & 2898 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.47712 & 1.53148 & 2.85854 & 2.98091 & 3.4621 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 4
+
+LC point: 7
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+99
+
+parceira
+
+parc$|$eira
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf a} & {\color{red}\bf r} & {\color{red}\bf c} & e & i & r & a \\ 
+R-complete freq: & 25437 & 4970 & 1441 & 53 & 31 & 11 & 8 & 2 \\ 
+log(RC): & 4.40547 & 3.69636 & 3.15866 & 1.72428 & 1.49136 & 1.04139 & 0.90309 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 2 & 32 & 696 & 950 & 5255 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.30103 & 1.50515 & 2.84261 & 2.97772 & 3.72057 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 4
+
+LC point: 3
+
+RC-LC point: 4
+
+\vspace{3em}
+
+
+
+100
+
+kebrada
+
+kebr$|$ada
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf k} & {\color{red}\bf e} & {\color{red}\bf b} & {\color{red}\bf r} & a & d & a \\ 
+R-complete freq: & 8941 & 1583 & 89 & 70 & 57 & 16 & 2 \\ 
+log(RC): & 3.95139 & 3.19948 & 1.94939 & 1.8451 & 1.75587 & 1.20412 & 0.30103 \\ 
+L-complete freq: & 2 & 5 & 31 & 479 & 4089 & 6423 & 51866 \\ 
+log(LC): & 0.30103 & 0.69897 & 1.49136 & 2.68034 & 3.61162 & 3.80774 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 3
+
+LC point: 6
+
+RC-LC point: 3
+
+\vspace{3em}
+
+
+
+101
+
+macaRão
+
+mac$|$aRão
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf a} & {\color{red}\bf c} & a & R & ã & o \\ 
+R-complete freq: & 22063 & 7953 & 482 & 100 & 10 & 1 & 1 \\ 
+log(RC): & 4.34366 & 3.90053 & 2.68305 & 2.0 & 1.0 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 2 & 15 & 29 & 6372 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.30103 & 1.17609 & 1.4624 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 3
+
+RC point: 6
+
+LC point: 5
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+102
+
+pirasão
+
+pir$|$asão
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf i} & {\color{red}\bf r} & a & s & ã & o \\ 
+R-complete freq: & 25437 & 2221 & 216 & 76 & 3 & 1 & 1 \\ 
+log(RC): & 4.40547 & 3.34655 & 2.33445 & 1.88081 & 0.47712 & 0.0 & 0.0 \\ 
+L-complete freq: & 15 & 20 & 265 & 1960 & 3048 & 6372 & 49626 \\ 
+log(LC): & 1.17609 & 1.30103 & 2.42325 & 3.29226 & 3.48401 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 3
+
+RC point: 5
+
+LC point: 2
+
+RC-LC point: 3
+
+\vspace{3em}
+
+
+
+103
+
+biblioteconomia
+
+biblio$|$teconomia
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllllllll}
+
+trunc: & {\color{red}\bf b} & {\color{red}\bf i} & {\color{red}\bf b} & {\color{red}\bf l} & {\color{red}\bf i} & {\color{red}\bf o} & t & e & c & o & n & o & m & i & a \\ 
+R-complete freq: & 17361 & 1791 & 74 & 31 & 25 & 16 & 12 & 10 & 10 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+log(RC): & 4.23957 & 3.2531 & 1.86923 & 1.49136 & 1.39794 & 1.20412 & 1.07918 & 1.0 & 1.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 4 & 5 & 20 & 25 & 85 & 227 & 8593 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.60206 & 0.69897 & 1.30103 & 1.39794 & 1.92942 & 2.35603 & 3.93414 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 3
+
+LC point: 13
+
+RC-LC point: 9
+
+\vspace{3em}
+
+
+
+104
+
+eletrocardiograma
+
+eletro$|$cardiograma
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllllllllll}
+
+trunc: & {\color{red}\bf e} & {\color{red}\bf l} & {\color{red}\bf e} & {\color{red}\bf t} & {\color{red}\bf r} & {\color{red}\bf o} & c & a & r & d & i & o & g & r & a & m & a \\ 
+R-complete freq: & 23044 & 1244 & 495 & 153 & 149 & 94 & 28 & 2 & 2 & 2 & 2 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+log(RC): & 4.36256 & 3.09482 & 2.69461 & 2.18469 & 2.17319 & 1.97313 & 1.44716 & 0.30103 & 0.30103 & 0.30103 & 0.30103 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 2 & 3 & 3 & 5 & 6 & 6 & 6 & 7 & 13 & 48 & 64 & 112 & 394 & 1774 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.30103 & 0.47712 & 0.47712 & 0.69897 & 0.77815 & 0.77815 & 0.77815 & 0.8451 & 1.11394 & 1.68124 & 1.80618 & 2.04922 & 2.5955 & 3.24895 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 8
+
+LC point: 16
+
+RC-LC point: 8
+
+\vspace{3em}
+
+
+
+105
+
+espeleologia
+
+espeleo$|$logia
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllll}
+
+trunc: & {\color{red}\bf e} & {\color{red}\bf s} & {\color{red}\bf p} & {\color{red}\bf e} & {\color{red}\bf l} & {\color{red}\bf e} & {\color{red}\bf o} & l & o & g & i & a \\ 
+R-complete freq: & 23044 & 7026 & 1444 & 519 & 8 & 5 & 2 & 1 & 1 & 1 & 1 & 1 \\ 
+log(RC): & 4.36256 & 3.84671 & 3.15957 & 2.71517 & 0.90309 & 0.69897 & 0.30103 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 1 & 15 & 189 & 201 & 225 & 394 & 8593 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 1.17609 & 2.27646 & 2.3032 & 2.35218 & 2.5955 & 3.93414 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 7
+
+RC point: 5
+
+LC point: 5
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+106
+
+extraordinário
+
+extra$|$ordinário
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllllll}
+
+trunc: & {\color{red}\bf e} & {\color{red}\bf x} & {\color{red}\bf t} & {\color{red}\bf r} & {\color{red}\bf a} & o & r & d & i & n & á & r & i & o \\ 
+R-complete freq: & 23044 & 2685 & 511 & 254 & 202 & 24 & 18 & 16 & 14 & 14 & 6 & 6 & 6 & 2 \\ 
+log(RC): & 4.36256 & 3.42894 & 2.70842 & 2.40483 & 2.30535 & 1.38021 & 1.25527 & 1.20412 & 1.14613 & 1.14613 & 0.77815 & 0.77815 & 0.77815 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 3 & 3 & 4 & 7 & 7 & 9 & 23 & 102 & 431 & 1109 & 3444 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.47712 & 0.47712 & 0.60206 & 0.8451 & 0.8451 & 0.95424 & 1.36173 & 2.0086 & 2.63448 & 3.04493 & 3.53706 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 6
+
+LC point: 13
+
+RC-LC point: 9
+
+\vspace{3em}
+
+
+
+107
+
+fotografia
+
+foto$|$grafia
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf f} & {\color{red}\bf o} & {\color{red}\bf t} & {\color{red}\bf o} & g & r & a & f & i & a \\ 
+R-complete freq: & 13224 & 1881 & 157 & 119 & 63 & 51 & 42 & 39 & 5 & 2 \\ 
+log(RC): & 4.12136 & 3.27439 & 2.1959 & 2.07555 & 1.79934 & 1.70757 & 1.62325 & 1.59106 & 0.69897 & 0.30103 \\ 
+L-complete freq: & 3 & 3 & 14 & 73 & 84 & 85 & 96 & 142 & 8593 & 51866 \\ 
+log(LC): & 0.47712 & 0.47712 & 1.14613 & 1.86332 & 1.92428 & 1.92942 & 1.98227 & 2.15229 & 3.93414 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 3
+
+LC point: 8
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+108
+
+heterosexual
+
+hetero$|$sexual
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllll}
+
+trunc: & {\color{red}\bf h} & {\color{red}\bf e} & {\color{red}\bf t} & {\color{red}\bf e} & {\color{red}\bf r} & {\color{red}\bf o} & s & e & x & u & a & l \\ 
+R-complete freq: & 9330 & 1721 & 40 & 24 & 23 & 22 & 7 & 6 & 6 & 6 & 6 & 4 \\ 
+log(RC): & 3.96988 & 3.23578 & 1.60206 & 1.38021 & 1.36173 & 1.34242 & 0.8451 & 0.77815 & 0.77815 & 0.77815 & 0.77815 & 0.60206 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 2 & 5 & 16 & 16 & 17 & 121 & 2413 & 8627 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.30103 & 0.69897 & 1.20412 & 1.20412 & 1.23045 & 2.08279 & 3.38256 & 3.93586 \\ 
+\end{tabular}
+
+trunc point: 6
+
+RC point: 3
+
+LC point: 9
+
+RC-LC point: 7
+
+\vspace{3em}
+
+
+
+109
+
+hidroginástica
+
+hidro$|$ginástica
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllllll}
+
+trunc: & {\color{red}\bf h} & {\color{red}\bf i} & {\color{red}\bf d} & {\color{red}\bf r} & {\color{red}\bf o} & g & i & n & á & s & t & i & c & a \\ 
+R-complete freq: & 9330 & 1483 & 199 & 149 & 101 & 13 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+log(RC): & 3.96988 & 3.17114 & 2.29885 & 2.17319 & 2.00432 & 1.11394 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 1 & 3 & 4 & 5 & 32 & 134 & 593 & 1972 & 3034 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.47712 & 0.60206 & 0.69897 & 1.50515 & 2.1271 & 2.77305 & 3.29491 & 3.48202 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 7
+
+LC point: 13
+
+RC-LC point: 7
+
+\vspace{3em}
+
+
+
+110
+
+homosexual
+
+homo$|$sexual
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllll}
+
+trunc: & {\color{red}\bf h} & {\color{red}\bf o} & {\color{red}\bf m} & {\color{red}\bf o} & s & e & x & u & a & l \\ 
+R-complete freq: & 9330 & 1947 & 262 & 62 & 17 & 12 & 10 & 9 & 9 & 6 \\ 
+log(RC): & 3.96988 & 3.28937 & 2.4183 & 1.79239 & 1.23045 & 1.07918 & 1.0 & 0.95424 & 0.95424 & 0.77815 \\ 
+L-complete freq: & 1 & 1 & 1 & 5 & 16 & 16 & 17 & 121 & 2413 & 8627 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.69897 & 1.20412 & 1.20412 & 1.23045 & 2.08279 & 3.38256 & 3.93586 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 5
+
+LC point: 7
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+111
+
+infraestrutura
+
+infra$|$estrutura
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllllll}
+
+trunc: & {\color{red}\bf i} & {\color{red}\bf n} & {\color{red}\bf f} & {\color{red}\bf r} & {\color{red}\bf a} & e & s & t & r & u & t & u & r & a \\ 
+R-complete freq: & 13082 & 6917 & 728 & 65 & 22 & 4 & 3 & 3 & 3 & 3 & 3 & 3 & 3 & 3 \\ 
+log(RC): & 4.11667 & 3.83992 & 2.86213 & 1.81291 & 1.34242 & 0.60206 & 0.47712 & 0.47712 & 0.47712 & 0.47712 & 0.47712 & 0.47712 & 0.47712 & 0.47712 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 1 & 6 & 8 & 9 & 10 & 15 & 217 & 628 & 5255 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.77815 & 0.90309 & 0.95424 & 1.0 & 1.17609 & 2.33646 & 2.79796 & 3.72057 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 6
+
+LC point: 10
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+112
+
+internacional
+
+inter$|$nacional
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllllll}
+
+trunc: & {\color{red}\bf i} & {\color{red}\bf n} & {\color{red}\bf t} & {\color{red}\bf e} & {\color{red}\bf r} & n & a & c & i & o & n & a & l \\ 
+R-complete freq: & 13082 & 6917 & 1607 & 1141 & 730 & 88 & 71 & 22 & 19 & 16 & 15 & 14 & 9 \\ 
+log(RC): & 4.11667 & 3.83992 & 3.20602 & 3.05729 & 2.86332 & 1.94448 & 1.85126 & 1.34242 & 1.27875 & 1.20412 & 1.17609 & 1.14613 & 0.95424 \\ 
+L-complete freq: & 1 & 2 & 2 & 2 & 2 & 10 & 45 & 102 & 166 & 217 & 382 & 2413 & 8627 \\ 
+log(LC): & 0.0 & 0.30103 & 0.30103 & 0.30103 & 0.30103 & 1.0 & 1.65321 & 2.0086 & 2.22011 & 2.33646 & 2.58206 & 3.38256 & 3.93586 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 6
+
+LC point: 5
+
+RC-LC point: 7
+
+\vspace{3em}
+
+
+
+113
+
+lipoaspirasão
+
+lipo$|$aspirasão
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllllll}
+
+trunc: & {\color{red}\bf l} & {\color{red}\bf i} & {\color{red}\bf p} & {\color{red}\bf o} & a & s & p & i & r & a & s & ã & o \\ 
+R-complete freq: & 11900 & 2256 & 69 & 10 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 1 & 1 \\ 
+log(RC): & 4.07555 & 3.35334 & 1.83885 & 1.0 & 0.30103 & 0.30103 & 0.30103 & 0.30103 & 0.30103 & 0.30103 & 0.30103 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 2 & 11 & 15 & 20 & 265 & 1960 & 3048 & 6372 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.30103 & 1.04139 & 1.17609 & 1.30103 & 2.42325 & 3.29226 & 3.48401 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 5
+
+LC point: 8
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+114
+
+maximizasão
+
+maxi$|$mizasão
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf a} & {\color{red}\bf x} & {\color{red}\bf i} & m & i & z & a & s & ã & o \\ 
+R-complete freq: & 22063 & 7953 & 81 & 50 & 35 & 21 & 9 & 7 & 1 & 1 & 1 \\ 
+log(RC): & 4.34366 & 3.90053 & 1.90849 & 1.69897 & 1.54407 & 1.32222 & 0.95424 & 0.8451 & 0.0 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 1 & 3 & 7 & 279 & 295 & 1960 & 3048 & 6372 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.47712 & 0.8451 & 2.4456 & 2.46982 & 3.29226 & 3.48401 & 3.80428 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 4
+
+RC point: 3
+
+LC point: 5
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+115
+
+microcomputador
+
+micro$|$computador
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllllllll}
+
+trunc: & {\color{red}\bf m} & {\color{red}\bf i} & {\color{red}\bf c} & {\color{red}\bf r} & {\color{red}\bf o} & c & o & m & p & u & t & a & d & o & r \\ 
+R-complete freq: & 22063 & 2988 & 242 & 161 & 151 & 26 & 5 & 2 & 2 & 2 & 2 & 2 & 2 & 2 & 2 \\ 
+log(RC): & 4.34366 & 3.47538 & 2.38382 & 2.20683 & 2.17898 & 1.41497 & 0.69897 & 0.30103 & 0.30103 & 0.30103 & 0.30103 & 0.30103 & 0.30103 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 1 & 4 & 5 & 5 & 6 & 20 & 196 & 1307 & 1633 & 3008 & 20031 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.60206 & 0.69897 & 0.69897 & 0.77815 & 1.30103 & 2.29226 & 3.11628 & 3.21299 & 3.47828 & 4.3017 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 3
+
+LC point: 5
+
+RC-LC point: 7
+
+\vspace{3em}
+
+
+
+116
+
+poliomielite
+
+polio$|$mielite
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf o} & {\color{red}\bf l} & {\color{red}\bf i} & {\color{red}\bf o} & m & i & e & l & i & t & e \\ 
+R-complete freq: & 25437 & 3459 & 631 & 255 & 5 & 2 & 1 & 1 & 1 & 1 & 1 & 1 \\ 
+log(RC): & 4.40547 & 3.53895 & 2.80003 & 2.40654 & 0.69897 & 0.30103 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 3 & 4 & 5 & 10 & 53 & 465 & 8326 & 33546 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.47712 & 0.60206 & 0.69897 & 1.0 & 1.72428 & 2.66745 & 3.92044 & 4.52564 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 5
+
+LC point: 4
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+117
+
+pornográfico
+
+porno$|$gráfico
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllll}
+
+trunc: & {\color{red}\bf p} & {\color{red}\bf o} & {\color{red}\bf r} & {\color{red}\bf n} & {\color{red}\bf o} & g & r & á & f & i & c & o \\ 
+R-complete freq: & 25437 & 3459 & 568 & 36 & 22 & 12 & 12 & 5 & 5 & 4 & 4 & 2 \\ 
+log(RC): & 4.40547 & 3.53895 & 2.75435 & 1.5563 & 1.34242 & 1.07918 & 1.07918 & 0.69897 & 0.69897 & 0.60206 & 0.60206 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 6 & 25 & 31 & 34 & 34 & 125 & 1903 & 2926 & 49626 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.77815 & 1.39794 & 1.49136 & 1.53148 & 1.53148 & 2.09691 & 3.27944 & 3.46627 & 4.69571 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 4
+
+LC point: 11
+
+RC-LC point: 5
+
+\vspace{3em}
+
+
+
+118
+
+radioterapia
+
+radio$|$terapia
+
+\vspace{1em}
+
+\begin{tabular}{l|llllllllllll}
+
+trunc: & {\color{red}\bf r} & {\color{red}\bf a} & {\color{red}\bf d} & {\color{red}\bf i} & {\color{red}\bf o} & t & e & r & a & p & i & a \\ 
+R-complete freq: & 18767 & 2749 & 259 & 174 & 103 & 19 & 11 & 4 & 3 & 3 & 2 & 2 \\ 
+log(RC): & 4.27339 & 3.43917 & 2.4133 & 2.24055 & 2.01284 & 1.27875 & 1.04139 & 0.60206 & 0.47712 & 0.47712 & 0.30103 & 0.30103 \\ 
+L-complete freq: & 1 & 1 & 1 & 3 & 15 & 21 & 21 & 23 & 27 & 141 & 8593 & 51866 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.47712 & 1.17609 & 1.32222 & 1.32222 & 1.36173 & 1.43136 & 2.14922 & 3.93414 & 4.71488 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 3
+
+LC point: 10
+
+RC-LC point: 6
+
+\vspace{3em}
+
+
+
+119
+
+retroprojetor
+
+retro$|$projetor
+
+\vspace{1em}
+
+\begin{tabular}{l|lllllllllllll}
+
+trunc: & {\color{red}\bf r} & {\color{red}\bf e} & {\color{red}\bf t} & {\color{red}\bf r} & {\color{red}\bf o} & p & r & o & j & e & t & o & r \\ 
+R-complete freq: & 18767 & 10754 & 694 & 229 & 71 & 5 & 4 & 4 & 2 & 2 & 1 & 1 & 1 \\ 
+log(RC): & 4.27339 & 4.03157 & 2.84136 & 2.35984 & 1.85126 & 0.69897 & 0.60206 & 0.60206 & 0.30103 & 0.30103 & 0.0 & 0.0 & 0.0 \\ 
+L-complete freq: & 1 & 1 & 1 & 1 & 2 & 4 & 4 & 4 & 8 & 47 & 432 & 3008 & 20031 \\ 
+log(LC): & 0.0 & 0.0 & 0.0 & 0.0 & 0.30103 & 0.60206 & 0.60206 & 0.60206 & 0.90309 & 1.6721 & 2.63548 & 3.47828 & 4.3017 \\ 
+\end{tabular}
+
+trunc point: 5
+
+RC point: 6
+
+LC point: 9
+
+RC-LC point: 8
+
+\vspace{3em}
+
+\end{document}
