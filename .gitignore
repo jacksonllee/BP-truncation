@@ -1,4 +1,6 @@
 *.log
 *.aux
-*~
+*.tex~
+*.csv~
+*.py~
 
