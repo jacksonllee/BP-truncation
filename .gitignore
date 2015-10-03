@@ -1,6 +1,18 @@
+*~
 *.log
 *.aux
-*.tex~
-*.csv~
-*.py~
+
+AIMM3/
+BP truncs paper/
+MSLD/
+LSA/
+LCC/
+old files/
+main2_backup/
+
+.Rhistory
+.dropbox
+.idea/
+orthofix/
+
 
