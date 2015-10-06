@@ -37,8 +37,10 @@ Download this repository to your local drive by one of these two methods:
 
 * Clone this repository:
 
+    ```
     $ git clone https://github.com/JacksonLLee/BP-truncation.git
     $ cd BP-truncation
+    ```
 
 After this repository is downloaded, run the truncation models for the accompanying datasets:
 
