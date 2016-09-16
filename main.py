@@ -1,10 +1,11 @@
 # Modeling truncation in Brazilian Portuguese
-# Mike Pham, Jackson Lee
+# Mike Pham and Jackson Lee
 
 import os
 import math
 import subprocess
 import numpy as np
+import scipy.stats as stats
 import multiprocessing as mp
 import argparse
 
@@ -81,13 +82,6 @@ args = parser.parse_args()
 use_tech_terms = args.tech
 use_c_orthography = args.c_orthography
 treat_a_as_truncated_stem = args.a_as_TS
-
-asuffix = input("Treat -a in TF as part of TS (maximal symbol overlap)? Y/N ")
-asuffix = asuffix.lower()
-
-if asuffix != "y":
-    techterms = input("Include technical terms? Y/N ").lower()
-    orthosys = input("Orthography system: k or c? ").lower()
 
 # -----------------------------------------------------------------------------#
 # make sure the directories for output files are present
@@ -168,7 +162,7 @@ binLR_trunc_points = [x.index("$") for x in goldstandard_binLR_list]
 # (right-completes = previously "successor frequencies = SF")
 # (left-completes = previously "predecessor frequencies = PF")
 
-print("computing right- and left-complete counts...")
+print("\ncomputing right- and left-complete counts...")
 
 def compute_SF_PF_counts(test_word):
     print(test_word)
@@ -261,7 +255,7 @@ for log_SF_list, log_PF_list in zip(log_SF_master_list, log_PF_master_list):
 # -----------------------------------------------------------------------------#
 # write LaTeX output
 
-print("writing LaTeX output...")
+print("\nWriting LaTeX output...")
 
 out_tex_filename = 'outlatex%s.tex' % file_suffix
 out_tex = open(out_tex_filename, 'w')
@@ -327,7 +321,7 @@ out_tex.close()
 #------------------------------------------------------------------------------#
 # write R script for individual words' plots
 
-print("writing R script for plotting individual words...")
+print("\nWriting R script for plotting individual words...")
 
 Rscriptname = 'plot_words.R'
 Rscript = open(Rscriptname, 'w')
@@ -372,7 +366,7 @@ Rscript.close()
 #------------------------------------------------------------------------------#
 # evaluation
 
-print("evaluation...")
+print("\nEvaluation...")
 
 SF_eval_list = list()
 PF_eval_list = list()
@@ -434,19 +428,37 @@ output.write(',std dev,{0},{1},{2},{3},{4}\n'.format(
 
 output.close()
 
+anova = stats.f_oneway(SF_eval_list, PF_eval_list, SFPF_eval_list,
+                       binRL_eval_list, binLR_eval_list)
+
+print('\nOne-way ANOVA:\nF-value: {}\np-value: {}'.format(*anova))
+
+print('\nKolmogorov-Smirnov tests')
+
+for data, model in zip(
+        [SF_eval_list, PF_eval_list, binRL_eval_list, binLR_eval_list],
+        ['SF', 'PF', 'binRL', 'binLR']):
+    ks = stats.ks_2samp(SFPF_eval_list, data)
+    print('Models: SFPF and {} |'.format(model), end=' ')
+    print('KS statistic: {} p-value: {}'.format(*ks))
+
 ############################################################
 # compile latex file and run R script
 
-print("compiling LaTeX file...")
-subprocess.call(('xelatex', out_tex_filename))
+devnull = open(os.devnull, 'w')
 
-print("running R scripts...")
-subprocess.call(('Rscript', Rscriptname))
+print("\nCompiling LaTeX file...")
+subprocess.call(('xelatex', out_tex_filename),
+                stdout=devnull, stderr=subprocess.STDOUT)
+
+print("\nRunning R scripts...")
+subprocess.call(('Rscript', Rscriptname),
+                stdout=devnull, stderr=subprocess.STDOUT)
 
 #------------------------------------------------------------------------------#
 #    write and run R script for error distribution plots
 
-print("writing R script for plotting error distributions...")
+print("\nWriting R script for plotting error distributions...")
 
 scriptstring = '''
 # plot density curves of error distributions
@@ -572,6 +584,7 @@ errorscriptname = 'plot_error_distributions.R'
 with open(errorscriptname, 'w') as Rscriptfile:
     Rscriptfile.write(scriptstring)
 
-subprocess.call(('Rscript', errorscriptname))
+subprocess.call(('Rscript', errorscriptname),
+                stdout=devnull, stderr=subprocess.STDOUT)
 
-print("all done!")
+print("\nAll done!")
