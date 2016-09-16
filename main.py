@@ -1,24 +1,21 @@
-#!usr/bin/env python3
-
-# Modeling Brazilian Portuguese
-# Mike Pham, Jackson Lee, 2014-15
+# Modeling truncation in Brazilian Portuguese
+# Mike Pham, Jackson Lee
 
 import os
 import math
 import subprocess
 import numpy as np
 import multiprocessing as mp
+import argparse
 
 
 def elbow_point(points):
     """
     takes a list of points
     and outputs the index of the list for maximal curvature
-
-    :type points: list
     """
-    second_derivative_list = [points[i + 1] + points[i - 1] - 2 * points[i]
-                              for i in range(1, len(points) - 1)]
+    second_derivative_list = [points[x+1] + points[x-1] - 2 * points[x]
+                              for x in range(1, len(points) - 1)]
     second_derivative_list_point_tuples = sorted(
         enumerate(second_derivative_list),
         key=lambda x: x[1], reverse=True)
@@ -60,11 +57,30 @@ def proportion(number_list):
     return number_list.count(0) / len(number_list)
 
 # -----------------------------------------------------------------------------#
-#  Choose which orthographic representation system to use as input
-#  and whether to include technical terms
+# Command line interface for
+# which orthographic representation system to use as input
+# and whether to include technical terms
 
-techterms = 'n'
-orthosys = 'k'
+parser = argparse.ArgumentParser(description='Modeling truncation in Brazilian'
+                                             ' Portuguese, '
+                                             'by Mike Pham and Jackson Lee')
+
+parser.add_argument('-t', '--tech', action='store_const',
+                    default=False, const=True,
+                    help='Include technical terms (default: False)')
+parser.add_argument('-a', '--a_as_TS', action='store_const',
+                    default=False, const=True,
+                    help='Treat -a in truncated form as part of truncated stem'
+                         ' (default: False)')
+parser.add_argument('-c', '--c_orthography', action='store_const',
+                    default=False, const=True,
+                    help='Use the c-orthography (less phonetic) instead of the'
+                         ' k-orthography (more phonetic) (default: False)')
+
+args = parser.parse_args()
+use_tech_terms = args.tech
+use_c_orthography = args.c_orthography
+treat_a_as_truncated_stem = args.a_as_TS
 
 asuffix = input("Treat -a in TF as part of TS (maximal symbol overlap)? Y/N ")
 asuffix = asuffix.lower()
@@ -72,6 +88,9 @@ asuffix = asuffix.lower()
 if asuffix != "y":
     techterms = input("Include technical terms? Y/N ").lower()
     orthosys = input("Orthography system: k or c? ").lower()
+
+# -----------------------------------------------------------------------------#
+# make sure the directories for output files are present
 
 word_plots_dir = 'plots_words'
 error_plots_dir = 'plots_errors'
@@ -85,19 +104,20 @@ if not os.path.isdir(error_plots_dir):
 # -----------------------------------------------------------------------------#
 # determine file suffix
 
-filesuffix = ''
-if asuffix == "y":
-    filesuffix += '-a'
-if techterms == "n":
-    filesuffix += '-notech'
-if orthosys == 'c':
-    filesuffix += '-c'
+file_suffix = ''
+
+if treat_a_as_truncated_stem:
+    file_suffix += '-a'
+if not use_tech_terms:
+    file_suffix += '-notech'
+if use_c_orthography:
+    file_suffix += '-c'
 
 # -----------------------------------------------------------------------------#
 # read lexicon
 
 lexiconfile = 'pt_br_orthofix'
-if orthosys == 'c':
+if use_c_orthography:
     lexiconfile += '-c.txt'
 else:
     lexiconfile += '.txt'
@@ -115,9 +135,9 @@ lex_keys = lex_freq_dict.keys()
 #    read gold standard words
 
 goldstandard_binRL_filename = os.path.join(
-    'data', 'goldStandard_binRL_orthofix%s.txt' % filesuffix)
+    'data', 'goldStandard_binRL_orthofix%s.txt' % file_suffix)
 goldstandard_binLR_filename = os.path.join(
-    'data', 'goldStandard_binLR_orthofix%s.txt' % filesuffix)
+    'data', 'goldStandard_binLR_orthofix%s.txt' % file_suffix)
 
 goldstandard_binRL_annotated = [x.strip().split("\t")[0].replace('#', '')
                                 for x in open(goldstandard_binRL_filename)]
@@ -243,7 +263,7 @@ for log_SF_list, log_PF_list in zip(log_SF_master_list, log_PF_master_list):
 
 print("writing LaTeX output...")
 
-out_tex_filename = 'outlatex%s.tex' % filesuffix
+out_tex_filename = 'outlatex%s.tex' % file_suffix
 out_tex = open(out_tex_filename, 'w')
 out_tex.write('\\documentclass{article}\n')
 out_tex.write('\\usepackage{booktabs}\n')
@@ -318,7 +338,7 @@ for i, test_word in enumerate(test_words):
     true_trunc_point = true_trunc_points[i]
 
     Rscript.write('postscript(\'' + word_plots_dir + '/' + \
-                  test_word + filesuffix + '.eps\')\n')
+                  test_word + file_suffix + '.eps\')\n')
     Rscript.write('sf <- c(%s)\n' % (','.join([str(x) for x in log_RC_list])))
     Rscript.write('pf <- c(%s)\n' % (','.join([str(x) for x in log_LC_list])))
     Rscript.write('y_range <- range(sf,pf)\n')
@@ -376,7 +396,7 @@ for T, SF, PF, SFPF, binRL, binLR in zip(true_trunc_points, SF_trunc_points,
     binLR_eval_list.append(binLR_eval)
 
 
-output = open('output%s.csv' % filesuffix, 'w')
+output = open('output%s.csv' % file_suffix, 'w')
 output.write('{0},,{1},{2},{3},{4},{5}\n'.format('word', 'RC', 'LC', 'RCLC',
                                                 'BinRL', 'BinLR'))
 
@@ -537,14 +557,14 @@ hist(data.BinaryFootLR, xlim=c(minX, maxX), ylim=c(minY, maxY.overall),
 lines(x=binftLR.density$x, y=binftLR.density$y*100, lwd=linewidth)
 dev.off()
 
-''' % (filesuffix,
-       error_plots_dir, filesuffix,
-       error_plots_dir, filesuffix,
-       error_plots_dir, filesuffix,
-       error_plots_dir, filesuffix,
-       error_plots_dir, filesuffix,
-       error_plots_dir, filesuffix,
-       error_plots_dir, filesuffix,
+''' % (file_suffix,
+       error_plots_dir, file_suffix,
+       error_plots_dir, file_suffix,
+       error_plots_dir, file_suffix,
+       error_plots_dir, file_suffix,
+       error_plots_dir, file_suffix,
+       error_plots_dir, file_suffix,
+       error_plots_dir, file_suffix,
        )
 
 errorscriptname = 'plot_error_distributions.R'
