@@ -16,9 +16,9 @@ as a
     * ``pt_br_orthofix*``: Brazilian Portuguese lexicon (two versions)
     * gold standard nouns with attested truncation (available in various formats for different annotations regarding binary foot model predictions)
 
-- ``plots_words/``: output plots for individual words for log(left-complete counts) and log(right-complete counts)
+- ``plots_words/``: directory for output plots for individual words for log(left-complete counts) and log(right-complete counts)
 
-- ``plots_errors/``: output plots of error distributions
+- ``plots_errors/``: directory for output plots of error distributions
 
 - ``outlatex*``: sameple output LaTeX files
 
@@ -28,8 +28,23 @@ as a
 
 - ``readme.md``: this readme file
 
+## Requirements
 
-## Usage
+Python 2.7, 3.4, or 3.5 is required.
+
+[NumPy](http://www.numpy.org/) and [SciPy](http://www.scipy.org/)
+are required to run ``main.py``.
+A great Python distribution that comes with these two packages (and many others)
+is [Anaconda](https://www.continuum.io/downloads).
+
+The following commands are assumed to be recognized in the path;
+they are triggered within ``main.py``:
+
+- ``xelatex``: for compiling LaTeX output files; available when, for instance,
+  ``texlive-full`` is installed
+- ``Rscript``: for making plots; available when R is installed
+
+## Download
 
 Download this repository to your local drive by one of these two methods:
 
@@ -42,11 +57,15 @@ Download this repository to your local drive by one of these two methods:
     $ cd BP-truncation
     ```
 
-After this repository is downloaded, run the truncation models for the accompanying datasets (either Python 2 or 3 works):
+## Usage
+
+Run the truncation models for the accompanying datasets:
 
     $ python main.py
 
-``main.py`` takes several optional arguments for determining which orthography to use, whether to include technical terms, and how to treat the suffix *-a*. The argument ``-h`` brings up the help page with details of these arguments:
+``main.py`` can take optional arguments for determining which orthography to use,
+ whether to include technical terms, and how to treat the suffix *-a*.
+ The argument ``-h`` brings up the help page with details of these arguments:
 
 ```
 $ python main.py -h
@@ -68,18 +87,14 @@ If, for instance, you'd like to use the c-orthography instead of the default
 k-orthography, you should run ``python main.py -c``.
 To use both c-orthography and technical terms, run ``python main.py -tc``.
 
-
 ## Output files
 
-Once this Python script is run and the input dataset parameters are provided,
+Once this Python script is run,
 output files ``outlatex*`` (LaTeX output), ``output*`` (CSV output), and ``plots*`` (R scripts) are generated at the same directory. In addition, output plots of interest are in the subdirectories ``plots_words/`` and ``plots_errors/``.
 
 *LaTeX and R outputs:*
 
-If you are on a Unix-like system (Linux or Mac)
-and the command line path environment recognizes
-the commands ``xelatex`` and ``Rscript``,
-then the generated ``.tex`` will be compiled and the ``.R`` file will be run by R.
+The generated ``.tex`` will be compiled and the ``.R`` file will be run by R.
 If you are on Windows or if for other reasons the commands ``xelatex`` and ``Rscript``
 are unavailable, then ``.tex`` and ``.R`` can be run by other non-command line means of your choice.
 
