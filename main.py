@@ -1,6 +1,7 @@
 # Modeling truncation in Brazilian Portuguese
 # Mike Pham and Jackson Lee
 
+from __future__ import print_function
 import os
 import math
 import subprocess
