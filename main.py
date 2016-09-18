@@ -2,6 +2,7 @@
 # Mike Pham and Jackson Lee
 
 from __future__ import print_function
+import sys
 import os
 from math import (sqrt, log)
 import subprocess
@@ -62,6 +63,17 @@ def proportion(number_list):
     return number_list.count(0) / len(number_list)
 
 # -----------------------------------------------------------------------------#
+# Make sure that python 3.4 or above is used
+
+required_py_version = (3, 4)
+current_py_version = sys.version_info[:2]
+
+if current_py_version < required_py_version:
+    sys.exit('Error: This script requires Python {}.{} or above.\n'
+             .format(*required_py_version) +
+             'You are using Python {}.{}.'.format(*current_py_version))
+
+# -----------------------------------------------------------------------------#
 # Command line interface for
 # which orthographic representation system to use as input
 # and whether to include technical terms
@@ -112,6 +124,8 @@ if not os.path.isdir(word_plots_dir):
 if not os.path.isdir(results_dir):
     os.makedirs(results_dir)
 
+output_ready_stdout = '    output ready: {}'
+
 # -----------------------------------------------------------------------------#
 # determine file suffix
 
@@ -145,7 +159,8 @@ else:
 
 lex_freq_dict = dict()
 
-for line in open(os.path.join('data', lexicon_file)).readlines():
+for line in open(os.path.join('data', lexicon_file),
+                 encoding="utf8").readlines():
     line = line.strip()
     word, freq = line.split()
     lex_freq_dict[word] = int(freq)
@@ -166,9 +181,11 @@ goldstandard_binLR_filename = os.path.join(
     'data', 'goldStandard_binLR_orthofix%s.txt' % goldstandard_file_suffix)
 
 goldstandard_binRL_annotated = [x.strip().split("\t")[0].replace('#', '')
-                                for x in open(goldstandard_binRL_filename)]
+                                for x in open(goldstandard_binRL_filename,
+                                              encoding="utf8")]
 goldstandard_binLR_annotated = [x.strip().split("\t")[0].replace('#', '')
-                                for x in open(goldstandard_binLR_filename)]
+                                for x in open(goldstandard_binLR_filename,
+                                              encoding="utf8")]
 
 test_words = [x.replace('|', '').replace('$', '')
               for x in goldstandard_binRL_annotated]
@@ -297,7 +314,7 @@ print("\nWriting LaTeX output...")
 
 out_tex_filename = os.path.join(results_dir,
                                 'individual_word_details%s.tex' % (file_suffix))
-out_tex = open(out_tex_filename, 'w')
+out_tex = open(out_tex_filename, mode="w", encoding="utf8")
 out_tex.write('\\documentclass{article}\n')
 out_tex.write('\\usepackage{booktabs}\n')
 out_tex.write('\\usepackage{color}\n')
@@ -356,6 +373,7 @@ for i, word in enumerate(test_words):
 
 out_tex.write("\\end{document}\n")
 out_tex.close()
+print(output_ready_stdout.format(out_tex_filename))
 
 # ---------------------------------------------------------------------------- #
 # write R script for individual words' plots
@@ -363,7 +381,7 @@ out_tex.close()
 print("\nWriting R script for plotting individual words...")
 
 Rscriptname = os.path.join(results_dir, 'plot_words.R')
-Rscript = open(Rscriptname, 'w')
+Rscript = open(Rscriptname, mode='w', encoding="utf8")
 
 for i, test_word in enumerate(test_words):
     log_RC_list = log_SF_master_list[i]
@@ -401,11 +419,12 @@ for i, test_word in enumerate(test_words):
     Rscript.write('dev.off()\n\n')
 
 Rscript.close()
+print(output_ready_stdout.format(Rscriptname))
 
 # -----------------------------------------------------------------------------#
 # compile latex file and run R script
 
-devnull = open(os.devnull, 'w')
+devnull = open(os.devnull, mode="w", encoding="utf8")
 
 if compile_latex:
     print("\nCompiling LaTeX file...")
@@ -416,6 +435,8 @@ if compile_latex:
                         stdout=devnull, stderr=subprocess.STDOUT)
     except (OSError, FileNotFoundError):
         print('The command "xelatex" is unavailable. No LaTeX compilation.')
+    else:
+        print(output_ready_stdout.format("PDF from " + out_tex_filename))
 
 if run_r_script:
     print("\nRunning R scripts...")
@@ -425,6 +446,8 @@ if run_r_script:
                         stdout=devnull, stderr=subprocess.STDOUT)
     except (OSError, FileNotFoundError):
         print('The command "Rscript" is unavailable. No R scripts are run.')
+    else:
+        print(output_ready_stdout.format("EPS's from " + Rscriptname))
 
 # ---------------------------------------------------------------------------- #
 # CSV file for errors
@@ -454,7 +477,7 @@ for T, SF, PF, SFPF, binRL, binLR in zip(true_trunc_points, SF_trunc_points,
 
 output_csv_filename = os.path.join(results_dir, 'errors%s.csv' % file_suffix)
 
-with open(output_csv_filename, 'w') as output:
+with open(output_csv_filename, mode="w", encoding="utf8") as output:
     output.write('{0},{1},{2},{3},{4},{5}\n'.format('word', 'RC', 'LC', 'RCLC',
                                                     'BinRL', 'BinLR'))
 
@@ -465,6 +488,8 @@ with open(output_csv_filename, 'w') as output:
         output.write('{0},{1},{2},{3},{4},{5}\n'.format(gold,
             SF_eval, PF_eval, SFPF_eval, binRL_eval, binLR_eval))
 
+print(output_ready_stdout.format(output_csv_filename))
+
 # ---------------------------------------------------------------------------- #
 # Writing evaluation file
 
@@ -472,7 +497,7 @@ print("\nEvaluating results...")
 
 stats_results_filename = os.path.join(results_dir,
                                       'evaluation%s.txt' % file_suffix)
-stats_results_file = open(stats_results_filename, 'w')
+stats_results_file = open(stats_results_filename, mode="w", encoding="utf8")
 
 row_template = '{:<20}{:<15}{:<15}{:<15}{:<15}{:<15}\n'  # <20 to left-align
 row_float_template = '{:<20}{:<15.2f}{:<15.2f}{:<15.2f}{:<15.2f}{:<15.2f}\n'
@@ -523,6 +548,7 @@ for data, model in zip(
           file=stats_results_file)
 
 stats_results_file.close()
+print(output_ready_stdout.format(stats_results_filename))
 
 # -----------------------------------------------------------------------------#
 # boxplot
@@ -536,9 +562,10 @@ boxplot_data = pd.DataFrame({model: data
 
 boxplot = sns.boxplot(data=boxplot_data)
 boxplot.set(ylabel='Error', ylim=(-5, 9))
-boxplot.get_figure().savefig(os.path.join(results_dir,
-                                          'error_distribution_boxplot%s.pdf'
-                                          % (file_suffix)))
+boxplot_filename = os.path.join(results_dir, 'error_distribution_boxplot%s.pdf'
+                                % (file_suffix))
+boxplot.get_figure().savefig(boxplot_filename)
+print(output_ready_stdout.format(boxplot_filename))
 
 # -----------------------------------------------------------------------------#
 

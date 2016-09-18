@@ -28,7 +28,7 @@ as a
 
 ## Requirements
 
-Python 2.7 or 3.x is required.
+Python 3.4 or above is required.
 A Unix-based system (Linux or Mac) is assumed.
 
 [NumPy](http://www.numpy.org/), [SciPy](http://www.scipy.org/),
@@ -64,17 +64,12 @@ Download this repository to your local drive by one of these two methods:
 
 ## Usage
 
-Run the truncation models for the accompanying datasets:
-
-    $ python main.py
-
-``main.py`` can take optional arguments for determining which orthography to use,
- whether to include technical terms, and how to treat the suffix *-a*.
+``main.py`` can take optional arguments.
  The argument ``-h`` brings up the help page with details of these arguments:
 
 ```
 $ python main.py -h
-usage: main.py [-h] [-t] [-a] [-c]
+usage: main.py [-h] [-t] [-a] [-c] [-f] [-l] [-r]
 
 Modeling truncation in Brazilian Portuguese, by Mike Pham and Jackson Lee
 
