@@ -1,0 +1,17 @@
+                    RC             LC             RCLC           BinRL          BinLR          
+sum                 -14.00         26.00          7.00           2.00           -129.00        
+abs values          132.00         162.00         69.00          152.00         129.00         
+RMS                 1.68           2.05           1.01           1.78           1.60           
+correct proportion  0.25           0.27           0.50           0.25           0.34           
+mean                -0.13          0.25           0.07           0.02           -1.22          
+std dev             1.68           2.04           1.01           1.77           1.05           
+
+One-way ANOVA:
+F-value: 14.550729225798
+p-value: 2.8097837535442997e-11
+
+Kolmogorov-Smirnov tests
+Models: RCLC and RC | KS statistic: 0.1887 p-value: 0.03988275171070208
+Models: RCLC and LC | KS statistic: 0.2075 p-value: 0.017528209878528038
+Models: RCLC and binRL | KS statistic: 0.2264 p-value: 0.007123317579670367
+Models: RCLC and binLR | KS statistic: 0.4151 p-value: 1.1799441224561092e-08

@@ -104,3 +104,16 @@ hom$o|sexual	homo
 fot$o|grafia	foto
 heter$o|sexual	hétero
 maxi|m$izasão	maxi
+bibl$io|tekonomia	bíblio
+eletr$o|kardiograma	eletro
+espel$eo|lojia	espéleo
+hidr$o|jinástika	hidro
+infr$a|estrutura	infra
+lip$o|aspirasão	lipo
+mikr$o|komputador	mikro
+pol$io|mielite	pólio
+radio|t$erapia	rádio
+retro|pr$ojetor	retro
+psik$o|lojia	psiko
+odont$o|lojia	odonto
+fon$o|audiologa	fono
