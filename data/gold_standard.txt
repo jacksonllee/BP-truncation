@@ -1,0 +1,119 @@
+adr$en|#alina	adrena
+an$alf|#abeto	analfa
+bat$#er|ista	batera
+bel$e|z#a	belê
+berm|$ud#a	bermas
+bij$#u|teria	biju
+bis|$av#ó	bisa
+bob|$eir#a	bobis
+bot$equ|#im	boteco
+burg|$#ês	burga
+bur$#ocr|ata	burocra
+cac$#ete|te	cacete
+cach|$oeir#a	cachu
+caf|$#ajeste	cafa
+caf$et|#ão	cafeta
+cap$it|#ão	capita
+carn|$av#al	carna
+carp$#in|teiro	carpina
+cat$#eg|oria	catega
+cel$ul|#ar	celula
+cerv|$ej#a	cerva
+ces$#aria|na	cesária
+coc|$aín#a	coca
+com$iç|#ão	comisa
+com$#iss|ário	comissa
+com$#un|ista	comuna
+conf|$us#ão	confa
+cons$#um|ação	consuma
+cort$es|#ia	cortesa
+cruz|$eir#o	cruza
+del$#eg|acia	delega
+del$#eg|ada	delega
+del$#eg|ado	delega
+dem$ô|n#io	demo
+depr$e|ç#ão	deprê
+depr|$#imido	deprê
+disp$#o|sição	dispô
+extr$#a|ordinário	extra
+fac$#u|ldade	facu
+fals$i|f#icado	falsi
+fiss$u|r#a	fissu
+flagr|$ant#e	flagra
+for$#ast|eira	forasta
+fort|$un#a	furta
+fot$#o|grafia	foto
+het$er#o|sexual	hétero
+hom$#o|sexual	homo
+infr$#a|estrutura	infra
+int$er|n#acional	inter
+lot|$er#ia	loto
+mac|$arr#ão	maca
+madr$#ug|ada	madruga
+man$equ|#im	maneca
+max$i|m#ização	maxi
+met$#al|eiro	metal
+milh|$#ão	milha
+mord$o|m#ia	mordô
+mot$oc|#icleta	motoca
+mulh|$#er	mulha
+nam$#o|rada	namo
+nam$#o|rado	namo
+nat$#ur|eza	natura
+neur|$os#e	neura
+palh|$as#o	palha
+parc|$eir#a	parsa
+parc|$eir#o	parsa
+per$#if|eria	perifa
+pij|$am#a	pija
+pir|$aç#ão	pira
+pir$#ig|ete	piriga
+pirr|$alh#o	pirras
+pis|$cin#a	pisa
+playb|$#oy	playba
+porn$o|gr#áfico	pornô
+port$ugu|#ês	portugua
+pregu$i|ç#a	pregui
+pregu$#i|çoso	pregui
+prej$u|íz#o	preju
+prof$#i|ssional	profi
+prol$et|#ariado	proleta
+prol$#et|ário	proleta
+quebr|$ad#a	quebra
+rap$#az|iada	rapaze
+reaç|$#ão	reaça
+rec|$#alcada	rec
+refr$i|g#erante	refri
+resp$ons|#abilidade	responsa
+sacr$ist|#ão	sacrista
+sal$#afr|ário	salafra
+sand$uích|#e	sanducha
+sap$at|#ão	sapata
+sarg|$ent#o	sarja
+sat$#isf|ação	satisfa
+saud$ad|#es	saudas
+secr$#et|ária	secreta
+sup$er|m#ercado	super
+tel$#ef|one	telefa
+tost|$#ão	tusta
+traf$#ic|ante	trafica
+tranqu$i|l#o	tranquis
+trans|$aç#ão	transa
+trav|$est#i	trava
+trogl$#o|dita	troglô
+vag$#ab|unda	vagaba
+vent$#il|ador	ventila
+vest$#ib|ular	vestiba
+viol|$#ão	viola
+bibl$#io|teconomia	bíblio	TECH
+eletr$#o|cardiograma	eletro	TECH
+esp$el#eo|logia	espéleo	TECH
+fon$#o|audiologa	fono	TECH
+hidr$#o|ginástica	hidro	TECH
+lip$#o|aspiração	lipo	TECH
+micr$#o|computador	micro	TECH
+od$ont#o|logia	odonto	TECH
+pol$#io|mielite	pólio	TECH
+psic$#o|logia	psico	TECH
+rad$io|t#erapia	rádio	TECH
+retr$o|pr#ojetor	retro	TECH

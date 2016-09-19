@@ -1,7 +1,7 @@
-\documentclass{article}
+\documentclass[10pt]{article}
 \usepackage{booktabs}
 \usepackage{color}
-\usepackage[letterpaper, landscape, margin=.2in]{geometry}
+\usepackage[letterpaper, margin=.2in]{geometry}
 \usepackage{fontspec}
 \setlength{\parindent}{0em}
 \begin{document}
@@ -11,10 +11,10 @@ adrenalina
 
 \begin{tabular}{l|lllllllllll}
 trunc: & a & d & r & e & n & a & l & i & n & a & \\ 
-R-complete count: & 29655 & 1594 & 54 & 16 & 11 & 6 & 4 & 3 & 3 & 2 & \\ 
-log(RC) & 4.47 & 3.2 & 1.73 & 1.2 & 1.04 & 0.78 & 0.6 & 0.48 & 0.48 & 0.3 & \\ 
-L-complete count: & 1 & 2 & 2 & 2 & 2 & 36 & 169 & 1248 & 3706 & 51308 & \\ 
-log(LC) & 0.0 & 0.3 & 0.3 & 0.3 & 0.3 & 1.56 & 2.23 & 3.1 & 3.57 & 4.71 & \\ 
+R-complete count: & 59362 & 2918 & 148 & 49 & 28 & 14 & 11 & 6 & 4 & 3 & \\ 
+log(RC) & 4.77 & 3.47 & 2.17 & 1.69 & 1.45 & 1.15 & 1.04 & 0.78 & 0.6 & 0.48 & \\ 
+L-complete count: & 4 & 6 & 8 & 8 & 14 & 101 & 447 & 3140 & 9239 & 107925 & \\ 
+log(LC) & 0.6 & 0.78 & 0.9 & 0.9 & 1.15 & 2.0 & 2.65 & 3.5 & 3.97 & 5.03 & \\ 
 \end{tabular}
 
 true trunc point: 5
@@ -24,1936 +24,1008 @@ RC trunc point: 3
 LC trunc point: 5
 
 RC+LC trunc point: 5
+
+binRL trunc point: 5
+
+binLR trunc point: 3
+
+Gries trunc point: 4
 
 \vspace{1em}
 
 2
 
-baterista
+analfabeto
 
-\begin{tabular}{l|llllllllll}
-trunc: & b & a & t & e & r & i & s & t & a & \\ 
-R-complete count: & 17275 & 4271 & 395 & 74 & 24 & 6 & 3 & 3 & 3 & \\ 
-log(RC) & 4.24 & 3.63 & 2.6 & 1.87 & 1.38 & 0.78 & 0.48 & 0.48 & 0.48 & \\ 
-L-complete count: & 1 & 2 & 5 & 12 & 110 & 938 & 1253 & 4435 & 51308 & \\ 
-log(LC) & 0.0 & 0.3 & 0.7 & 1.08 & 2.04 & 2.97 & 3.1 & 3.65 & 4.71 & \\ 
+\begin{tabular}{l|lllllllllll}
+trunc: & a & n & a & l & f & a & b & e & t & o & \\ 
+R-complete count: & 59362 & 6401 & 665 & 168 & 8 & 8 & 8 & 6 & 5 & 2 & \\ 
+log(RC) & 4.77 & 3.81 & 2.82 & 2.23 & 0.9 & 0.9 & 0.9 & 0.78 & 0.7 & 0.3 & \\ 
+L-complete count: & 3 & 3 & 4 & 4 & 4 & 6 & 15 & 571 & 9187 & 95398 & \\ 
+log(LC) & 0.48 & 0.48 & 0.6 & 0.6 & 0.6 & 0.78 & 1.18 & 2.76 & 3.96 & 4.98 & \\ 
 \end{tabular}
 
 true trunc point: 5
 
-RC trunc point: 7
+RC trunc point: 5
 
-LC trunc point: 4
+LC trunc point: 7
 
-RC+LC trunc point: 5
+RC+LC trunc point: 6
+
+binRL trunc point: 5
+
+binLR trunc point: 2
+
+Gries trunc point: 5
 
 \vspace{1em}
 
 3
 
-bermuda
+baterista
 
-\begin{tabular}{l|llllllll}
-trunc: & b & e & r & m & u & d & a & \\ 
-R-complete count: & 17275 & 2856 & 461 & 14 & 3 & 3 & 2 & \\ 
-log(RC) & 4.24 & 3.46 & 2.66 & 1.15 & 0.48 & 0.48 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 4 & 164 & 6378 & 51308 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.6 & 2.21 & 3.8 & 4.71 & \\ 
+\begin{tabular}{l|llllllllll}
+trunc: & b & a & t & e & r & i & s & t & a & \\ 
+R-complete count: & 40547 & 9821 & 813 & 111 & 34 & 9 & 3 & 3 & 3 & \\ 
+log(RC) & 4.61 & 3.99 & 2.91 & 2.05 & 1.53 & 0.95 & 0.48 & 0.48 & 0.48 & \\ 
+L-complete count: & 1 & 2 & 8 & 23 & 213 & 1845 & 2477 & 9240 & 107925 & \\ 
+log(LC) & 0.0 & 0.3 & 0.9 & 1.36 & 2.33 & 3.27 & 3.39 & 3.97 & 5.03 & \\ 
 \end{tabular}
 
-true trunc point: 4
+true trunc point: 5
 
-RC trunc point: 4
+RC trunc point: 7
 
 LC trunc point: 4
 
 RC+LC trunc point: 4
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 7
 
 \vspace{1em}
 
 4
 
-bobeira
+beleza
 
-\begin{tabular}{l|llllllll}
-trunc: & b & o & b & e & i & r & a & \\ 
-R-complete count: & 17275 & 2711 & 114 & 17 & 6 & 3 & 2 & \\ 
-log(RC) & 4.24 & 3.43 & 2.06 & 1.23 & 0.78 & 0.48 & 0.3 & \\ 
-L-complete count: & 2 & 3 & 15 & 685 & 936 & 5211 & 51308 & \\ 
-log(LC) & 0.3 & 0.48 & 1.18 & 2.84 & 2.97 & 3.72 & 4.71 & \\ 
+\begin{tabular}{l|lllllll}
+trunc: & b & e & l & e & z & a & \\ 
+R-complete count: & 40547 & 6635 & 1012 & 70 & 18 & 5 & \\ 
+log(RC) & 4.61 & 3.82 & 3.01 & 1.85 & 1.26 & 0.7 & \\ 
+L-complete count: & 7 & 10 & 40 & 302 & 1642 & 107925 & \\ 
+log(LC) & 0.85 & 1.0 & 1.6 & 2.48 & 3.22 & 5.03 & \\ 
 \end{tabular}
 
-true trunc point: 3
+true trunc point: 4
 
-RC trunc point: 3
+RC trunc point: 4
 
-LC trunc point: 3
+LC trunc point: 5
 
-RC+LC trunc point: 3
+RC+LC trunc point: 4
+
+binRL trunc point: 5
+
+binLR trunc point: 3
+
+Gries trunc point: 3
 
 \newpage
 
 5
 
-burokrata
+bermuda
 
-\begin{tabular}{l|llllllllll}
-trunc: & b & u & r & o & k & r & a & t & a & \\ 
-R-complete count: & 17275 & 1606 & 320 & 14 & 11 & 10 & 6 & 4 & 2 & \\ 
-log(RC) & 4.24 & 3.21 & 2.51 & 1.15 & 1.04 & 1.0 & 0.78 & 0.6 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 2 & 8 & 11 & 68 & 419 & 4435 & 51308 & \\ 
-log(LC) & 0.0 & 0.0 & 0.3 & 0.9 & 1.04 & 1.83 & 2.62 & 3.65 & 4.71 & \\ 
+\begin{tabular}{l|llllllll}
+trunc: & b & e & r & m & u & d & a & \\ 
+R-complete count: & 40547 & 6635 & 1260 & 35 & 10 & 8 & 3 & \\ 
+log(RC) & 4.61 & 3.82 & 3.1 & 1.54 & 1.0 & 0.9 & 0.48 & \\ 
+L-complete count: & 1 & 1 & 1 & 12 & 295 & 11171 & 107925 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 1.08 & 2.47 & 4.05 & 5.03 & \\ 
 \end{tabular}
 
-true trunc point: 6
+true trunc point: 4
 
 RC trunc point: 4
 
-LC trunc point: 5
+LC trunc point: 3
 
-RC+LC trunc point: 5
+RC+LC trunc point: 4
+
+binRL trunc point: 6
+
+binLR trunc point: 4
+
+Gries trunc point: 0
 
 \vspace{1em}
 
 6
 
-serveja
+bijuteria
 
-\begin{tabular}{l|llllllll}
-trunc: & s & e & r & v & e & j & a & \\ 
-R-complete count: & 29058 & 4841 & 906 & 175 & 32 & 13 & 7 & \\ 
-log(RC) & 4.46 & 3.68 & 2.96 & 2.24 & 1.51 & 1.11 & 0.85 & \\ 
-L-complete count: & 1 & 2 & 2 & 14 & 111 & 388 & 51308 & \\ 
-log(LC) & 0.0 & 0.3 & 0.3 & 1.15 & 2.05 & 2.59 & 4.71 & \\ 
+\begin{tabular}{l|llllllllll}
+trunc: & b & i & j & u & t & e & r & i & a & \\ 
+R-complete count: & 40547 & 4149 & 64 & 16 & 6 & 3 & 3 & 3 & 3 & \\ 
+log(RC) & 4.61 & 3.62 & 1.81 & 1.2 & 0.78 & 0.48 & 0.48 & 0.48 & 0.48 & \\ 
+L-complete count: & 1 & 1 & 1 & 5 & 156 & 775 & 5677 & 17278 & 107925 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.7 & 2.19 & 2.89 & 3.75 & 4.24 & 5.03 & \\ 
 \end{tabular}
 
 true trunc point: 4
 
-RC trunc point: 5
+RC trunc point: 3
 
-LC trunc point: 6
+LC trunc point: 4
 
-RC+LC trunc point: 5
+RC+LC trunc point: 4
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 0
 
 \vspace{1em}
 
 7
 
-delegado
+bisavó
 
-\begin{tabular}{l|lllllllll}
-trunc: & d & e & l & e & g & a & d & o & \\ 
-R-complete count: & 23504 & 12577 & 584 & 95 & 26 & 22 & 6 & 4 & \\ 
-log(RC) & 4.37 & 4.1 & 2.77 & 1.98 & 1.41 & 1.34 & 0.78 & 0.6 & \\ 
-L-complete count: & 2 & 3 & 8 & 49 & 227 & 4874 & 11939 & 49185 & \\ 
-log(LC) & 0.3 & 0.48 & 0.9 & 1.69 & 2.36 & 3.69 & 4.08 & 4.69 & \\ 
+\begin{tabular}{l|lllllll}
+trunc: & b & i & s & a & v & ó & \\ 
+R-complete count: & 40547 & 4149 & 430 & 20 & 7 & 3 & \\ 
+log(RC) & 4.61 & 3.62 & 2.63 & 1.3 & 0.85 & 0.48 & \\ 
+L-complete count: & 1 & 2 & 2 & 12 & 22 & 582 & \\ 
+log(LC) & 0.0 & 0.3 & 0.3 & 1.08 & 1.34 & 2.76 & \\ 
 \end{tabular}
 
-true trunc point: 5
+true trunc point: 3
 
-RC trunc point: 3
+RC trunc point: 4
 
 LC trunc point: 5
 
 RC+LC trunc point: 4
+
+binRL trunc point: 5
+
+binLR trunc point: 3
+
+Gries trunc point: 6
 
 \vspace{1em}
 
 8
 
-delegada
+bobeira
 
-\begin{tabular}{l|lllllllll}
-trunc: & d & e & l & e & g & a & d & a & \\ 
-R-complete count: & 23504 & 12577 & 584 & 95 & 26 & 22 & 6 & 2 & \\ 
-log(RC) & 4.37 & 4.1 & 2.77 & 1.98 & 1.41 & 1.34 & 0.78 & 0.3 & \\ 
-L-complete count: & 1 & 2 & 6 & 39 & 182 & 4067 & 6378 & 51308 & \\ 
-log(LC) & 0.0 & 0.3 & 0.78 & 1.59 & 2.26 & 3.61 & 3.8 & 4.71 & \\ 
+\begin{tabular}{l|llllllll}
+trunc: & b & o & b & e & i & r & a & \\ 
+R-complete count: & 40547 & 6209 & 257 & 36 & 10 & 6 & 2 & \\ 
+log(RC) & 4.61 & 3.79 & 2.41 & 1.56 & 1.0 & 0.78 & 0.3 & \\ 
+L-complete count: & 2 & 6 & 27 & 1226 & 1815 & 11116 & 107925 & \\ 
+log(LC) & 0.3 & 0.78 & 1.43 & 3.09 & 3.26 & 4.05 & 5.03 & \\ 
 \end{tabular}
 
-true trunc point: 5
+true trunc point: 3
 
 RC trunc point: 3
 
-LC trunc point: 7
+LC trunc point: 3
 
-RC+LC trunc point: 4
+RC+LC trunc point: 3
+
+binRL trunc point: 6
+
+binLR trunc point: 3
+
+Gries trunc point: 4
 
 \newpage
 
 9
 
-delegasia
+botequim
 
-\begin{tabular}{l|llllllllll}
-trunc: & d & e & l & e & g & a & s & i & a & \\ 
-R-complete count: & 23504 & 12577 & 584 & 95 & 26 & 22 & 7 & 3 & 2 & \\ 
-log(RC) & 4.37 & 4.1 & 2.77 & 1.98 & 1.41 & 1.34 & 0.85 & 0.48 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 2 & 5 & 109 & 1430 & 8523 & 51308 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.3 & 0.7 & 2.04 & 3.16 & 3.93 & 4.71 & \\ 
+\begin{tabular}{l|lllllllll}
+trunc: & b & o & t & e & q & u & i & m & \\ 
+R-complete count: & 40547 & 6209 & 341 & 38 & 6 & 6 & 4 & 1 & \\ 
+log(RC) & 4.61 & 3.79 & 2.53 & 1.58 & 0.78 & 0.78 & 0.6 & 0.0 & \\ 
+L-complete count: & 1 & 1 & 2 & 11 & 46 & 77 & 1609 & 35169 & \\ 
+log(LC) & 0.0 & 0.0 & 0.3 & 1.04 & 1.66 & 1.89 & 3.21 & 4.55 & \\ 
 \end{tabular}
 
-true trunc point: 5
+true trunc point: 6
 
-RC trunc point: 3
+RC trunc point: 5
 
-LC trunc point: 5
+LC trunc point: 6
 
-RC+LC trunc point: 6
+RC+LC trunc point: 4
+
+binRL trunc point: 6
+
+binLR trunc point: 3
+
+Gries trunc point: 5
 
 \vspace{1em}
 
 10
 
-flagrante
+burgês
 
-\begin{tabular}{l|llllllllll}
-trunc: & f & l & a & g & r & a & n & t & e & \\ 
-R-complete count: & 13126 & 1147 & 339 & 32 & 20 & 17 & 3 & 3 & 3 & \\ 
-log(RC) & 4.12 & 3.06 & 2.53 & 1.51 & 1.3 & 1.23 & 0.48 & 0.48 & 0.48 & \\ 
-L-complete count: & 1 & 1 & 3 & 11 & 116 & 1027 & 4663 & 8254 & 33111 & \\ 
-log(LC) & 0.0 & 0.0 & 0.48 & 1.04 & 2.06 & 3.01 & 3.67 & 3.92 & 4.52 & \\ 
+\begin{tabular}{l|lllllll}
+trunc: & b & u & r & g & ê & s & \\ 
+R-complete count: & 40547 & 3953 & 913 & 139 & 1 & 1 & \\ 
+log(RC) & 4.61 & 3.6 & 2.96 & 2.14 & 0.0 & 0.0 & \\ 
+L-complete count: & 1 & 1 & 2 & 7 & 556 & 141056 & \\ 
+log(LC) & 0.0 & 0.0 & 0.3 & 0.85 & 2.75 & 5.15 & \\ 
 \end{tabular}
 
-true trunc point: 5
+true trunc point: 4
 
-RC trunc point: 4
+RC trunc point: 5
 
-LC trunc point: 2
+LC trunc point: 4
 
 RC+LC trunc point: 4
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 5
 
 \vspace{1em}
 
 11
 
-forasteira
+burocrata
 
-\begin{tabular}{l|lllllllllll}
-trunc: & f & o & r & a & s & t & e & i & r & a & \\ 
-R-complete count: & 13126 & 1869 & 731 & 31 & 5 & 4 & 4 & 4 & 4 & 2 & \\ 
-log(RC) & 4.12 & 3.27 & 2.86 & 1.49 & 0.7 & 0.6 & 0.6 & 0.6 & 0.6 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 3 & 4 & 13 & 83 & 685 & 936 & 5211 & 51308 & \\ 
-log(LC) & 0.0 & 0.0 & 0.48 & 0.6 & 1.11 & 1.92 & 2.84 & 2.97 & 3.72 & 4.71 & \\ 
+\begin{tabular}{l|llllllllll}
+trunc: & b & u & r & o & c & r & a & t & a & \\ 
+R-complete count: & 40547 & 3953 & 913 & 31 & 20 & 17 & 12 & 10 & 3 & \\ 
+log(RC) & 4.61 & 3.6 & 2.96 & 1.49 & 1.3 & 1.23 & 1.08 & 1.0 & 0.48 & \\ 
+L-complete count: & 1 & 1 & 3 & 15 & 20 & 142 & 970 & 9240 & 107925 & \\ 
+log(LC) & 0.0 & 0.0 & 0.48 & 1.18 & 1.3 & 2.15 & 2.99 & 3.97 & 5.03 & \\ 
 \end{tabular}
 
 true trunc point: 6
 
-RC trunc point: 5
+RC trunc point: 4
 
-LC trunc point: 8
+LC trunc point: 5
 
 RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 0
 
 \vspace{1em}
 
 12
 
-fortuna
+cacetete
 
-\begin{tabular}{l|llllllll}
-trunc: & f & o & r & t & u & n & a & \\ 
-R-complete count: & 13126 & 1869 & 731 & 132 & 18 & 13 & 8 & \\ 
-log(RC) & 4.12 & 3.27 & 2.86 & 2.12 & 1.26 & 1.11 & 0.9 & \\ 
-L-complete count: & 2 & 7 & 7 & 16 & 116 & 3706 & 51308 & \\ 
-log(LC) & 0.3 & 0.85 & 0.85 & 1.2 & 2.06 & 3.57 & 4.71 & \\ 
+\begin{tabular}{l|lllllllll}
+trunc: & c & a & c & e & t & e & t & e & \\ 
+R-complete count: & 65113 & 14915 & 377 & 31 & 16 & 6 & 2 & 2 & \\ 
+log(RC) & 4.81 & 4.17 & 2.58 & 1.49 & 1.2 & 0.78 & 0.3 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 1 & 6 & 24 & 976 & 16009 & 73680 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.78 & 1.38 & 2.99 & 4.2 & 4.87 & \\ 
 \end{tabular}
 
-true trunc point: 4
+true trunc point: 6
 
-RC trunc point: 5
+RC trunc point: 4
 
 LC trunc point: 5
 
 RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 7
 
 \newpage
 
 13
 
-neurose
+cachoeira
 
-\begin{tabular}{l|llllllll}
-trunc: & n & e & u & r & o & s & e & \\ 
-R-complete count: & 7541 & 1759 & 246 & 140 & 107 & 22 & 3 & \\ 
-log(RC) & 3.88 & 3.25 & 2.39 & 2.15 & 2.03 & 1.34 & 0.48 & \\ 
-L-complete count: & 2 & 2 & 3 & 51 & 259 & 4423 & 33111 & \\ 
-log(LC) & 0.3 & 0.3 & 0.48 & 1.71 & 2.41 & 3.65 & 4.52 & \\ 
+\begin{tabular}{l|llllllllll}
+trunc: & c & a & c & h & o & e & i & r & a & \\ 
+R-complete count: & 65113 & 14915 & 377 & 173 & 74 & 5 & 4 & 3 & 2 & \\ 
+log(RC) & 4.81 & 4.17 & 2.58 & 2.24 & 1.87 & 0.7 & 0.6 & 0.48 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 2 & 2 & 29 & 1226 & 1815 & 11116 & 107925 & \\ 
+log(LC) & 0.0 & 0.0 & 0.3 & 0.3 & 1.46 & 3.09 & 3.26 & 4.05 & 5.03 & \\ 
 \end{tabular}
 
 true trunc point: 4
 
 RC trunc point: 3
 
-LC trunc point: 3
+LC trunc point: 4
 
 RC+LC trunc point: 5
+
+binRL trunc point: 8
+
+binLR trunc point: 4
+
+Gries trunc point: 6
 
 \vspace{1em}
 
 14
 
-pijama
+cafajeste
 
-\begin{tabular}{l|lllllll}
-trunc: & p & i & j & a & m & a & \\ 
-R-complete count: & 25254 & 2207 & 5 & 4 & 4 & 2 & \\ 
-log(RC) & 4.4 & 3.34 & 0.7 & 0.6 & 0.6 & 0.3 & \\ 
-L-complete count: & 1 & 2 & 4 & 393 & 1760 & 51308 & \\ 
-log(LC) & 0.0 & 0.3 & 0.6 & 2.59 & 3.25 & 4.71 & \\ 
+\begin{tabular}{l|llllllllll}
+trunc: & c & a & f & a & j & e & s & t & e & \\ 
+R-complete count: & 65113 & 14915 & 197 & 16 & 6 & 6 & 6 & 6 & 3 & \\ 
+log(RC) & 4.81 & 4.17 & 2.29 & 1.2 & 0.78 & 0.78 & 0.78 & 0.78 & 0.48 & \\ 
+L-complete count: & 1 & 1 & 1 & 2 & 4 & 350 & 1742 & 16009 & 73680 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.3 & 0.6 & 2.54 & 3.24 & 4.2 & 4.87 & \\ 
 \end{tabular}
 
 true trunc point: 3
 
 RC trunc point: 3
 
-LC trunc point: 3
+LC trunc point: 5
 
-RC+LC trunc point: 3
+RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 4
 
 \vspace{1em}
 
 15
 
-portugês
+cafetão
 
-\begin{tabular}{l|lllllllll}
-trunc: & p & o & r & t & u & g & ê & s & \\ 
-R-complete count: & 25254 & 3448 & 566 & 206 & 24 & 15 & 4 & 4 & \\ 
-log(RC) & 4.4 & 3.54 & 2.75 & 2.31 & 1.38 & 1.18 & 0.6 & 0.6 & \\ 
-L-complete count: & 1 & 1 & 1 & 1 & 1 & 8 & 287 & 70840 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.9 & 2.46 & 4.85 & \\ 
+\begin{tabular}{l|llllllll}
+trunc: & c & a & f & e & t & ã & o & \\ 
+R-complete count: & 65113 & 14915 & 197 & 89 & 47 & 5 & 4 & \\ 
+log(RC) & 4.81 & 4.17 & 2.29 & 1.95 & 1.67 & 0.7 & 0.6 & \\ 
+L-complete count: & 3 & 3 & 4 & 57 & 577 & 10870 & 95398 & \\ 
+log(LC) & 0.48 & 0.48 & 0.6 & 1.76 & 2.76 & 4.04 & 4.98 & \\ 
 \end{tabular}
 
-true trunc point: 6
+true trunc point: 5
 
-RC trunc point: 5
+RC trunc point: 3
 
-LC trunc point: 5
+LC trunc point: 3
 
-RC+LC trunc point: 6
+RC+LC trunc point: 4
+
+binRL trunc point: 5
+
+binLR trunc point: 3
+
+Gries trunc point: 6
 
 \vspace{1em}
 
 16
 
-proletário
+capitão
 
-\begin{tabular}{l|lllllllllll}
-trunc: & p & r & o & l & e & t & á & r & i & o & \\ 
-R-complete count: & 25254 & 5993 & 2584 & 82 & 15 & 9 & 5 & 5 & 4 & 2 & \\ 
-log(RC) & 4.4 & 3.78 & 3.41 & 1.91 & 1.18 & 0.95 & 0.7 & 0.7 & 0.6 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 2 & 12 & 101 & 428 & 1103 & 3417 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.3 & 1.08 & 2.0 & 2.63 & 3.04 & 3.53 & 4.69 & \\ 
+\begin{tabular}{l|llllllll}
+trunc: & c & a & p & i & t & ã & o & \\ 
+R-complete count: & 65113 & 14915 & 1083 & 233 & 143 & 12 & 7 & \\ 
+log(RC) & 4.81 & 4.17 & 3.03 & 2.37 & 2.16 & 1.08 & 0.85 & \\ 
+L-complete count: & 2 & 5 & 7 & 54 & 577 & 10870 & 95398 & \\ 
+log(LC) & 0.3 & 0.7 & 0.85 & 1.73 & 2.76 & 4.04 & 4.98 & \\ 
 \end{tabular}
 
-true trunc point: 6
+true trunc point: 5
 
-RC trunc point: 4
+RC trunc point: 6
 
-LC trunc point: 9
+LC trunc point: 3
 
 RC+LC trunc point: 5
+
+binRL trunc point: 5
+
+binLR trunc point: 3
+
+Gries trunc point: 3
 
 \newpage
 
 17
 
-refrijerante
+carnaval
 
-\begin{tabular}{l|lllllllllllll}
-trunc: & r & e & f & r & i & j & e & r & a & n & t & e & \\ 
-R-complete count: & 18654 & 10681 & 568 & 87 & 23 & 19 & 18 & 18 & 17 & 3 & 2 & 2 & \\ 
-log(RC) & 4.27 & 4.03 & 2.75 & 1.94 & 1.36 & 1.28 & 1.26 & 1.26 & 1.23 & 0.48 & 0.3 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 1 & 2 & 2 & 26 & 116 & 1027 & 4663 & 8254 & 33111 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 0.3 & 0.3 & 1.41 & 2.06 & 3.01 & 3.67 & 3.92 & 4.52 & \\ 
+\begin{tabular}{l|lllllllll}
+trunc: & c & a & r & n & a & v & a & l & \\ 
+R-complete count: & 65113 & 14915 & 3385 & 214 & 52 & 17 & 14 & 11 & \\ 
+log(RC) & 4.81 & 4.17 & 3.53 & 2.33 & 1.72 & 1.23 & 1.15 & 1.04 & \\ 
+L-complete count: & 1 & 2 & 2 & 5 & 37 & 219 & 5800 & 20940 & \\ 
+log(LC) & 0.0 & 0.3 & 0.3 & 0.7 & 1.57 & 2.34 & 3.76 & 4.32 & \\ 
 \end{tabular}
 
-true trunc point: 5
+true trunc point: 4
 
-RC trunc point: 10
+RC trunc point: 4
 
 LC trunc point: 6
 
-RC+LC trunc point: 7
+RC+LC trunc point: 5
+
+binRL trunc point: 6
+
+binLR trunc point: 4
+
+Gries trunc point: 5
 
 \vspace{1em}
 
 18
 
-sapatão
+carpinteiro
 
-\begin{tabular}{l|llllllll}
-trunc: & s & a & p & a & t & ã & o & \\ 
-R-complete count: & 29058 & 4299 & 123 & 60 & 47 & 1 & 1 & \\ 
-log(RC) & 4.46 & 3.63 & 2.09 & 1.78 & 1.67 & 0.0 & 0.0 & \\ 
-L-complete count: & 1 & 1 & 2 & 26 & 274 & 6340 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.3 & 1.41 & 2.44 & 3.8 & 4.69 & \\ 
+\begin{tabular}{l|llllllllllll}
+trunc: & c & a & r & p & i & n & t & e & i & r & o & \\ 
+R-complete count: & 65113 & 14915 & 3385 & 131 & 32 & 15 & 9 & 7 & 4 & 4 & 2 & \\ 
+log(RC) & 4.81 & 4.17 & 3.53 & 2.12 & 1.51 & 1.18 & 0.95 & 0.85 & 0.6 & 0.6 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 1 & 1 & 6 & 29 & 181 & 1280 & 1767 & 6258 & 95398 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 0.78 & 1.46 & 2.26 & 3.11 & 3.25 & 3.8 & 4.98 & \\ 
 \end{tabular}
 
-true trunc point: 5
+true trunc point: 6
 
-RC trunc point: 6
+RC trunc point: 4
 
-LC trunc point: 3
+LC trunc point: 4
 
-RC+LC trunc point: 4
+RC+LC trunc point: 6
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 5
 
 \vspace{1em}
 
 19
 
-saudades
+categoria
 
-\begin{tabular}{l|lllllllll}
-trunc: & s & a & u & d & a & d & e & s & \\ 
-R-complete count: & 29058 & 4299 & 141 & 65 & 35 & 6 & 2 & 1 & \\ 
-log(RC) & 4.46 & 3.63 & 2.15 & 1.81 & 1.54 & 0.78 & 0.3 & 0.0 & \\ 
-L-complete count: & 3 & 3 & 4 & 320 & 392 & 927 & 13401 & 70840 & \\ 
-log(LC) & 0.48 & 0.48 & 0.6 & 2.51 & 2.59 & 2.97 & 4.13 & 4.85 & \\ 
+\begin{tabular}{l|llllllllll}
+trunc: & c & a & t & e & g & o & r & i & a & \\ 
+R-complete count: & 65113 & 14915 & 951 & 146 & 35 & 27 & 27 & 23 & 5 & \\ 
+log(RC) & 4.81 & 4.17 & 2.98 & 2.16 & 1.54 & 1.43 & 1.43 & 1.36 & 0.7 & \\ 
+L-complete count: & 2 & 2 & 2 & 5 & 15 & 271 & 5677 & 17278 & 107925 & \\ 
+log(LC) & 0.3 & 0.3 & 0.3 & 0.7 & 1.18 & 2.43 & 3.75 & 4.24 & 5.03 & \\ 
 \end{tabular}
 
-true trunc point: 6
+true trunc point: 5
 
-RC trunc point: 3
+RC trunc point: 5
 
-LC trunc point: 3
+LC trunc point: 5
 
-RC+LC trunc point: 4
+RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 4
 
 \vspace{1em}
 
 20
 
-sekretária
+celular
 
-\begin{tabular}{l|lllllllllll}
-trunc: & s & e & k & r & e & t & á & r & i & a & \\ 
-R-complete count: & 29058 & 4841 & 313 & 53 & 49 & 44 & 6 & 6 & 4 & 2 & \\ 
-log(RC) & 4.46 & 3.68 & 2.5 & 1.72 & 1.69 & 1.64 & 0.78 & 0.78 & 0.6 & 0.3 & \\ 
-L-complete count: & 3 & 3 & 3 & 3 & 14 & 76 & 247 & 3122 & 8523 & 51308 & \\ 
-log(LC) & 0.48 & 0.48 & 0.48 & 0.48 & 1.15 & 1.88 & 2.39 & 3.49 & 3.93 & 4.71 & \\ 
+\begin{tabular}{l|llllllll}
+trunc: & c & e & l & u & l & a & r & \\ 
+R-complete count: & 65113 & 2765 & 427 & 42 & 29 & 16 & 9 & \\ 
+log(RC) & 4.81 & 3.44 & 2.63 & 1.62 & 1.46 & 1.2 & 0.95 & \\ 
+L-complete count: & 19 & 22 & 33 & 403 & 1109 & 13966 & 44060 & \\ 
+log(LC) & 1.28 & 1.34 & 1.52 & 2.61 & 3.04 & 4.15 & 4.64 & \\ 
 \end{tabular}
 
-true trunc point: 6
+true trunc point: 5
 
-RC trunc point: 7
+RC trunc point: 4
 
-LC trunc point: 4
+LC trunc point: 3
 
-RC+LC trunc point: 6
+RC+LC trunc point: 4
+
+binRL trunc point: 5
+
+binLR trunc point: 3
+
+Gries trunc point: 3
 
 \newpage
 
 21
 
-travesti
+cerveja
 
-\begin{tabular}{l|lllllllll}
-trunc: & t & r & a & v & e & s & t & i & \\ 
-R-complete count: & 16966 & 4469 & 2354 & 131 & 70 & 33 & 14 & 11 & \\ 
-log(RC) & 4.23 & 3.65 & 3.37 & 2.12 & 1.85 & 1.52 & 1.15 & 1.04 & \\ 
-L-complete count: & 1 & 1 & 1 & 6 & 35 & 88 & 959 & 16535 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.78 & 1.54 & 1.94 & 2.98 & 4.22 & \\ 
+\begin{tabular}{l|llllllll}
+trunc: & c & e & r & v & e & j & a & \\ 
+R-complete count: & 65113 & 2765 & 788 & 94 & 50 & 27 & 12 & \\ 
+log(RC) & 4.81 & 3.44 & 2.9 & 1.97 & 1.7 & 1.43 & 1.08 & \\ 
+L-complete count: & 3 & 4 & 6 & 30 & 210 & 945 & 107925 & \\ 
+log(LC) & 0.48 & 0.6 & 0.78 & 1.48 & 2.32 & 2.98 & 5.03 & \\ 
 \end{tabular}
 
 true trunc point: 4
 
-RC trunc point: 4
+RC trunc point: 2
 
-LC trunc point: 3
+LC trunc point: 6
 
-RC+LC trunc point: 5
+RC+LC trunc point: 4
+
+binRL trunc point: 6
+
+binLR trunc point: 4
+
+Gries trunc point: 4
 
 \vspace{1em}
 
 22
 
-vagabunda
+cesariana
 
 \begin{tabular}{l|llllllllll}
-trunc: & v & a & g & a & b & u & n & d & a & \\ 
-R-complete count: & 8551 & 1894 & 115 & 69 & 26 & 21 & 21 & 21 & 7 & \\ 
-log(RC) & 3.93 & 3.28 & 2.06 & 1.84 & 1.41 & 1.32 & 1.32 & 1.32 & 0.85 & \\ 
-L-complete count: & 1 & 1 & 1 & 14 & 20 & 67 & 459 & 6378 & 51308 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 1.15 & 1.3 & 1.83 & 2.66 & 3.8 & 4.71 & \\ 
+trunc: & c & e & s & a & r & i & a & n & a & \\ 
+R-complete count: & 65113 & 2765 & 175 & 45 & 35 & 14 & 5 & 4 & 2 & \\ 
+log(RC) & 4.81 & 3.44 & 2.24 & 1.65 & 1.54 & 1.15 & 0.7 & 0.6 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 4 & 73 & 201 & 887 & 2392 & 9239 & 107925 & \\ 
+log(LC) & 0.0 & 0.0 & 0.6 & 1.86 & 2.3 & 2.95 & 3.38 & 3.97 & 5.03 & \\ 
 \end{tabular}
 
-true trunc point: 5
+true trunc point: 7
 
 RC trunc point: 3
 
 LC trunc point: 3
 
-RC+LC trunc point: 5
+RC+LC trunc point: 4
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 6
 
 \vspace{1em}
 
 23
 
-vestibular
+cocaína
 
-\begin{tabular}{l|lllllllllll}
-trunc: & v & e & s & t & i & b & u & l & a & r & \\ 
-R-complete count: & 8551 & 2083 & 176 & 95 & 61 & 4 & 3 & 3 & 2 & 2 & \\ 
-log(RC) & 3.93 & 3.32 & 2.25 & 1.98 & 1.79 & 0.6 & 0.48 & 0.48 & 0.3 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 2 & 3 & 15 & 182 & 545 & 7141 & 19839 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.3 & 0.48 & 1.18 & 2.26 & 2.74 & 3.85 & 4.3 & \\ 
+\begin{tabular}{l|llllllll}
+trunc: & c & o & c & a & í & n & a & \\ 
+R-complete count: & 65113 & 22704 & 488 & 50 & 7 & 4 & 2 & \\ 
+log(RC) & 4.81 & 4.36 & 2.69 & 1.7 & 0.85 & 0.6 & 0.3 & \\ 
+L-complete count: & 1 & 14 & 24 & 36 & 110 & 9239 & 107925 & \\ 
+log(LC) & 0.0 & 1.15 & 1.38 & 1.56 & 2.04 & 3.97 & 5.03 & \\ 
 \end{tabular}
 
-true trunc point: 6
+true trunc point: 3
 
-RC trunc point: 6
+RC trunc point: 3
 
-LC trunc point: 8
+LC trunc point: 5
 
-RC+LC trunc point: 6
+RC+LC trunc point: 4
+
+binRL trunc point: 6
+
+binLR trunc point: 3
+
+Gries trunc point: 3
 
 \vspace{1em}
 
 24
 
-beleza
+comição
 
-\begin{tabular}{l|lllllll}
-trunc: & b & e & l & e & z & a & \\ 
-R-complete count: & 17275 & 2856 & 427 & 25 & 9 & 2 & \\ 
-log(RC) & 4.24 & 3.46 & 2.63 & 1.4 & 0.95 & 0.3 & \\ 
-L-complete count: & 4 & 6 & 27 & 175 & 801 & 51308 & \\ 
-log(LC) & 0.6 & 0.78 & 1.43 & 2.24 & 2.9 & 4.71 & \\ 
+\begin{tabular}{l|llllllll}
+trunc: & c & o & m & i & ç & ã & o & \\ 
+R-complete count: & 65113 & 22704 & 4209 & 238 & 1 & 1 & 1 & \\ 
+log(RC) & 4.81 & 4.36 & 3.62 & 2.38 & 0.0 & 0.0 & 0.0 & \\ 
+L-complete count: & 1 & 3 & 13 & 486 & 4759 & 10870 & 95398 & \\ 
+log(LC) & 0.0 & 0.48 & 1.11 & 2.69 & 3.68 & 4.04 & 4.98 & \\ 
 \end{tabular}
 
-true trunc point: 4
+true trunc point: 5
 
-RC trunc point: 4
+RC trunc point: 5
 
-LC trunc point: 5
+LC trunc point: 3
 
 RC+LC trunc point: 4
+
+binRL trunc point: 5
+
+binLR trunc point: 3
+
+Gries trunc point: 5
 
 \newpage
 
 25
 
-burgês
+comissário
 
-\begin{tabular}{l|lllllll}
-trunc: & b & u & r & g & ê & s & \\ 
-R-complete count: & 17275 & 1606 & 320 & 40 & 2 & 2 & \\ 
-log(RC) & 4.24 & 3.21 & 2.51 & 1.6 & 0.3 & 0.3 & \\ 
-L-complete count: & 3 & 3 & 3 & 8 & 287 & 70840 & \\ 
-log(LC) & 0.48 & 0.48 & 0.48 & 0.9 & 2.46 & 4.85 & \\ 
+\begin{tabular}{l|lllllllllll}
+trunc: & c & o & m & i & s & s & á & r & i & o & \\ 
+R-complete count: & 65113 & 22704 & 4209 & 238 & 72 & 51 & 6 & 5 & 5 & 2 & \\ 
+log(RC) & 4.81 & 4.36 & 3.62 & 2.38 & 1.86 & 1.71 & 0.78 & 0.7 & 0.7 & 0.3 & \\ 
+L-complete count: & 2 & 2 & 6 & 6 & 29 & 86 & 787 & 2140 & 7008 & 95398 & \\ 
+log(LC) & 0.3 & 0.3 & 0.78 & 0.78 & 1.46 & 1.93 & 2.9 & 3.33 & 3.85 & 4.98 & \\ 
 \end{tabular}
 
-true trunc point: 4
+true trunc point: 6
 
-RC trunc point: 5
+RC trunc point: 7
 
 LC trunc point: 4
 
-RC+LC trunc point: 4
+RC+LC trunc point: 6
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 5
 
 \vspace{1em}
 
 26
 
-kruzeiro
+comunista
 
-\begin{tabular}{l|lllllllll}
-trunc: & k & r & u & z & e & i & r & o & \\ 
-R-complete count: & 33086 & 2569 & 303 & 61 & 10 & 3 & 2 & 2 & \\ 
-log(RC) & 4.52 & 3.41 & 2.48 & 1.79 & 1.0 & 0.48 & 0.3 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 4 & 9 & 709 & 941 & 2875 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.6 & 0.95 & 2.85 & 2.97 & 3.46 & 4.69 & \\ 
+\begin{tabular}{l|llllllllll}
+trunc: & c & o & m & u & n & i & s & t & a & \\ 
+R-complete count: & 65113 & 22704 & 4209 & 243 & 199 & 127 & 8 & 6 & 4 & \\ 
+log(RC) & 4.81 & 4.36 & 3.62 & 2.39 & 2.3 & 2.1 & 0.9 & 0.78 & 0.6 & \\ 
+L-complete count: & 3 & 3 & 4 & 11 & 296 & 1845 & 2477 & 9240 & 107925 & \\ 
+log(LC) & 0.48 & 0.48 & 0.6 & 1.04 & 2.47 & 3.27 & 3.39 & 3.97 & 5.03 & \\ 
 \end{tabular}
 
-true trunc point: 4
+true trunc point: 5
 
-RC trunc point: 6
+RC trunc point: 4
 
 LC trunc point: 4
 
-RC+LC trunc point: 4
+RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 7
 
 \vspace{1em}
 
 27
 
-demônio
+confusão
 
-\begin{tabular}{l|llllllll}
-trunc: & d & e & m & ô & n & i & o & \\ 
-R-complete count: & 23504 & 12577 & 536 & 9 & 8 & 8 & 3 & \\ 
-log(RC) & 4.37 & 4.1 & 2.73 & 0.95 & 0.9 & 0.9 & 0.48 & \\ 
-L-complete count: & 4 & 4 & 16 & 51 & 272 & 3417 & 49185 & \\ 
-log(LC) & 0.6 & 0.6 & 1.2 & 1.71 & 2.43 & 3.53 & 4.69 & \\ 
+\begin{tabular}{l|lllllllll}
+trunc: & c & o & n & f & u & s & ã & o & \\ 
+R-complete count: & 65113 & 22704 & 8953 & 1147 & 118 & 28 & 4 & 3 & \\ 
+log(RC) & 4.81 & 4.36 & 3.95 & 3.06 & 2.07 & 1.45 & 0.6 & 0.48 & \\ 
+L-complete count: & 2 & 2 & 5 & 25 & 70 & 755 & 10870 & 95398 & \\ 
+log(LC) & 0.3 & 0.3 & 0.7 & 1.4 & 1.85 & 2.88 & 4.04 & 4.98 & \\ 
 \end{tabular}
 
 true trunc point: 4
 
-RC trunc point: 4
+RC trunc point: 7
 
-LC trunc point: 2
+LC trunc point: 5
 
-RC+LC trunc point: 4
+RC+LC trunc point: 5
+
+binRL trunc point: 6
+
+binLR trunc point: 4
+
+Gries trunc point: 5
 
 \vspace{1em}
 
 28
 
-fisura
+consumação
 
-\begin{tabular}{l|lllllll}
-trunc: & f & i & s & u & r & a & \\ 
-R-complete count: & 13126 & 2003 & 164 & 7 & 7 & 7 & \\ 
-log(RC) & 4.12 & 3.3 & 2.21 & 0.85 & 0.85 & 0.85 & \\ 
-L-complete count: & 1 & 2 & 27 & 624 & 5211 & 51308 & \\ 
-log(LC) & 0.0 & 0.3 & 1.43 & 2.8 & 3.72 & 4.71 & \\ 
+\begin{tabular}{l|lllllllllll}
+trunc: & c & o & n & s & u & m & a & ç & ã & o & \\ 
+R-complete count: & 65113 & 22704 & 8953 & 1906 & 217 & 92 & 27 & 3 & 2 & 2 & \\ 
+log(RC) & 4.81 & 4.36 & 3.95 & 3.28 & 2.34 & 1.96 & 1.43 & 0.48 & 0.3 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 1 & 1 & 12 & 126 & 3366 & 4759 & 10870 & 95398 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 1.08 & 2.1 & 3.53 & 3.68 & 4.04 & 4.98 & \\ 
 \end{tabular}
 
-true trunc point: 4
+true trunc point: 6
 
-RC trunc point: 4
+RC trunc point: 8
 
-LC trunc point: 2
+LC trunc point: 4
 
-RC+LC trunc point: 3
+RC+LC trunc point: 6
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 8
 
 \newpage
 
 29
 
-miLão
+cortesia
 
-\begin{tabular}{l|llllll}
-trunc: & m & i & L & ã & o & \\ 
-R-complete count: & 21904 & 2966 & 42 & 2 & 2 & \\ 
-log(RC) & 4.34 & 3.47 & 1.62 & 0.3 & 0.3 & \\ 
-L-complete count: & 1 & 23 & 71 & 6340 & 49185 & \\ 
-log(LC) & 0.0 & 1.36 & 1.85 & 3.8 & 4.69 & \\ 
+\begin{tabular}{l|lllllllll}
+trunc: & c & o & r & t & e & s & i & a & \\ 
+R-complete count: & 65113 & 22704 & 2538 & 272 & 94 & 19 & 3 & 2 & \\ 
+log(RC) & 4.81 & 4.36 & 3.4 & 2.43 & 1.97 & 1.28 & 0.48 & 0.3 & \\ 
+L-complete count: & 2 & 3 & 5 & 20 & 106 & 634 & 17278 & 107925 & \\ 
+log(LC) & 0.3 & 0.48 & 0.7 & 1.3 & 2.03 & 2.8 & 4.24 & 5.03 & \\ 
 \end{tabular}
 
-true trunc point: 3
+true trunc point: 6
 
-RC trunc point: 4
+RC trunc point: 7
 
-LC trunc point: 3
+LC trunc point: 6
 
-RC+LC trunc point: 3
+RC+LC trunc point: 5
+
+binRL trunc point: 6
+
+binLR trunc point: 4
+
+Gries trunc point: 7
 
 \vspace{1em}
 
 30
 
-muLer
+cruzeiro
 
-\begin{tabular}{l|llllll}
-trunc: & m & u & L & e & r & \\ 
-R-complete count: & 21904 & 1798 & 52 & 43 & 40 & \\ 
-log(RC) & 4.34 & 3.25 & 1.72 & 1.63 & 1.6 & \\ 
-L-complete count: & 7 & 10 & 29 & 7524 & 19839 & \\ 
-log(LC) & 0.85 & 1.0 & 1.46 & 3.88 & 4.3 & \\ 
+\begin{tabular}{l|lllllllll}
+trunc: & c & r & u & z & e & i & r & o & \\ 
+R-complete count: & 65113 & 4558 & 467 & 80 & 14 & 6 & 5 & 2 & \\ 
+log(RC) & 4.81 & 3.66 & 2.67 & 1.9 & 1.15 & 0.78 & 0.7 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 5 & 21 & 1280 & 1767 & 6258 & 95398 & \\ 
+log(LC) & 0.0 & 0.0 & 0.7 & 1.32 & 3.11 & 3.25 & 3.8 & 4.98 & \\ 
 \end{tabular}
 
-true trunc point: 3
+true trunc point: 4
 
-RC trunc point: 3
+RC trunc point: 5
 
-LC trunc point: 3
+LC trunc point: 4
 
-RC+LC trunc point: 3
+RC+LC trunc point: 4
+
+binRL trunc point: 7
+
+binLR trunc point: 4
+
+Gries trunc point: 5
 
 \vspace{1em}
 
 31
 
-paLaso
+delegacia
 
-\begin{tabular}{l|lllllll}
-trunc: & p & a & L & a & s & o & \\ 
-R-complete count: & 25254 & 4921 & 26 & 15 & 12 & 3 & \\ 
-log(RC) & 4.4 & 3.69 & 1.41 & 1.18 & 1.08 & 0.48 & \\ 
-L-complete count: & 1 & 6 & 8 & 176 & 1690 & 49185 & \\ 
-log(LC) & 0.0 & 0.78 & 0.9 & 2.25 & 3.23 & 4.69 & \\ 
+\begin{tabular}{l|llllllllll}
+trunc: & d & e & l & e & g & a & c & i & a & \\ 
+R-complete count: & 48173 & 23805 & 1284 & 179 & 38 & 29 & 3 & 3 & 2 & \\ 
+log(RC) & 4.68 & 4.38 & 3.11 & 2.25 & 1.58 & 1.46 & 0.48 & 0.48 & 0.3 & \\ 
+L-complete count: & 3 & 3 & 4 & 4 & 8 & 129 & 2239 & 17278 & 107925 & \\ 
+log(LC) & 0.48 & 0.48 & 0.6 & 0.6 & 0.9 & 2.11 & 3.35 & 4.24 & 5.03 & \\ 
 \end{tabular}
 
-true trunc point: 3
+true trunc point: 5
 
-RC trunc point: 3
+RC trunc point: 7
 
-LC trunc point: 3
+LC trunc point: 5
 
-RC+LC trunc point: 3
+RC+LC trunc point: 6
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 5
 
 \vspace{1em}
 
 32
 
-pisina
+delegada
 
-\begin{tabular}{l|lllllll}
-trunc: & p & i & s & i & n & a & \\ 
-R-complete count: & 25254 & 2207 & 212 & 25 & 7 & 2 & \\ 
-log(RC) & 4.4 & 3.34 & 2.33 & 1.4 & 0.85 & 0.3 & \\ 
-L-complete count: & 1 & 28 & 105 & 1248 & 3706 & 51308 & \\ 
-log(LC) & 0.0 & 1.45 & 2.02 & 3.1 & 3.57 & 4.71 & \\ 
+\begin{tabular}{l|lllllllll}
+trunc: & d & e & l & e & g & a & d & a & \\ 
+R-complete count: & 48173 & 23805 & 1284 & 179 & 38 & 29 & 7 & 2 & \\ 
+log(RC) & 4.68 & 4.38 & 3.11 & 2.25 & 1.58 & 1.46 & 0.85 & 0.3 & \\ 
+L-complete count: & 1 & 2 & 6 & 57 & 307 & 6664 & 11171 & 107925 & \\ 
+log(LC) & 0.0 & 0.3 & 0.78 & 1.76 & 2.49 & 3.82 & 4.05 & 5.03 & \\ 
 \end{tabular}
 
-true trunc point: 3
+true trunc point: 5
 
-RC trunc point: 4
+RC trunc point: 5
 
-LC trunc point: 5
+LC trunc point: 7
 
-RC+LC trunc point: 3
+RC+LC trunc point: 4
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 8
 
 \newpage
 
 33
 
-playboy
+delegado
 
-\begin{tabular}{l|llllllll}
-trunc: & p & l & a & y & b & o & y & \\ 
-R-complete count: & 25254 & 1014 & 562 & 42 & 6 & 5 & 4 & \\ 
-log(RC) & 4.4 & 3.01 & 2.75 & 1.62 & 0.78 & 0.7 & 0.6 & \\ 
-L-complete count: & 1 & 1 & 3 & 11 & 67 & 239 & 7662 & \\ 
-log(LC) & 0.0 & 0.0 & 0.48 & 1.04 & 1.83 & 2.38 & 3.88 & \\ 
+\begin{tabular}{l|lllllllll}
+trunc: & d & e & l & e & g & a & d & o & \\ 
+R-complete count: & 48173 & 23805 & 1284 & 179 & 38 & 29 & 7 & 4 & \\ 
+log(RC) & 4.68 & 4.38 & 3.11 & 2.25 & 1.58 & 1.46 & 0.85 & 0.6 & \\ 
+L-complete count: & 2 & 3 & 11 & 75 & 367 & 8016 & 20151 & 95398 & \\ 
+log(LC) & 0.3 & 0.48 & 1.04 & 1.88 & 2.56 & 3.9 & 4.3 & 4.98 & \\ 
 \end{tabular}
 
 true trunc point: 5
 
-RC trunc point: 2
+RC trunc point: 5
 
-LC trunc point: 6
+LC trunc point: 5
 
 RC+LC trunc point: 4
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 7
 
 \vspace{1em}
 
 34
 
-pregisa
+demônio
 
 \begin{tabular}{l|llllllll}
-trunc: & p & r & e & g & i & s & a & \\ 
-R-complete count: & 25254 & 5993 & 2150 & 99 & 15 & 9 & 2 & \\ 
-log(RC) & 4.4 & 3.78 & 3.33 & 2.0 & 1.18 & 0.95 & 0.3 & \\ 
-L-complete count: & 2 & 2 & 2 & 5 & 252 & 2169 & 51308 & \\ 
-log(LC) & 0.3 & 0.3 & 0.3 & 0.7 & 2.4 & 3.34 & 4.71 & \\ 
+trunc: & d & e & m & ô & n & i & o & \\ 
+R-complete count: & 48173 & 23805 & 1044 & 22 & 17 & 14 & 6 & \\ 
+log(RC) & 4.68 & 4.38 & 3.02 & 1.34 & 1.23 & 1.15 & 0.78 & \\ 
+L-complete count: & 9 & 10 & 34 & 124 & 673 & 7008 & 95398 & \\ 
+log(LC) & 0.95 & 1.0 & 1.53 & 2.09 & 2.83 & 3.85 & 4.98 & \\ 
 \end{tabular}
 
-true trunc point: 5
+true trunc point: 4
 
-RC trunc point: 5
+RC trunc point: 4
 
-LC trunc point: 4
+LC trunc point: 2
 
-RC+LC trunc point: 5
+RC+LC trunc point: 4
+
+binRL trunc point: 5
+
+binLR trunc point: 3
+
+Gries trunc point: 4
 
 \vspace{1em}
 
 35
 
-sarjento
+depreção
 
 \begin{tabular}{l|lllllllll}
-trunc: & s & a & r & j & e & n & t & o & \\ 
-R-complete count: & 29058 & 4299 & 331 & 21 & 17 & 10 & 9 & 3 & \\ 
-log(RC) & 4.46 & 3.63 & 2.52 & 1.32 & 1.23 & 1.0 & 0.95 & 0.48 & \\ 
-L-complete count: & 1 & 2 & 3 & 14 & 1302 & 1601 & 4493 & 49185 & \\ 
-log(LC) & 0.0 & 0.3 & 0.48 & 1.15 & 3.11 & 3.2 & 3.65 & 4.69 & \\ 
+trunc: & d & e & p & r & e & ç & ã & o & \\ 
+R-complete count: & 48173 & 23805 & 843 & 203 & 121 & 0 & 0 & 0 & \\ 
+log(RC) & 4.68 & 4.38 & 2.93 & 2.31 & 2.08 & 0 & 0 & 0 & \\ 
+L-complete count: & 0 & 0 & 3 & 41 & 170 & 4759 & 10870 & 95398 & \\ 
+log(LC) & 0 & 0 & 0.48 & 1.61 & 2.23 & 3.68 & 4.04 & 4.98 & \\ 
 \end{tabular}
 
-true trunc point: 4
+true trunc point: 5
 
-RC trunc point: 4
+RC trunc point: 6
 
-LC trunc point: 4
+LC trunc point: 5
 
-RC+LC trunc point: 4
+RC+LC trunc point: 5
+
+binRL trunc point: 6
+
+binLR trunc point: 4
+
+Gries trunc point: 0
 
 \vspace{1em}
 
 36
 
-piRaLo
+deprimido
 
-\begin{tabular}{l|lllllll}
-trunc: & p & i & R & a & L & o & \\ 
-R-complete count: & 25254 & 2207 & 14 & 12 & 8 & 2 & \\ 
-log(RC) & 4.4 & 3.34 & 1.15 & 1.08 & 0.9 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 3 & 70 & 243 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.48 & 1.85 & 2.39 & 4.69 & \\ 
+\begin{tabular}{l|llllllllll}
+trunc: & d & e & p & r & i & m & i & d & o & \\ 
+R-complete count: & 48173 & 23805 & 843 & 203 & 47 & 35 & 19 & 6 & 2 & \\ 
+log(RC) & 4.68 & 4.38 & 2.93 & 2.31 & 1.67 & 1.54 & 1.28 & 0.78 & 0.3 & \\ 
+L-complete count: & 2 & 4 & 14 & 14 & 22 & 66 & 1950 & 20151 & 95398 & \\ 
+log(LC) & 0.3 & 0.6 & 1.15 & 1.15 & 1.34 & 1.82 & 3.29 & 4.3 & 4.98 & \\ 
 \end{tabular}
 
-true trunc point: 3
+true trunc point: 4
 
 RC trunc point: 3
 
-LC trunc point: 5
+LC trunc point: 6
 
-RC+LC trunc point: 3
+RC+LC trunc point: 6
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 5
 
 \newpage
 
 37
 
-trankilo
-
-\begin{tabular}{l|lllllllll}
-trunc: & t & r & a & n & k & i & l & o & \\ 
-R-complete count: & 16966 & 4469 & 2354 & 1000 & 114 & 52 & 46 & 3 & \\ 
-log(RC) & 4.23 & 3.65 & 3.37 & 3.0 & 2.06 & 1.72 & 1.66 & 0.48 & \\ 
-L-complete count: & 2 & 2 & 2 & 2 & 19 & 160 & 1652 & 49185 & \\ 
-log(LC) & 0.3 & 0.3 & 0.3 & 0.3 & 1.28 & 2.2 & 3.22 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 6
-
-RC trunc point: 5
-
-LC trunc point: 4
-
-RC+LC trunc point: 6
-
-\vspace{1em}
-
-38
-
-falsifikado
-
-\begin{tabular}{l|llllllllllll}
-trunc: & f & a & l & s & i & f & i & k & a & d & o & \\ 
-R-complete count: & 13126 & 2677 & 456 & 59 & 33 & 31 & 29 & 28 & 23 & 7 & 5 & \\ 
-log(RC) & 4.12 & 3.43 & 2.66 & 1.77 & 1.52 & 1.49 & 1.46 & 1.45 & 1.36 & 0.85 & 0.7 & \\ 
-L-complete count: & 1 & 2 & 2 & 13 & 77 & 84 & 178 & 413 & 4874 & 11939 & 49185 & \\ 
-log(LC) & 0.0 & 0.3 & 0.3 & 1.11 & 1.89 & 1.92 & 2.25 & 2.62 & 3.69 & 4.08 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 4
-
-LC trunc point: 3
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-39
-
-bijuteria
-
-\begin{tabular}{l|llllllllll}
-trunc: & b & i & j & u & t & e & r & i & a & \\ 
-R-complete count: & 17275 & 1783 & 25 & 5 & 4 & 2 & 2 & 2 & 2 & \\ 
-log(RC) & 4.24 & 3.25 & 1.4 & 0.7 & 0.6 & 0.3 & 0.3 & 0.3 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 3 & 79 & 424 & 3122 & 8523 & 51308 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.48 & 1.9 & 2.63 & 3.49 & 3.93 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 4
-
-RC trunc point: 3
-
-LC trunc point: 4
-
-RC+LC trunc point: 4
-
-\vspace{1em}
-
-40
-
-bisavó
-
-\begin{tabular}{l|lllllll}
-trunc: & b & i & s & a & v & ó & \\ 
-R-complete count: & 17275 & 1783 & 223 & 9 & 4 & 2 & \\ 
-log(RC) & 4.24 & 3.25 & 2.35 & 0.95 & 0.6 & 0.3 & \\ 
-L-complete count: & 1 & 2 & 2 & 6 & 12 & 274 & \\ 
-log(LC) & 0.0 & 0.3 & 0.3 & 0.78 & 1.08 & 2.44 & \\ 
-\end{tabular}
-
-true trunc point: 3
-
-RC trunc point: 4
-
-LC trunc point: 5
-
-RC+LC trunc point: 4
-
-\newpage
-
-41
-
-kafajeste
-
-\begin{tabular}{l|llllllllll}
-trunc: & k & a & f & a & j & e & s & t & e & \\ 
-R-complete count: & 33086 & 9327 & 106 & 9 & 4 & 4 & 4 & 4 & 3 & \\ 
-log(RC) & 4.52 & 3.97 & 2.03 & 0.95 & 0.6 & 0.6 & 0.6 & 0.6 & 0.48 & \\ 
-L-complete count: & 1 & 1 & 1 & 1 & 4 & 221 & 1123 & 8254 & 33111 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 0.6 & 2.34 & 3.05 & 3.92 & 4.52 & \\ 
-\end{tabular}
-
-true trunc point: 3
-
-RC trunc point: 3
-
-LC trunc point: 5
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-42
-
-karnaval
-
-\begin{tabular}{l|lllllllll}
-trunc: & k & a & r & n & a & v & a & l & \\ 
-R-complete count: & 33086 & 9327 & 1643 & 120 & 25 & 9 & 9 & 6 & \\ 
-log(RC) & 4.52 & 3.97 & 3.22 & 2.08 & 1.4 & 0.95 & 0.95 & 0.78 & \\ 
-L-complete count: & 1 & 1 & 1 & 3 & 16 & 104 & 2386 & 8534 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.48 & 1.2 & 2.02 & 3.38 & 3.93 & \\ 
-\end{tabular}
-
-true trunc point: 4
-
-RC trunc point: 4
-
-LC trunc point: 6
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-43
-
-kokaína
-
-\begin{tabular}{l|llllllll}
-trunc: & k & o & k & a & í & n & a & \\ 
-R-complete count: & 33086 & 13060 & 204 & 26 & 2 & 2 & 2 & \\ 
-log(RC) & 4.52 & 4.12 & 2.31 & 1.41 & 0.3 & 0.3 & 0.3 & \\ 
-L-complete count: & 2 & 7 & 9 & 12 & 48 & 3706 & 51308 & \\ 
-log(LC) & 0.3 & 0.85 & 0.95 & 1.08 & 1.68 & 3.57 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 3
-
-RC trunc point: 5
-
-LC trunc point: 5
-
-RC+LC trunc point: 4
-
-\vspace{1em}
-
-44
-
-konfusão
-
-\begin{tabular}{l|lllllllll}
-trunc: & k & o & n & f & u & s & ã & o & \\ 
-R-complete count: & 33086 & 13060 & 5128 & 682 & 80 & 22 & 1 & 1 & \\ 
-log(RC) & 4.52 & 4.12 & 3.71 & 2.83 & 1.9 & 1.34 & 0.0 & 0.0 & \\ 
-L-complete count: & 1 & 1 & 3 & 13 & 128 & 3027 & 6340 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.48 & 1.11 & 2.11 & 3.48 & 3.8 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 4
-
-RC trunc point: 7
-
-LC trunc point: 7
-
-RC+LC trunc point: 5
-
-\newpage
-
-45
-
-disposisão
+disposição
 
 \begin{tabular}{l|lllllllllll}
-trunc: & d & i & s & p & o & s & i & s & ã & o & \\ 
-R-complete count: & 23504 & 4046 & 1415 & 333 & 70 & 22 & 13 & 6 & 2 & 1 & \\ 
-log(RC) & 4.37 & 3.61 & 3.15 & 2.52 & 1.85 & 1.34 & 1.11 & 0.78 & 0.3 & 0.0 & \\ 
-L-complete count: & 4 & 4 & 5 & 31 & 34 & 62 & 360 & 3027 & 6340 & 49185 & \\ 
-log(LC) & 0.6 & 0.6 & 0.7 & 1.49 & 1.53 & 1.79 & 2.56 & 3.48 & 3.8 & 4.69 & \\ 
+trunc: & d & i & s & p & o & s & i & ç & ã & o & \\ 
+R-complete count: & 48173 & 8462 & 2784 & 562 & 131 & 46 & 24 & 8 & 2 & 1 & \\ 
+log(RC) & 4.68 & 3.93 & 3.44 & 2.75 & 2.12 & 1.66 & 1.38 & 0.9 & 0.3 & 0.0 & \\ 
+L-complete count: & 6 & 6 & 10 & 48 & 48 & 66 & 486 & 4759 & 10870 & 95398 & \\ 
+log(LC) & 0.78 & 0.78 & 1.0 & 1.68 & 1.68 & 1.82 & 2.69 & 3.68 & 4.04 & 4.98 & \\ 
 \end{tabular}
 
 true trunc point: 5
-
-RC trunc point: 2
-
-LC trunc point: 3
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-46
-
-fakuldade
-
-\begin{tabular}{l|llllllllll}
-trunc: & f & a & k & u & l & d & a & d & e & \\ 
-R-complete count: & 13126 & 2677 & 95 & 13 & 8 & 2 & 2 & 2 & 2 & \\ 
-log(RC) & 4.12 & 3.43 & 1.98 & 1.11 & 0.9 & 0.3 & 0.3 & 0.3 & 0.3 & \\ 
-L-complete count: & 1 & 2 & 8 & 9 & 55 & 1165 & 1428 & 2830 & 33111 & \\ 
-log(LC) & 0.0 & 0.3 & 0.9 & 0.95 & 1.74 & 3.07 & 3.15 & 3.45 & 4.52 & \\ 
-\end{tabular}
-
-true trunc point: 4
-
-RC trunc point: 4
-
-LC trunc point: 8
-
-RC+LC trunc point: 4
-
-\vspace{1em}
-
-47
-
-loteria
-
-\begin{tabular}{l|llllllll}
-trunc: & l & o & t & e & r & i & a & \\ 
-R-complete count: & 11821 & 1480 & 81 & 19 & 3 & 2 & 2 & \\ 
-log(RC) & 4.07 & 3.17 & 1.91 & 1.28 & 0.48 & 0.3 & 0.3 & \\ 
-L-complete count: & 1 & 2 & 79 & 424 & 3122 & 8523 & 51308 & \\ 
-log(LC) & 0.0 & 0.3 & 1.9 & 2.63 & 3.49 & 3.93 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 3
-
-RC trunc point: 3
-
-LC trunc point: 2
-
-RC+LC trunc point: 3
-
-\vspace{1em}
-
-48
-
-metaleiro
-
-\begin{tabular}{l|llllllllll}
-trunc: & m & e & t & a & l & e & i & r & o & \\ 
-R-complete count: & 21904 & 3525 & 470 & 139 & 27 & 4 & 3 & 3 & 2 & \\ 
-log(RC) & 4.34 & 3.55 & 2.67 & 2.14 & 1.43 & 0.6 & 0.48 & 0.48 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 6 & 16 & 61 & 709 & 941 & 2875 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.78 & 1.2 & 1.79 & 2.85 & 2.97 & 3.46 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 6
-
-LC trunc point: 2
-
-RC+LC trunc point: 5
-
-\newpage
-
-49
-
-mordomia
-
-\begin{tabular}{l|lllllllll}
-trunc: & m & o & r & d & o & m & i & a & \\ 
-R-complete count: & 21904 & 3794 & 700 & 98 & 9 & 5 & 2 & 2 & \\ 
-log(RC) & 4.34 & 3.58 & 2.85 & 1.99 & 0.95 & 0.7 & 0.3 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 2 & 85 & 227 & 8523 & 51308 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.3 & 1.93 & 2.36 & 3.93 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 5
-
-LC trunc point: 4
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-50
-
-prejuízo
-
-\begin{tabular}{l|lllllllll}
-trunc: & p & r & e & j & u & í & z & o & \\ 
-R-complete count: & 25254 & 5993 & 2150 & 49 & 46 & 2 & 2 & 2 & \\ 
-log(RC) & 4.4 & 3.78 & 3.33 & 1.69 & 1.66 & 0.3 & 0.3 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 2 & 8 & 8 & 9 & 367 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.3 & 0.9 & 0.9 & 0.95 & 2.56 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 4
-
-LC trunc point: 6
-
-RC+LC trunc point: 6
-
-\vspace{1em}
-
-51
-
-profisional
-
-\begin{tabular}{l|llllllllllll}
-trunc: & p & r & o & f & i & s & i & o & n & a & l & \\ 
-R-complete count: & 25254 & 5993 & 2584 & 233 & 59 & 33 & 22 & 15 & 15 & 15 & 11 & \\ 
-log(RC) & 4.4 & 3.78 & 3.41 & 2.37 & 1.77 & 1.52 & 1.34 & 1.18 & 1.18 & 1.18 & 1.04 & \\ 
-L-complete count: & 5 & 6 & 6 & 6 & 26 & 136 & 164 & 215 & 377 & 2386 & 8534 & \\ 
-log(LC) & 0.7 & 0.78 & 0.78 & 0.78 & 1.41 & 2.13 & 2.21 & 2.33 & 2.58 & 3.38 & 3.93 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 4
-
-LC trunc point: 4
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-52
-
-transasão
-
-\begin{tabular}{l|llllllllll}
-trunc: & t & r & a & n & s & a & s & ã & o & \\ 
-R-complete count: & 16966 & 4469 & 2354 & 1000 & 756 & 64 & 15 & 1 & 1 & \\ 
-log(RC) & 4.23 & 3.65 & 3.37 & 3.0 & 2.88 & 1.81 & 1.18 & 0.0 & 0.0 & \\ 
-L-complete count: & 1 & 1 & 1 & 11 & 32 & 1951 & 3027 & 6340 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 1.04 & 1.51 & 3.29 & 3.48 & 3.8 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 8
-
-LC trunc point: 5
-
-RC+LC trunc point: 5
-
-\newpage
-
-53
-
-troglodita
-
-\begin{tabular}{l|lllllllllll}
-trunc: & t & r & o & g & l & o & d & i & t & a & \\ 
-R-complete count: & 16966 & 4469 & 483 & 9 & 6 & 6 & 5 & 4 & 2 & 2 & \\ 
-log(RC) & 4.23 & 3.65 & 2.68 & 0.95 & 0.78 & 0.78 & 0.7 & 0.6 & 0.3 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 1 & 1 & 3 & 59 & 799 & 4435 & 51308 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.48 & 1.77 & 2.9 & 3.65 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 6
-
-RC trunc point: 4
-
-LC trunc point: 6
-
-RC+LC trunc point: 6
-
-\vspace{1em}
-
-54
-
-sakristão
-
-\begin{tabular}{l|llllllllll}
-trunc: & s & a & k & r & i & s & t & ã & o & \\ 
-R-complete count: & 29058 & 4299 & 409 & 117 & 76 & 5 & 5 & 1 & 1 & \\ 
-log(RC) & 4.46 & 3.63 & 2.61 & 2.07 & 1.88 & 0.7 & 0.7 & 0.0 & 0.0 & \\ 
-L-complete count: & 1 & 1 & 2 & 6 & 39 & 84 & 274 & 6340 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.3 & 0.78 & 1.59 & 1.92 & 2.44 & 3.8 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 7
-
-RC trunc point: 6
-
-LC trunc point: 7
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-55
-
-salafrário
-
-\begin{tabular}{l|lllllllllll}
-trunc: & s & a & l & a & f & r & á & r & i & o & \\ 
-R-complete count: & 29058 & 4299 & 676 & 76 & 6 & 3 & 3 & 3 & 3 & 2 & \\ 
-log(RC) & 4.46 & 3.63 & 2.83 & 1.88 & 0.78 & 0.48 & 0.48 & 0.48 & 0.48 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 2 & 2 & 29 & 428 & 1103 & 3417 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.3 & 0.3 & 1.46 & 2.63 & 3.04 & 3.53 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 6
-
-RC trunc point: 5
-
-LC trunc point: 5
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-56
-
-analfabeto
-
-\begin{tabular}{l|lllllllllll}
-trunc: & a & n & a & l & f & a & b & e & t & o & \\ 
-R-complete count: & 29655 & 2787 & 293 & 94 & 5 & 5 & 5 & 5 & 5 & 2 & \\ 
-log(RC) & 4.47 & 3.45 & 2.47 & 1.97 & 0.7 & 0.7 & 0.7 & 0.7 & 0.7 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 2 & 2 & 3 & 4 & 9 & 255 & 4493 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.3 & 0.3 & 0.48 & 0.6 & 0.95 & 2.41 & 3.65 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 5
-
-LC trunc point: 7
-
-RC+LC trunc point: 6
-
-\newpage
-
-57
-
-botekim
-
-\begin{tabular}{l|llllllll}
-trunc: & b & o & t & e & k & i & m & \\ 
-R-complete count: & 17275 & 2711 & 172 & 19 & 7 & 2 & 1 & \\ 
-log(RC) & 4.24 & 3.43 & 2.24 & 1.28 & 0.85 & 0.3 & 0.0 & \\ 
-L-complete count: & 1 & 1 & 1 & 7 & 37 & 684 & 18873 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.85 & 1.57 & 2.84 & 4.28 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 4
-
-LC trunc point: 3
-
-RC+LC trunc point: 4
-
-\vspace{1em}
-
-58
-
-kasetete
-
-\begin{tabular}{l|lllllllll}
-trunc: & k & a & s & e & t & e & t & e & \\ 
-R-complete count: & 33086 & 9327 & 802 & 80 & 17 & 4 & 2 & 2 & \\ 
-log(RC) & 4.52 & 3.97 & 2.9 & 1.9 & 1.23 & 0.6 & 0.3 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 2 & 10 & 445 & 8254 & 33111 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.3 & 1.0 & 2.65 & 3.92 & 4.52 & \\ 
-\end{tabular}
-
-true trunc point: 6
-
-RC trunc point: 4
-
-LC trunc point: 5
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-59
-
-kafetão
-
-\begin{tabular}{l|llllllll}
-trunc: & k & a & f & e & t & ã & o & \\ 
-R-complete count: & 33086 & 9327 & 106 & 37 & 22 & 3 & 2 & \\ 
-log(RC) & 4.52 & 3.97 & 2.03 & 1.57 & 1.34 & 0.48 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 3 & 32 & 274 & 6340 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.48 & 1.51 & 2.44 & 3.8 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 3
-
-LC trunc point: 3
-
-RC+LC trunc point: 4
-
-\vspace{1em}
-
-60
-
-kapitão
-
-\begin{tabular}{l|llllllll}
-trunc: & k & a & p & i & t & ã & o & \\ 
-R-complete count: & 33086 & 9327 & 614 & 141 & 91 & 7 & 3 & \\ 
-log(RC) & 4.52 & 3.97 & 2.79 & 2.15 & 1.96 & 0.85 & 0.48 & \\ 
-L-complete count: & 1 & 1 & 2 & 25 & 274 & 6340 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.3 & 1.4 & 2.44 & 3.8 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 6
-
-LC trunc point: 3
-
-RC+LC trunc point: 5
-
-\newpage
-
-61
-
-karpinteiro
-
-\begin{tabular}{l|llllllllllll}
-trunc: & k & a & r & p & i & n & t & e & i & r & o & \\ 
-R-complete count: & 33086 & 9327 & 1643 & 76 & 22 & 13 & 9 & 7 & 4 & 4 & 2 & \\ 
-log(RC) & 4.52 & 3.97 & 3.22 & 1.88 & 1.34 & 1.11 & 0.95 & 0.85 & 0.6 & 0.6 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 1 & 4 & 15 & 104 & 709 & 941 & 2875 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 0.6 & 1.18 & 2.02 & 2.85 & 2.97 & 3.46 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 6
-
-RC trunc point: 4
-
-LC trunc point: 10
-
-RC+LC trunc point: 6
-
-\vspace{1em}
-
-62
-
-kategoria
-
-\begin{tabular}{l|llllllllll}
-trunc: & k & a & t & e & g & o & r & i & a & \\ 
-R-complete count: & 33086 & 9327 & 635 & 90 & 21 & 16 & 16 & 13 & 3 & \\ 
-log(RC) & 4.52 & 3.97 & 2.8 & 1.95 & 1.32 & 1.2 & 1.2 & 1.11 & 0.48 & \\ 
-L-complete count: & 2 & 2 & 2 & 3 & 6 & 127 & 3122 & 8523 & 51308 & \\ 
-log(LC) & 0.3 & 0.3 & 0.3 & 0.48 & 0.78 & 2.1 & 3.49 & 3.93 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 5
-
-LC trunc point: 5
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-63
-
-selular
-
-\begin{tabular}{l|llllllll}
-trunc: & s & e & l & u & l & a & r & \\ 
-R-complete count: & 29058 & 4841 & 436 & 20 & 17 & 10 & 6 & \\ 
-log(RC) & 4.46 & 3.68 & 2.64 & 1.3 & 1.23 & 1.0 & 0.78 & \\ 
-L-complete count: & 8 & 8 & 12 & 182 & 545 & 7141 & 19839 & \\ 
-log(LC) & 0.9 & 0.9 & 1.08 & 2.26 & 2.74 & 3.85 & 4.3 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 4
-
-LC trunc point: 3
-
-RC+LC trunc point: 4
-
-\vspace{1em}
-
-64
-
-sesariana
-
-\begin{tabular}{l|llllllllll}
-trunc: & s & e & s & a & r & i & a & n & a & \\ 
-R-complete count: & 29058 & 4841 & 167 & 54 & 26 & 10 & 5 & 3 & 2 & \\ 
-log(RC) & 4.46 & 3.68 & 2.22 & 1.73 & 1.41 & 1.0 & 0.7 & 0.48 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 21 & 73 & 311 & 873 & 3706 & 51308 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 1.32 & 1.86 & 2.49 & 2.94 & 3.57 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 7
-
-RC trunc point: 3
-
-LC trunc point: 3
-
-RC+LC trunc point: 4
-
-\newpage
-
-65
-
-komisão
-
-\begin{tabular}{l|llllllll}
-trunc: & k & o & m & i & s & ã & o & \\ 
-R-complete count: & 33086 & 13060 & 2479 & 128 & 41 & 2 & 1 & \\ 
-log(RC) & 4.52 & 4.12 & 3.39 & 2.11 & 1.61 & 0.3 & 0.0 & \\ 
-L-complete count: & 4 & 7 & 28 & 360 & 3027 & 6340 & 49185 & \\ 
-log(LC) & 0.6 & 0.85 & 1.45 & 2.56 & 3.48 & 3.8 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 6
-
-LC trunc point: 6
-
-RC+LC trunc point: 4
-
-\vspace{1em}
-
-66
-
-komisário
-
-\begin{tabular}{l|llllllllll}
-trunc: & k & o & m & i & s & á & r & i & o & \\ 
-R-complete count: & 33086 & 13060 & 2479 & 128 & 41 & 6 & 6 & 5 & 3 & \\ 
-log(RC) & 4.52 & 4.12 & 3.39 & 2.11 & 1.61 & 0.78 & 0.78 & 0.7 & 0.48 & \\ 
-L-complete count: & 2 & 2 & 5 & 6 & 45 & 428 & 1103 & 3417 & 49185 & \\ 
-log(LC) & 0.3 & 0.3 & 0.7 & 0.78 & 1.65 & 2.63 & 3.04 & 3.53 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 6
-
-LC trunc point: 4
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-67
-
-komunista
-
-\begin{tabular}{l|llllllllll}
-trunc: & k & o & m & u & n & i & s & t & a & \\ 
-R-complete count: & 33086 & 13060 & 2479 & 144 & 117 & 80 & 7 & 4 & 3 & \\ 
-log(RC) & 4.52 & 4.12 & 3.39 & 2.16 & 2.07 & 1.9 & 0.85 & 0.6 & 0.48 & \\ 
-L-complete count: & 2 & 2 & 3 & 6 & 155 & 938 & 1253 & 4435 & 51308 & \\ 
-log(LC) & 0.3 & 0.3 & 0.48 & 0.78 & 2.19 & 2.97 & 3.1 & 3.65 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 4
-
-LC trunc point: 4
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-68
-
-konsumasão
-
-\begin{tabular}{l|lllllllllll}
-trunc: & k & o & n & s & u & m & a & s & ã & o & \\ 
-R-complete count: & 33086 & 13060 & 5128 & 1437 & 143 & 63 & 15 & 2 & 1 & 1 & \\ 
-log(RC) & 4.52 & 4.12 & 3.71 & 3.16 & 2.16 & 1.8 & 1.18 & 0.3 & 0.0 & 0.0 & \\ 
-L-complete count: & 1 & 1 & 1 & 1 & 7 & 75 & 1951 & 3027 & 6340 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 0.85 & 1.88 & 3.29 & 3.48 & 3.8 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 6
-
-RC trunc point: 5
-
-LC trunc point: 4
-
-RC+LC trunc point: 6
-
-\newpage
-
-69
-
-kortesia
-
-\begin{tabular}{l|lllllllll}
-trunc: & k & o & r & t & e & s & i & a & \\ 
-R-complete count: & 33086 & 13060 & 988 & 169 & 60 & 11 & 2 & 2 & \\ 
-log(RC) & 4.52 & 4.12 & 2.99 & 2.23 & 1.78 & 1.04 & 0.3 & 0.3 & \\ 
-L-complete count: & 2 & 2 & 4 & 17 & 135 & 1430 & 8523 & 51308 & \\ 
-log(LC) & 0.3 & 0.3 & 0.6 & 1.23 & 2.13 & 3.16 & 3.93 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 6
-
-RC trunc point: 7
-
-LC trunc point: 3
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-70
-
-madrugada
-
-\begin{tabular}{l|llllllllll}
-trunc: & m & a & d & r & u & g & a & d & a & \\ 
-R-complete count: & 21904 & 7880 & 270 & 61 & 23 & 22 & 18 & 10 & 2 & \\ 
-log(RC) & 4.34 & 3.9 & 2.43 & 1.79 & 1.36 & 1.34 & 1.26 & 1.0 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 2 & 13 & 182 & 4067 & 6378 & 51308 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.3 & 1.11 & 2.26 & 3.61 & 3.8 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 6
-
-RC trunc point: 3
-
-LC trunc point: 8
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-71
-
-manekim
-
-\begin{tabular}{l|llllllll}
-trunc: & m & a & n & e & k & i & m & \\ 
-R-complete count: & 21904 & 7880 & 1273 & 104 & 4 & 2 & 1 & \\ 
-log(RC) & 4.34 & 3.9 & 3.1 & 2.02 & 0.6 & 0.3 & 0.0 & \\ 
-L-complete count: & 1 & 1 & 1 & 7 & 37 & 684 & 18873 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.85 & 1.57 & 2.84 & 4.28 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 5
-
-LC trunc point: 3
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-72
-
-motosikleta
-
-\begin{tabular}{l|llllllllllll}
-trunc: & m & o & t & o & s & i & k & l & e & t & a & \\ 
-R-complete count: & 21904 & 3794 & 229 & 88 & 12 & 9 & 6 & 6 & 2 & 2 & 2 & \\ 
-log(RC) & 4.34 & 3.58 & 2.36 & 1.94 & 1.08 & 0.95 & 0.78 & 0.78 & 0.3 & 0.3 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 1 & 7 & 10 & 11 & 74 & 467 & 4435 & 51308 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 0.85 & 1.0 & 1.04 & 1.87 & 2.67 & 3.65 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 4
-
-RC trunc point: 3
-
-LC trunc point: 4
-
-RC+LC trunc point: 6
-
-\newpage
-
-73
-
-natureza
-
-\begin{tabular}{l|lllllllll}
-trunc: & n & a & t & u & r & e & z & a & \\ 
-R-complete count: & 7541 & 1930 & 230 & 50 & 44 & 11 & 3 & 2 & \\ 
-log(RC) & 3.88 & 3.29 & 2.36 & 1.7 & 1.64 & 1.04 & 0.48 & 0.3 & \\ 
-L-complete count: & 2 & 2 & 2 & 6 & 37 & 175 & 801 & 51308 & \\ 
-log(LC) & 0.3 & 0.3 & 0.3 & 0.78 & 1.57 & 2.24 & 2.9 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 4
-
-LC trunc point: 7
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-74
-
-periferia
-
-\begin{tabular}{l|llllllllll}
-trunc: & p & e & r & i & f & e & r & i & a & \\ 
-R-complete count: & 25254 & 4715 & 1977 & 162 & 11 & 5 & 5 & 4 & 2 & \\ 
-log(RC) & 4.4 & 3.67 & 3.3 & 2.21 & 1.04 & 0.7 & 0.7 & 0.6 & 0.3 & \\ 
-L-complete count: & 2 & 2 & 2 & 3 & 12 & 424 & 3122 & 8523 & 51308 & \\ 
-log(LC) & 0.3 & 0.3 & 0.3 & 0.48 & 1.08 & 2.63 & 3.49 & 3.93 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 5
-
-LC trunc point: 5
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-75
-
-proletariado
-
-\begin{tabular}{l|lllllllllllll}
-trunc: & p & r & o & l & e & t & a & r & i & a & d & o & \\ 
-R-complete count: & 25254 & 5993 & 2584 & 82 & 15 & 9 & 3 & 3 & 3 & 3 & 3 & 2 & \\ 
-log(RC) & 4.4 & 3.78 & 3.41 & 1.91 & 1.18 & 0.95 & 0.48 & 0.48 & 0.48 & 0.48 & 0.48 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 1 & 4 & 6 & 17 & 47 & 310 & 4874 & 11939 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 0.6 & 0.78 & 1.23 & 1.67 & 2.49 & 3.69 & 4.08 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 6
-
-RC trunc point: 4
-
-LC trunc point: 4
-
-RC+LC trunc point: 6
-
-\vspace{1em}
-
-76
-
-rapaziada
-
-\begin{tabular}{l|llllllllll}
-trunc: & r & a & p & a & z & i & a & d & a & \\ 
-R-complete count: & 18654 & 2740 & 226 & 64 & 24 & 7 & 1 & 1 & 1 & \\ 
-log(RC) & 4.27 & 3.44 & 2.35 & 1.81 & 1.38 & 0.85 & 0.0 & 0.0 & 0.0 & \\ 
-L-complete count: & 1 & 1 & 1 & 2 & 3 & 235 & 4067 & 6378 & 51308 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.3 & 0.48 & 2.37 & 3.61 & 3.8 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 7
-
-LC trunc point: 5
-
-RC+LC trunc point: 5
-
-\newpage
-
-77
-
-reasão
-
-\begin{tabular}{l|lllllll}
-trunc: & r & e & a & s & ã & o & \\ 
-R-complete count: & 18654 & 10681 & 752 & 58 & 1 & 1 & \\ 
-log(RC) & 4.27 & 4.03 & 2.88 & 1.76 & 0.0 & 0.0 & \\ 
-L-complete count: & 9 & 19 & 1951 & 3027 & 6340 & 49185 & \\ 
-log(LC) & 0.95 & 1.28 & 3.29 & 3.48 & 3.8 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 4
-
-RC trunc point: 5
-
-LC trunc point: 2
-
-RC+LC trunc point: 3
-
-\vspace{1em}
-
-78
-
-responsabilidade
-
-\begin{tabular}{l|lllllllllllllllll}
-trunc: & r & e & s & p & o & n & s & a & b & i & l & i & d & a & d & e & \\ 
-R-complete count: & 18654 & 10681 & 1738 & 373 & 157 & 137 & 79 & 58 & 52 & 44 & 37 & 35 & 7 & 6 & 5 & 3 & \\ 
-log(RC) & 4.27 & 4.03 & 3.24 & 2.57 & 2.2 & 2.14 & 1.9 & 1.76 & 1.72 & 1.64 & 1.57 & 1.54 & 0.85 & 0.78 & 0.7 & 0.48 & \\ 
-L-complete count: & 1 & 2 & 2 & 3 & 4 & 4 & 6 & 77 & 137 & 175 & 349 & 951 & 1165 & 1428 & 2830 & 33111 & \\ 
-log(LC) & 0.0 & 0.3 & 0.3 & 0.48 & 0.6 & 0.6 & 0.78 & 1.89 & 2.14 & 2.24 & 2.54 & 2.98 & 3.07 & 3.15 & 3.45 & 4.52 & \\ 
-\end{tabular}
-
-true trunc point: 7
-
-RC trunc point: 13
-
-LC trunc point: 7
-
-RC+LC trunc point: 8
-
-\vspace{1em}
-
-79
-
-telefone
-
-\begin{tabular}{l|lllllllll}
-trunc: & t & e & l & e & f & o & n & e & \\ 
-R-complete count: & 16966 & 3071 & 448 & 355 & 86 & 61 & 53 & 11 & \\ 
-log(RC) & 4.23 & 3.49 & 2.65 & 2.55 & 1.93 & 1.79 & 1.72 & 1.04 & \\ 
-L-complete count: & 3 & 4 & 4 & 8 & 39 & 608 & 2609 & 33111 & \\ 
-log(LC) & 0.48 & 0.6 & 0.6 & 0.9 & 1.59 & 2.78 & 3.42 & 4.52 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 3
-
-LC trunc point: 5
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-80
-
-trafikante
-
-\begin{tabular}{l|lllllllllll}
-trunc: & t & r & a & f & i & k & a & n & t & e & \\ 
-R-complete count: & 16966 & 4469 & 2354 & 44 & 24 & 23 & 18 & 4 & 3 & 3 & \\ 
-log(RC) & 4.23 & 3.65 & 3.37 & 1.64 & 1.38 & 1.36 & 1.26 & 0.6 & 0.48 & 0.48 & \\ 
-L-complete count: & 2 & 2 & 2 & 28 & 45 & 77 & 1027 & 4663 & 8254 & 33111 & \\ 
-log(LC) & 0.3 & 0.3 & 0.3 & 1.45 & 1.65 & 1.89 & 3.01 & 3.67 & 3.92 & 4.52 & \\ 
-\end{tabular}
-
-true trunc point: 6
-
-RC trunc point: 4
-
-LC trunc point: 3
-
-RC+LC trunc point: 4
-
-\newpage
-
-81
-
-ventilador
-
-\begin{tabular}{l|lllllllllll}
-trunc: & v & e & n & t & i & l & a & d & o & r & \\ 
-R-complete count: & 8551 & 2083 & 491 & 115 & 29 & 23 & 16 & 6 & 4 & 2 & \\ 
-log(RC) & 3.93 & 3.32 & 2.69 & 2.06 & 1.46 & 1.36 & 1.2 & 0.78 & 0.6 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 3 & 14 & 92 & 1304 & 1628 & 2986 & 19839 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.48 & 1.15 & 1.96 & 3.12 & 3.21 & 3.48 & 4.3 & \\ 
-\end{tabular}
-
-true trunc point: 6
-
-RC trunc point: 5
-
-LC trunc point: 9
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-82
-
-violão
-
-\begin{tabular}{l|lllllll}
-trunc: & v & i & o & l & ã & o & \\ 
-R-complete count: & 8551 & 2448 & 169 & 134 & 2 & 2 & \\ 
-log(RC) & 3.93 & 3.39 & 2.23 & 2.13 & 0.3 & 0.3 & \\ 
-L-complete count: & 1 & 2 & 16 & 105 & 6340 & 49185 & \\ 
-log(LC) & 0.0 & 0.3 & 1.2 & 2.02 & 3.8 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 4
-
-RC trunc point: 5
-
-LC trunc point: 4
-
-RC+LC trunc point: 4
-
-\vspace{1em}
-
-83
-
-supermerkado
-
-\begin{tabular}{l|lllllllllllll}
-trunc: & s & u & p & e & r & m & e & r & k & a & d & o & \\ 
-R-complete count: & 29058 & 4156 & 997 & 662 & 645 & 31 & 5 & 2 & 2 & 2 & 2 & 2 & \\ 
-log(RC) & 4.46 & 3.62 & 3.0 & 2.82 & 2.81 & 1.49 & 0.7 & 0.3 & 0.3 & 0.3 & 0.3 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 3 & 3 & 3 & 8 & 12 & 33 & 413 & 4874 & 11939 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.48 & 0.48 & 0.48 & 0.9 & 1.08 & 1.52 & 2.62 & 3.69 & 4.08 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 6
-
-LC trunc point: 8
-
-RC+LC trunc point: 7
-
-\vspace{1em}
-
-84
-
-depresão
-
-\begin{tabular}{l|lllllllll}
-trunc: & d & e & p & r & e & s & ã & o & \\ 
-R-complete count: & 23504 & 12577 & 482 & 106 & 64 & 47 & 1 & 1 & \\ 
-log(RC) & 4.37 & 4.1 & 2.68 & 2.03 & 1.81 & 1.67 & 0.0 & 0.0 & \\ 
-L-complete count: & 2 & 3 & 20 & 42 & 139 & 3027 & 6340 & 49185 & \\ 
-log(LC) & 0.3 & 0.48 & 1.3 & 1.62 & 2.14 & 3.48 & 3.8 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 7
-
-LC trunc point: 5
-
-RC+LC trunc point: 5
-
-\newpage
-
-85
-
-deprimido
-
-\begin{tabular}{l|llllllllll}
-trunc: & d & e & p & r & i & m & i & d & o & \\ 
-R-complete count: & 23504 & 12577 & 482 & 106 & 30 & 25 & 13 & 5 & 2 & \\ 
-log(RC) & 4.37 & 4.1 & 2.68 & 2.03 & 1.48 & 1.4 & 1.11 & 0.7 & 0.3 & \\ 
-L-complete count: & 1 & 2 & 8 & 8 & 13 & 42 & 1172 & 11939 & 49185 & \\ 
-log(LC) & 0.0 & 0.3 & 0.9 & 0.9 & 1.11 & 1.62 & 3.07 & 4.08 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 4
-
-RC trunc point: 3
-
-LC trunc point: 6
-
-RC+LC trunc point: 6
-
-\vspace{1em}
-
-86
-
-pregisoso
-
-\begin{tabular}{l|llllllllll}
-trunc: & p & r & e & g & i & s & o & s & o & \\ 
-R-complete count: & 25254 & 5993 & 2150 & 99 & 15 & 9 & 7 & 6 & 2 & \\ 
-log(RC) & 4.4 & 3.78 & 3.33 & 2.0 & 1.18 & 0.95 & 0.85 & 0.78 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 1 & 5 & 22 & 680 & 1690 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 0.7 & 1.34 & 2.83 & 3.23 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 5
-
-LC trunc point: 8
-
-RC+LC trunc point: 6
-
-\vspace{1em}
-
-87
-
-tostão
-
-\begin{tabular}{l|lllllll}
-trunc: & t & o & s & t & ã & o & \\ 
-R-complete count: & 16966 & 2374 & 141 & 39 & 1 & 1 & \\ 
-log(RC) & 4.23 & 3.38 & 2.15 & 1.59 & 0.0 & 0.0 & \\ 
-L-complete count: & 1 & 5 & 84 & 274 & 6340 & 49185 & \\ 
-log(LC) & 0.0 & 0.7 & 1.92 & 2.44 & 3.8 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 4
-
-RC trunc point: 5
-
-LC trunc point: 4
-
-RC+LC trunc point: 3
-
-\vspace{1em}
-
-88
-
-sanduíSe
-
-\begin{tabular}{l|lllllllll}
-trunc: & s & a & n & d & u & í & S & e & \\ 
-R-complete count: & 29058 & 4299 & 616 & 133 & 17 & 4 & 4 & 2 & \\ 
-log(RC) & 4.46 & 3.63 & 2.79 & 2.12 & 1.23 & 0.6 & 0.6 & 0.3 & \\ 
-L-complete count: & 2 & 2 & 2 & 3 & 3 & 5 & 309 & 33111 & \\ 
-log(LC) & 0.3 & 0.3 & 0.3 & 0.48 & 0.48 & 0.7 & 2.49 & 4.52 & \\ 
-\end{tabular}
-
-true trunc point: 7
-
-RC trunc point: 6
-
-LC trunc point: 6
-
-RC+LC trunc point: 6
-
-\newpage
-
-89
-
-satisfasão
-
-\begin{tabular}{l|lllllllllll}
-trunc: & s & a & t & i & s & f & a & s & ã & o & \\ 
-R-complete count: & 29058 & 4299 & 268 & 95 & 66 & 61 & 40 & 8 & 1 & 1 & \\ 
-log(RC) & 4.46 & 3.63 & 2.43 & 1.98 & 1.82 & 1.79 & 1.6 & 0.9 & 0.0 & 0.0 & \\ 
-L-complete count: & 3 & 3 & 3 & 3 & 4 & 17 & 1951 & 3027 & 6340 & 49185 & \\ 
-log(LC) & 0.48 & 0.48 & 0.48 & 0.48 & 0.6 & 1.23 & 3.29 & 3.48 & 3.8 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 6
 
 RC trunc point: 9
 
@@ -1961,238 +1033,24 @@ LC trunc point: 6
 
 RC+LC trunc point: 6
 
-\vspace{1em}
+binRL trunc point: 4
 
-90
+binLR trunc point: 4
 
-kaSoeira
-
-\begin{tabular}{l|lllllllll}
-trunc: & k & a & S & o & e & i & r & a & \\ 
-R-complete count: & 33086 & 9327 & 104 & 35 & 3 & 2 & 2 & 2 & \\ 
-log(RC) & 4.52 & 3.97 & 2.02 & 1.54 & 0.48 & 0.3 & 0.3 & 0.3 & \\ 
-L-complete count: & 2 & 2 & 2 & 23 & 685 & 936 & 5211 & 51308 & \\ 
-log(LC) & 0.3 & 0.3 & 0.3 & 1.36 & 2.84 & 2.97 & 3.72 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 3
-
-RC trunc point: 3
-
-LC trunc point: 3
-
-RC+LC trunc point: 4
+Gries trunc point: 8
 
 \vspace{1em}
 
-91
-
-namorada
-
-\begin{tabular}{l|lllllllll}
-trunc: & n & a & m & o & r & a & d & a & \\ 
-R-complete count: & 7541 & 1930 & 127 & 66 & 59 & 37 & 17 & 3 & \\ 
-log(RC) & 3.88 & 3.29 & 2.1 & 1.82 & 1.77 & 1.57 & 1.23 & 0.48 & \\ 
-L-complete count: & 3 & 3 & 9 & 60 & 479 & 4067 & 6378 & 51308 & \\ 
-log(LC) & 0.48 & 0.48 & 0.95 & 1.78 & 2.68 & 3.61 & 3.8 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 4
-
-RC trunc point: 3
-
-LC trunc point: 7
-
-RC+LC trunc point: 4
-
-\vspace{1em}
-
-92
-
-namorado
-
-\begin{tabular}{l|lllllllll}
-trunc: & n & a & m & o & r & a & d & o & \\ 
-R-complete count: & 7541 & 1930 & 127 & 66 & 59 & 37 & 17 & 5 & \\ 
-log(RC) & 3.88 & 3.29 & 2.1 & 1.82 & 1.77 & 1.57 & 1.23 & 0.7 & \\ 
-L-complete count: & 3 & 3 & 8 & 73 & 534 & 4874 & 11939 & 49185 & \\ 
-log(LC) & 0.48 & 0.48 & 0.9 & 1.86 & 2.73 & 3.69 & 4.08 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 4
-
-RC trunc point: 3
-
-LC trunc point: 3
-
-RC+LC trunc point: 4
-
-\newpage
-
-93
-
-rekalkada
-
-\begin{tabular}{l|llllllllll}
-trunc: & r & e & k & a & l & k & a & d & a & \\ 
-R-complete count: & 18654 & 10681 & 1428 & 161 & 30 & 14 & 4 & 3 & 1 & \\ 
-log(RC) & 4.27 & 4.03 & 3.15 & 2.21 & 1.48 & 1.15 & 0.6 & 0.48 & 0.0 & \\ 
-L-complete count: & 1 & 1 & 2 & 3 & 8 & 322 & 4067 & 6378 & 51308 & \\ 
-log(LC) & 0.0 & 0.0 & 0.3 & 0.48 & 0.9 & 2.51 & 3.61 & 3.8 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 3
-
-RC trunc point: 7
-
-LC trunc point: 5
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-94
-
-pirigete
-
-\begin{tabular}{l|lllllllll}
-trunc: & p & i & r & i & g & e & t & e & \\ 
-R-complete count: & 25254 & 2207 & 216 & 28 & 2 & 2 & 2 & 2 & \\ 
-log(RC) & 4.4 & 3.34 & 2.33 & 1.45 & 0.3 & 0.3 & 0.3 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 2 & 12 & 445 & 8254 & 33111 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.3 & 1.08 & 2.65 & 3.92 & 4.52 & \\ 
-\end{tabular}
-
-true trunc point: 5
-
-RC trunc point: 5
-
-LC trunc point: 5
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-95
-
-parseiro
-
-\begin{tabular}{l|lllllllll}
-trunc: & p & a & r & s & e & i & r & o & \\ 
-R-complete count: & 25254 & 4921 & 1423 & 68 & 39 & 11 & 8 & 3 & \\ 
-log(RC) & 4.4 & 3.69 & 3.15 & 1.83 & 1.59 & 1.04 & 0.9 & 0.48 & \\ 
-L-complete count: & 1 & 1 & 3 & 50 & 709 & 941 & 2875 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.48 & 1.7 & 2.85 & 2.97 & 3.46 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 4
-
-RC trunc point: 4
-
-LC trunc point: 7
-
-RC+LC trunc point: 4
-
-\vspace{1em}
-
-96
-
-parseira
-
-\begin{tabular}{l|lllllllll}
-trunc: & p & a & r & s & e & i & r & a & \\ 
-R-complete count: & 25254 & 4921 & 1423 & 68 & 39 & 11 & 8 & 2 & \\ 
-log(RC) & 4.4 & 3.69 & 3.15 & 1.83 & 1.59 & 1.04 & 0.9 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 2 & 46 & 685 & 936 & 5211 & 51308 & \\ 
-log(LC) & 0.0 & 0.0 & 0.3 & 1.66 & 2.84 & 2.97 & 3.72 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 4
-
-RC trunc point: 4
-
-LC trunc point: 3
-
-RC+LC trunc point: 4
-
-\newpage
-
-97
-
-kebrada
-
-\begin{tabular}{l|llllllll}
-trunc: & k & e & b & r & a & d & a & \\ 
-R-complete count: & 33086 & 1582 & 89 & 70 & 57 & 16 & 2 & \\ 
-log(RC) & 4.52 & 3.2 & 1.95 & 1.85 & 1.76 & 1.2 & 0.3 & \\ 
-L-complete count: & 2 & 5 & 31 & 479 & 4067 & 6378 & 51308 & \\ 
-log(LC) & 0.3 & 0.7 & 1.49 & 2.68 & 3.61 & 3.8 & 4.71 & \\ 
-\end{tabular}
-
-true trunc point: 4
-
-RC trunc point: 3
-
-LC trunc point: 6
-
-RC+LC trunc point: 3
-
-\vspace{1em}
-
-98
-
-makaRão
-
-\begin{tabular}{l|llllllll}
-trunc: & m & a & k & a & R & ã & o & \\ 
-R-complete count: & 21904 & 7880 & 618 & 124 & 10 & 1 & 1 & \\ 
-log(RC) & 4.34 & 3.9 & 2.79 & 2.09 & 1.0 & 0.0 & 0.0 & \\ 
-L-complete count: & 1 & 1 & 2 & 15 & 29 & 6340 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.3 & 1.18 & 1.46 & 3.8 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 3
-
-RC trunc point: 6
-
-LC trunc point: 5
-
-RC+LC trunc point: 5
-
-\vspace{1em}
-
-99
-
-pirasão
-
-\begin{tabular}{l|llllllll}
-trunc: & p & i & r & a & s & ã & o & \\ 
-R-complete count: & 25254 & 2207 & 216 & 76 & 4 & 1 & 1 & \\ 
-log(RC) & 4.4 & 3.34 & 2.33 & 1.88 & 0.6 & 0.0 & 0.0 & \\ 
-L-complete count: & 15 & 20 & 263 & 1951 & 3027 & 6340 & 49185 & \\ 
-log(LC) & 1.18 & 1.3 & 2.42 & 3.29 & 3.48 & 3.8 & 4.69 & \\ 
-\end{tabular}
-
-true trunc point: 3
-
-RC trunc point: 5
-
-LC trunc point: 2
-
-RC+LC trunc point: 3
-
-\vspace{1em}
-
-100
+38
 
 extraordinário
 
 \begin{tabular}{l|lllllllllllllll}
 trunc: & e & x & t & r & a & o & r & d & i & n & á & r & i & o & \\ 
-R-complete count: & 22953 & 2674 & 510 & 253 & 201 & 24 & 18 & 16 & 14 & 14 & 6 & 6 & 6 & 2 & \\ 
-log(RC) & 4.36 & 3.43 & 2.71 & 2.4 & 2.3 & 1.38 & 1.26 & 1.2 & 1.15 & 1.15 & 0.78 & 0.78 & 0.78 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 3 & 3 & 4 & 7 & 7 & 9 & 23 & 102 & 428 & 1103 & 3417 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.48 & 0.48 & 0.6 & 0.85 & 0.85 & 0.95 & 1.36 & 2.01 & 2.63 & 3.04 & 3.53 & 4.69 & \\ 
+R-complete count: & 43401 & 4620 & 954 & 533 & 416 & 45 & 33 & 26 & 22 & 19 & 9 & 8 & 7 & 2 & \\ 
+log(RC) & 4.64 & 3.66 & 2.98 & 2.73 & 2.62 & 1.65 & 1.52 & 1.41 & 1.34 & 1.28 & 0.95 & 0.9 & 0.85 & 0.3 & \\ 
+L-complete count: & 3 & 3 & 6 & 6 & 7 & 12 & 14 & 20 & 53 & 192 & 787 & 2140 & 7008 & 95398 & \\ 
+log(LC) & 0.48 & 0.48 & 0.78 & 0.78 & 0.85 & 1.08 & 1.15 & 1.3 & 1.72 & 2.28 & 2.9 & 3.33 & 3.85 & 4.98 & \\ 
 \end{tabular}
 
 true trunc point: 5
@@ -2201,20 +1059,306 @@ RC trunc point: 6
 
 LC trunc point: 13
 
-RC+LC trunc point: 9
+RC+LC trunc point: 8
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 6
+
+\vspace{1em}
+
+39
+
+faculdade
+
+\begin{tabular}{l|llllllllll}
+trunc: & f & a & c & u & l & d & a & d & e & \\ 
+R-complete count: & 27639 & 5638 & 390 & 26 & 21 & 4 & 3 & 3 & 3 & \\ 
+log(RC) & 4.44 & 3.75 & 2.59 & 1.41 & 1.32 & 0.6 & 0.48 & 0.48 & 0.48 & \\ 
+L-complete count: & 5 & 6 & 15 & 15 & 84 & 2155 & 2816 & 5909 & 73680 & \\ 
+log(LC) & 0.7 & 0.78 & 1.18 & 1.18 & 1.92 & 3.33 & 3.45 & 3.77 & 4.87 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 4
+
+LC trunc point: 8
+
+RC+LC trunc point: 4
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 3
+
+\vspace{1em}
+
+40
+
+falsificado
+
+\begin{tabular}{l|llllllllllll}
+trunc: & f & a & l & s & i & f & i & c & a & d & o & \\ 
+R-complete count: & 27639 & 5638 & 1028 & 121 & 56 & 48 & 47 & 41 & 35 & 9 & 7 & \\ 
+log(RC) & 4.44 & 3.75 & 3.01 & 2.08 & 1.75 & 1.68 & 1.67 & 1.61 & 1.54 & 0.95 & 0.85 & \\ 
+L-complete count: & 1 & 1 & 1 & 13 & 150 & 167 & 312 & 623 & 8016 & 20151 & 95398 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 1.11 & 2.18 & 2.22 & 2.49 & 2.79 & 3.9 & 4.3 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 4
+
+LC trunc point: 3
+
+RC+LC trunc point: 5
+
+binRL trunc point: 6
+
+binLR trunc point: 4
+
+Gries trunc point: 10
 
 \newpage
 
-101
+41
 
-internasional
+fissura
+
+\begin{tabular}{l|llllllll}
+trunc: & f & i & s & s & u & r & a & \\ 
+R-complete count: & 27639 & 4055 & 344 & 29 & 14 & 14 & 12 & \\ 
+log(RC) & 4.44 & 3.61 & 2.54 & 1.46 & 1.15 & 1.15 & 1.08 & \\ 
+L-complete count: & 2 & 3 & 14 & 55 & 1181 & 11116 & 107925 & \\ 
+log(LC) & 0.3 & 0.48 & 1.15 & 1.74 & 3.07 & 4.05 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 4
+
+LC trunc point: 4
+
+RC+LC trunc point: 4
+
+binRL trunc point: 6
+
+binLR trunc point: 4
+
+Gries trunc point: 4
+
+\vspace{1em}
+
+42
+
+flagrante
+
+\begin{tabular}{l|llllllllll}
+trunc: & f & l & a & g & r & a & n & t & e & \\ 
+R-complete count: & 27639 & 2602 & 753 & 98 & 31 & 24 & 4 & 3 & 3 & \\ 
+log(RC) & 4.44 & 3.42 & 2.88 & 1.99 & 1.49 & 1.38 & 0.6 & 0.48 & 0.48 & \\ 
+L-complete count: & 1 & 2 & 4 & 15 & 236 & 1954 & 8493 & 16009 & 73680 & \\ 
+log(LC) & 0.0 & 0.3 & 0.6 & 1.18 & 2.37 & 3.29 & 3.93 & 4.2 & 4.87 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 7
+
+LC trunc point: 4
+
+RC+LC trunc point: 4
+
+binRL trunc point: 8
+
+binLR trunc point: 5
+
+Gries trunc point: 4
+
+\vspace{1em}
+
+43
+
+forasteira
+
+\begin{tabular}{l|lllllllllll}
+trunc: & f & o & r & a & s & t & e & i & r & a & \\ 
+R-complete count: & 27639 & 3795 & 1455 & 71 & 12 & 9 & 9 & 5 & 5 & 2 & \\ 
+log(RC) & 4.44 & 3.58 & 3.16 & 1.85 & 1.08 & 0.95 & 0.95 & 0.7 & 0.7 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 3 & 5 & 20 & 146 & 1226 & 1815 & 11116 & 107925 & \\ 
+log(LC) & 0.0 & 0.0 & 0.48 & 0.7 & 1.3 & 2.16 & 3.09 & 3.26 & 4.05 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 6
+
+RC trunc point: 5
+
+LC trunc point: 8
+
+RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 10
+
+\vspace{1em}
+
+44
+
+fortuna
+
+\begin{tabular}{l|llllllll}
+trunc: & f & o & r & t & u & n & a & \\ 
+R-complete count: & 27639 & 3795 & 1455 & 244 & 39 & 26 & 14 & \\ 
+log(RC) & 4.44 & 3.58 & 3.16 & 2.39 & 1.59 & 1.41 & 1.15 & \\ 
+L-complete count: & 4 & 11 & 13 & 37 & 280 & 9239 & 107925 & \\ 
+log(LC) & 0.6 & 1.04 & 1.11 & 1.57 & 2.45 & 3.97 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 5
+
+LC trunc point: 5
+
+RC+LC trunc point: 4
+
+binRL trunc point: 6
+
+binLR trunc point: 4
+
+Gries trunc point: 5
+
+\newpage
+
+45
+
+fotografia
+
+\begin{tabular}{l|lllllllllll}
+trunc: & f & o & t & o & g & r & a & f & i & a & \\ 
+R-complete count: & 27639 & 3795 & 336 & 258 & 84 & 70 & 58 & 50 & 8 & 3 & \\ 
+log(RC) & 4.44 & 3.58 & 2.53 & 2.41 & 1.92 & 1.85 & 1.76 & 1.7 & 0.9 & 0.48 & \\ 
+L-complete count: & 8 & 8 & 28 & 141 & 172 & 176 & 194 & 305 & 17278 & 107925 & \\ 
+log(LC) & 0.9 & 0.9 & 1.45 & 2.15 & 2.24 & 2.25 & 2.29 & 2.48 & 4.24 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 3
+
+LC trunc point: 8
+
+RC+LC trunc point: 4
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 5
+
+\vspace{1em}
+
+46
+
+heterosexual
+
+\begin{tabular}{l|lllllllllllll}
+trunc: & h & e & t & e & r & o & s & e & x & u & a & l & \\ 
+R-complete count: & 22768 & 4287 & 136 & 87 & 82 & 68 & 18 & 7 & 6 & 6 & 6 & 5 & \\ 
+log(RC) & 4.36 & 3.63 & 2.13 & 1.94 & 1.91 & 1.83 & 1.26 & 0.85 & 0.78 & 0.78 & 0.78 & 0.7 & \\ 
+L-complete count: & 1 & 1 & 1 & 1 & 4 & 11 & 51 & 51 & 52 & 263 & 5800 & 20940 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 0.6 & 1.04 & 1.71 & 1.71 & 1.72 & 2.42 & 3.76 & 4.32 & \\ 
+\end{tabular}
+
+true trunc point: 6
+
+RC trunc point: 3
+
+LC trunc point: 9
+
+RC+LC trunc point: 7
+
+binRL trunc point: 5
+
+binLR trunc point: 3
+
+Gries trunc point: 8
+
+\vspace{1em}
+
+47
+
+homosexual
+
+\begin{tabular}{l|lllllllllll}
+trunc: & h & o & m & o & s & e & x & u & a & l & \\ 
+R-complete count: & 22768 & 4637 & 608 & 145 & 25 & 6 & 6 & 6 & 5 & 3 & \\ 
+log(RC) & 4.36 & 3.67 & 2.78 & 2.16 & 1.4 & 0.78 & 0.78 & 0.78 & 0.7 & 0.48 & \\ 
+L-complete count: & 1 & 2 & 2 & 11 & 51 & 51 & 52 & 263 & 5800 & 20940 & \\ 
+log(LC) & 0.0 & 0.3 & 0.3 & 1.04 & 1.71 & 1.71 & 1.72 & 2.42 & 3.76 & 4.32 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 6
+
+LC trunc point: 3
+
+RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 6
+
+\vspace{1em}
+
+48
+
+infraestrutura
+
+\begin{tabular}{l|lllllllllllllll}
+trunc: & i & n & f & r & a & e & s & t & r & u & t & u & r & a & \\ 
+R-complete count: & 24737 & 12956 & 1295 & 137 & 57 & 8 & 6 & 6 & 3 & 3 & 3 & 3 & 3 & 3 & \\ 
+log(RC) & 4.39 & 4.11 & 3.11 & 2.14 & 1.76 & 0.9 & 0.78 & 0.78 & 0.48 & 0.48 & 0.48 & 0.48 & 0.48 & 0.48 & \\ 
+L-complete count: & 1 & 1 & 1 & 1 & 1 & 13 & 18 & 21 & 22 & 39 & 379 & 1181 & 11116 & 107925 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 1.11 & 1.26 & 1.32 & 1.34 & 1.59 & 2.58 & 3.07 & 4.05 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 6
+
+LC trunc point: 5
+
+RC+LC trunc point: 6
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 6
+
+\newpage
+
+49
+
+internacional
 
 \begin{tabular}{l|llllllllllllll}
-trunc: & i & n & t & e & r & n & a & s & i & o & n & a & l & \\ 
-R-complete count: & 13002 & 6875 & 1601 & 1135 & 725 & 88 & 71 & 26 & 19 & 16 & 15 & 14 & 9 & \\ 
-log(RC) & 4.11 & 3.84 & 3.2 & 3.05 & 2.86 & 1.94 & 1.85 & 1.41 & 1.28 & 1.2 & 1.18 & 1.15 & 0.95 & \\ 
-L-complete count: & 1 & 2 & 2 & 2 & 2 & 10 & 49 & 136 & 164 & 215 & 377 & 2386 & 8534 & \\ 
-log(LC) & 0.0 & 0.3 & 0.3 & 0.3 & 0.3 & 1.0 & 1.69 & 2.13 & 2.21 & 2.33 & 2.58 & 3.38 & 3.93 & \\ 
+trunc: & i & n & t & e & r & n & a & c & i & o & n & a & l & \\ 
+R-complete count: & 24737 & 12956 & 3117 & 2226 & 1666 & 119 & 86 & 22 & 22 & 19 & 16 & 16 & 13 & \\ 
+log(RC) & 4.39 & 4.11 & 3.49 & 3.35 & 3.22 & 2.08 & 1.93 & 1.34 & 1.34 & 1.28 & 1.2 & 1.2 & 1.11 & \\ 
+L-complete count: & 2 & 3 & 3 & 3 & 3 & 13 & 96 & 223 & 371 & 460 & 875 & 5800 & 20940 & \\ 
+log(LC) & 0.3 & 0.48 & 0.48 & 0.48 & 0.48 & 1.11 & 1.98 & 2.35 & 2.57 & 2.66 & 2.94 & 3.76 & 4.32 & \\ 
 \end{tabular}
 
 true trunc point: 5
@@ -2225,18 +1369,696 @@ LC trunc point: 5
 
 RC+LC trunc point: 7
 
+binRL trunc point: 6
+
+binLR trunc point: 3
+
+Gries trunc point: 7
+
 \vspace{1em}
 
-102
+50
 
-pornográfiko
+loteria
+
+\begin{tabular}{l|llllllll}
+trunc: & l & o & t & e & r & i & a & \\ 
+R-complete count: & 26384 & 3468 & 169 & 27 & 6 & 4 & 3 & \\ 
+log(RC) & 4.42 & 3.54 & 2.23 & 1.43 & 0.78 & 0.6 & 0.48 & \\ 
+L-complete count: & 2 & 7 & 156 & 775 & 5677 & 17278 & 107925 & \\ 
+log(LC) & 0.3 & 0.85 & 2.19 & 2.89 & 3.75 & 4.24 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 3
+
+RC trunc point: 3
+
+LC trunc point: 2
+
+RC+LC trunc point: 3
+
+binRL trunc point: 5
+
+binLR trunc point: 3
+
+Gries trunc point: 3
+
+\vspace{1em}
+
+51
+
+macarrão
+
+\begin{tabular}{l|lllllllll}
+trunc: & m & a & c & a & r & r & ã & o & \\ 
+R-complete count: & 50090 & 17724 & 1495 & 229 & 59 & 16 & 3 & 2 & \\ 
+log(RC) & 4.7 & 4.25 & 3.17 & 2.36 & 1.77 & 1.2 & 0.48 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 3 & 28 & 48 & 2394 & 10870 & 95398 & \\ 
+log(LC) & 0.0 & 0.0 & 0.48 & 1.45 & 1.68 & 3.38 & 4.04 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 3
+
+RC trunc point: 7
+
+LC trunc point: 5
+
+RC+LC trunc point: 5
+
+binRL trunc point: 6
+
+binLR trunc point: 3
+
+Gries trunc point: 5
+
+\vspace{1em}
+
+52
+
+madrugada
+
+\begin{tabular}{l|llllllllll}
+trunc: & m & a & d & r & u & g & a & d & a & \\ 
+R-complete count: & 50090 & 17724 & 601 & 120 & 31 & 30 & 21 & 11 & 2 & \\ 
+log(RC) & 4.7 & 4.25 & 2.78 & 2.08 & 1.49 & 1.48 & 1.32 & 1.04 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 1 & 9 & 27 & 307 & 6664 & 11171 & 107925 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.95 & 1.43 & 2.49 & 3.82 & 4.05 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 6
+
+RC trunc point: 3
+
+LC trunc point: 3
+
+RC+LC trunc point: 5
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 5
+
+\newpage
+
+53
+
+manequim
+
+\begin{tabular}{l|lllllllll}
+trunc: & m & a & n & e & q & u & i & m & \\ 
+R-complete count: & 50090 & 17724 & 2722 & 195 & 8 & 8 & 7 & 1 & \\ 
+log(RC) & 4.7 & 4.25 & 3.43 & 2.29 & 0.9 & 0.9 & 0.85 & 0.0 & \\ 
+L-complete count: & 1 & 1 & 2 & 11 & 46 & 77 & 1609 & 35169 & \\ 
+log(LC) & 0.0 & 0.0 & 0.3 & 1.04 & 1.66 & 1.89 & 3.21 & 4.55 & \\ 
+\end{tabular}
+
+true trunc point: 6
+
+RC trunc point: 5
+
+LC trunc point: 6
+
+RC+LC trunc point: 5
+
+binRL trunc point: 6
+
+binLR trunc point: 3
+
+Gries trunc point: 5
+
+\vspace{1em}
+
+54
+
+maximização
+
+\begin{tabular}{l|llllllllllll}
+trunc: & m & a & x & i & m & i & z & a & ç & ã & o & \\ 
+R-complete count: & 50090 & 17724 & 192 & 113 & 71 & 42 & 22 & 17 & 1 & 1 & 1 & \\ 
+log(RC) & 4.7 & 4.25 & 2.28 & 2.05 & 1.85 & 1.62 & 1.34 & 1.23 & 0.0 & 0.0 & 0.0 & \\ 
+L-complete count: & 1 & 1 & 1 & 10 & 25 & 591 & 605 & 3366 & 4759 & 10870 & 95398 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 1.0 & 1.4 & 2.77 & 2.78 & 3.53 & 3.68 & 4.04 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 3
+
+LC trunc point: 3
+
+RC+LC trunc point: 5
+
+binRL trunc point: 5
+
+binLR trunc point: 3
+
+Gries trunc point: 9
+
+\vspace{1em}
+
+55
+
+metaleiro
+
+\begin{tabular}{l|llllllllll}
+trunc: & m & e & t & a & l & e & i & r & o & \\ 
+R-complete count: & 50090 & 8254 & 1104 & 387 & 88 & 4 & 3 & 3 & 2 & \\ 
+log(RC) & 4.7 & 3.92 & 3.04 & 2.59 & 1.94 & 0.6 & 0.48 & 0.48 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 7 & 26 & 98 & 1280 & 1767 & 6258 & 95398 & \\ 
+log(LC) & 0.0 & 0.0 & 0.85 & 1.41 & 1.99 & 3.11 & 3.25 & 3.8 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 6
+
+LC trunc point: 2
+
+RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 6
+
+\vspace{1em}
+
+56
+
+milhão
+
+\begin{tabular}{l|lllllll}
+trunc: & m & i & l & h & ã & o & \\ 
+R-complete count: & 50090 & 6995 & 1062 & 90 & 9 & 6 & \\ 
+log(RC) & 4.7 & 3.84 & 3.03 & 1.95 & 0.95 & 0.78 & \\ 
+L-complete count: & 3 & 52 & 124 & 216 & 10870 & 95398 & \\ 
+log(LC) & 0.48 & 1.72 & 2.09 & 2.33 & 4.04 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 5
+
+LC trunc point: 4
+
+RC+LC trunc point: 4
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 5
+
+\newpage
+
+57
+
+mordomia
+
+\begin{tabular}{l|lllllllll}
+trunc: & m & o & r & d & o & m & i & a & \\ 
+R-complete count: & 50090 & 8071 & 1731 & 163 & 23 & 11 & 2 & 2 & \\ 
+log(RC) & 4.7 & 3.91 & 3.24 & 2.21 & 1.36 & 1.04 & 0.3 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 1 & 4 & 285 & 641 & 17278 & 107925 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.6 & 2.45 & 2.81 & 4.24 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 7
+
+LC trunc point: 4
+
+RC+LC trunc point: 5
+
+binRL trunc point: 6
+
+binLR trunc point: 4
+
+Gries trunc point: 7
+
+\vspace{1em}
+
+58
+
+motocicleta
+
+\begin{tabular}{l|llllllllllll}
+trunc: & m & o & t & o & c & i & c & l & e & t & a & \\ 
+R-complete count: & 50090 & 8071 & 487 & 201 & 27 & 10 & 9 & 9 & 2 & 2 & 2 & \\ 
+log(RC) & 4.7 & 3.91 & 2.69 & 2.3 & 1.43 & 1.0 & 0.95 & 0.95 & 0.3 & 0.3 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 1 & 1 & 11 & 15 & 19 & 130 & 864 & 9240 & 107925 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 1.04 & 1.18 & 1.28 & 2.11 & 2.94 & 3.97 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 3
+
+LC trunc point: 4
+
+RC+LC trunc point: 6
+
+binRL trunc point: 5
+
+binLR trunc point: 3
+
+Gries trunc point: 5
+
+\vspace{1em}
+
+59
+
+mulher
+
+\begin{tabular}{l|lllllll}
+trunc: & m & u & l & h & e & r & \\ 
+R-complete count: & 50090 & 4062 & 875 & 123 & 102 & 95 & \\ 
+log(RC) & 4.7 & 3.61 & 2.94 & 2.09 & 2.01 & 1.98 & \\ 
+L-complete count: & 16 & 20 & 54 & 987 & 17930 & 44060 & \\ 
+log(LC) & 1.2 & 1.3 & 1.73 & 2.99 & 4.25 & 4.64 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 4
+
+LC trunc point: 3
+
+RC+LC trunc point: 4
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 3
+
+\vspace{1em}
+
+60
+
+namorada
+
+\begin{tabular}{l|lllllllll}
+trunc: & n & a & m & o & r & a & d & a & \\ 
+R-complete count: & 18190 & 4765 & 311 & 119 & 98 & 59 & 27 & 6 & \\ 
+log(RC) & 4.26 & 3.68 & 2.49 & 2.08 & 1.99 & 1.77 & 1.43 & 0.78 & \\ 
+L-complete count: & 4 & 8 & 16 & 95 & 790 & 6664 & 11171 & 107925 & \\ 
+log(LC) & 0.6 & 0.9 & 1.2 & 1.98 & 2.9 & 3.82 & 4.05 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 3
+
+LC trunc point: 7
+
+RC+LC trunc point: 4
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 3
+
+\newpage
+
+61
+
+namorado
+
+\begin{tabular}{l|lllllllll}
+trunc: & n & a & m & o & r & a & d & o & \\ 
+R-complete count: & 18190 & 4765 & 311 & 119 & 98 & 59 & 27 & 6 & \\ 
+log(RC) & 4.26 & 3.68 & 2.49 & 2.08 & 1.99 & 1.77 & 1.43 & 0.78 & \\ 
+L-complete count: & 3 & 4 & 13 & 121 & 933 & 8016 & 20151 & 95398 & \\ 
+log(LC) & 0.48 & 0.6 & 1.11 & 2.08 & 2.97 & 3.9 & 4.3 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 3
+
+LC trunc point: 3
+
+RC+LC trunc point: 4
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 8
+
+\vspace{1em}
+
+62
+
+natureza
+
+\begin{tabular}{l|lllllllll}
+trunc: & n & a & t & u & r & e & z & a & \\ 
+R-complete count: & 18190 & 4765 & 503 & 103 & 81 & 12 & 4 & 3 & \\ 
+log(RC) & 4.26 & 3.68 & 2.7 & 2.01 & 1.91 & 1.08 & 0.6 & 0.48 & \\ 
+L-complete count: & 6 & 6 & 10 & 15 & 69 & 302 & 1642 & 107925 & \\ 
+log(LC) & 0.78 & 0.78 & 1.0 & 1.18 & 1.84 & 2.48 & 3.22 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 4
+
+LC trunc point: 7
+
+RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 4
+
+\vspace{1em}
+
+63
+
+neurose
+
+\begin{tabular}{l|llllllll}
+trunc: & n & e & u & r & o & s & e & \\ 
+R-complete count: & 18190 & 4283 & 646 & 420 & 362 & 26 & 6 & \\ 
+log(RC) & 4.26 & 3.63 & 2.81 & 2.62 & 2.56 & 1.41 & 0.78 & \\ 
+L-complete count: & 3 & 3 & 5 & 127 & 612 & 7207 & 73680 & \\ 
+log(LC) & 0.48 & 0.48 & 0.7 & 2.1 & 2.79 & 3.86 & 4.87 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 3
+
+LC trunc point: 3
+
+RC+LC trunc point: 5
+
+binRL trunc point: 6
+
+binLR trunc point: 4
+
+Gries trunc point: 6
+
+\vspace{1em}
+
+64
+
+palhaso
+
+\begin{tabular}{l|llllllll}
+trunc: & p & a & l & h & a & s & o & \\ 
+R-complete count: & 53447 & 10689 & 1077 & 62 & 43 & 4 & 1 & \\ 
+log(RC) & 4.73 & 4.03 & 3.03 & 1.79 & 1.63 & 0.6 & 0.0 & \\ 
+L-complete count: & 1 & 1 & 1 & 3 & 110 & 2724 & 95398 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.48 & 2.04 & 3.44 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 4
+
+LC trunc point: 4
+
+RC+LC trunc point: 5
+
+binRL trunc point: 6
+
+binLR trunc point: 4
+
+Gries trunc point: 7
+
+\newpage
+
+65
+
+parceira
+
+\begin{tabular}{l|lllllllll}
+trunc: & p & a & r & c & e & i & r & a & \\ 
+R-complete count: & 53447 & 10689 & 3021 & 107 & 58 & 25 & 19 & 7 & \\ 
+log(RC) & 4.73 & 4.03 & 3.48 & 2.03 & 1.76 & 1.4 & 1.28 & 0.85 & \\ 
+L-complete count: & 2 & 2 & 6 & 47 & 1226 & 1815 & 11116 & 107925 & \\ 
+log(LC) & 0.3 & 0.3 & 0.78 & 1.67 & 3.09 & 3.26 & 4.05 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 4
+
+LC trunc point: 6
+
+RC+LC trunc point: 4
+
+binRL trunc point: 7
+
+binLR trunc point: 4
+
+Gries trunc point: 8
+
+\vspace{1em}
+
+66
+
+parceiro
+
+\begin{tabular}{l|lllllllll}
+trunc: & p & a & r & c & e & i & r & o & \\ 
+R-complete count: & 53447 & 10689 & 3021 & 107 & 58 & 25 & 19 & 6 & \\ 
+log(RC) & 4.73 & 4.03 & 3.48 & 2.03 & 1.76 & 1.4 & 1.28 & 0.78 & \\ 
+L-complete count: & 2 & 4 & 9 & 62 & 1280 & 1767 & 6258 & 95398 & \\ 
+log(LC) & 0.3 & 0.6 & 0.95 & 1.79 & 3.11 & 3.25 & 3.8 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 4
+
+LC trunc point: 7
+
+RC+LC trunc point: 4
+
+binRL trunc point: 7
+
+binLR trunc point: 4
+
+Gries trunc point: 4
+
+\vspace{1em}
+
+67
+
+periferia
+
+\begin{tabular}{l|llllllllll}
+trunc: & p & e & r & i & f & e & r & i & a & \\ 
+R-complete count: & 53447 & 9910 & 3962 & 402 & 17 & 9 & 7 & 5 & 2 & \\ 
+log(RC) & 4.73 & 4.0 & 3.6 & 2.6 & 1.23 & 0.95 & 0.85 & 0.7 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 1 & 3 & 18 & 775 & 5677 & 17278 & 107925 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.48 & 1.26 & 2.89 & 3.75 & 4.24 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 5
+
+LC trunc point: 5
+
+RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 5
+
+\vspace{1em}
+
+68
+
+pijama
+
+\begin{tabular}{l|lllllll}
+trunc: & p & i & j & a & m & a & \\ 
+R-complete count: & 53447 & 4628 & 13 & 11 & 9 & 3 & \\ 
+log(RC) & 4.73 & 3.67 & 1.11 & 1.04 & 0.95 & 0.48 & \\ 
+L-complete count: & 1 & 3 & 18 & 891 & 3895 & 107925 & \\ 
+log(LC) & 0.0 & 0.48 & 1.26 & 2.95 & 3.59 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 3
+
+RC trunc point: 3
+
+LC trunc point: 3
+
+RC+LC trunc point: 3
+
+binRL trunc point: 5
+
+binLR trunc point: 3
+
+Gries trunc point: 3
+
+\newpage
+
+69
+
+piração
+
+\begin{tabular}{l|llllllll}
+trunc: & p & i & r & a & ç & ã & o & \\ 
+R-complete count: & 53447 & 4628 & 504 & 167 & 2 & 1 & 1 & \\ 
+log(RC) & 4.73 & 3.67 & 2.7 & 2.22 & 0.3 & 0.0 & 0.0 & \\ 
+L-complete count: & 20 & 33 & 464 & 3366 & 4759 & 10870 & 95398 & \\ 
+log(LC) & 1.3 & 1.52 & 2.67 & 3.53 & 3.68 & 4.04 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 3
+
+RC trunc point: 5
+
+LC trunc point: 2
+
+RC+LC trunc point: 3
+
+binRL trunc point: 5
+
+binLR trunc point: 3
+
+Gries trunc point: 5
+
+\vspace{1em}
+
+70
+
+pirigete
+
+\begin{tabular}{l|lllllllll}
+trunc: & p & i & r & i & g & e & t & e & \\ 
+R-complete count: & 53447 & 4628 & 504 & 53 & 7 & 0 & 0 & 0 & \\ 
+log(RC) & 4.73 & 3.67 & 2.7 & 1.72 & 0.85 & 0 & 0 & 0 & \\ 
+L-complete count: & 0 & 0 & 0 & 2 & 22 & 976 & 16009 & 73680 & \\ 
+log(LC) & 0 & 0 & 0 & 0.3 & 1.34 & 2.99 & 4.2 & 4.87 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 6
+
+LC trunc point: 4
+
+RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 0
+
+\vspace{1em}
+
+71
+
+pirralho
+
+\begin{tabular}{l|lllllllll}
+trunc: & p & i & r & r & a & l & h & o & \\ 
+R-complete count: & 53447 & 4628 & 504 & 36 & 24 & 11 & 9 & 3 & \\ 
+log(RC) & 4.73 & 3.67 & 2.7 & 1.56 & 1.38 & 1.04 & 0.95 & 0.48 & \\ 
+L-complete count: & 1 & 2 & 6 & 24 & 133 & 481 & 5125 & 95398 & \\ 
+log(LC) & 0.0 & 0.3 & 0.78 & 1.38 & 2.12 & 2.68 & 3.71 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 4
+
+LC trunc point: 6
+
+RC+LC trunc point: 4
+
+binRL trunc point: 7
+
+binLR trunc point: 4
+
+Gries trunc point: 4
+
+\vspace{1em}
+
+72
+
+piscina
+
+\begin{tabular}{l|llllllll}
+trunc: & p & i & s & c & i & n & a & \\ 
+R-complete count: & 53447 & 4628 & 402 & 100 & 29 & 15 & 4 & \\ 
+log(RC) & 4.73 & 3.67 & 2.6 & 2.0 & 1.46 & 1.18 & 0.6 & \\ 
+L-complete count: & 3 & 3 & 14 & 165 & 3140 & 9239 & 107925 & \\ 
+log(LC) & 0.48 & 0.48 & 1.15 & 2.22 & 3.5 & 3.97 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 3
+
+RC trunc point: 3
+
+LC trunc point: 2
+
+RC+LC trunc point: 4
+
+binRL trunc point: 6
+
+binLR trunc point: 3
+
+Gries trunc point: 4
+
+\newpage
+
+73
+
+playboy
+
+\begin{tabular}{l|llllllll}
+trunc: & p & l & a & y & b & o & y & \\ 
+R-complete count: & 53447 & 2211 & 1143 & 102 & 20 & 13 & 7 & \\ 
+log(RC) & 4.73 & 3.34 & 3.06 & 2.01 & 1.3 & 1.11 & 0.85 & \\ 
+L-complete count: & 1 & 3 & 3 & 29 & 183 & 633 & 19518 & \\ 
+log(LC) & 0.0 & 0.48 & 0.48 & 1.46 & 2.26 & 2.8 & 4.29 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 2
+
+LC trunc point: 3
+
+RC+LC trunc point: 4
+
+binRL trunc point: 5
+
+binLR trunc point: 5
+
+Gries trunc point: 4
+
+\vspace{1em}
+
+74
+
+pornográfico
 
 \begin{tabular}{l|lllllllllllll}
-trunc: & p & o & r & n & o & g & r & á & f & i & k & o & \\ 
-R-complete count: & 25254 & 3448 & 566 & 36 & 22 & 12 & 12 & 5 & 5 & 4 & 4 & 2 & \\ 
-log(RC) & 4.4 & 3.54 & 2.75 & 1.56 & 1.34 & 1.08 & 1.08 & 0.7 & 0.7 & 0.6 & 0.6 & 0.3 & \\ 
-L-complete count: & 1 & 1 & 1 & 6 & 25 & 31 & 34 & 34 & 125 & 1982 & 3511 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.78 & 1.4 & 1.49 & 1.53 & 1.53 & 2.1 & 3.3 & 3.55 & 4.69 & \\ 
+trunc: & p & o & r & n & o & g & r & á & f & i & c & o & \\ 
+R-complete count: & 53447 & 7555 & 1311 & 89 & 46 & 23 & 23 & 7 & 7 & 6 & 5 & 3 & \\ 
+log(RC) & 4.73 & 3.88 & 3.12 & 1.95 & 1.66 & 1.36 & 1.36 & 0.85 & 0.85 & 0.78 & 0.7 & 0.48 & \\ 
+L-complete count: & 2 & 2 & 2 & 12 & 60 & 66 & 71 & 72 & 243 & 3939 & 5955 & 95398 & \\ 
+log(LC) & 0.3 & 0.3 & 0.3 & 1.08 & 1.78 & 1.82 & 1.85 & 1.86 & 2.39 & 3.6 & 3.77 & 4.98 & \\ 
 \end{tabular}
 
 true trunc point: 5
@@ -2247,93 +2069,935 @@ LC trunc point: 11
 
 RC+LC trunc point: 5
 
+binRL trunc point: 7
+
+binLR trunc point: 4
+
+Gries trunc point: 8
+
 \vspace{1em}
 
-103
+75
 
-homosexual
+português
+
+\begin{tabular}{l|llllllllll}
+trunc: & p & o & r & t & u & g & u & ê & s & \\ 
+R-complete count: & 53447 & 7555 & 1311 & 410 & 45 & 26 & 13 & 4 & 4 & \\ 
+log(RC) & 4.73 & 3.88 & 3.12 & 2.61 & 1.65 & 1.41 & 1.11 & 0.6 & 0.6 & \\ 
+L-complete count: & 1 & 1 & 1 & 2 & 3 & 20 & 53 & 556 & 141056 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.3 & 0.48 & 1.3 & 1.72 & 2.75 & 5.15 & \\ 
+\end{tabular}
+
+true trunc point: 7
+
+RC trunc point: 5
+
+LC trunc point: 8
+
+RC+LC trunc point: 6
+
+binRL trunc point: 7
+
+binLR trunc point: 4
+
+Gries trunc point: 5
+
+\vspace{1em}
+
+76
+
+preguiça
+
+\begin{tabular}{l|lllllllll}
+trunc: & p & r & e & g & u & i & ç & a & \\ 
+R-complete count: & 53447 & 11819 & 4104 & 155 & 72 & 28 & 15 & 4 & \\ 
+log(RC) & 4.73 & 4.07 & 3.61 & 2.19 & 1.86 & 1.45 & 1.18 & 0.6 & \\ 
+L-complete count: & 2 & 2 & 2 & 8 & 11 & 142 & 1131 & 107925 & \\ 
+log(LC) & 0.3 & 0.3 & 0.3 & 0.9 & 1.04 & 2.15 & 3.05 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 6
+
+RC trunc point: 4
+
+LC trunc point: 7
+
+RC+LC trunc point: 6
+
+binRL trunc point: 7
+
+binLR trunc point: 5
+
+Gries trunc point: 8
+
+\newpage
+
+77
+
+preguiçoso
 
 \begin{tabular}{l|lllllllllll}
-trunc: & h & o & m & o & s & e & x & u & a & l & \\ 
-R-complete count: & 9316 & 1942 & 262 & 62 & 20 & 12 & 10 & 9 & 9 & 6 & \\ 
-log(RC) & 3.97 & 3.29 & 2.42 & 1.79 & 1.3 & 1.08 & 1.0 & 0.95 & 0.95 & 0.78 & \\ 
-L-complete count: & 1 & 1 & 1 & 5 & 16 & 16 & 17 & 120 & 2386 & 8534 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.7 & 1.2 & 1.2 & 1.23 & 2.08 & 3.38 & 3.93 & \\ 
+trunc: & p & r & e & g & u & i & ç & o & s & o & \\ 
+R-complete count: & 53447 & 11819 & 4104 & 155 & 72 & 28 & 15 & 10 & 7 & 2 & \\ 
+log(RC) & 4.73 & 4.07 & 3.61 & 2.19 & 1.86 & 1.45 & 1.18 & 1.0 & 0.85 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 1 & 1 & 2 & 6 & 25 & 1174 & 2724 & 95398 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 0.3 & 0.78 & 1.4 & 3.07 & 3.44 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 6
+
+RC trunc point: 4
+
+LC trunc point: 9
+
+RC+LC trunc point: 7
+
+binRL trunc point: 5
+
+binLR trunc point: 5
+
+Gries trunc point: 4
+
+\vspace{1em}
+
+78
+
+prejuízo
+
+\begin{tabular}{l|lllllllll}
+trunc: & p & r & e & j & u & í & z & o & \\ 
+R-complete count: & 53447 & 11819 & 4104 & 76 & 69 & 3 & 2 & 2 & \\ 
+log(RC) & 4.73 & 4.07 & 3.61 & 1.88 & 1.84 & 0.48 & 0.3 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 2 & 12 & 13 & 14 & 797 & 95398 & \\ 
+log(LC) & 0.0 & 0.0 & 0.3 & 1.08 & 1.11 & 1.15 & 2.9 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 4
+
+LC trunc point: 6
+
+RC+LC trunc point: 6
+
+binRL trunc point: 7
+
+binLR trunc point: 4
+
+Gries trunc point: 6
+
+\vspace{1em}
+
+79
+
+profissional
+
+\begin{tabular}{l|lllllllllllll}
+trunc: & p & r & o & f & i & s & s & i & o & n & a & l & \\ 
+R-complete count: & 53447 & 11819 & 4854 & 428 & 112 & 57 & 48 & 35 & 30 & 26 & 22 & 16 & \\ 
+log(RC) & 4.73 & 4.07 & 3.69 & 2.63 & 2.05 & 1.76 & 1.68 & 1.54 & 1.48 & 1.41 & 1.34 & 1.2 & \\ 
+L-complete count: & 7 & 8 & 9 & 12 & 17 & 30 & 81 & 371 & 460 & 875 & 5800 & 20940 & \\ 
+log(LC) & 0.85 & 0.9 & 0.95 & 1.08 & 1.23 & 1.48 & 1.91 & 2.57 & 2.66 & 2.94 & 3.76 & 4.32 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 4
+
+LC trunc point: 10
+
+RC+LC trunc point: 7
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 5
+
+\vspace{1em}
+
+80
+
+proletariado
+
+\begin{tabular}{l|lllllllllllll}
+trunc: & p & r & o & l & e & t & a & r & i & a & d & o & \\ 
+R-complete count: & 53447 & 11819 & 4854 & 166 & 37 & 24 & 12 & 9 & 8 & 3 & 3 & 2 & \\ 
+log(RC) & 4.73 & 4.07 & 3.69 & 2.22 & 1.57 & 1.38 & 1.08 & 0.95 & 0.9 & 0.48 & 0.48 & 0.3 & \\ 
+L-complete count: & 3 & 3 & 3 & 3 & 6 & 8 & 24 & 77 & 492 & 8016 & 20151 & 95398 & \\ 
+log(LC) & 0.48 & 0.48 & 0.48 & 0.48 & 0.78 & 0.9 & 1.38 & 1.89 & 2.69 & 3.9 & 4.3 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 6
+
+RC trunc point: 4
+
+LC trunc point: 9
+
+RC+LC trunc point: 7
+
+binRL trunc point: 6
+
+binLR trunc point: 4
+
+Gries trunc point: 6
+
+\newpage
+
+81
+
+proletário
+
+\begin{tabular}{l|lllllllllll}
+trunc: & p & r & o & l & e & t & á & r & i & o & \\ 
+R-complete count: & 53447 & 11819 & 4854 & 166 & 37 & 24 & 5 & 5 & 4 & 2 & \\ 
+log(RC) & 4.73 & 4.07 & 3.69 & 2.22 & 1.57 & 1.38 & 0.7 & 0.7 & 0.6 & 0.3 & \\ 
+L-complete count: & 2 & 2 & 3 & 6 & 28 & 183 & 787 & 2140 & 7008 & 95398 & \\ 
+log(LC) & 0.3 & 0.3 & 0.48 & 0.78 & 1.45 & 2.26 & 2.9 & 3.33 & 3.85 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 6
+
+RC trunc point: 4
+
+LC trunc point: 9
+
+RC+LC trunc point: 5
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 0
+
+\vspace{1em}
+
+82
+
+quebrada
+
+\begin{tabular}{l|lllllllll}
+trunc: & q & u & e & b & r & a & d & a & \\ 
+R-complete count: & 4696 & 4160 & 1595 & 126 & 105 & 85 & 23 & 3 & \\ 
+log(RC) & 3.67 & 3.62 & 3.2 & 2.1 & 2.02 & 1.93 & 1.36 & 0.48 & \\ 
+L-complete count: & 3 & 3 & 9 & 47 & 790 & 6664 & 11171 & 107925 & \\ 
+log(LC) & 0.48 & 0.48 & 0.95 & 1.67 & 2.9 & 3.82 & 4.05 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 4
+
+LC trunc point: 7
+
+RC+LC trunc point: 4
+
+binRL trunc point: 7
+
+binLR trunc point: 5
+
+Gries trunc point: 8
+
+\vspace{1em}
+
+83
+
+rapaziada
+
+\begin{tabular}{l|llllllllll}
+trunc: & r & a & p & a & z & i & a & d & a & \\ 
+R-complete count: & 37942 & 6265 & 397 & 96 & 26 & 6 & 1 & 1 & 1 & \\ 
+log(RC) & 4.58 & 3.8 & 2.6 & 1.98 & 1.41 & 0.78 & 0.0 & 0.0 & 0.0 & \\ 
+L-complete count: & 1 & 1 & 1 & 3 & 4 & 358 & 6664 & 11171 & 107925 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.48 & 0.6 & 2.55 & 3.82 & 4.05 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 7
+
+LC trunc point: 5
+
+RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 7
+
+\vspace{1em}
+
+84
+
+reação
+
+\begin{tabular}{l|lllllll}
+trunc: & r & e & a & ç & ã & o & \\ 
+R-complete count: & 37942 & 19672 & 1478 & 15 & 4 & 4 & \\ 
+log(RC) & 4.58 & 4.29 & 3.17 & 1.18 & 0.6 & 0.6 & \\ 
+L-complete count: & 14 & 44 & 3366 & 4759 & 10870 & 95398 & \\ 
+log(LC) & 1.15 & 1.64 & 3.53 & 3.68 & 4.04 & 4.98 & \\ 
 \end{tabular}
 
 true trunc point: 4
 
-RC trunc point: 5
+RC trunc point: 4
+
+LC trunc point: 2
+
+RC+LC trunc point: 3
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 4
+
+\newpage
+
+85
+
+recalcada
+
+\begin{tabular}{l|llllllllll}
+trunc: & r & e & c & a & l & c & a & d & a & \\ 
+R-complete count: & 37942 & 19672 & 2941 & 281 & 61 & 30 & 7 & 4 & 2 & \\ 
+log(RC) & 4.58 & 4.29 & 3.47 & 2.45 & 1.79 & 1.48 & 0.85 & 0.6 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 2 & 3 & 11 & 506 & 6664 & 11171 & 107925 & \\ 
+log(LC) & 0.0 & 0.0 & 0.3 & 0.48 & 1.04 & 2.7 & 3.82 & 4.05 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 3
+
+RC trunc point: 7
+
+LC trunc point: 5
+
+RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 7
+
+\vspace{1em}
+
+86
+
+refrigerante
+
+\begin{tabular}{l|lllllllllllll}
+trunc: & r & e & f & r & i & g & e & r & a & n & t & e & \\ 
+R-complete count: & 37942 & 19672 & 962 & 170 & 51 & 37 & 35 & 27 & 22 & 5 & 3 & 2 & \\ 
+log(RC) & 4.58 & 4.29 & 2.98 & 2.23 & 1.71 & 1.57 & 1.54 & 1.43 & 1.34 & 0.7 & 0.48 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 1 & 2 & 4 & 5 & 49 & 236 & 1954 & 8493 & 16009 & 73680 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.3 & 0.6 & 0.7 & 1.69 & 2.37 & 3.29 & 3.93 & 4.2 & 4.87 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 3
+
+LC trunc point: 6
+
+RC+LC trunc point: 7
+
+binRL trunc point: 6
+
+binLR trunc point: 4
+
+Gries trunc point: 4
+
+\vspace{1em}
+
+87
+
+responsabilidade
+
+\begin{tabular}{l|lllllllllllllllll}
+trunc: & r & e & s & p & o & n & s & a & b & i & l & i & d & a & d & e & \\ 
+R-complete count: & 37942 & 19672 & 2474 & 600 & 250 & 208 & 121 & 77 & 66 & 59 & 55 & 47 & 10 & 8 & 6 & 4 & \\ 
+log(RC) & 4.58 & 4.29 & 3.39 & 2.78 & 2.4 & 2.32 & 2.08 & 1.89 & 1.82 & 1.77 & 1.74 & 1.67 & 1.0 & 0.9 & 0.78 & 0.6 & \\ 
+L-complete count: & 5 & 6 & 7 & 8 & 10 & 13 & 20 & 182 & 313 & 380 & 695 & 1763 & 2155 & 2816 & 5909 & 73680 & \\ 
+log(LC) & 0.7 & 0.78 & 0.85 & 0.9 & 1.0 & 1.11 & 1.3 & 2.26 & 2.5 & 2.58 & 2.84 & 3.25 & 3.33 & 3.45 & 3.77 & 4.87 & \\ 
+\end{tabular}
+
+true trunc point: 7
+
+RC trunc point: 13
+
+LC trunc point: 15
+
+RC+LC trunc point: 8
+
+binRL trunc point: 7
+
+binLR trunc point: 4
+
+Gries trunc point: 8
+
+\vspace{1em}
+
+88
+
+sacristão
+
+\begin{tabular}{l|llllllllll}
+trunc: & s & a & c & r & i & s & t & ã & o & \\ 
+R-complete count: & 61069 & 9476 & 648 & 209 & 124 & 8 & 7 & 3 & 2 & \\ 
+log(RC) & 4.79 & 3.98 & 2.81 & 2.32 & 2.09 & 0.9 & 0.85 & 0.48 & 0.3 & \\ 
+L-complete count: & 1 & 2 & 6 & 13 & 110 & 217 & 577 & 10870 & 95398 & \\ 
+log(LC) & 0.0 & 0.3 & 0.78 & 1.11 & 2.04 & 2.34 & 2.76 & 4.04 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 7
+
+RC trunc point: 6
 
 LC trunc point: 7
 
 RC+LC trunc point: 5
 
-\vspace{1em}
+binRL trunc point: 7
 
-104
+binLR trunc point: 4
 
-fotografia
+Gries trunc point: 8
+
+\newpage
+
+89
+
+salafrário
 
 \begin{tabular}{l|lllllllllll}
-trunc: & f & o & t & o & g & r & a & f & i & a & \\ 
-R-complete count: & 13126 & 1869 & 157 & 119 & 54 & 51 & 42 & 39 & 5 & 2 & \\ 
-log(RC) & 4.12 & 3.27 & 2.2 & 2.08 & 1.73 & 1.71 & 1.62 & 1.59 & 0.7 & 0.3 & \\ 
-L-complete count: & 3 & 3 & 14 & 73 & 84 & 85 & 96 & 142 & 8523 & 51308 & \\ 
-log(LC) & 0.48 & 0.48 & 1.15 & 1.86 & 1.92 & 1.93 & 1.98 & 2.15 & 3.93 & 4.71 & \\ 
+trunc: & s & a & l & a & f & r & á & r & i & o & \\ 
+R-complete count: & 61069 & 9476 & 1394 & 196 & 10 & 4 & 3 & 3 & 3 & 2 & \\ 
+log(RC) & 4.79 & 3.98 & 3.14 & 2.29 & 1.0 & 0.6 & 0.48 & 0.48 & 0.48 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 1 & 2 & 2 & 57 & 787 & 2140 & 7008 & 95398 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.3 & 0.3 & 1.76 & 2.9 & 3.33 & 3.85 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 6
+
+RC trunc point: 5
+
+LC trunc point: 5
+
+RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 5
+
+\vspace{1em}
+
+90
+
+sanduíche
+
+\begin{tabular}{l|llllllllll}
+trunc: & s & a & n & d & u & í & c & h & e & \\ 
+R-complete count: & 61069 & 9476 & 1527 & 361 & 45 & 7 & 7 & 6 & 3 & \\ 
+log(RC) & 4.79 & 3.98 & 3.18 & 2.56 & 1.65 & 0.85 & 0.85 & 0.78 & 0.48 & \\ 
+L-complete count: & 4 & 5 & 6 & 7 & 9 & 11 & 703 & 1500 & 73680 & \\ 
+log(LC) & 0.6 & 0.7 & 0.78 & 0.85 & 0.95 & 1.04 & 2.85 & 3.18 & 4.87 & \\ 
+\end{tabular}
+
+true trunc point: 8
+
+RC trunc point: 6
+
+LC trunc point: 6
+
+RC+LC trunc point: 6
+
+binRL trunc point: 8
+
+binLR trunc point: 4
+
+Gries trunc point: 4
+
+\vspace{1em}
+
+91
+
+sapatão
+
+\begin{tabular}{l|llllllll}
+trunc: & s & a & p & a & t & ã & o & \\ 
+R-complete count: & 61069 & 9476 & 274 & 99 & 73 & 1 & 1 & \\ 
+log(RC) & 4.79 & 3.98 & 2.44 & 2.0 & 1.86 & 0.0 & 0.0 & \\ 
+L-complete count: & 1 & 1 & 3 & 41 & 577 & 10870 & 95398 & \\ 
+log(LC) & 0.0 & 0.0 & 0.48 & 1.61 & 2.76 & 4.04 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 6
+
+LC trunc point: 3
+
+RC+LC trunc point: 4
+
+binRL trunc point: 5
+
+binLR trunc point: 3
+
+Gries trunc point: 6
+
+\vspace{1em}
+
+92
+
+sargento
+
+\begin{tabular}{l|lllllllll}
+trunc: & s & a & r & g & e & n & t & o & \\ 
+R-complete count: & 61069 & 9476 & 865 & 53 & 26 & 18 & 15 & 8 & \\ 
+log(RC) & 4.79 & 3.98 & 2.94 & 1.72 & 1.41 & 1.26 & 1.18 & 0.9 & \\ 
+L-complete count: & 3 & 6 & 7 & 22 & 2446 & 3154 & 9187 & 95398 & \\ 
+log(LC) & 0.48 & 0.78 & 0.85 & 1.34 & 3.39 & 3.5 & 3.96 & 4.98 & \\ 
 \end{tabular}
 
 true trunc point: 4
 
-RC trunc point: 3
+RC trunc point: 4
 
-LC trunc point: 8
+LC trunc point: 4
 
-RC+LC trunc point: 5
+RC+LC trunc point: 4
+
+binRL trunc point: 7
+
+binLR trunc point: 4
+
+Gries trunc point: 3
 
 \newpage
 
-105
+93
 
-heterosexual
+satisfação
 
-\begin{tabular}{l|lllllllllllll}
-trunc: & h & e & t & e & r & o & s & e & x & u & a & l & \\ 
-R-complete count: & 9316 & 1715 & 40 & 24 & 23 & 22 & 7 & 6 & 6 & 6 & 6 & 4 & \\ 
-log(RC) & 3.97 & 3.23 & 1.6 & 1.38 & 1.36 & 1.34 & 0.85 & 0.78 & 0.78 & 0.78 & 0.78 & 0.6 & \\ 
-L-complete count: & 1 & 1 & 1 & 1 & 2 & 5 & 16 & 16 & 17 & 120 & 2386 & 8534 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 0.3 & 0.7 & 1.2 & 1.2 & 1.23 & 2.08 & 3.38 & 3.93 & \\ 
+\begin{tabular}{l|lllllllllll}
+trunc: & s & a & t & i & s & f & a & ç & ã & o & \\ 
+R-complete count: & 61069 & 9476 & 550 & 164 & 104 & 94 & 59 & 9 & 1 & 1 & \\ 
+log(RC) & 4.79 & 3.98 & 2.74 & 2.21 & 2.02 & 1.97 & 1.77 & 0.95 & 0.0 & 0.0 & \\ 
+L-complete count: & 3 & 3 & 3 & 3 & 3 & 21 & 3366 & 4759 & 10870 & 95398 & \\ 
+log(LC) & 0.48 & 0.48 & 0.48 & 0.48 & 0.48 & 1.32 & 3.53 & 3.68 & 4.04 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 6
+
+RC trunc point: 9
+
+LC trunc point: 6
+
+RC+LC trunc point: 6
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 7
+
+\vspace{1em}
+
+94
+
+saudades
+
+\begin{tabular}{l|lllllllll}
+trunc: & s & a & u & d & a & d & e & s & \\ 
+R-complete count: & 61069 & 9476 & 325 & 118 & 60 & 10 & 4 & 3 & \\ 
+log(RC) & 4.79 & 3.98 & 2.51 & 2.07 & 1.78 & 1.0 & 0.6 & 0.48 & \\ 
+L-complete count: & 3 & 3 & 3 & 527 & 695 & 1919 & 25215 & 141056 & \\ 
+log(LC) & 0.48 & 0.48 & 0.48 & 2.72 & 2.84 & 3.28 & 4.4 & 5.15 & \\ 
 \end{tabular}
 
 true trunc point: 6
 
 RC trunc point: 3
 
-LC trunc point: 9
+LC trunc point: 3
+
+RC+LC trunc point: 4
+
+binRL trunc point: 6
+
+binLR trunc point: 4
+
+Gries trunc point: 5
+
+\vspace{1em}
+
+95
+
+secretária
+
+\begin{tabular}{l|lllllllllll}
+trunc: & s & e & c & r & e & t & á & r & i & a & \\ 
+R-complete count: & 61069 & 7665 & 407 & 104 & 94 & 81 & 8 & 6 & 5 & 3 & \\ 
+log(RC) & 4.79 & 3.88 & 2.61 & 2.02 & 1.97 & 1.91 & 0.9 & 0.78 & 0.7 & 0.48 & \\ 
+L-complete count: & 6 & 7 & 9 & 12 & 30 & 126 & 468 & 5677 & 17278 & 107925 & \\ 
+log(LC) & 0.78 & 0.85 & 0.95 & 1.08 & 1.48 & 2.1 & 2.67 & 3.75 & 4.24 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 6
+
+RC trunc point: 7
+
+LC trunc point: 7
+
+RC+LC trunc point: 6
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 7
+
+\vspace{1em}
+
+96
+
+supermercado
+
+\begin{tabular}{l|lllllllllllll}
+trunc: & s & u & p & e & r & m & e & r & c & a & d & o & \\ 
+R-complete count: & 61069 & 9039 & 2415 & 1798 & 1746 & 104 & 22 & 6 & 5 & 4 & 3 & 2 & \\ 
+log(RC) & 4.79 & 3.96 & 3.38 & 3.25 & 3.24 & 2.02 & 1.34 & 0.78 & 0.7 & 0.6 & 0.48 & 0.3 & \\ 
+L-complete count: & 2 & 2 & 5 & 5 & 5 & 11 & 15 & 38 & 623 & 8016 & 20151 & 95398 & \\ 
+log(LC) & 0.3 & 0.3 & 0.7 & 0.7 & 0.7 & 1.04 & 1.18 & 1.58 & 2.79 & 3.9 & 4.3 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 6
+
+LC trunc point: 8
 
 RC+LC trunc point: 7
+
+binRL trunc point: 6
+
+binLR trunc point: 3
+
+Gries trunc point: 7
+
+\newpage
+
+97
+
+telefone
+
+\begin{tabular}{l|lllllllll}
+trunc: & t & e & l & e & f & o & n & e & \\ 
+R-complete count: & 38218 & 6718 & 928 & 664 & 119 & 92 & 75 & 23 & \\ 
+log(RC) & 4.58 & 3.83 & 2.97 & 2.82 & 2.08 & 1.96 & 1.88 & 1.36 & \\ 
+L-complete count: & 7 & 9 & 9 & 16 & 89 & 1534 & 6499 & 73680 & \\ 
+log(LC) & 0.85 & 0.95 & 0.95 & 1.2 & 1.95 & 3.19 & 3.81 & 4.87 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 3
+
+LC trunc point: 4
+
+RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 3
+
+\vspace{1em}
+
+98
+
+tostão
+
+\begin{tabular}{l|lllllll}
+trunc: & t & o & s & t & ã & o & \\ 
+R-complete count: & 38218 & 5118 & 268 & 53 & 2 & 2 & \\ 
+log(RC) & 4.58 & 3.71 & 2.43 & 1.72 & 0.3 & 0.3 & \\ 
+L-complete count: & 1 & 8 & 217 & 577 & 10870 & 95398 & \\ 
+log(LC) & 0.0 & 0.9 & 2.34 & 2.76 & 4.04 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 5
+
+LC trunc point: 4
+
+RC+LC trunc point: 3
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 4
+
+\vspace{1em}
+
+99
+
+traficante
+
+\begin{tabular}{l|lllllllllll}
+trunc: & t & r & a & f & i & c & a & n & t & e & \\ 
+R-complete count: & 38218 & 9170 & 4375 & 78 & 41 & 34 & 29 & 10 & 8 & 8 & \\ 
+log(RC) & 4.58 & 3.96 & 3.64 & 1.89 & 1.61 & 1.53 & 1.46 & 1.0 & 0.9 & 0.9 & \\ 
+L-complete count: & 2 & 2 & 3 & 58 & 93 & 145 & 1954 & 8493 & 16009 & 73680 & \\ 
+log(LC) & 0.3 & 0.3 & 0.48 & 1.76 & 1.97 & 2.16 & 3.29 & 3.93 & 4.2 & 4.87 & \\ 
+\end{tabular}
+
+true trunc point: 6
+
+RC trunc point: 4
+
+LC trunc point: 3
+
+RC+LC trunc point: 4
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 4
+
+\vspace{1em}
+
+100
+
+tranquilo
+
+\begin{tabular}{l|llllllllll}
+trunc: & t & r & a & n & q & u & i & l & o & \\ 
+R-complete count: & 38218 & 9170 & 4375 & 1928 & 174 & 118 & 91 & 82 & 5 & \\ 
+log(RC) & 4.58 & 3.96 & 3.64 & 3.29 & 2.24 & 2.07 & 1.96 & 1.91 & 0.7 & \\ 
+L-complete count: & 6 & 6 & 8 & 10 & 27 & 34 & 355 & 3640 & 95398 & \\ 
+log(LC) & 0.78 & 0.78 & 0.9 & 1.0 & 1.43 & 1.53 & 2.55 & 3.56 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 7
+
+RC trunc point: 5
+
+LC trunc point: 6
+
+RC+LC trunc point: 6
+
+binRL trunc point: 8
+
+binLR trunc point: 6
+
+Gries trunc point: 5
+
+\newpage
+
+101
+
+transação
+
+\begin{tabular}{l|llllllllll}
+trunc: & t & r & a & n & s & a & ç & ã & o & \\ 
+R-complete count: & 38218 & 9170 & 4375 & 1928 & 1457 & 103 & 4 & 1 & 1 & \\ 
+log(RC) & 4.58 & 3.96 & 3.64 & 3.29 & 3.16 & 2.01 & 0.6 & 0.0 & 0.0 & \\ 
+L-complete count: & 1 & 1 & 1 & 16 & 44 & 3366 & 4759 & 10870 & 95398 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 1.2 & 1.64 & 3.53 & 3.68 & 4.04 & 4.98 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 7
+
+LC trunc point: 5
+
+RC+LC trunc point: 6
+
+binRL trunc point: 7
+
+binLR trunc point: 5
+
+Gries trunc point: 7
+
+\vspace{1em}
+
+102
+
+travesti
+
+\begin{tabular}{l|lllllllll}
+trunc: & t & r & a & v & e & s & t & i & \\ 
+R-complete count: & 38218 & 9170 & 4375 & 237 & 119 & 57 & 19 & 14 & \\ 
+log(RC) & 4.58 & 3.96 & 3.64 & 2.37 & 2.08 & 1.76 & 1.28 & 1.15 & \\ 
+L-complete count: & 2 & 2 & 5 & 13 & 63 & 211 & 2551 & 38080 & \\ 
+log(LC) & 0.3 & 0.3 & 0.7 & 1.11 & 1.8 & 2.32 & 3.41 & 4.58 & \\ 
+\end{tabular}
+
+true trunc point: 4
+
+RC trunc point: 4
+
+LC trunc point: 6
+
+RC+LC trunc point: 5
+
+binRL trunc point: 7
+
+binLR trunc point: 4
+
+Gries trunc point: 7
+
+\vspace{1em}
+
+103
+
+troglodita
+
+\begin{tabular}{l|lllllllllll}
+trunc: & t & r & o & g & l & o & d & i & t & a & \\ 
+R-complete count: & 38218 & 9170 & 1031 & 27 & 12 & 10 & 6 & 4 & 2 & 2 & \\ 
+log(RC) & 4.58 & 3.96 & 3.01 & 1.43 & 1.08 & 1.0 & 0.78 & 0.6 & 0.3 & 0.3 & \\ 
+L-complete count: & 1 & 1 & 1 & 1 & 1 & 8 & 117 & 1773 & 9240 & 107925 & \\ 
+log(LC) & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.9 & 2.07 & 3.25 & 3.97 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 6
+
+RC trunc point: 4
+
+LC trunc point: 5
+
+RC+LC trunc point: 6
+
+binRL trunc point: 5
+
+binLR trunc point: 5
+
+Gries trunc point: 4
+
+\vspace{1em}
+
+104
+
+vagabunda
+
+\begin{tabular}{l|llllllllll}
+trunc: & v & a & g & a & b & u & n & d & a & \\ 
+R-complete count: & 17979 & 4393 & 315 & 129 & 57 & 47 & 41 & 40 & 8 & \\ 
+log(RC) & 4.25 & 3.64 & 2.5 & 2.11 & 1.76 & 1.67 & 1.61 & 1.6 & 0.9 & \\ 
+L-complete count: & 2 & 2 & 2 & 12 & 28 & 137 & 1019 & 11171 & 107925 & \\ 
+log(LC) & 0.3 & 0.3 & 0.3 & 1.08 & 1.45 & 2.14 & 3.01 & 4.05 & 5.03 & \\ 
+\end{tabular}
+
+true trunc point: 5
+
+RC trunc point: 3
+
+LC trunc point: 3
+
+RC+LC trunc point: 5
+
+binRL trunc point: 3
+
+binLR trunc point: 3
+
+Gries trunc point: 9
+
+\newpage
+
+105
+
+ventilador
+
+\begin{tabular}{l|lllllllllll}
+trunc: & v & e & n & t & i & l & a & d & o & r & \\ 
+R-complete count: & 17979 & 4277 & 897 & 207 & 52 & 41 & 31 & 7 & 5 & 3 & \\ 
+log(RC) & 4.25 & 3.63 & 2.95 & 2.32 & 1.72 & 1.61 & 1.49 & 0.85 & 0.7 & 0.48 & \\ 
+L-complete count: & 1 & 1 & 2 & 7 & 35 & 209 & 2492 & 3138 & 6277 & 44060 & \\ 
+log(LC) & 0.0 & 0.0 & 0.3 & 0.85 & 1.54 & 2.32 & 3.4 & 3.5 & 3.8 & 4.64 & \\ 
+\end{tabular}
+
+true trunc point: 6
+
+RC trunc point: 8
+
+LC trunc point: 9
+
+RC+LC trunc point: 5
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 8
 
 \vspace{1em}
 
 106
 
-maximizasão
+vestibular
 
-\begin{tabular}{l|llllllllllll}
-trunc: & m & a & x & i & m & i & z & a & s & ã & o & \\ 
-R-complete count: & 21904 & 7880 & 81 & 50 & 35 & 21 & 9 & 7 & 1 & 1 & 1 & \\ 
-log(RC) & 4.34 & 3.9 & 1.91 & 1.7 & 1.54 & 1.32 & 0.95 & 0.85 & 0.0 & 0.0 & 0.0 & \\ 
-L-complete count: & 1 & 1 & 1 & 3 & 7 & 278 & 294 & 1951 & 3027 & 6340 & 49185 & \\ 
-log(LC) & 0.0 & 0.0 & 0.0 & 0.48 & 0.85 & 2.44 & 2.47 & 3.29 & 3.48 & 3.8 & 4.69 & \\ 
+\begin{tabular}{l|lllllllllll}
+trunc: & v & e & s & t & i & b & u & l & a & r & \\ 
+R-complete count: & 17979 & 4277 & 331 & 191 & 105 & 11 & 10 & 10 & 4 & 2 & \\ 
+log(RC) & 4.25 & 3.63 & 2.52 & 2.28 & 2.02 & 1.04 & 1.0 & 1.0 & 0.6 & 0.3 & \\ 
+L-complete count: & 2 & 2 & 2 & 2 & 12 & 32 & 403 & 1109 & 13966 & 44060 & \\ 
+log(LC) & 0.3 & 0.3 & 0.3 & 0.3 & 1.08 & 1.51 & 2.61 & 3.04 & 4.15 & 4.64 & \\ 
+\end{tabular}
+
+true trunc point: 6
+
+RC trunc point: 6
+
+LC trunc point: 4
+
+RC+LC trunc point: 6
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 6
+
+\vspace{1em}
+
+107
+
+violão
+
+\begin{tabular}{l|lllllll}
+trunc: & v & i & o & l & ã & o & \\ 
+R-complete count: & 17979 & 4939 & 224 & 181 & 4 & 3 & \\ 
+log(RC) & 4.25 & 3.69 & 2.35 & 2.26 & 0.6 & 0.48 & \\ 
+L-complete count: & 1 & 2 & 20 & 144 & 10870 & 95398 & \\ 
+log(LC) & 0.0 & 0.3 & 1.3 & 2.16 & 4.04 & 4.98 & \\ 
 \end{tabular}
 
 true trunc point: 4
 
-RC trunc point: 3
+RC trunc point: 5
 
-LC trunc point: 5
+LC trunc point: 4
 
-RC+LC trunc point: 5
+RC+LC trunc point: 4
+
+binRL trunc point: 4
+
+binLR trunc point: 4
+
+Gries trunc point: 5
 
 \vspace{1em}
 

@@ -1,17 +1,18 @@
-                    RC             LC             RCLC           BinRL          BinLR          
-sum                 -14.00         26.00          7.00           2.00           -129.00        
-abs values          132.00         162.00         69.00          152.00         129.00         
-RMS                 1.68           2.05           1.01           1.78           1.60           
-correct proportion  0.25           0.27           0.50           0.25           0.34           
-mean                -0.13          0.25           0.07           0.02           -1.22          
-std dev             1.68           2.04           1.01           1.77           1.05           
+                    RC             LC             RCLC           BinRL          BinLR          Gries          
+sum                 -13.00         32.00          4.00           2.00           -137.00        69.00          
+abs values          139.00         168.00         78.00          156.00         137.00         149.00         
+RMS                 1.70           2.16           1.04           1.82           1.69           1.82           
+correct proportion  0.24           0.24           0.43           0.25           0.33           0.21           
+mean                -0.12          0.30           0.04           0.02           -1.28          0.64           
+std dev             1.70           2.14           1.04           1.82           1.10           1.70           
 
 One-way ANOVA:
-F-value: 14.550729225798
-p-value: 2.8097837535442997e-11
+F-value: 17.009307721775297
+p-value: 8.36207472445279e-16
 
 Kolmogorov-Smirnov tests
-Models: RCLC and RC | KS statistic: 0.1887 p-value: 0.03988275171070208
-Models: RCLC and LC | KS statistic: 0.2075 p-value: 0.017528209878528038
-Models: RCLC and binRL | KS statistic: 0.2264 p-value: 0.007123317579670367
-Models: RCLC and binLR | KS statistic: 0.4151 p-value: 1.1799441224561092e-08
+Models: RCLC and RC | KS statistic: 0.1682 p-value: 0.08648266680561614
+Models: RCLC and LC | KS statistic: 0.1963 p-value: 0.02782170311958393
+Models: RCLC and binRL | KS statistic: 0.2056 p-value: 0.01833796428153577
+Models: RCLC and binLR | KS statistic: 0.3925 p-value: 7.489443304451974e-08
+Models: RCLC and Gries | KS statistic: 0.2243 p-value: 0.007516646195418815

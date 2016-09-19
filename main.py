@@ -1,3 +1,4 @@
+# -*- encoding: utf8 -*-
 # Modeling truncation in Brazilian Portuguese
 # Mike Pham and Jackson Lee
 
@@ -62,6 +63,16 @@ def rms(number_list):
 def proportion(number_list):
     return number_list.count(0) / len(number_list)
 
+
+def replace_digraphs(word):
+    word = word.lower()
+    word = word.replace('ch', 'S')
+    word = word.replace('lh', 'L')
+    word = word.replace('nh', 'N')
+    word = word.replace('ss', 's')
+    word = word.replace('rr', 'R')
+    return word
+
 # -----------------------------------------------------------------------------#
 # Make sure that python 3.4 or above is used
 
@@ -85,14 +96,6 @@ parser = argparse.ArgumentParser(description='Modeling truncation in Brazilian'
 parser.add_argument('-t', '--tech', action='store_const',
                     default=False, const=True,
                     help='Include technical terms (default: False)')
-parser.add_argument('-a', '--a_as_TS', action='store_const',
-                    default=False, const=True,
-                    help='Treat -a in truncated form as part of truncated stem'
-                         ' (default: False)')
-parser.add_argument('-c', '--c_orthography', action='store_const',
-                    default=False, const=True,
-                    help='Use the c-orthography (less phonetic) instead of the'
-                         ' k-orthography (more phonetic) (default: False)')
 parser.add_argument('-f', '--freqtoken', action='store_const',
                     default=False, const=True,
                     help='Use token frequencies in lexicon '
@@ -103,14 +106,18 @@ parser.add_argument('-l', '--latex', action='store_const',
 parser.add_argument('-r', '--run_r_script', action='store_const',
                     default=False, const=True,
                     help='Run R script (default: False)')
+parser.add_argument('-d', '--digraphsfixed', action='store_const',
+                    default=False, const=True,
+                    help='Change orthographic digraphs into monographs '
+                         '(default: False)')
 
 args = parser.parse_args()
+
 use_tech_terms = args.tech
-use_c_orthography = args.c_orthography
-treat_a_as_truncated_stem = args.a_as_TS
 use_token_frequency = args.freqtoken
 compile_latex = args.latex
 run_r_script = args.run_r_script
+digraphs_fixed = args.digraphsfixed
 
 # -----------------------------------------------------------------------------#
 # make sure the directories for output files are present
@@ -131,39 +138,33 @@ output_ready_stdout = '    output ready: {}'
 
 file_suffix = ''
 
-if treat_a_as_truncated_stem:
-    file_suffix += '-a'
 if use_tech_terms:
     file_suffix += '-tech'
-if use_c_orthography:
-    file_suffix += '-c'
 if use_token_frequency:
     file_suffix += '-tokenfreq'
+if digraphs_fixed:
+    file_suffix += '-nodigraphs'
 
 goldstandard_file_suffix = file_suffix.replace('-tokenfreq', '')
-
-if treat_a_as_truncated_stem:
-    file_suffix = '-a-tech'
-    goldstandard_file_suffix = '-a-tech'
-    print('NOTE: -a can be active only when -t (but nothing else) is as well.')
+goldstandard_file_suffix = goldstandard_file_suffix.replace('-nodigraphs', '')
 
 # -----------------------------------------------------------------------------#
 # read lexicon
 
-lexicon_file = 'pt_br_orthofix'
+print("\nReading the lexicon file...")
 
-if use_c_orthography:
-    lexicon_file += '-c.txt'
-else:
-    lexicon_file += '.txt'
+lexicon_file = 'pt_br_full.txt'
 
 lex_freq_dict = dict()
 
 for line in open(os.path.join('data', lexicon_file),
                  encoding="utf8").readlines():
+    if digraphs_fixed:
+        line = replace_digraphs(line)
     line = line.strip()
     word, freq = line.split()
     lex_freq_dict[word] = int(freq)
+    # TODO: this works, but really tries should be used to speed up everything..
 
 lex_keys = lex_freq_dict.keys()
 
@@ -175,34 +176,43 @@ for word in lex_keys:
 # -----------------------------------------------------------------------------#
 # read gold standard words
 
-goldstandard_binRL_filename = os.path.join(
-    'data', 'goldStandard_binRL_orthofix%s.txt' % goldstandard_file_suffix)
-goldstandard_binLR_filename = os.path.join(
-    'data', 'goldStandard_binLR_orthofix%s.txt' % goldstandard_file_suffix)
+goldstandard_filename = os.path.join("data", "gold_standard.txt")
 
-goldstandard_binRL_annotated = [x.strip().split("\t")[0].replace('#', '')
-                                for x in open(goldstandard_binRL_filename,
-                                              encoding="utf8")]
-goldstandard_binLR_annotated = [x.strip().split("\t")[0].replace('#', '')
-                                for x in open(goldstandard_binLR_filename,
-                                              encoding="utf8")]
+test_words = list()
+true_trunc_points = list()
+binRL_trunc_points = list()
+binLR_trunc_points = list()
 
-test_words = [x.replace('|', '').replace('$', '')
-              for x in goldstandard_binRL_annotated]
+for line in open(goldstandard_filename, encoding="utf8"):
+    line = line.strip()
+    if not line:
+        continue
 
-goldstandard_list = [x.replace('$', '') for x in goldstandard_binRL_annotated]
+    if line.endswith("TECH") and not use_tech_terms:
+        continue
 
-goldstandard_binRL_list = [x.replace('|', '')
-                           for x in goldstandard_binRL_annotated]
-goldstandard_binLR_list = [x.replace('|', '')
-                           for x in goldstandard_binLR_annotated]
+    line = line.replace("\tTECH", "")
 
-# -----------------------------------------------------------------------------#
-# extract truncation points
+    if digraphs_fixed:
+        line = replace_digraphs(line)
 
-true_trunc_points = [x.index("|") for x in goldstandard_list]
-binRL_trunc_points = [x.index("$") for x in goldstandard_binRL_list]
-binLR_trunc_points = [x.index("$") for x in goldstandard_binLR_list]
+    annotated_word, _ = line.split()  # _ is truncated form for reference
+
+    positions = dict()
+    positions["$"] = annotated_word.index("$")  # binLR marked by $
+    positions["#"] = annotated_word.index("#")  # binRL marked by #
+    positions["|"] = annotated_word.index("|")  # gld std by |
+
+    for rank, (symbol, position) in enumerate(sorted(positions.items(),
+                                                     key=lambda x: x[1])):
+        positions[symbol] = position - rank
+
+    binLR_trunc_points.append(positions["$"])
+    binRL_trunc_points.append(positions["#"])
+    true_trunc_points.append(positions["|"])
+
+    test_words.append(
+        annotated_word.replace("$", "").replace("#", "").replace("|", ""))
 
 # -----------------------------------------------------------------------------#
 # compute right-completes and left-completes for each test word
@@ -263,7 +273,6 @@ for SF_counts, PF_counts in SF_PF_count_master_list:
     SF_count_master_list.append(SF_counts)
     PF_count_master_list.append(PF_counts)
 
-
 # log-transform the right- and left-complete counts
 
 log_SF_master_list = list()
@@ -291,6 +300,39 @@ for SF_counts, PF_counts in zip(SF_count_master_list, PF_count_master_list):
     log_PF_master_list.append(log_PF_list)
 
 # -----------------------------------------------------------------------------#
+# compute truncation points predicted by the Gries algorithm
+
+print("\nComputing the Gries truncation points...")
+
+
+def compute_gries_point(test_word):
+    print(test_word)
+    if test_word not in lex_keys:
+        print('(%s NOT in the lexicon)' % test_word)
+        return 0
+
+    trunc = ''
+
+    for letter in test_word:
+        trunc = trunc + letter
+        gries_dict = dict()
+
+        for word in lex_keys:
+            if word.startswith(trunc):
+                gries_dict[word] = lex_log_freq_dict[word]
+
+        most_frequent_word = sorted(gries_dict.items(), key=lambda x: x[1],
+                                    reverse=True)[0][0]
+        if most_frequent_word == test_word:
+            return len(trunc)
+
+    print('(Gries method fails to predict for %s)' % test_word)
+    return 0
+
+p = mp.Pool(processes=mp.cpu_count())
+gries_trunc_points = p.map(compute_gries_point, test_words)
+
+# -----------------------------------------------------------------------------#
 # compute truncation points based on SF, PF, and SF+PF
 
 SF_trunc_points = list()
@@ -315,10 +357,10 @@ print("\nWriting LaTeX output...")
 out_tex_filename = os.path.join(results_dir,
                                 'individual_word_details%s.tex' % (file_suffix))
 out_tex = open(out_tex_filename, mode="w", encoding="utf8")
-out_tex.write('\\documentclass{article}\n')
+out_tex.write('\\documentclass[10pt]{article}\n')
 out_tex.write('\\usepackage{booktabs}\n')
 out_tex.write('\\usepackage{color}\n')
-out_tex.write('\\usepackage[letterpaper, landscape, margin=.2in]{geometry}\n')
+out_tex.write('\\usepackage[letterpaper, margin=.2in]{geometry}\n')
 out_tex.write('\\usepackage{fontspec}\n')
 out_tex.write('\\setlength{\\parindent}{0em}\n')
 out_tex.write('\\begin{document}\n')
@@ -365,6 +407,9 @@ for i, word in enumerate(test_words):
     out_tex.write("RC trunc point: {}\n\n".format(SF_trunc_points[i]))
     out_tex.write("LC trunc point: {}\n\n".format(PF_trunc_points[i]))
     out_tex.write("RC+LC trunc point: {}\n\n".format(SFPF_trunc_points[i]))
+    out_tex.write("binRL trunc point: {}\n\n".format(binRL_trunc_points[i]))
+    out_tex.write("binLR trunc point: {}\n\n".format(binLR_trunc_points[i]))
+    out_tex.write("Gries trunc point: {}\n\n".format(gries_trunc_points[i]))
 
     if counter % 4:
         out_tex.write("\\vspace{1em}\n\n")
@@ -380,7 +425,7 @@ print(output_ready_stdout.format(out_tex_filename))
 
 print("\nWriting R script for plotting individual words...")
 
-Rscriptname = os.path.join(results_dir, 'plot_words.R')
+Rscriptname = os.path.join(results_dir, 'plot_words%s.R' % file_suffix)
 Rscript = open(Rscriptname, mode='w', encoding="utf8")
 
 for i, test_word in enumerate(test_words):
@@ -459,34 +504,42 @@ PF_eval_list = list()
 SFPF_eval_list = list()
 binRL_eval_list = list()
 binLR_eval_list = list()
+gries_eval_list = list()
 
-for T, SF, PF, SFPF, binRL, binLR in zip(true_trunc_points, SF_trunc_points,
-    PF_trunc_points, SFPF_trunc_points, binRL_trunc_points, binLR_trunc_points):
+for T, SF, PF, SFPF, binRL, binLR, gries in zip(true_trunc_points,
+    SF_trunc_points, PF_trunc_points, SFPF_trunc_points,
+    binRL_trunc_points, binLR_trunc_points, gries_trunc_points):
+
+    if gries == 0:
+        gries = T
 
     SF_eval = SF - T
     PF_eval = PF - T
     SFPF_eval = SFPF - T
     binRL_eval = binRL - T
     binLR_eval = binLR - T
+    gries_eval = gries - T
+
 
     SF_eval_list.append(SF_eval)
     PF_eval_list.append(PF_eval)
     SFPF_eval_list.append(SFPF_eval)
     binRL_eval_list.append(binRL_eval)
     binLR_eval_list.append(binLR_eval)
+    gries_eval_list.append(gries_eval)
 
 output_csv_filename = os.path.join(results_dir, 'errors%s.csv' % file_suffix)
 
 with open(output_csv_filename, mode="w", encoding="utf8") as output:
-    output.write('{0},{1},{2},{3},{4},{5}\n'.format('word', 'RC', 'LC', 'RCLC',
-                                                    'BinRL', 'BinLR'))
+    output.write('{0},{1},{2},{3},{4},{5},{6}\n'.format('word', 'RC', 'LC', 'RCLC',
+                                                    'BinRL', 'BinLR', 'Gries'))
 
-    for gold, SF_eval, PF_eval, SFPF_eval, binRL_eval, binLR_eval in \
-        zip(goldstandard_list, SF_eval_list, PF_eval_list, SFPF_eval_list,
-            binRL_eval_list, binLR_eval_list):
+    for gold, SF_eval, PF_eval, SFPF_eval, binRL_eval, binLR_eval, gries_eval in \
+        zip(test_words, SF_eval_list, PF_eval_list, SFPF_eval_list,
+            binRL_eval_list, binLR_eval_list, gries_eval_list):
 
-        output.write('{0},{1},{2},{3},{4},{5}\n'.format(gold,
-            SF_eval, PF_eval, SFPF_eval, binRL_eval, binLR_eval))
+        output.write('{0},{1},{2},{3},{4},{5},{6}\n'.format(gold,
+            SF_eval, PF_eval, SFPF_eval, binRL_eval, binLR_eval, gries_eval))
 
 print(output_ready_stdout.format(output_csv_filename))
 
@@ -499,39 +552,39 @@ stats_results_filename = os.path.join(results_dir,
                                       'evaluation%s.txt' % file_suffix)
 stats_results_file = open(stats_results_filename, mode="w", encoding="utf8")
 
-row_template = '{:<20}{:<15}{:<15}{:<15}{:<15}{:<15}\n'  # <20 to left-align
-row_float_template = '{:<20}{:<15.2f}{:<15.2f}{:<15.2f}{:<15.2f}{:<15.2f}\n'
+row_template = '{:<20}{:<15}{:<15}{:<15}{:<15}{:<15}{:<15}\n'  # <20 to left-align
+row_float_template = '{:<20}{:<15.2f}{:<15.2f}{:<15.2f}{:<15.2f}{:<15.2f}{:<15.2f}\n'
 
 stats_results_file.write(row_template.format('', 'RC', 'LC', 'RCLC',
-                                             'BinRL', 'BinLR'))
+                                             'BinRL', 'BinLR', 'Gries'))
 
 stats_results_file.write(row_float_template.format('sum',
     sum(SF_eval_list), sum(PF_eval_list), sum(SFPF_eval_list),
-    sum(binRL_eval_list), sum(binLR_eval_list)))
+    sum(binRL_eval_list), sum(binLR_eval_list), sum(gries_eval_list)))
 
 stats_results_file.write(row_float_template.format('abs values',
     sum_abs(SF_eval_list), sum_abs(PF_eval_list), sum_abs(SFPF_eval_list),
-    sum_abs(binRL_eval_list), sum_abs(binLR_eval_list)))
+    sum_abs(binRL_eval_list), sum_abs(binLR_eval_list), sum_abs(gries_eval_list)))
 
 stats_results_file.write(row_float_template.format('RMS',
     rms(SF_eval_list), rms(PF_eval_list), rms(SFPF_eval_list),
-    rms(binRL_eval_list), rms(binLR_eval_list)))
+    rms(binRL_eval_list), rms(binLR_eval_list), rms(gries_eval_list)))
 
 stats_results_file.write(row_float_template.format('correct proportion',
     proportion(SF_eval_list), proportion(PF_eval_list),
     proportion(SFPF_eval_list),
-    proportion(binRL_eval_list), proportion(binLR_eval_list)))
+    proportion(binRL_eval_list), proportion(binLR_eval_list), proportion(gries_eval_list)))
 
 stats_results_file.write(row_float_template.format('mean',
     np.mean(SF_eval_list), np.mean(PF_eval_list), np.mean(SFPF_eval_list),
-    np.mean(binRL_eval_list), np.mean(binLR_eval_list)))
+    np.mean(binRL_eval_list), np.mean(binLR_eval_list), np.mean(gries_eval_list)))
 
 stats_results_file.write(row_float_template.format('std dev',
     np.std(SF_eval_list), np.std(PF_eval_list), np.std(SFPF_eval_list),
-    np.std(binRL_eval_list), np.std(binLR_eval_list)))
+    np.std(binRL_eval_list), np.std(binLR_eval_list), np.std(gries_eval_list)))
 
 anova = stats.f_oneway(SF_eval_list, PF_eval_list, SFPF_eval_list,
-                       binRL_eval_list, binLR_eval_list)
+                       binRL_eval_list, binLR_eval_list, gries_eval_list)
 
 print('\nOne-way ANOVA:\nF-value: {}\np-value: {}'.format(*anova),
       file=stats_results_file)
@@ -539,8 +592,8 @@ print('\nOne-way ANOVA:\nF-value: {}\np-value: {}'.format(*anova),
 print('\nKolmogorov-Smirnov tests', file=stats_results_file)
 
 for data, model in zip(
-        [SF_eval_list, PF_eval_list, binRL_eval_list, binLR_eval_list],
-        ['RC', 'LC', 'binRL', 'binLR']):
+        [SF_eval_list, PF_eval_list, binRL_eval_list, binLR_eval_list, gries_eval_list],
+        ['RC', 'LC', 'binRL', 'binLR', 'Gries']):
     ks = stats.ks_2samp(SFPF_eval_list, data)
     print('Models: RCLC and {} |'.format(model), end=' ',
           file=stats_results_file)
@@ -553,9 +606,9 @@ print(output_ready_stdout.format(stats_results_filename))
 # -----------------------------------------------------------------------------#
 # boxplot
 
-models = ['RC', 'LC', 'RCLC', 'BinRL', 'BinLR']
+models = ['RC', 'LC', 'RCLC', 'BinRL', 'BinLR', 'Gries']
 eval_data = [SF_eval_list, PF_eval_list, SFPF_eval_list,
-             binRL_eval_list, binLR_eval_list]
+             binRL_eval_list, binLR_eval_list, gries_eval_list]
 
 boxplot_data = pd.DataFrame({model: data
                              for model, data in zip(models, eval_data)})
