@@ -510,6 +510,11 @@ for T, SF, PF, SFPF, binRL, binLR, gries in zip(true_trunc_points,
     SF_trunc_points, PF_trunc_points, SFPF_trunc_points,
     binRL_trunc_points, binLR_trunc_points, gries_trunc_points):
 
+    # "gries" is 0 when either test_word isn't in lexicon or
+    # when the gries algorithm fails as the test_word still doesn't emerge
+    # as the most frequent word even when the whole word is the truncated stem
+    # Setting "gries = T" means we (very generously) assume the gries algorithm
+    # gives the *correct* prediction!
     if gries == 0:
         gries = T
 
@@ -553,7 +558,7 @@ stats_results_filename = os.path.join(results_dir,
 stats_results_file = open(stats_results_filename, mode="w", encoding="utf8")
 
 row_template = '{:<20}{:<15}{:<15}{:<15}{:<15}{:<15}{:<15}\n'  # <20 to left-align
-row_float_template = '{:<20}{:<15.2f}{:<15.2f}{:<15.2f}{:<15.2f}{:<15.2f}{:<15.2f}\n'
+row_float_template = '{:<20}{:<15.3f}{:<15.3f}{:<15.3f}{:<15.3f}{:<15.3f}{:<15.3f}\n'
 
 stats_results_file.write(row_template.format('', 'RC', 'LC', 'RCLC',
                                              'BinRL', 'BinLR', 'Gries'))
@@ -614,7 +619,7 @@ boxplot_data = pd.DataFrame({model: data
                              for model, data in zip(models, eval_data)})
 
 boxplot = sns.boxplot(data=boxplot_data)
-boxplot.set(ylabel='Error', ylim=(-5, 9))
+boxplot.set(ylabel='Distance error', ylim=(-5, 9))
 boxplot_filename = os.path.join(results_dir, 'error_distribution_boxplot%s.pdf'
                                 % (file_suffix))
 boxplot.get_figure().savefig(boxplot_filename)
