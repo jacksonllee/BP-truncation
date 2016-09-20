@@ -72,13 +72,12 @@ Download this repository to your local drive by one of these two methods:
 
 ```
 $ python main.py -h
-usage: main.py [-h] [-t] [-f] [-l] [-r] [-d]
+usage: main.py [-h] [-f] [-l] [-r] [-d]
 
 Modeling truncation in Brazilian Portuguese, by Mike Pham and Jackson Lee
 
 optional arguments:
   -h, --help           show this help message and exit
-  -t, --tech           Include technical terms (default: False)
   -f, --freqtoken      Use token frequencies in lexicon (default: False)
   -l, --latex          Compile the output LaTeX file (default: False)
   -r, --run_r_script   Run R script (default: False)
@@ -94,6 +93,13 @@ $ python main.py -lr
  
 This command has most of the default settings as described in the help page
 shown above, except that R code is run and LaTeX compilation is triggered.
-If, for instance, you'd like to include technical words as test words while still
-running the R code and compiling the LaTeX file at the end,
-you should run ``python main.py -tlr``.
+If you don't want to run R and LaTeX, simply run ``python main.py``
+with no other arguments.
+
+If, for instance, you'd like to make use of word token frequency information
+in the models that involve right-completes and left-completes,
+you should run ``python main.py -flr`` (still running R and LaTeX).
+All output files for this command bear the suffix "-tokenfreq".
+
+To activate orthographic digraph replacements, run ``python main.py -dlr``.
+All output files are suffixed by "-nodigraphs".

@@ -93,9 +93,11 @@ parser = argparse.ArgumentParser(description='Modeling truncation in Brazilian'
                                              ' Portuguese, '
                                              'by Mike Pham and Jackson Lee')
 
-parser.add_argument('-t', '--tech', action='store_const',
-                    default=False, const=True,
-                    help='Include technical terms (default: False)')
+# using "genre-specific" words? might come back to this some day...
+# parser.add_argument('-t', '--tech', action='store_const',
+#                     default=False, const=True,
+#                     help='Include technical terms (default: False)')
+
 parser.add_argument('-f', '--freqtoken', action='store_const',
                     default=False, const=True,
                     help='Use token frequencies in lexicon '
@@ -113,7 +115,7 @@ parser.add_argument('-d', '--digraphsfixed', action='store_const',
 
 args = parser.parse_args()
 
-use_tech_terms = args.tech
+# use_tech_terms = args.tech
 use_token_frequency = args.freqtoken
 compile_latex = args.latex
 run_r_script = args.run_r_script
@@ -138,8 +140,8 @@ output_ready_stdout = '    output ready: {}'
 
 file_suffix = ''
 
-if use_tech_terms:
-    file_suffix += '-tech'
+# if use_tech_terms:
+#     file_suffix += '-tech'
 if use_token_frequency:
     file_suffix += '-tokenfreq'
 if digraphs_fixed:
@@ -188,10 +190,10 @@ for line in open(goldstandard_filename, encoding="utf8"):
     if not line:
         continue
 
-    if line.endswith("TECH") and not use_tech_terms:
+    if line.endswith("TECH"):
         continue
 
-    line = line.replace("\tTECH", "")
+    # line = line.replace("\tTECH", "")
 
     if digraphs_fixed:
         line = replace_digraphs(line)
