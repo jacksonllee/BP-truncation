@@ -105,15 +105,3 @@ vag$#ab|unda	vagaba
 vent$#il|ador	ventila
 vest$#ib|ular	vestiba
 viol|$#ão	viola
-bibl$#io|teconomia	bíblio	TECH
-eletr$#o|cardiograma	eletro	TECH
-esp$el#eo|logia	espéleo	TECH
-fon$#o|audiologa	fono	TECH
-hidr$#o|ginástica	hidro	TECH
-lip$#o|aspiração	lipo	TECH
-micr$#o|computador	micro	TECH
-od$ont#o|logia	odonto	TECH
-pol$#io|mielite	pólio	TECH
-psic$#o|logia	psico	TECH
-rad$io|t#erapia	rádio	TECH
-retr$o|pr#ojetor	retro	TECH
