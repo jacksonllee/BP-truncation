@@ -3,7 +3,7 @@
 By [Mike Pham](http://www.mikettpham.com/) and [Jackson Lee](http://jacksonllee.com/)
 
 A full paper is currently being prepared,
-which is a substantically expanded and revised version of the brief write-up
+which is a substantially expanded and revised version of the brief write-up
 as a
 [technical report (TR-2014-15, UChicago Computer Science)](https://newtraell.cs.uchicago.edu/research/publications/techreports/TR-2014-15).
 
@@ -13,7 +13,7 @@ as a
 
 - ``data/``: directory for datasets
 
-    * ``pt_br_full.txt``: Brazilian Portuguese lexicon (two versions)
+    * ``pt_br_full.txt``: Brazilian Portuguese lexicon (8.7 MB)
     * ``gold_standard.txt``: gold standard nouns with attested truncation,
       all annotated with predictions from models such as the binary foot models
       (see code in ``main.py`` for annotation details)
