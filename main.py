@@ -85,9 +85,10 @@ if current_py_version < required_py_version:
              'You are using Python {}.{}.'.format(*current_py_version))
 
 # -----------------------------------------------------------------------------#
-# Command line interface for
-# which orthographic representation system to use as input
-# and whether to include technical terms
+# Command line interface
+
+lexicon_default = 'data/pt_br_full.txt'
+goldstandard_default = 'data/gold_standard.txt'
 
 parser = argparse.ArgumentParser(description='Modeling truncation in Brazilian'
                                              ' Portuguese, '
@@ -112,6 +113,12 @@ parser.add_argument('-d', '--digraphsfixed', action='store_const',
                     default=False, const=True,
                     help='Change orthographic digraphs into monographs '
                          '(default: False)')
+parser.add_argument('-x', '--lexicon', type=str, default=lexicon_default,
+                    help='Lexicon file (default: %s)' % lexicon_default)
+parser.add_argument('-g', '--goldstandard', type=str,
+                    default=goldstandard_default,
+                    help='Gold standard file (default: %s)'
+                         % goldstandard_default)
 
 args = parser.parse_args()
 
@@ -120,6 +127,9 @@ use_token_frequency = args.freqtoken
 compile_latex = args.latex
 run_r_script = args.run_r_script
 digraphs_fixed = args.digraphsfixed
+lexicon_filename = args.lexicon
+goldstandard_filename = args.goldstandard
+
 
 # -----------------------------------------------------------------------------#
 # make sure the directories for output files are present
@@ -155,16 +165,20 @@ goldstandard_file_suffix = goldstandard_file_suffix.replace('-nodigraphs', '')
 
 print("\nReading the lexicon file...")
 
-lexicon_file = 'pt_br_full.txt'
-
 lex_freq_dict = dict()
 
-for line in open(os.path.join('data', lexicon_file),
-                 encoding="utf8").readlines():
+for line in open(lexicon_filename, encoding="utf8"):
+    line = line.strip()
+    if not line:
+        continue
     if digraphs_fixed:
         line = replace_digraphs(line)
-    line = line.strip()
-    word, freq = line.split()
+    line_split = line.split()
+    word = line_split[0]
+    try:
+        freq = int(line_split[1])
+    except (ValueError, IndexError):
+        freq = 1
     lex_freq_dict[word] = int(freq)
     # TODO: this works, but really tries should be used to speed up everything..
 
@@ -177,8 +191,6 @@ for word in lex_keys:
 
 # -----------------------------------------------------------------------------#
 # read gold standard words
-
-goldstandard_filename = os.path.join("data", "gold_standard.txt")
 
 test_words = list()
 true_trunc_points = list()
@@ -198,7 +210,7 @@ for line in open(goldstandard_filename, encoding="utf8"):
     if digraphs_fixed:
         line = replace_digraphs(line)
 
-    annotated_word, _ = line.split()  # _ is truncated form for reference
+    annotated_word = line.split()[0]
 
     positions = dict()
     positions["$"] = annotated_word.index("$")  # binLR marked by $
