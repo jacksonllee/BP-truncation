@@ -1,25 +1,32 @@
 # -*- encoding: utf8 -*-
-# Modeling truncation in Brazilian Portuguese
-# Mike Pham and Jackson Lee
 
-from __future__ import print_function
-import sys
+"""Modeling truncation in Brazilian Portuguese
+Mike Pham and Jackson Lee
+"""
+
+from __future__ import print_function, division
+
 import os
-from math import (sqrt, log)
+import math
 import subprocess
 import multiprocessing as mp
 import argparse
 
 import numpy as np
-import scipy.stats as stats
 import pandas as pd
 import seaborn as sns
 
 
 def elbow_point(points):
-    """
-    takes a list of points
-    and outputs the index of the list for maximal curvature
+    """Return the index in ``points`` for maximal curvature.
+
+    Parameters
+    ----------
+    points : list of int
+
+    Returns
+    -------
+    int
     """
     second_derivative_list = [points[x+1] + points[x-1] - 2 * points[x]
                               for x in range(1, len(points) - 1)]
@@ -30,12 +37,22 @@ def elbow_point(points):
 
 
 def closest_intersection(points1, points2):
-    """
+    """Return the index of intersection point between ``points1`` and
+    ``points2``.
+
     points1[idx1] *   * points1[idx2]
                    \ /
                     *  <--- intersection point
                    / \
     points2[idx1] *   * points2[idx2]
+
+    Parameters
+    ----------
+    points1, points2 : list of int
+
+    Returns
+    -------
+    int
     """
     for (idx, (p1, p2)) in enumerate(zip(points1, points2)):
         if p2 > p1:
@@ -51,38 +68,90 @@ def closest_intersection(points1, points2):
                 return idx + 1
 
 
-def sum_abs(number_list, plus=0):
-    return sum([abs(x + plus) for x in number_list])
+def sum_abs(number_list):
+    """Return the sum of the absolute values of ``number_list``.
 
+    Parameters
+    ----------
+    number_list : list of int
 
-def rms(number_list):
-    """root mean square"""
-    return sqrt(sum([x * x for x in number_list]) / len(number_list))
+    Returns
+    -------
+    int
+    """
+    return sum([abs(x) for x in number_list])
 
 
 def proportion(number_list):
+    """Return the proportion of correct truncation prediction.
+
+    Parameters
+    ----------
+    number_list : list of int
+
+    Returns
+    -------
+    float
+    """
     return number_list.count(0) / len(number_list)
 
 
-def replace_digraphs(word):
-    word = word.lower()
-    word = word.replace('ch', 'S')
-    word = word.replace('lh', 'L')
-    word = word.replace('nh', 'N')
-    word = word.replace('ss', 's')
-    word = word.replace('rr', 'R')
-    return word
+def replace_digraphs(word_):
+    """Return the given word processed for orthographic changes.
 
-# -----------------------------------------------------------------------------#
-# Make sure that python 3.4 or above is used
+    Parameters
+    ----------
+    word_ : str
 
-required_py_version = (3, 4)
-current_py_version = sys.version_info[:2]
+    Returns
+    -------
+    str
+    """
+    word_ = word_.lower()
+    word_ = word_.replace('ch', 'S')
+    word_ = word_.replace('lh', 'L')
+    word_ = word_.replace('nh', 'N')
+    word_ = word_.replace('ss', 's')
+    word_ = word_.replace('rr', 'R')
+    return word_
 
-if current_py_version < required_py_version:
-    sys.exit('Error: This script requires Python {}.{} or above.\n'
-             .format(*required_py_version) +
-             'You are using Python {}.{}.'.format(*current_py_version))
+
+def jitter(number_list, std_dev=0.1):
+    """Return the jittered ``number_list``.
+
+    Each number is jittered by ``d``, where ``d`` is randomly drawn from
+    a normal distribution of N(0, ``sigma``^2).
+
+    Parameters
+    ----------
+    number_list : list of int
+    std_dev : float
+
+    Returns
+    -------
+    list of int
+    """
+    return [_shift(x, np.random.normal(loc=0, scale=std_dev))
+            for x in number_list]
+
+
+def _shift(x, y):
+    """Return ``x`` shifted by ``y``.
+    We flip a coin to decide if we want x - y or x + y.
+
+    Parameters
+    ----------
+    x, y : float
+
+    Returns
+    -------
+    float
+    """
+    coin = np.random.rand()
+    if coin > 0.5:
+        return x - y
+    else:
+        return x + y
 
 # -----------------------------------------------------------------------------#
 # Command line interface
@@ -90,14 +159,9 @@ if current_py_version < required_py_version:
 lexicon_default = 'data/pt_br_full.txt'
 goldstandard_default = 'data/gold_standard.txt'
 
-parser = argparse.ArgumentParser(description='Modeling truncation in Brazilian'
-                                             ' Portuguese, '
-                                             'by Mike Pham and Jackson Lee')
-
-# using "genre-specific" words? might come back to this some day...
-# parser.add_argument('-t', '--tech', action='store_const',
-#                     default=False, const=True,
-#                     help='Include technical terms (default: False)')
+parser = argparse.ArgumentParser(
+    description='Modeling truncation in Brazilian Portuguese, '
+                'by Mike Pham and Jackson Lee')
 
 parser.add_argument('-f', '--freqtoken', action='store_const',
                     default=False, const=True,
@@ -122,7 +186,6 @@ parser.add_argument('-g', '--goldstandard', type=str,
 
 args = parser.parse_args()
 
-# use_tech_terms = args.tech
 use_token_frequency = args.freqtoken
 compile_latex = args.latex
 run_r_script = args.run_r_script
@@ -143,15 +206,13 @@ if not os.path.isdir(word_plots_dir):
 if not os.path.isdir(results_dir):
     os.makedirs(results_dir)
 
-output_ready_stdout = '    output ready: {}'
+output_ready_stdout = '\toutput ready: {}'
 
 # -----------------------------------------------------------------------------#
 # determine file suffix
 
 file_suffix = ''
 
-# if use_tech_terms:
-#     file_suffix += '-tech'
 if use_token_frequency:
     file_suffix += '-tokenfreq'
 if digraphs_fixed:
@@ -180,14 +241,13 @@ for line in open(lexicon_filename, encoding="utf8"):
     except (ValueError, IndexError):
         freq = 1
     lex_freq_dict[word] = int(freq)
-    # TODO: this works, but really tries should be used to speed up everything..
 
 lex_keys = lex_freq_dict.keys()
 
 lex_log_freq_dict = dict()
 
 for word in lex_keys:
-    lex_log_freq_dict[word] = log(lex_freq_dict[word], 10)
+    lex_log_freq_dict[word] = math.log(lex_freq_dict[word], 10)
 
 # -----------------------------------------------------------------------------#
 # read gold standard words
@@ -202,11 +262,6 @@ for line in open(goldstandard_filename, encoding="utf8"):
     if not line:
         continue
 
-    if line.endswith("TECH"):
-        continue
-
-    # line = line.replace("\tTECH", "")
-
     if digraphs_fixed:
         line = replace_digraphs(line)
 
@@ -215,7 +270,7 @@ for line in open(goldstandard_filename, encoding="utf8"):
     positions = dict()
     positions["$"] = annotated_word.index("$")  # binLR marked by $
     positions["#"] = annotated_word.index("#")  # binRL marked by #
-    positions["|"] = annotated_word.index("|")  # gld std by |
+    positions["|"] = annotated_word.index("|")  # gold standard by |
 
     for rank, (symbol, position) in enumerate(sorted(positions.items(),
                                                      key=lambda x: x[1])):
@@ -229,26 +284,24 @@ for line in open(goldstandard_filename, encoding="utf8"):
         annotated_word.replace("$", "").replace("#", "").replace("|", ""))
 
 # -----------------------------------------------------------------------------#
-# compute right-completes and left-completes for each test word
-# (right-completes = previously "successor frequencies = SF")
-# (left-completes = previously "predecessor frequencies = PF")
+# compute right- and left-complete counts for each input word
 
 print("\nComputing right- and left-complete counts...")
 
 
-def compute_SF_PF_counts(test_word):
-    print(test_word)
-    SF_counts = list()
-    PF_counts = list()
+def compute_rc_lc_counts(input_word):
+    print(input_word)
+    rc_counts = list()
+    lc_counts = list()
 
     # initialize reversed form
-    test_word_reversed = test_word[::-1]
+    test_word_reversed = input_word[::-1]
 
     trunc = ''
     trunc_reversed = ''
 
     # compute the counts of left- and right-completes
-    for letter, letter_reversed in zip(test_word, test_word_reversed):
+    for letter, letter_reversed in zip(input_word, test_word_reversed):
         count_ = 0
         count_reversed = 0
         trunc = trunc + letter
@@ -272,46 +325,46 @@ def compute_SF_PF_counts(test_word):
             if word.endswith(trunc_reversed):
                 count_reversed += word_weight
 
-        SF_counts.append(count_)
-        PF_counts = [count_reversed] + PF_counts
+        rc_counts.append(count_)
+        lc_counts = [count_reversed] + lc_counts
 
-    return SF_counts, PF_counts
+    return rc_counts, lc_counts
 
 p = mp.Pool(processes=mp.cpu_count())
-SF_PF_count_master_list = p.map(compute_SF_PF_counts, test_words)
+rc_lc_count_master_list = p.map(compute_rc_lc_counts, test_words)
 
-SF_count_master_list = list()
-PF_count_master_list = list()
+rc_count_master_list = list()
+lc_count_master_list = list()
 
-for SF_counts, PF_counts in SF_PF_count_master_list:
-    SF_count_master_list.append(SF_counts)
-    PF_count_master_list.append(PF_counts)
+for rc_counts, lc_counts in rc_lc_count_master_list:
+    rc_count_master_list.append(rc_counts)
+    lc_count_master_list.append(lc_counts)
 
 # log-transform the right- and left-complete counts
 
-log_SF_master_list = list()
-log_PF_master_list = list()
+log_rc_master_list = list()
+log_lc_master_list = list()
 
-for SF_counts, PF_counts in zip(SF_count_master_list, PF_count_master_list):
-    log_SF_list = list()
-    log_PF_list = list()
+for rc_counts, lc_counts in zip(rc_count_master_list, lc_count_master_list):
+    log_rc_list = list()
+    log_lc_list = list()
 
-    for SF_count, PF_count in zip(SF_counts, PF_counts):
-        if SF_count > 0:
-            log_SF = round(log(SF_count, 10), 2)
+    for rc_count, lc_count in zip(rc_counts, lc_counts):
+        if rc_count > 0:
+            log_rc = round(math.log(rc_count, 10), 2)
         else:
-            log_SF = 0
+            log_rc = 0
 
-        if PF_count > 0:
-            log_PF = round(log(PF_count, 10), 2)
+        if lc_count > 0:
+            log_lc = round(math.log(lc_count, 10), 2)
         else:
-            log_PF = 0
+            log_lc = 0
 
-        log_SF_list.append(log_SF)
-        log_PF_list.append(log_PF)
+        log_rc_list.append(log_rc)
+        log_lc_list.append(log_lc)
 
-    log_SF_master_list.append(log_SF_list)
-    log_PF_master_list.append(log_PF_list)
+    log_rc_master_list.append(log_rc_list)
+    log_lc_master_list.append(log_lc_list)
 
 # -----------------------------------------------------------------------------#
 # compute truncation points predicted by the Gries algorithm
@@ -340,28 +393,28 @@ def compute_gries_point(test_word):
         if most_frequent_word == test_word:
             return len(trunc)
 
-    print('(Gries method fails to predict for %s)' % test_word)
+    print('(Warning: end of word reached for %s)' % test_word)
     return 0
 
 p = mp.Pool(processes=mp.cpu_count())
 gries_trunc_points = p.map(compute_gries_point, test_words)
 
 # -----------------------------------------------------------------------------#
-# compute truncation points based on SF, PF, and SF+PF
+# compute truncation points based on RC, LC, and RC+LC
 
-SF_trunc_points = list()
-PF_trunc_points = list()
-SFPF_trunc_points = list()
+rc_trunc_points = list()
+lc_trunc_points = list()
+rclc_trunc_points = list()
 
-for log_SF_list, log_PF_list in zip(log_SF_master_list, log_PF_master_list):
+for log_rc_list, log_lc_list in zip(log_rc_master_list, log_lc_master_list):
 
-    SF_trunc_point = elbow_point(log_SF_list)
-    PF_trunc_point = elbow_point(log_PF_list)
-    SFPF_trunc_point = closest_intersection(log_SF_list, log_PF_list)
+    SF_trunc_point = elbow_point(log_rc_list)
+    PF_trunc_point = elbow_point(log_lc_list)
+    SFPF_trunc_point = closest_intersection(log_rc_list, log_lc_list)
 
-    SF_trunc_points.append(SF_trunc_point)
-    PF_trunc_points.append(PF_trunc_point)
-    SFPF_trunc_points.append(SFPF_trunc_point)
+    rc_trunc_points.append(SF_trunc_point)
+    lc_trunc_points.append(PF_trunc_point)
+    rclc_trunc_points.append(SFPF_trunc_point)
 
 # -----------------------------------------------------------------------------#
 # write LaTeX output
@@ -369,7 +422,7 @@ for log_SF_list, log_PF_list in zip(log_SF_master_list, log_PF_master_list):
 print("\nWriting LaTeX output...")
 
 out_tex_filename = os.path.join(results_dir,
-                                'individual_word_details%s.tex' % (file_suffix))
+                                'individual_word_details%s.tex' % file_suffix)
 out_tex = open(out_tex_filename, mode="w", encoding="utf8")
 out_tex.write('\\documentclass[10pt]{article}\n')
 out_tex.write('\\usepackage{booktabs}\n')
@@ -381,10 +434,10 @@ out_tex.write('\\begin{document}\n')
 
 for i, word in enumerate(test_words):
     counter = i + 1
-    SF_counts = SF_count_master_list[i]
-    PF_counts = PF_count_master_list[i]
-    log_RC_list = log_SF_master_list[i]
-    log_LC_list = log_PF_master_list[i]
+    rc_counts = rc_count_master_list[i]
+    lc_counts = lc_count_master_list[i]
+    log_RC_list = log_rc_master_list[i]
+    log_LC_list = log_lc_master_list[i]
 
     out_tex.write("{}\n\n".format(counter))
     out_tex.write("{}\n\n".format(word))
@@ -398,14 +451,14 @@ for i, word in enumerate(test_words):
     log_LC_row = "log(LC) & "
 
     for k, letter in enumerate(word):
-        SF_count = SF_counts[k]
-        PF_count = PF_counts[k]
+        rc_count = rc_counts[k]
+        lc_count = lc_counts[k]
         log_RC = log_RC_list[k]
         log_LC = log_LC_list[k]
 
         trunc_row += letter + " & "
-        RC_count_row = "{}{} & ".format(RC_count_row, SF_count)
-        LC_count_row = "{}{} & ".format(LC_count_row, PF_count)
+        RC_count_row = "{}{} & ".format(RC_count_row, rc_count)
+        LC_count_row = "{}{} & ".format(LC_count_row, lc_count)
         log_RC_row = "{}{} & ".format(log_RC_row, log_RC)
         log_LC_row = "{}{} & ".format(log_LC_row, log_LC)
 
@@ -418,9 +471,9 @@ for i, word in enumerate(test_words):
     out_tex.write("\\end{tabular}\n\n")
 
     out_tex.write("true trunc point: {}\n\n".format(true_trunc_points[i]))
-    out_tex.write("RC trunc point: {}\n\n".format(SF_trunc_points[i]))
-    out_tex.write("LC trunc point: {}\n\n".format(PF_trunc_points[i]))
-    out_tex.write("RC+LC trunc point: {}\n\n".format(SFPF_trunc_points[i]))
+    out_tex.write("RC trunc point: {}\n\n".format(rc_trunc_points[i]))
+    out_tex.write("LC trunc point: {}\n\n".format(lc_trunc_points[i]))
+    out_tex.write("RC+LC trunc point: {}\n\n".format(rclc_trunc_points[i]))
     out_tex.write("binRL trunc point: {}\n\n".format(binRL_trunc_points[i]))
     out_tex.write("binLR trunc point: {}\n\n".format(binLR_trunc_points[i]))
     out_tex.write("Gries trunc point: {}\n\n".format(gries_trunc_points[i]))
@@ -443,8 +496,8 @@ Rscriptname = os.path.join(results_dir, 'plot_words%s.R' % file_suffix)
 Rscript = open(Rscriptname, mode='w', encoding="utf8")
 
 for i, test_word in enumerate(test_words):
-    log_RC_list = log_SF_master_list[i]
-    log_LC_list = log_PF_master_list[i]
+    log_RC_list = log_rc_master_list[i]
+    log_LC_list = log_lc_master_list[i]
     true_trunc_point = true_trunc_points[i]
 
     Rscript.write('postscript(\'' + word_plots_dir + '/' + \
@@ -473,8 +526,8 @@ for i, test_word in enumerate(test_words):
     Rscript.write('title(main="%s")\n' % test_word)
     Rscript.write('title(ylab="log(count)")\n')
 
-    Rscript.write('legend(2, y_range[2], c("R-complete count (RC)", ' + \
-        '"L-complete count (LC)"), pch=21:22, lty=1:2)\n')
+    Rscript.write('legend(2, y_range[2], c("R-complete count (RC)", '
+                  '"L-complete count (LC)"), pch=21:22, lty=1:2)\n')
     Rscript.write('dev.off()\n\n')
 
 Rscript.close()
@@ -483,7 +536,7 @@ print(output_ready_stdout.format(Rscriptname))
 # -----------------------------------------------------------------------------#
 # compile latex file and run R script
 
-devnull = open(os.devnull, mode="w", encoding="utf8")
+devnull = open(os.devnull)
 
 if compile_latex:
     print("\nCompiling LaTeX file...")
@@ -521,7 +574,7 @@ binLR_eval_list = list()
 gries_eval_list = list()
 
 for T, SF, PF, SFPF, binRL, binLR, gries in zip(true_trunc_points,
-    SF_trunc_points, PF_trunc_points, SFPF_trunc_points,
+    rc_trunc_points, lc_trunc_points, rclc_trunc_points,
     binRL_trunc_points, binLR_trunc_points, gries_trunc_points):
 
     # "gries" is 0 when either test_word isn't in lexicon or
@@ -539,7 +592,6 @@ for T, SF, PF, SFPF, binRL, binLR, gries in zip(true_trunc_points,
     binLR_eval = binLR - T
     gries_eval = gries - T
 
-
     SF_eval_list.append(SF_eval)
     PF_eval_list.append(PF_eval)
     SFPF_eval_list.append(SFPF_eval)
@@ -550,15 +602,18 @@ for T, SF, PF, SFPF, binRL, binLR, gries in zip(true_trunc_points,
 output_csv_filename = os.path.join(results_dir, 'errors%s.csv' % file_suffix)
 
 with open(output_csv_filename, mode="w", encoding="utf8") as output:
-    output.write('{0},{1},{2},{3},{4},{5},{6}\n'.format('word', 'RC', 'LC', 'RCLC',
-                                                    'BinRL', 'BinLR', 'Gries'))
+    output.write('{0},{1},{2},{3},{4},{5},{6}\n'
+                 .format('word', 'RC', 'LC', 'RCLC',
+                         'BinRL', 'BinLR', 'Gries'))
 
-    for gold, SF_eval, PF_eval, SFPF_eval, binRL_eval, binLR_eval, gries_eval in \
-        zip(test_words, SF_eval_list, PF_eval_list, SFPF_eval_list,
-            binRL_eval_list, binLR_eval_list, gries_eval_list):
+    for (gold, SF_eval, PF_eval, SFPF_eval, binRL_eval, binLR_eval,
+         gries_eval) in  zip(test_words, SF_eval_list, PF_eval_list,
+                             SFPF_eval_list, binRL_eval_list, binLR_eval_list,
+                             gries_eval_list):
 
-        output.write('{0},{1},{2},{3},{4},{5},{6}\n'.format(gold,
-            SF_eval, PF_eval, SFPF_eval, binRL_eval, binLR_eval, gries_eval))
+        output.write('{0},{1},{2},{3},{4},{5},{6}\n'
+                     .format(gold, SF_eval, PF_eval, SFPF_eval, binRL_eval,
+                             binLR_eval, gries_eval))
 
 print(output_ready_stdout.format(output_csv_filename))
 
@@ -571,72 +626,78 @@ stats_results_filename = os.path.join(results_dir,
                                       'evaluation%s.txt' % file_suffix)
 stats_results_file = open(stats_results_filename, mode="w", encoding="utf8")
 
-row_template = '{:<20}{:<15}{:<15}{:<15}{:<15}{:<15}{:<15}\n'  # <20 to left-align
-row_float_template = '{:<20}{:<15.3f}{:<15.3f}{:<15.3f}{:<15.3f}{:<15.3f}{:<15.3f}\n'
+row_template = '{:<20}{:<15}{:<15}{:<15}{:<15}{:<15}{:<15}\n'
+row_float_template = ('{:<20}{:<15.3f}{:<15.3f}{:<15.3f}'
+                      '{:<15.3f}{:<15.3f}{:<15.3f}\n')
 
-stats_results_file.write(row_template.format('', 'RC', 'LC', 'RCLC',
-                                             'BinRL', 'BinLR', 'Gries'))
+stats_results_file.write(row_template.format(
+    '', 'RC', 'LC', 'RCLC', 'BinRL', 'BinLR', 'Gries'))
 
-stats_results_file.write(row_float_template.format('sum',
-    sum(SF_eval_list), sum(PF_eval_list), sum(SFPF_eval_list),
-    sum(binRL_eval_list), sum(binLR_eval_list), sum(gries_eval_list)))
+stats_results_file.write(
+    row_float_template.format(
+        'sum', sum(SF_eval_list), sum(PF_eval_list), sum(SFPF_eval_list),
+        sum(binRL_eval_list), sum(binLR_eval_list), sum(gries_eval_list)
+    )
+)
 
-stats_results_file.write(row_float_template.format('abs values',
-    sum_abs(SF_eval_list), sum_abs(PF_eval_list), sum_abs(SFPF_eval_list),
-    sum_abs(binRL_eval_list), sum_abs(binLR_eval_list), sum_abs(gries_eval_list)))
+stats_results_file.write(
+    row_float_template.format(
+        'abs values', sum_abs(SF_eval_list), sum_abs(PF_eval_list),
+        sum_abs(SFPF_eval_list), sum_abs(binRL_eval_list),
+        sum_abs(binLR_eval_list), sum_abs(gries_eval_list)
+    )
+)
 
-stats_results_file.write(row_float_template.format('RMS',
-    rms(SF_eval_list), rms(PF_eval_list), rms(SFPF_eval_list),
-    rms(binRL_eval_list), rms(binLR_eval_list), rms(gries_eval_list)))
+stats_results_file.write(
+    row_float_template.format(
+        'correct proportion', proportion(SF_eval_list),
+        proportion(PF_eval_list), proportion(SFPF_eval_list),
+        proportion(binRL_eval_list), proportion(binLR_eval_list),
+        proportion(gries_eval_list)
+    )
+)
 
-stats_results_file.write(row_float_template.format('correct proportion',
-    proportion(SF_eval_list), proportion(PF_eval_list),
-    proportion(SFPF_eval_list),
-    proportion(binRL_eval_list), proportion(binLR_eval_list), proportion(gries_eval_list)))
+stats_results_file.write(
+    row_float_template.format(
+        'mean', np.mean(SF_eval_list), np.mean(PF_eval_list),
+        np.mean(SFPF_eval_list), np.mean(binRL_eval_list),
+        np.mean(binLR_eval_list), np.mean(gries_eval_list)
+    )
+)
 
-stats_results_file.write(row_float_template.format('mean',
-    np.mean(SF_eval_list), np.mean(PF_eval_list), np.mean(SFPF_eval_list),
-    np.mean(binRL_eval_list), np.mean(binLR_eval_list), np.mean(gries_eval_list)))
-
-stats_results_file.write(row_float_template.format('std dev',
-    np.std(SF_eval_list), np.std(PF_eval_list), np.std(SFPF_eval_list),
-    np.std(binRL_eval_list), np.std(binLR_eval_list), np.std(gries_eval_list)))
-
-anova = stats.f_oneway(SF_eval_list, PF_eval_list, SFPF_eval_list,
-                       binRL_eval_list, binLR_eval_list, gries_eval_list)
-
-print('\nOne-way ANOVA:\nF-value: {}\np-value: {}'.format(*anova),
-      file=stats_results_file)
-
-print('\nKolmogorov-Smirnov tests', file=stats_results_file)
-
-for data, model in zip(
-        [SF_eval_list, PF_eval_list, binRL_eval_list, binLR_eval_list, gries_eval_list],
-        ['RC', 'LC', 'binRL', 'binLR', 'Gries']):
-    ks = stats.ks_2samp(SFPF_eval_list, data)
-    print('Models: RCLC and {} |'.format(model), end=' ',
-          file=stats_results_file)
-    print('KS statistic: {:.4f} p-value: {}'.format(*ks),
-          file=stats_results_file)
+stats_results_file.write(
+    row_float_template.format(
+        'std dev', np.std(SF_eval_list), np.std(PF_eval_list),
+        np.std(SFPF_eval_list), np.std(binRL_eval_list),
+        np.std(binLR_eval_list), np.std(gries_eval_list)
+    )
+)
 
 stats_results_file.close()
 print(output_ready_stdout.format(stats_results_filename))
 
 # -----------------------------------------------------------------------------#
-# boxplot
+# Creating the boxplot.
+
+sns.set_style("whitegrid")
 
 models = ['RC', 'LC', 'RCLC', 'BinRL', 'BinLR', 'Gries']
 eval_data = [SF_eval_list, PF_eval_list, SFPF_eval_list,
              binRL_eval_list, binLR_eval_list, gries_eval_list]
+eval_data_jittered = [jitter(list_) for list_ in eval_data]
 
 boxplot_data = pd.DataFrame({model: data
                              for model, data in zip(models, eval_data)})
+boxplot_data_jittered = pd.DataFrame({model: data
+                                      for model, data in
+                                      zip(models, eval_data_jittered)})
 
-boxplot = sns.boxplot(data=boxplot_data)
+boxplot = sns.boxplot(data=boxplot_data, color='#c0c0c0')
+boxplot = sns.stripplot(data=boxplot_data_jittered, color='.3', jitter=True)
 boxplot.set(ylabel='Distance error', ylim=(-5, 9))
-boxplot_filename = os.path.join(results_dir, 'error_distribution_boxplot%s.pdf'
-                                % (file_suffix))
-boxplot.get_figure().savefig(boxplot_filename)
+boxplot_filename = os.path.join(results_dir, 'error_distribution_boxplot%s.eps'
+                                % file_suffix)
+boxplot.get_figure().savefig(boxplot_filename, format='eps')
 print(output_ready_stdout.format(boxplot_filename))
 
 # -----------------------------------------------------------------------------#

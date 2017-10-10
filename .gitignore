@@ -15,4 +15,10 @@ main2_backup/
 .idea/
 orthofix/
 
+plots_for_words/*-nodigraphs.eps
+plots_for_words/*-tech.eps
+plots_for_words/*-tokenfreq.eps
 
+results/*nodigraphs*
+results/*tech*
+results/*tokenfreq*
