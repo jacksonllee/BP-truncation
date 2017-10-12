@@ -34,6 +34,7 @@ NumPy, Pandas, and Seaborn are required to run ``main.py``.
 For reproducibility, the exact versions we use are pinned down in
 `requirements.txt`, and you can install these dependencies by
 `pip install -r requirements.txt`.
+We are using Python 3.6.3.
 
 *Optional* -- If the following commands are recognized in your path environment:
 
