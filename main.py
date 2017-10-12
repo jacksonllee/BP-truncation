@@ -18,6 +18,10 @@ import pandas as pd
 import seaborn as sns
 
 
+# Pin down the random seed for reproducible results
+np.random.seed(42)
+
+
 def elbow_point(points):
     """Return the index in ``points`` for maximal curvature.
 
