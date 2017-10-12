@@ -9,6 +9,7 @@ from __future__ import print_function, division
 import os
 import math
 import subprocess
+import platform
 import multiprocessing as mp
 import argparse
 
@@ -330,8 +331,13 @@ def compute_rc_lc_counts(input_word):
 
     return rc_counts, lc_counts
 
-p = mp.Pool(processes=mp.cpu_count())
-rc_lc_count_master_list = p.map(compute_rc_lc_counts, test_words)
+
+if platform.system().lower().startswith('win'):
+    # Don't use multiprocessing on Windows
+    rc_lc_count_master_list = [compute_rc_lc_counts(w) for w in test_words]
+else:
+    with mp.Pool(processes=mp.cpu_count()) as p:
+        rc_lc_count_master_list = p.map(compute_rc_lc_counts, test_words)
 
 rc_count_master_list = list()
 lc_count_master_list = list()
