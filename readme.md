@@ -30,11 +30,10 @@ as a
 
 ## Requirements
 
-[NumPy](http://www.numpy.org/), [Pandas](http://pandas.pydata.org/),
-and [Seaborn](https://stanford.edu/~mwaskom/software/seaborn/)
-are required to run ``main.py``.
-A great Python distribution that comes with these packages (and many others)
-is [Anaconda](https://www.continuum.io/downloads).
+NumPy, Pandas, and Seaborn are required to run ``main.py``.
+For reproducibility, the exact versions we use are pinned down in
+`requirements.txt`, and you can install these dependencies by
+`pip install -r requirements.txt`.
 
 *Optional* -- If the following commands are recognized in your path environment:
 
