@@ -231,7 +231,7 @@ goldstandard_file_suffix = goldstandard_file_suffix.replace('-nodigraphs', '')
 
 print("\nReading the lexicon file...")
 
-lex_freq_dict = dict()
+lex_freq_dict = {}
 
 for line in open(lexicon_filename, encoding="utf8"):
     line = line.strip()
@@ -249,7 +249,7 @@ for line in open(lexicon_filename, encoding="utf8"):
 
 lex_keys = lex_freq_dict.keys()
 
-lex_log_freq_dict = dict()
+lex_log_freq_dict = {}
 
 for word in lex_keys:
     lex_log_freq_dict[word] = math.log(lex_freq_dict[word], 10)
@@ -257,10 +257,10 @@ for word in lex_keys:
 # -----------------------------------------------------------------------------#
 # read gold standard words
 
-test_words = list()
-true_trunc_points = list()
-binRL_trunc_points = list()
-binLR_trunc_points = list()
+test_words = []
+true_trunc_points = []
+binRL_trunc_points = []
+binLR_trunc_points = []
 
 for line in open(goldstandard_filename, encoding="utf8"):
     line = line.strip()
@@ -272,7 +272,7 @@ for line in open(goldstandard_filename, encoding="utf8"):
 
     annotated_word = line.split()[0]
 
-    positions = dict()
+    positions = {}
     positions["$"] = annotated_word.index("$")  # binLR marked by $
     positions["#"] = annotated_word.index("#")  # binRL marked by #
     positions["|"] = annotated_word.index("|")  # gold standard by |
@@ -296,8 +296,8 @@ print("\nComputing right- and left-complete counts...")
 
 def compute_rc_lc_counts(input_word):
     print(input_word)
-    rc_counts = list()
-    lc_counts = list()
+    rc_counts = []
+    lc_counts = []
 
     # initialize reversed form
     test_word_reversed = input_word[::-1]
@@ -343,8 +343,8 @@ else:
     with mp.Pool(processes=mp.cpu_count()) as p:
         rc_lc_count_master_list = p.map(compute_rc_lc_counts, test_words)
 
-rc_count_master_list = list()
-lc_count_master_list = list()
+rc_count_master_list = []
+lc_count_master_list = []
 
 for rc_counts, lc_counts in rc_lc_count_master_list:
     rc_count_master_list.append(rc_counts)
@@ -352,12 +352,12 @@ for rc_counts, lc_counts in rc_lc_count_master_list:
 
 # log-transform the right- and left-complete counts
 
-log_rc_master_list = list()
-log_lc_master_list = list()
+log_rc_master_list = []
+log_lc_master_list = []
 
 for rc_counts, lc_counts in zip(rc_count_master_list, lc_count_master_list):
-    log_rc_list = list()
-    log_lc_list = list()
+    log_rc_list = []
+    log_lc_list = []
 
     for rc_count, lc_count in zip(rc_counts, lc_counts):
         if rc_count > 0:
@@ -392,7 +392,7 @@ def compute_gries_point(test_word):
 
     for letter in test_word:
         trunc = trunc + letter
-        gries_dict = dict()
+        gries_dict = {}
 
         for word in lex_keys:
             if word.startswith(trunc):
@@ -412,9 +412,9 @@ gries_trunc_points = p.map(compute_gries_point, test_words)
 # -----------------------------------------------------------------------------#
 # compute truncation points based on RC, LC, and RC+LC
 
-rc_trunc_points = list()
-lc_trunc_points = list()
-rclc_trunc_points = list()
+rc_trunc_points = []
+lc_trunc_points = []
+rclc_trunc_points = []
 
 for log_rc_list, log_lc_list in zip(log_rc_master_list, log_lc_master_list):
 
@@ -576,12 +576,12 @@ if run_r_script:
 
 print("\nComputing errors...")
 
-SF_eval_list = list()
-PF_eval_list = list()
-SFPF_eval_list = list()
-binRL_eval_list = list()
-binLR_eval_list = list()
-gries_eval_list = list()
+SF_eval_list = []
+PF_eval_list = []
+SFPF_eval_list = []
+binRL_eval_list = []
+binLR_eval_list = []
+gries_eval_list = []
 
 for T, SF, PF, SFPF, binRL, binLR, gries in zip(true_trunc_points,
     rc_trunc_points, lc_trunc_points, rclc_trunc_points,
@@ -617,9 +617,9 @@ with open(output_csv_filename, mode="w", encoding="utf8") as output:
                          'BinRL', 'BinLR', 'Gries'))
 
     for (gold, SF_eval, PF_eval, SFPF_eval, binRL_eval, binLR_eval,
-         gries_eval) in  zip(test_words, SF_eval_list, PF_eval_list,
-                             SFPF_eval_list, binRL_eval_list, binLR_eval_list,
-                             gries_eval_list):
+         gries_eval) in zip(test_words, SF_eval_list, PF_eval_list,
+                            SFPF_eval_list, binRL_eval_list, binLR_eval_list,
+                            gries_eval_list):
 
         output.write('{0},{1},{2},{3},{4},{5},{6}\n'
                      .format(gold, SF_eval, PF_eval, SFPF_eval, binRL_eval,
