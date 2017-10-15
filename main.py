@@ -261,6 +261,7 @@ test_words = []
 true_trunc_points = []
 binRL_trunc_points = []
 binLR_trunc_points = []
+normalized_true_trunc_points = []
 
 for line in open(goldstandard_filename, encoding="utf8"):
     line = line.strip()
@@ -271,6 +272,8 @@ for line in open(goldstandard_filename, encoding="utf8"):
         line = replace_digraphs(line)
 
     annotated_word = line.split()[0]
+    test_word = (annotated_word
+                 .replace("$", "").replace("#", "").replace("|", ""))
 
     positions = {}
     positions["$"] = annotated_word.index("$")  # binLR marked by $
@@ -284,9 +287,9 @@ for line in open(goldstandard_filename, encoding="utf8"):
     binLR_trunc_points.append(positions["$"])
     binRL_trunc_points.append(positions["#"])
     true_trunc_points.append(positions["|"])
+    normalized_true_trunc_points.append(positions["|"] / len(test_word))
 
-    test_words.append(
-        annotated_word.replace("$", "").replace("#", "").replace("|", ""))
+    test_words.append(test_word)
 
 # -----------------------------------------------------------------------------#
 # compute right- and left-complete counts for each input word
