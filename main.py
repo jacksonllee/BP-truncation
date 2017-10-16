@@ -426,6 +426,9 @@ print("\nComputing the truncation points by random sampling from "
 normalized_true_trunc_mean = np.mean(normalized_true_trunc_points)
 normalized_true_trunc_std = np.std(normalized_true_trunc_points)
 
+print('normalized_true_trunc_mean', normalized_true_trunc_mean)
+print('normalized_true_trunc_std', normalized_true_trunc_std)
+
 
 def compute_trunc_point_by_random_sampling(test_word):
     sampled_normalized_points = [
