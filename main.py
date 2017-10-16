@@ -623,10 +623,13 @@ SFPF_eval_list = []
 binRL_eval_list = []
 binLR_eval_list = []
 gries_eval_list = []
+random_sampling_eval_list = []
 
-for T, SF, PF, SFPF, binRL, binLR, gries in zip(true_trunc_points,
-    rc_trunc_points, lc_trunc_points, rclc_trunc_points,
-    binRL_trunc_points, binLR_trunc_points, gries_trunc_points):
+for T, SF, PF, SFPF, binRL, binLR, gries, random_sampling in zip(
+        true_trunc_points,
+        rc_trunc_points, lc_trunc_points, rclc_trunc_points,
+        binRL_trunc_points, binLR_trunc_points, gries_trunc_points,
+        random_sampling_trunc_points):
 
     # "gries" is 0 when either test_word isn't in lexicon or
     # when the gries algorithm fails as the test_word still doesn't emerge
@@ -642,6 +645,7 @@ for T, SF, PF, SFPF, binRL, binLR, gries in zip(true_trunc_points,
     binRL_eval = binRL - T
     binLR_eval = binLR - T
     gries_eval = gries - T
+    random_sampling_eval = random_sampling - T
 
     SF_eval_list.append(SF_eval)
     PF_eval_list.append(PF_eval)
@@ -649,22 +653,24 @@ for T, SF, PF, SFPF, binRL, binLR, gries in zip(true_trunc_points,
     binRL_eval_list.append(binRL_eval)
     binLR_eval_list.append(binLR_eval)
     gries_eval_list.append(gries_eval)
+    random_sampling_eval_list.append(random_sampling_eval)
 
 output_csv_filename = os.path.join(results_dir, 'errors%s.csv' % file_suffix)
 
 with open(output_csv_filename, mode="w", encoding="utf8") as output:
-    output.write('{0},{1},{2},{3},{4},{5},{6}\n'
+    output.write('{},{},{},{},{},{},{},{}\n'
                  .format('word', 'RC', 'LC', 'RCLC',
-                         'BinRL', 'BinLR', 'Gries'))
+                         'BinRL', 'BinLR', 'Gries', 'RandomSampling'))
 
     for (gold, SF_eval, PF_eval, SFPF_eval, binRL_eval, binLR_eval,
-         gries_eval) in zip(test_words, SF_eval_list, PF_eval_list,
-                            SFPF_eval_list, binRL_eval_list, binLR_eval_list,
-                            gries_eval_list):
+         gries_eval, random_sampling_eval) in zip(
+        test_words, SF_eval_list, PF_eval_list,
+        SFPF_eval_list, binRL_eval_list, binLR_eval_list,
+        gries_eval_list, random_sampling_eval_list):
 
-        output.write('{0},{1},{2},{3},{4},{5},{6}\n'
+        output.write('{},{},{},{},{},{},{},{}\n'
                      .format(gold, SF_eval, PF_eval, SFPF_eval, binRL_eval,
-                             binLR_eval, gries_eval))
+                             binLR_eval, gries_eval, random_sampling_eval))
 
 print(output_ready_stdout.format(output_csv_filename))
 
@@ -677,17 +683,18 @@ stats_results_filename = os.path.join(results_dir,
                                       'evaluation%s.txt' % file_suffix)
 stats_results_file = open(stats_results_filename, mode="w", encoding="utf8")
 
-row_template = '{:<20}{:<15}{:<15}{:<15}{:<15}{:<15}{:<15}\n'
+row_template = '{:<20}{:<15}{:<15}{:<15}{:<15}{:<15}{:<15}{:<15}\n'
 row_float_template = ('{:<20}{:<15.3f}{:<15.3f}{:<15.3f}'
-                      '{:<15.3f}{:<15.3f}{:<15.3f}\n')
+                      '{:<15.3f}{:<15.3f}{:<15.3f}{:<15.3}\n')
 
 stats_results_file.write(row_template.format(
-    '', 'RC', 'LC', 'RCLC', 'BinRL', 'BinLR', 'Gries'))
+    '', 'RC', 'LC', 'RCLC', 'BinRL', 'BinLR', 'Gries', 'RandomSampling'))
 
 stats_results_file.write(
     row_float_template.format(
         'sum', sum(SF_eval_list), sum(PF_eval_list), sum(SFPF_eval_list),
-        sum(binRL_eval_list), sum(binLR_eval_list), sum(gries_eval_list)
+        sum(binRL_eval_list), sum(binLR_eval_list), sum(gries_eval_list),
+        sum(random_sampling_eval_list)
     )
 )
 
@@ -695,7 +702,8 @@ stats_results_file.write(
     row_float_template.format(
         'abs values', sum_abs(SF_eval_list), sum_abs(PF_eval_list),
         sum_abs(SFPF_eval_list), sum_abs(binRL_eval_list),
-        sum_abs(binLR_eval_list), sum_abs(gries_eval_list)
+        sum_abs(binLR_eval_list), sum_abs(gries_eval_list),
+        sum_abs(random_sampling_eval_list)
     )
 )
 
@@ -704,7 +712,8 @@ stats_results_file.write(
         'correct proportion', proportion(SF_eval_list),
         proportion(PF_eval_list), proportion(SFPF_eval_list),
         proportion(binRL_eval_list), proportion(binLR_eval_list),
-        proportion(gries_eval_list)
+        proportion(gries_eval_list),
+        proportion(random_sampling_eval_list)
     )
 )
 
@@ -712,7 +721,8 @@ stats_results_file.write(
     row_float_template.format(
         'mean', np.mean(SF_eval_list), np.mean(PF_eval_list),
         np.mean(SFPF_eval_list), np.mean(binRL_eval_list),
-        np.mean(binLR_eval_list), np.mean(gries_eval_list)
+        np.mean(binLR_eval_list), np.mean(gries_eval_list),
+        np.mean(random_sampling_eval_list)
     )
 )
 
@@ -720,7 +730,8 @@ stats_results_file.write(
     row_float_template.format(
         'std dev', np.std(SF_eval_list), np.std(PF_eval_list),
         np.std(SFPF_eval_list), np.std(binRL_eval_list),
-        np.std(binLR_eval_list), np.std(gries_eval_list)
+        np.std(binLR_eval_list), np.std(gries_eval_list),
+        np.std(random_sampling_eval_list)
     )
 )
 
@@ -732,9 +743,10 @@ print(output_ready_stdout.format(stats_results_filename))
 
 sns.set_style("whitegrid")
 
-models = ['RC', 'LC', 'RCLC', 'BinRL', 'BinLR', 'Gries']
+models = ['RC', 'LC', 'RCLC', 'BinRL', 'BinLR', 'Gries', 'RandomSampling']
 eval_data = [SF_eval_list, PF_eval_list, SFPF_eval_list,
-             binRL_eval_list, binLR_eval_list, gries_eval_list]
+             binRL_eval_list, binLR_eval_list, gries_eval_list,
+             random_sampling_eval_list]
 eval_data_jittered = [jitter(list_) for list_ in eval_data]
 
 boxplot_data = pd.DataFrame({model: data
