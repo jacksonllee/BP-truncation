@@ -409,8 +409,13 @@ def compute_gries_point(test_word):
     print('(Warning: end of word reached for %s)' % test_word)
     return 0
 
-p = mp.Pool(processes=mp.cpu_count())
-gries_trunc_points = p.map(compute_gries_point, test_words)
+
+if platform.system().lower().startswith('win'):
+    # Don't use multiprocessing on Windows
+    gries_trunc_points = [compute_gries_point(w) for w in test_words]
+else:
+    with mp.Pool(processes=mp.cpu_count()) as p:
+        gries_trunc_points = p.map(compute_gries_point, test_words)
 
 # -----------------------------------------------------------------------------#
 # compute truncation points based on RC, LC, and RC+LC
