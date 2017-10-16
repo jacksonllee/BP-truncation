@@ -428,11 +428,11 @@ normalized_true_trunc_std = np.std(normalized_true_trunc_points)
 
 
 def compute_trunc_point_by_random_sampling(test_word):
-    sampled_normalized_points = []
-    for i in range(10000):
-        normalized_point = np.random.normal(loc=normalized_true_trunc_mean,
-                                            scale=normalized_true_trunc_std)
-        sampled_normalized_points.append(normalized_point)
+    sampled_normalized_points = [
+        np.random.normal(loc=normalized_true_trunc_mean,
+                         scale=normalized_true_trunc_std)
+        for _ in range(10000)
+    ]
     sampled_mean = np.mean(sampled_normalized_points)
     trunc_point = round(sampled_mean * len(test_word))
     return trunc_point
