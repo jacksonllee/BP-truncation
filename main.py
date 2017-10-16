@@ -418,6 +418,36 @@ else:
         gries_trunc_points = p.map(compute_gries_point, test_words)
 
 # -----------------------------------------------------------------------------#
+# compute truncation points based on random sampling from true trunc points
+
+print("\nComputing the truncation points by random sampling from "
+      "the normalized true truncation points...")
+
+normalized_true_trunc_mean = np.mean(normalized_true_trunc_points)
+normalized_true_trunc_std = np.std(normalized_true_trunc_points)
+
+
+def compute_trunc_point_by_random_sampling(test_word):
+    sampled_normalized_points = []
+    for i in range(10000):
+        normalized_point = np.random.normal(loc=normalized_true_trunc_mean,
+                                            scale=normalized_true_trunc_std)
+        sampled_normalized_points.append(normalized_point)
+    sampled_mean = np.mean(sampled_normalized_points)
+    trunc_point = round(sampled_mean * len(test_word))
+    return trunc_point
+
+
+if platform.system().lower().startswith('win'):
+    # Don't use multiprocessing on Windows
+    random_sampling_trunc_points = [compute_trunc_point_by_random_sampling(w)
+                                    for w in test_words]
+else:
+    with mp.Pool(processes=mp.cpu_count()) as p:
+        random_sampling_trunc_points = p.map(
+            compute_trunc_point_by_random_sampling, test_words)
+
+# -----------------------------------------------------------------------------#
 # compute truncation points based on RC, LC, and RC+LC
 
 rc_trunc_points = []
