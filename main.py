@@ -743,7 +743,7 @@ print(output_ready_stdout.format(stats_results_filename))
 
 sns.set_style("whitegrid")
 
-models = ['RC', 'LC', 'RCLC', 'BinRL', 'BinLR', 'Gries', 'RandomSampling']
+models = ['RC', 'LC', 'RCLC', 'BinRL', 'BinLR', 'Gries', 'Sampling']
 eval_data = [SF_eval_list, PF_eval_list, SFPF_eval_list,
              binRL_eval_list, binLR_eval_list, gries_eval_list,
              random_sampling_eval_list]
