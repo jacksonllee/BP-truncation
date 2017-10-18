@@ -756,7 +756,8 @@ boxplot_data_jittered = pd.DataFrame({model: data
                                       zip(models, eval_data_jittered)})
 
 boxplot = sns.boxplot(data=boxplot_data, color='#c0c0c0')
-boxplot = sns.stripplot(data=boxplot_data_jittered, color='.3', jitter=True)
+boxplot = sns.stripplot(data=boxplot_data_jittered, color='.3', jitter=True,
+                        size=2.5)
 boxplot.set(ylabel='Distance error', ylim=(-5, 9))
 boxplot_filename = os.path.join(results_dir, 'error_distribution_boxplot%s.eps'
                                 % file_suffix)
