@@ -2,10 +2,13 @@
 
 By [Mike Pham](http://www.mikettpham.com/) and [Jackson Lee](http://jacksonllee.com/)
 
-A full paper is currently being prepared,
-which is a substantially expanded and revised version of the brief write-up
-as a
-[technical report (TR-2014-15, UChicago Computer Science)](https://newtraell.cs.uchicago.edu/research/publications/techreports/TR-2014-15).
+Academic publication:
+
+Pham, Mike and Jackson L. Lee. 2018/Forthcoming.
+[Mincing words: Balancing recovery and deletion in word truncation](http://jacksonllee.com/papers/pham-lee-truncation-glossa.pdf).
+*Glossa*.
+
+This repo contains code, datasets, and results associated with this publication.
 
 
 ## Contents
