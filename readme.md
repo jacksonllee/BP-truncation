@@ -7,6 +7,7 @@ which is a substantially expanded and revised version of the brief write-up
 as a
 [technical report (TR-2014-15, UChicago Computer Science)](https://newtraell.cs.uchicago.edu/research/publications/techreports/TR-2014-15).
 
+
 ## Contents
 
 - ``main.py``: Python script for running the different truncation models over the data files in the ``data/`` folder
@@ -28,6 +29,7 @@ as a
 
 - ``readme.md``: this readme file
 
+
 ## Requirements
 
 NumPy, Pandas, and Seaborn are required to run ``main.py``.
@@ -46,6 +48,7 @@ We are using Python 3.6.3.
 
 ``Rscript`` comes from R, whereas ``xelatex`` comes from a LaTeX distribution
 (such as ``texlive-full``).
+
 
 ## Download
 
@@ -108,15 +111,14 @@ may be used to override the default lexicon
 and gold standard files, respectively.
 See the sections below on their file format.
 
+
 ## Lexicon
 
-The lexicon file is a plain text file
-where each line begins with a word, and then a space/tab, and finally
-the frequency count of that word in some corpus.
-The ordering of the words in the lexicon file does not matter.
+The lexicon file `data/pt_br_full.txt` is a plain text file
+where each line begins with a word, and then a space, and finally
+the frequency count of that word.
 Here are the first ten lines of the
-the default lexicon file in this repository
-(``data/pt_br_full.txt``):
+the lexicon file:
 
 ```
 que 12021478
@@ -130,6 +132,12 @@ e 5863939
 eu 5741437
 um 4589127
 ```
+
+This lexicon file is from [here](https://github.com/hermitdave/FrequencyWords)
+(released with an MIT license),
+which in turn derived the lexicon and frequency counts from movie subtitles.
+The data is therefore highly representative of the spoken language.
+
 
 ## Gold standard file
 
