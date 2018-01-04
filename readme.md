@@ -168,3 +168,8 @@ bob|$eir#a	bobis
 bot$equ|#im	boteco
 burg|$#ês	burga
 ```
+
+
+## License
+
+MIT License
