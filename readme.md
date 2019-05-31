@@ -4,9 +4,10 @@ By [Mike Pham](http://www.mikettpham.com/) and [Jackson Lee](http://jacksonllee.
 
 Academic publication:
 
-Pham, Mike and Jackson L. Lee. 2018/Forthcoming.
-[Mincing words: Balancing recovery and deletion in word truncation](http://jacksonllee.com/papers/pham-lee-truncation-glossa.pdf).
-*Glossa*.
+Pham, Mike, & Jackson L. Lee. 2018.
+Mincing words: Balancing recovery and deletion in word truncation.
+*Glossa: A Journal of General Linguistics*, 3(1), 36.
+DOI: http://doi.org/10.5334/gjgl.269
 
 This repo contains code, datasets, and results associated with this publication.
 
